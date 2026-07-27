@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-teal: #12312B;
+  --color-brand-teal-light: #1c4b42;
+  --color-brand-gold: #C99A2E;
+  --color-brand-gold-light: #d6af55;
+  --color-brand-gold-dark: #a87f22;
+  --font-sans: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-slate-800 bg-slate-50;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Growguest",
+  "description": "Digital marketing consultancy helping Nagpur hotels, homestays, and restaurants get more direct bookings and reduce OTA commissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
