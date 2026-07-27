@@ -10,7 +10,7 @@ const blogPosts = [
     date: "Aug 12, 2024",
     author: "Growguest Team",
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop",
-    slug: "optimize-google-business-profile-homestays"
+    slug: "google-business-profile-seo-homestays-resorts"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const blogPosts = [
     date: "Sep 05, 2024",
     author: "Growguest Team",
     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
-    slug: "direct-booking-strategy-stop-ota-commissions"
+    slug: "hotel-direct-booking-strategy-reduce-ota-commissions"
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const blogPosts = [
     date: "Oct 22, 2024",
     author: "Growguest Team",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
-    slug: "hotel-website-conversion-fixes"
+    slug: "hotel-website-conversion-rate-optimization"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const blogPosts = [
     date: "Nov 15, 2024",
     author: "Growguest Team",
     image: "https://images.unsplash.com/photo-1498354178607-a79df2916198?q=80&w=800&auto=format&fit=crop",
-    slug: "local-seo-guide-resorts"
+    slug: "local-seo-guide-resorts-hotels"
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const blogPosts = [
     date: "Dec 02, 2024",
     author: "Growguest Team",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
-    slug: "whatsapp-business-room-bookings"
+    slug: "whatsapp-marketing-strategies-hotel-room-bookings"
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const blogPosts = [
     date: "Jan 18, 2025",
     author: "Growguest Team",
     image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=800&auto=format&fit=crop",
-    slug: "building-trust-reviews-impact"
+    slug: "hotel-reputation-management-google-reviews"
   }
 ];
 

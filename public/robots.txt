@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://growguest.com/sitemap.xml
+Sitemap: https://growguest.com/sitemap-website.xml
+Sitemap: https://growguest.com/sitemap-blog.xml
