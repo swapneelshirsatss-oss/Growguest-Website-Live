@@ -11,7 +11,7 @@ interface SEOProps {
 export default function SEO({
   title = "Growguest — Digital Growth for Hospitality | Nagpur",
   description = "Growguest is a boutique digital marketing consultancy helping hotels, resorts, and homestays in Nagpur and Uttarakhand eliminate OTA commissions and maximize direct bookings.",
-  canonicalUrl = "https://growguest.com/",
+  canonicalUrl = "https://growguest.in/",
   ogImage = "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
   breadcrumbs
 }: SEOProps) {
@@ -25,7 +25,7 @@ export default function SEO({
       "@type": "ListItem",
       "position": index + 1,
       "name": crumb.name,
-      "item": crumb.url.startsWith('http') ? crumb.url : `https://growguest.com${crumb.url}`
+      "item": crumb.url.startsWith('http') ? crumb.url : `https://growguest.in${crumb.url}`
     }))
   } : null;
 
@@ -35,8 +35,8 @@ export default function SEO({
     "@type": "ProfessionalService",
     "name": "Growguest — Digital Growth for Hospitality",
     "image": ogImage,
-    "@id": "https://growguest.com/#organization",
-    "url": "https://growguest.com/",
+    "@id": "https://growguest.in/#organization",
+    "url": "https://growguest.in/",
     "telephone": "+919876543210",
     "priceRange": "$$",
     "description": "Boutique digital marketing consultancy specializing in hospitality (hotels, homestays, resorts, restaurants). Solves OTA commission loss by optimizing Google Business Profiles, technical SEO, and direct booking websites.",
