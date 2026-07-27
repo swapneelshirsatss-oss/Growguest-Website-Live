@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const blogPosts = [
   {
@@ -60,10 +62,22 @@ const blogPosts = [
 ];
 
 export default function Blog() {
+  const breadcrumbItems = [
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog' }
+  ];
+
   return (
-    <div className="bg-slate-50 min-h-screen py-16 lg:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <div className="bg-slate-50 min-h-screen pb-16 lg:pb-28">
+      <SEO
+        title="Hospitality Digital Marketing Blog | Growguest Insights"
+        description="Actionable strategies, case studies, and guides to help hotels, resorts, and homestays maximize direct bookings and profitability."
+        canonicalUrl="https://growguest.com/hospitality-digital-marketing-blog"
+        breadcrumbs={breadcrumbItems}
+      />
+
+      <Breadcrumbs items={breadcrumbItems} />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <motion.h1 
