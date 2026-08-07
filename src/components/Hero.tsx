@@ -35,7 +35,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              अभी कोई गेस्ट Google पर आपके जैसे होटल, होमस्टे या रेस्टोरेंट को ढूंढ रहा है — <span className="text-brand-gold">और उसे आपके कॉम्पिटिटर मिल रहे हैं।</span>
+              अभी कोई गेस्ट Google पर आपके जैसे होटल, होमस्टे या रेस्टोरेंट को Search कर रहा है — <span className="text-brand-gold">और उसे आपके कॉम्पिटिटर मिल रहे हैं।</span>
             </h1>
             
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-xl leading-relaxed">

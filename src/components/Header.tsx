@@ -27,9 +27,9 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-5">
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center text-sm font-semibold text-slate-600 hover:text-brand-teal transition-colors">
+            <a href="https://wa.me/918956907343" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center text-sm font-semibold text-slate-600 hover:text-brand-teal transition-colors">
               <Phone className="w-4 h-4 mr-2" />
-              +91 98765 43210
+              +91 89569 07343
             </a>
             <a
               href="/#audit"
@@ -62,9 +62,9 @@ export default function Header() {
             <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 text-base font-medium text-slate-700 hover:text-brand-teal hover:bg-slate-50 rounded-md">Blog</Link>
             
             <div className="mt-4 pt-4 border-t border-slate-100 flex flex-col gap-4 px-3">
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="flex items-center text-base font-medium text-brand-teal">
+              <a href="https://wa.me/918956907343" target="_blank" rel="noopener noreferrer" className="flex items-center text-base font-medium text-brand-teal">
                 <Phone className="w-5 h-5 mr-2" />
-                +91 98765 43210
+                +91 89569 07343
               </a>
               <a
                 href="/#audit"

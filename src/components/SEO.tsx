@@ -9,13 +9,13 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Growguest — Digital Growth for Hospitality | Nagpur",
-  description = "Growguest is a boutique digital marketing consultancy helping hotels, resorts, and homestays in Nagpur and Uttarakhand eliminate OTA commissions and maximize direct bookings.",
+  title = "GrowGuest — Digital Growth for Hospitality | Nagpur",
+  description = "GrowGuest is a boutique digital marketing consultancy helping hotels, resorts, and homestays in Nagpur and Uttarakhand eliminate OTA commissions and maximize direct bookings.",
   canonicalUrl = "https://growguest.in/",
   ogImage = "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
   breadcrumbs
 }: SEOProps) {
-  const fullTitle = title.includes("Growguest") ? title : `${title} | Growguest Digital Growth for Hospitality`;
+  const fullTitle = title.includes("GrowGuest") || title.includes("Growguest") ? title : `${title} | GrowGuest — Digital Growth for Hospitality`;
 
   // Generate Schema.org BreadcrumbList JSON-LD structured data
   const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
@@ -33,23 +33,25 @@ export default function SEO({
   const businessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Growguest — Digital Growth for Hospitality",
+    "name": "GrowGuest — Digital Growth for Hospitality",
     "image": ogImage,
     "@id": "https://growguest.in/#organization",
     "url": "https://growguest.in/",
-    "telephone": "+919876543210",
+    "telephone": "+918956907343",
     "priceRange": "$$",
     "description": "Boutique digital marketing consultancy specializing in hospitality (hotels, homestays, resorts, restaurants). Solves OTA commission loss by optimizing Google Business Profiles, technical SEO, and direct booking websites.",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "60, Swami samarth Nagari, Besa-Pipla Rd",
       "addressLocality": "Nagpur",
       "addressRegion": "Maharashtra",
+      "postalCode": "440037",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 21.1458,
-      "longitude": 79.0882
+      "latitude": 21.0859296,
+      "longitude": 79.0985166
     },
     "areaServed": [
       "Nagpur",

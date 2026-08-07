@@ -94,14 +94,20 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact & Service Focus */}
+          {/* Column 4: Contact & Office Address */}
           <div>
-            <h4 className="text-white font-semibold text-base mb-4 tracking-wide">Connect & Local Areas</h4>
+            <h4 className="text-white font-semibold text-base mb-4 tracking-wide">Connect & Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-brand-gold transition-colors">
+                <div className="flex items-start text-slate-300">
+                  <MapPin className="w-4 h-4 mr-2 text-brand-gold flex-shrink-0 mt-0.5" />
+                  <span>60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur</span>
+                </div>
+              </li>
+              <li>
+                <a href="https://wa.me/918956907343" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-brand-gold transition-colors">
                   <Phone className="w-4 h-4 mr-2 text-brand-gold flex-shrink-0" />
-                  +91 98765 43210
+                  +91 89569 07343
                 </a>
               </li>
               <li>
@@ -117,6 +123,38 @@ export default function Footer() {
             </ul>
           </div>
 
+        </div>
+
+        {/* Location & Embedded Map Section */}
+        <div className="mb-12 p-6 rounded-2xl bg-slate-900/60 border border-white/10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+            <div className="lg:col-span-1 space-y-3">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-gold/10 text-brand-gold text-xs font-medium border border-brand-gold/20">
+                <MapPin className="w-3.5 h-3.5 mr-1.5" />
+                Nagpur Office Location
+              </div>
+              <h4 className="text-white font-semibold text-lg">Visit GrowGuest</h4>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra
+              </p>
+              <p className="text-xs text-slate-400">
+                Book a face-to-face direct booking & local SEO audit for your hotel, resort, or restaurant in Nagpur.
+              </p>
+            </div>
+            <div className="lg:col-span-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6677174950273!2d79.0985166!3d21.0859296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf26c05347f1%3A0xbca701993578885b!2sGrowGuest%20-%20Digital%20Growth%20for%20Hospitality!5e0!3m2!1sen!2sin!4v1785221263287!5m2!1sen!2sin"
+                width="100%"
+                height="240"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="GrowGuest Office Location Map - Besa-Pipla Rd, Nagpur"
+                className="w-full h-[240px] rounded-xl"
+              ></iframe>
+            </div>
+          </div>
         </div>
         
         {/* Bottom Footer Bar */}
