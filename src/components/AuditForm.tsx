@@ -28,10 +28,10 @@ export default function AuditForm() {
         <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-16 border border-slate-100">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-teal mb-4">
-              Get Your Free Direct Booking Audit
+              फ्री Direct Booking Audit पाएँ
             </h2>
-            <p className="text-lg text-slate-600">
-              Find out exactly how much commission you could be saving. Drop your details below and we'll send a quick audit to your WhatsApp.
+            <p className="text-lg text-slate-600 font-medium">
+              अपनी प्रॉपर्टी की डिटेल्स डालें — 15 मिनट में आपकी WhatsApp पर 4-पॉइंट फ्री ऑडिट रिपोर्ट (OTA कमिशन सेविंग + Google Maps Rank रिपोर्ट) भेजेंगे।
             </p>
           </div>
 
@@ -93,10 +93,10 @@ export default function AuditForm() {
                     : 'bg-brand-gold hover:bg-brand-gold-light shadow-[0_0_15px_rgba(201,154,46,0.3)] hover:shadow-[0_0_25px_rgba(201,154,46,0.5)] transform hover:-translate-y-0.5'
                 }`}
               >
-                {isSubmitting ? 'Requesting Audit...' : 'Send My Free Audit'}
+                {isSubmitting ? 'रिपोर्ट तैयार हो रही है...' : 'WhatsApp पर फ्री ऑडिट रिपोर्ट पाएँ →'}
               </button>
-              <p className="text-xs text-center text-slate-500 mt-4">
-                We respect your privacy. No spam, just a business analysis.
+              <p className="text-xs text-center text-slate-500 mt-4 font-medium">
+                100% नि:शुल्क • 0% स्पैम • सीधा आपकी WhatsApp पर डिलीवरी
               </p>
             </form>
           )}

@@ -6,9 +6,12 @@ export default function Problem() {
     <section id="hotels" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-teal mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-teal mb-4">
             The Digital Visibility Gap & The Commission Trap
           </h2>
+          <h3 className="text-xl sm:text-2xl font-extrabold text-[#C99A2E] mb-4 leading-snug">
+            हर ₹1 लाख की बुकिंग पर ₹20,000 OTA को क्यों देना? अपनी मेहनत की कमाई खुद बचाएँ।
+          </h3>
           <p className="text-lg text-slate-600">
             80% of guests search Google before booking. If your website and Google Business Profile don't capture them instantly, they either book your competitor or use MakeMyTrip (costing you 20%). <strong className="text-brand-teal">You are losing both new guests and profit margins.</strong>
           </p>

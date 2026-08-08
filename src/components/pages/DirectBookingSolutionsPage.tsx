@@ -21,6 +21,7 @@ import {
 import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
+import WhatsAppOtaBypass from '../WhatsAppOtaBypass';
 
 const comparisonMatrix = [
   {
@@ -266,6 +267,8 @@ export default function DirectBookingSolutionsPage() {
           </div>
         </div>
       </section>
+
+      <WhatsAppOtaBypass />
 
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">

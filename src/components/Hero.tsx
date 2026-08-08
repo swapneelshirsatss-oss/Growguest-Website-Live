@@ -20,17 +20,17 @@ export default function Hero() {
             className="max-w-2xl"
           >
             <div className="flex flex-wrap gap-2 mb-8">
-              <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-brand-gold/20 text-brand-gold border border-brand-gold/30">
-                <span className="flex h-1.5 w-1.5 rounded-full bg-brand-gold mr-2"></span>
-                Create New Business
+              <div className="inline-flex items-center rounded-full px-3.5 py-1 text-xs sm:text-sm font-bold bg-brand-gold/20 text-brand-gold border border-brand-gold/30">
+                <span className="flex h-2 w-2 rounded-full bg-brand-gold mr-2 animate-pulse"></span>
+                Save 15-25% OTA Fees
               </div>
-              <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                <span className="flex h-1.5 w-1.5 rounded-full bg-emerald-400 mr-2"></span>
-                Save OTA Fees
+              <div className="inline-flex items-center rounded-full px-3.5 py-1 text-xs sm:text-sm font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                <span className="flex h-2 w-2 rounded-full bg-emerald-400 mr-2"></span>
+                WhatsApp Direct Booking
               </div>
-              <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-blue-500/20 text-blue-300 border border-blue-500/30">
-                <span className="flex h-1.5 w-1.5 rounded-full bg-blue-300 mr-2"></span>
-                Build Brand Trust
+              <div className="inline-flex items-center rounded-full px-3.5 py-1 text-xs sm:text-sm font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                <span className="flex h-2 w-2 rounded-full bg-blue-300 mr-2"></span>
+                Google Maps Rank #1
               </div>
             </div>
             
@@ -38,23 +38,25 @@ export default function Hero() {
               अभी कोई गेस्ट Google पर होटल, होमस्टे या रेस्टोरेंट Search कर रहा है — <span className="text-brand-gold">और उसे आपके कॉम्पिटिटर मिल रहे हैं।</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-xl leading-relaxed">
-              We build a strong brand presence for your property online to capture local search traffic before OTAs do, turning lookers into direct, commission-free bookings.
+            <p className="text-lg md:text-xl text-slate-200 mb-8 max-w-xl leading-relaxed font-medium">
+              MakeMyTrip और Agoda को 15-25% कमीशन देना बंद करें। हम आपकी प्रॉपर्टी को Google Maps पर Top-3 में लाते हैं और सीधा WhatsApp बुकिंग से 100% प्रॉफ़िट आपकी जेब में रखते हैं।
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#audit" 
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full text-brand-teal bg-brand-gold hover:bg-brand-gold-light transition-all shadow-[0_0_20px_rgba(201,154,46,0.3)] hover:shadow-[0_0_30px_rgba(201,154,46,0.5)] transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-brand-teal bg-brand-gold hover:bg-brand-gold-light transition-all shadow-[0_0_20px_rgba(201,154,46,0.3)] hover:shadow-[0_0_30px_rgba(201,154,46,0.5)] transform hover:-translate-y-1"
               >
-                Get your free Direct Booking Audit
+                फ्री Direct Booking Audit पाएँ
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a 
-                href="#how-it-works"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-full text-white bg-white/10 hover:bg-white/20 transition-all backdrop-blur"
+                href="https://wa.me/918956907343?text=Namaste%20GrowGuest!%20I%20want%20a%20free%20Direct%20Booking%20Audit%20for%20my%20hotel/homestay."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-white bg-emerald-600/90 hover:bg-emerald-500 transition-all backdrop-blur shadow-lg border border-emerald-400/40"
               >
-                See how it works
+                WhatsApp पर बात करें →
               </a>
             </div>
           </motion.div>

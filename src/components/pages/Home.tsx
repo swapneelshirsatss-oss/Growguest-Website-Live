@@ -1,6 +1,7 @@
 import SEO from '../SEO';
 import Hero from '../Hero';
 import Problem from '../Problem';
+import WhatsAppOtaBypass from '../WhatsAppOtaBypass';
 import Services from '../Services';
 import ValueEquation from '../ValueEquation';
 import Partners from '../Partners';
@@ -20,6 +21,7 @@ export default function Home() {
       />
       <Hero />
       <Problem />
+      <WhatsAppOtaBypass />
       <Services />
       <ValueEquation />
       <Partners />

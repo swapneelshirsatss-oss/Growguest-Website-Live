@@ -2,12 +2,12 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
-import Home from './pages/Home';
-import Blog from './pages/Blog';
-import ServicesPage from './pages/ServicesPage';
-import DirectBookingSolutionsPage from './pages/DirectBookingSolutionsPage';
-import CaseStudiesPage from './pages/CaseStudiesPage';
-import AuditPage from './pages/AuditPage';
+import Home from './components/pages/Home';
+import Blog from './components/pages/BlogPage';
+import ServicesPage from './components/pages/ServicesPage';
+import DirectBookingSolutionsPage from './components/pages/DirectBookingSolutionsPage';
+import CaseStudiesPage from './components/pages/CaseStudiesPage';
+import AuditPage from './components/pages/AuditPage';
 
 export default function App() {
   return (
