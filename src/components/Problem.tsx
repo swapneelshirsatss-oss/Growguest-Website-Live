@@ -10,7 +10,7 @@ export default function Problem() {
             The Digital Visibility Gap & The Commission Trap
           </h2>
           <h3 className="text-xl sm:text-2xl font-extrabold text-[#C99A2E] mb-4 leading-snug">
-            कमजोर डिजिटल विजिबिलिटी और OTA कमीशन का भारी जाल
+            Google पर नाम न दिखना और OTA कमीशन का भारी जाल
           </h3>
           <p className="text-lg text-slate-600">
             80% of guests search Google before booking. If your website and Google Business Profile don't capture them instantly, they either book your competitor or use MakeMyTrip (costing you 20%). <strong className="text-brand-teal">You are losing both new guests and profit margins.</strong>
