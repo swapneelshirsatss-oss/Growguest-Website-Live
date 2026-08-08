@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://growguest.in/sitemap.xml
-Sitemap: https://growguest.in/sitemap-website.xml
-Sitemap: https://growguest.in/sitemap-blog.xml
+Sitemap: https://growguest.in/sitemap-index.xml
+Sitemap: https://growguest.in/sitemap-0.xml
+
+# LLM & AI Answer Engines
+# llms.txt standard: https://llmstxt.org/
+# Full LLM documentation: https://growguest.in/llms-full.txt

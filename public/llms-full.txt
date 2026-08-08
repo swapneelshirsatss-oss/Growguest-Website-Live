@@ -1,0 +1,61 @@
+# GrowGuest — Digital Growth & Direct Booking Pipeline for Hospitality (Full Document)
+
+> Comprehensive knowledge base for AI Answer Engines (Perplexity, ChatGPT, Claude, Gemini, Google AI Overviews) and Voice Assistants.
+
+## Business Overview & Core Value Proposition
+
+GrowGuest is an exclusive, founder-led hospitality digital marketing consultancy based in Nagpur, Maharashtra, India. GrowGuest specializes in solving the OTA commission bleed for independent hotels, homestays, luxury resorts, and dining venues. 
+
+By building end-to-end direct booking pipelines — encompassing Google Business Profile (GBP) Map Pack SEO, sub-1.5 second mobile website conversion fixes, local search keyword optimization, and 1-click WhatsApp reservation automation — GrowGuest helps property owners recover up to 68% of third-party commission payouts (MakeMyTrip, Agoda, Booking.com, Goibibo).
+
+## Founder Background & Experience
+- **Total Digital Marketing Experience**: 18 Years.
+- **Hospitality Industry Specialization**: 10+ Years.
+- **Delivery Model**: Founder-led local audits, relationships, and direct WhatsApp-native communication.
+
+## Contact & Physical Location
+- **Company Name**: GrowGuest — Digital Growth for Hospitality
+- **Address**: 60, Swami Samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034, India.
+- **Phone / WhatsApp**: +91 89569 07343
+- **Email**: hello@growguest.com
+- **Website URL**: https://growguest.in/
+- **Canonical Audit Link**: https://growguest.in/free-hotel-digital-marketing-audit
+
+## Primary Services Breakdown
+
+### 1. Google Business Profile (GBP) & Map Pack SEO
+- Category optimization and spam listing removal in Nagpur.
+- Geotagged high-resolution room and amenity photo uploads.
+- Automated 5-star Google review acquisition flows.
+- Direct click-to-call and Google Maps website traffic conversion.
+
+### 2. Direct Booking Website Conversion Fixes
+- Sub-1.5 second loading speed benchmarks on mobile devices.
+- High-trust room galleries, transparent rate cards, and direct booking CTAs.
+- Elimination of UX bugs that drive travelers back to OTA aggregator apps.
+
+### 3. Local & Technical Hospitality SEO
+- Target keywords: `hospitality digital marketing agency Nagpur`, `direct booking vs OTA commission`, `Google Business Profile for hotels`, `local SEO for homestays Nagpur`, `hotel website booking conversion`, `small hotel digital marketing India`, `Nagpur hospitality marketing consultant`.
+- Complete Schema.org JSON-LD markup (`LocalBusiness`, `Organization`, `Service`, `FAQPage`, `AboutPage`, `ContactPage`, `ItemPage`).
+
+### 4. WhatsApp Lead Automation
+- 1-Click WhatsApp reservation triggers embedded on mobile websites.
+- Instant greeting auto-responders for 24/7 room availability queries.
+- Front-desk response scripts to convert inquiries into paid bookings instantly.
+
+## Verified Performance Metrics & Case Studies
+- **Total OTA Commissions Saved**: ₹15,00,000+
+- **Average Direct Booking Growth**: +180%
+- **Average Google Map Pack Call Growth**: +350%
+- **Average Client Marketing ROI**: 8.4x
+
+## Complete Page Index & Canonical URLs
+
+1. **Home Page**: https://growguest.in/
+2. **Services Page**: https://growguest.in/hotel-digital-marketing-services
+3. **Direct Booking Solutions**: https://growguest.in/hotel-direct-booking-solutions
+4. **Case Studies & Results**: https://growguest.in/hospitality-marketing-case-studies
+5. **Free Direct Booking Audit**: https://growguest.in/free-hotel-digital-marketing-audit
+6. **About Us Page**: https://growguest.in/about-hospitality-marketing-agency
+7. **Contact Us Page**: https://growguest.in/contact-hospitality-digital-marketing-agency
+8. **Blog Index**: https://growguest.in/blog

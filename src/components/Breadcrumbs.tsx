@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
 
 export interface BreadcrumbItem {
@@ -32,13 +31,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                   {item.name}
                 </span>
               ) : (
-                <Link
-                  to={item.url}
+                <a
+                  href={item.url}
                   className="flex items-center hover:text-brand-teal transition-colors"
                 >
                   {index === 0 && <Home className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />}
                   <span>{item.name}</span>
-                </Link>
+                </a>
               )}
             </li>
           );

@@ -1,0 +1,42 @@
+---
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
+import '../index.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  canonicalUrl?: string;
+}
+
+const { title, description, keywords, canonicalUrl } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{title || "GrowGuest — Digital Marketing Agency for Hotels & Resorts"}</title>
+    <meta name="description" content={description || "Nagpur-based digital marketing for hotels, resorts & homestays. Cut OTA commissions and grow direct bookings with GrowGuest."} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta name="indexnow-key" content="e4a19b5d2c8f3e7a1b0c9d8e7f6a5b4c" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body className="min-h-screen flex flex-col font-sans bg-slate-50 text-slate-900">
+    <Header client:load />
+    <main className="flex-grow">
+      <slot />
+    </main>
+    <Footer client:load />
+    <WhatsAppButton client:load />
+  </body>
+</html>
