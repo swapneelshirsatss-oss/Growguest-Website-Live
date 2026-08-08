@@ -18,6 +18,7 @@ import {
 import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
+import DirectConnectionEngine from '../DirectConnectionEngine';
 
 const servicesList = [
   {
@@ -166,6 +167,7 @@ export default function ServicesPage() {
 
       <Breadcrumbs items={breadcrumbItems} />
 
+      {/* Hero Section */}
       <section className="relative bg-brand-teal text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#C99A2E_0%,_transparent_50%)]" />
@@ -204,7 +206,7 @@ export default function ServicesPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="flex flex-col sm:flex-row justify-center gap-4 mb-10"
             >
               <a
                 href="#audit"
@@ -224,6 +226,10 @@ export default function ServicesPage() {
               </a>
             </motion.div>
           </div>
+
+          {/* Interactive Direct Connection Engine Banner */}
+          <DirectConnectionEngine />
+
         </div>
       </section>
 
