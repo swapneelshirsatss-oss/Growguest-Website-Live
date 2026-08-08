@@ -1,68 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage Target Keyword: Hospitality Digital Marketing Agency -->
   <url>
     <loc>https://growguest.in/</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-08</lastmod>
   </url>
-
-  <!-- High-Intent Hospitality Digital Marketing Keyword Slugs -->
   <url>
-    <loc>https://growguest.in/hospitality-digital-marketing-services</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://growguest.in/hotel-digital-marketing-services</loc>
+    <lastmod>2026-08-08</lastmod>
   </url>
-
   <url>
     <loc>https://growguest.in/hotel-direct-booking-solutions</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-08-08</lastmod>
   </url>
-
   <url>
     <loc>https://growguest.in/hospitality-marketing-case-studies</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-08</lastmod>
   </url>
-
   <url>
     <loc>https://growguest.in/free-hotel-digital-marketing-audit</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-08</lastmod>
   </url>
-
   <url>
     <loc>https://growguest.in/about-hospitality-marketing-agency</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-08-08</lastmod>
   </url>
-
   <url>
-    <loc>https://growguest.in/contact-hospitality-marketing-agency</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Legal & Compliance Pages -->
-  <url>
-    <loc>https://growguest.in/privacy-policy</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://growguest.in/terms-of-service</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://growguest.in/contact-hospitality-digital-marketing-agency</loc>
+    <lastmod>2026-08-08</lastmod>
   </url>
 </urlset>
