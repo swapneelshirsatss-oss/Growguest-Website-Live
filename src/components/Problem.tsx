@@ -12,8 +12,8 @@ export default function Problem() {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-teal mb-3">
             Hotel Problems & Direct Booking Solutions
           </h2>
-          <h3 className="text-xl sm:text-2xl font-extrabold text-[#C99A2E] mb-4 leading-snug">
-            Google पर नाम न दिखना और OTA कमीशन का भारी जाल
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#C99A2E] mb-4 leading-snug">
+            Google और Website पर ना नंबर ना नाम — तो OTA को क्यों देना भारी दाम?
           </h3>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
             देखें कि कैसे बिना सही सेटअप के होटल मालिक हर महीने भारी नुकसान उठाते हैं, और GrowGuest स्ट्रैटेजी से 100% प्रॉफ़िट अपनी जेब में रखते हैं।
