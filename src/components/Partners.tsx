@@ -3,12 +3,12 @@ export default function Partners() {
     {
       name: "The Stone Heritage",
       url: "https://thestoneheritage.in",
-      logo: "https://images.unsplash.com/photo-1590251786576-905bfaf5dd40?q=80&w=200&auto=format&fit=crop" // fallback image or real logo
+      logo: "/Image/stone-heritage-mukteshwar.webp"
     },
     { 
       name: "Whispering Pines Resort",
       url: "https://whisperingpinesresort.in/",
-      logo: "" // Leave empty to show initials
+      logo: "/Image/whispering-pines-casa-de-bello.webp"
     },
     { 
       name: "Ethnic Trail",
