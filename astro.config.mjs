@@ -5,6 +5,10 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://growguest.in',
+  server: {
+    host: '127.0.0.1',
+    port: 3000,
+  },
   vite: {
     plugins: [tailwindcss()],
   },
