@@ -11,9 +11,14 @@ export default function Partners() {
       logo: "/Image/whispering-pines-casa-de-bello.webp"
     },
     { 
-      name: "Ethnic Trail",
-      url: "",
-      logo: "" 
+      name: "Casa De Bello Kainchi Dham",
+      url: "https://casadebello.com/",
+      logo: "/Image/Casa-logo.webp"
+    },
+    { 
+      name: "Ethnic Trail Resort",
+      url: "https://ethnictrailhomestay.com/",
+      logo: "/Image/Ethanic-trail.webp" 
     },
     { 
       name: "And Many More",
@@ -42,7 +47,7 @@ export default function Partners() {
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-slate-50 text-brand-teal font-bold text-xl rounded-full flex items-center justify-center overflow-hidden border border-slate-200 shrink-0">
                     {partner.logo ? (
-                      <img src={partner.logo} alt={`${partner.name} Logo`} className="w-full h-full object-cover" />
+                      <img src={partner.logo} alt={`${partner.name} Logo`} className="w-full h-full object-contain p-0.5 bg-white" />
                     ) : (
                       partner.name.charAt(0)
                     )}
