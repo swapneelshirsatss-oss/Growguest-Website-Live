@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
+import { trackMetaEvent } from '../utils/metaPixel';
 
 export default function AuditForm() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,10 @@ export default function AuditForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    trackMetaEvent('Lead', {
+      content_name: 'Free Direct Booking Audit Form',
+      property_name: formData.propertyName
+    });
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
