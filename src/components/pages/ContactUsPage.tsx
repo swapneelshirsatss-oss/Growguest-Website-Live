@@ -17,7 +17,6 @@ import {
 } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
-import { trackMetaEvent } from '../../utils/metaPixel';
 
 const contactChannels = [
   {
@@ -94,10 +93,6 @@ export default function ContactUsPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    trackMetaEvent('Lead', {
-      content_name: 'Contact Page Audit Form',
-      property_name: formData.propertyName
-    });
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
