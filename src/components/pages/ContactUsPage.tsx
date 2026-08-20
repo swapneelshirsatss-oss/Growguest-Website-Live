@@ -144,7 +144,15 @@ export default function ContactUsPage() {
       ],
       "opens": "09:00",
       "closes": "19:00"
-    }
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61593380557986",
+      "https://www.instagram.com/growguest/",
+      "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
+      "https://x.com/Growguest",
+      "https://www.pinterest.com/growguest",
+      "https://www.linkedin.com/company/growguest-digital-growth-for-hospitality"
+    ]
   };
 
   const contactPageSchema = {
@@ -486,13 +494,33 @@ export default function ContactUsPage() {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-800">
-                <span className="text-xs text-slate-400 font-semibold block mb-2">
-                  Nagpur Local Service Areas:
-                </span>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  Wardha Road • Dharampeth • Civil Lines • Sadar • Besa-Pipla • Hingna Rd • Kamptee Rd
-                </p>
+              <div className="pt-4 border-t border-slate-800 space-y-3">
+                <div>
+                  <span className="text-xs text-brand-gold font-semibold block mb-2 uppercase tracking-wider">
+                    Official Social Channels
+                  </span>
+                  <div className="flex items-center space-x-3 text-xs text-slate-300 flex-wrap gap-y-2">
+                    <a href="https://www.facebook.com/profile.php?id=61593380557986" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">Facebook</a>
+                    <span>•</span>
+                    <a href="https://www.instagram.com/growguest/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">Instagram</a>
+                    <span>•</span>
+                    <a href="https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">YouTube</a>
+                    <span>•</span>
+                    <a href="https://x.com/Growguest" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">X (Twitter)</a>
+                    <span>•</span>
+                    <a href="https://www.pinterest.com/growguest" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">Pinterest</a>
+                    <span>•</span>
+                    <a href="https://www.linkedin.com/company/growguest-digital-growth-for-hospitality" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">LinkedIn</a>
+                  </div>
+                </div>
+                <div>
+                  <span className="text-xs text-slate-400 font-semibold block mb-1">
+                    Nagpur Local Service Areas:
+                  </span>
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    Wardha Road • Dharampeth • Civil Lines • Sadar • Besa-Pipla • Hingna Rd • Kamptee Rd
+                  </p>
+                </div>
               </div>
             </div>
 

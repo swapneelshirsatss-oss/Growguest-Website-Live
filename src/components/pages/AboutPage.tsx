@@ -116,7 +116,15 @@ export default function AboutPage() {
       "@type": "ContactPoint",
       "telephone": "+918956907343",
       "contactType": "customer service"
-    }
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61593380557986",
+      "https://www.instagram.com/growguest/",
+      "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
+      "https://x.com/Growguest",
+      "https://www.pinterest.com/growguest",
+      "https://www.linkedin.com/company/growguest-digital-growth-for-hospitality"
+    ]
   };
 
   const aboutSchema = {

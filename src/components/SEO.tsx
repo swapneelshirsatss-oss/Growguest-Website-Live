@@ -33,7 +33,15 @@ export default function SEO({
       "GrowGuest Nagpur",
       "GrowGuest Hospitality Marketing"
     ],
-    "url": "https://growguest.in/"
+    "url": "https://growguest.in/",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61593380557986",
+      "https://www.instagram.com/growguest/",
+      "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
+      "https://x.com/Growguest",
+      "https://www.pinterest.com/growguest",
+      "https://www.linkedin.com/company/growguest-digital-growth-for-hospitality"
+    ]
   };
 
   // Generate Schema.org BreadcrumbList JSON-LD structured data
@@ -93,6 +101,14 @@ export default function SEO({
       "Restaurant Local SEO",
       "Reduce OTA Dependence"
     ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61593380557986",
+      "https://www.instagram.com/growguest/",
+      "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
+      "https://x.com/Growguest",
+      "https://www.pinterest.com/growguest",
+      "https://www.linkedin.com/company/growguest-digital-growth-for-hospitality"
+    ],
     "founder": {
       "@type": "Person",
       "name": "Growguest Founder",
@@ -112,6 +128,13 @@ export default function SEO({
       <link rel="canonical" href={canonicalUrl} />
       <meta name="indexnow-key" content="e4a19b5d2c8f3e7a1b0c9d8e7f6a5b4c" />
 
+      {/* Favicons & App Icons */}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={fullTitle} />
@@ -121,6 +144,8 @@ export default function SEO({
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@Growguest" />
+      <meta name="twitter:creator" content="@Growguest" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
