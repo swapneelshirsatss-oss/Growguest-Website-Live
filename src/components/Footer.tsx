@@ -140,6 +140,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/blog/digital-marketing-for-hospitality-hotels-resorts-homestays" className="hover:text-brand-gold transition-colors line-clamp-1 font-semibold text-brand-gold">
+                  Digital Marketing for Hospitality
+                </a>
+              </li>
+              <li>
                 <a href="/blog/google-business-profile-seo-homestays-resorts" className="hover:text-brand-gold transition-colors line-clamp-1">
                   Google Business Profile SEO
                 </a>

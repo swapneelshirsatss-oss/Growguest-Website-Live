@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev --host 127.0.0.1 --port 3000",
     "build": "astro build",
+    "indexnow": "node scripts/submit-indexnow.mjs",
     "preview": "astro preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"

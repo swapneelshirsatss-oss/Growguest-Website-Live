@@ -18,6 +18,17 @@ import AuditForm from '../AuditForm';
 
 const blogPosts = [
   {
+    id: 0,
+    title: "Digital Marketing for Hospitality: What Actually Gets Hotels and Homestays More Direct Bookings",
+    slug: "/blog/digital-marketing-for-hospitality-hotels-resorts-homestays",
+    category: "Direct Booking",
+    readTime: "7 min read",
+    date: "Aug 2026",
+    excerpt: "A no-fluff guide to digital marketing for hotels, resorts, and homestays — how to cut 15-25% OTA commissions and win direct bookings, from a Nagpur-based hospitality specialist.",
+    icon: <Sparkles className="w-6 h-6 text-brand-gold" />,
+    featured: true
+  },
+  {
     id: 1,
     title: "How to Cut OTA Commissions by 50% Without Losing Booking Volume",
     slug: "/blog/hotel-direct-booking-strategy-reduce-ota-commissions",
@@ -26,7 +37,7 @@ const blogPosts = [
     date: "Aug 2026",
     excerpt: "A practical, step-by-step roadmap for independent hotel and homestay owners to shift guest bookings from MakeMyTrip, Agoda, and Booking.com to commission-free direct channels.",
     icon: <Percent className="w-6 h-6 text-brand-gold" />,
-    featured: true
+    featured: false
   },
   {
     id: 2,
@@ -231,27 +242,40 @@ export default function BlogPage() {
         {/* Featured Banner Post */}
         {selectedCategory === "All" && (
           <div className="bg-slate-900 text-white rounded-3xl p-8 md:p-12 border border-white/10 shadow-xl overflow-hidden relative">
-            <div className="absolute top-4 right-4 bg-brand-gold text-brand-teal px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider">
+            <div className="absolute top-4 right-4 bg-brand-gold text-brand-teal px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider z-20">
               Featured Guide
             </div>
             
-            <div className="max-w-3xl">
-              <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">
-                {featuredPost.category} • {featuredPost.readTime}
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
-                {featuredPost.title}
-              </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
-                {featuredPost.excerpt}
-              </p>
-              <a
-                href={featuredPost.slug}
-                className="inline-flex items-center px-6 py-3.5 rounded-full text-brand-teal font-extrabold text-sm bg-brand-gold hover:bg-brand-gold-light transition-all shadow-md"
-              >
-                Read Full Strategy Guide
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
+            <div className="grid lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-7">
+                <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">
+                  {featuredPost.category} • {featuredPost.readTime}
+                </span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
+                  {featuredPost.title}
+                </h2>
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+                  {featuredPost.excerpt}
+                </p>
+                <a
+                  href={featuredPost.slug}
+                  className="inline-flex items-center px-6 py-3.5 rounded-full text-brand-teal font-extrabold text-sm bg-brand-gold hover:bg-brand-gold-light transition-all shadow-md"
+                >
+                  Read Full Strategy Guide
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </div>
+
+              <div className="lg:col-span-5">
+                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-800">
+                  <img
+                    src="/Image/GrowGuest%20Header.avif"
+                    alt="Digital Marketing for Hospitality Header - GrowGuest"
+                    className="w-full h-48 sm:h-64 lg:h-56 object-cover object-center hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         )}

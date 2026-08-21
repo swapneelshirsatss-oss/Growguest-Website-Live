@@ -8,6 +8,7 @@ import ServicesPage from './components/pages/ServicesPage';
 import DirectBookingSolutionsPage from './components/pages/DirectBookingSolutionsPage';
 import CaseStudiesPage from './components/pages/CaseStudiesPage';
 import AuditPage from './components/pages/AuditPage';
+import BlogPostHospitalityDigitalMarketing from './components/pages/BlogPostHospitalityDigitalMarketing';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/free-resort-digital-marketing-audit" element={<AuditPage />} />
         <Route path="/free-audit" element={<AuditPage />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/digital-marketing-for-hospitality-hotels-resorts-homestays" element={<BlogPostHospitalityDigitalMarketing />} />
       </Routes>
       <Footer />
       <WhatsAppButton />
