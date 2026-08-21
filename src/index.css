@@ -1,20 +1,42 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-teal: #12312B;
-  --color-brand-teal-light: #1c4b42;
-  --color-brand-gold: #C99A2E;
-  --color-brand-gold-light: #d6af55;
-  --color-brand-gold-dark: #a87f22;
-  --font-sans: 'Poppins', sans-serif;
+  /* Refero Modern Business Intelligence Design System Tokens */
+  --color-pale-sage: #eef2e3;
+  --color-paper-white: #fcfcfc;
+  --color-ink-black: #000000;
+  --color-charcoal: #242423;
+  --color-deep-forest: #043f2e;
+  --color-chartreuse-lime: #c8f169;
+  --color-forest-mid: #2a6f2b;
+  --color-vivid-green: #78c51c;
+
+  /* Brand Theme Mapping */
+  --color-brand-teal: #043f2e;          /* Deep Forest */
+  --color-brand-teal-light: #095c44;    /* Light Forest */
+  --color-brand-teal-dark: #02291e;     /* Dark Forest Canvas */
+  --color-brand-gold: #c8f169;          /* Chartreuse Lime Accent */
+  --color-brand-gold-light: #d8f68e;    /* Bright Lime Accent */
+  --color-brand-gold-dark: #a5ce45;     /* Dark Lime Accent */
+
+  /* Typography Tokens */
+  --font-serif: 'Fraunces', 'Source Serif 4', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
 }
 
 @layer base {
   html {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-sans);
     scroll-behavior: smooth;
+    background-color: var(--color-pale-sage);
+    color: var(--color-charcoal);
   }
   body {
-    @apply text-slate-800 bg-slate-50;
+    background-color: var(--color-pale-sage);
+    color: var(--color-charcoal);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.02em;
   }
 }

@@ -1,7 +1,10 @@
 import SEO from '../SEO';
 import Hero from '../Hero';
+import ImpactMetrics from '../ImpactMetrics';
 import Problem from '../Problem';
+import DirectConnectionEngine from '../DirectConnectionEngine';
 import WhatsAppOtaBypass from '../WhatsAppOtaBypass';
+import OtaCalculator from '../OtaCalculator';
 import Services from '../Services';
 import ValueEquation from '../ValueEquation';
 import Partners from '../Partners';
@@ -20,8 +23,11 @@ export default function Home() {
         canonicalUrl="https://growguest.in/"
       />
       <Hero />
+      <ImpactMetrics />
       <Problem />
+      <DirectConnectionEngine />
       <WhatsAppOtaBypass />
+      <OtaCalculator />
       <Services />
       <ValueEquation />
       <Partners />
@@ -32,3 +38,4 @@ export default function Home() {
     </main>
   );
 }
+

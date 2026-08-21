@@ -1,20 +1,20 @@
 import { motion } from 'motion/react';
-import { 
-  Clock, 
-  Calendar, 
-  User, 
-  ArrowRight, 
-  CheckCircle2, 
-  Percent, 
-  MapPin, 
-  Globe, 
-  Sparkles, 
-  FileText, 
-  HelpCircle, 
-  ShieldCheck, 
-  TrendingUp, 
-  BarChart3, 
-  PhoneCall, 
+import {
+  Clock,
+  Calendar,
+  User,
+  ArrowRight,
+  CheckCircle2,
+  Percent,
+  MapPin,
+  Globe,
+  Sparkles,
+  FileText,
+  HelpCircle,
+  ShieldCheck,
+  TrendingUp,
+  BarChart3,
+  PhoneCall,
   ArrowUpRight,
   MessageSquare,
   Star,
@@ -26,7 +26,7 @@ import AuditForm from '../AuditForm';
 
 export default function BlogPostHospitalityDigitalMarketing() {
   const canonicalUrl = "https://growguest.in/blog/digital-marketing-for-hospitality-hotels-resorts-homestays";
-  
+
   const breadcrumbItems = [
     { name: 'Blog', url: '/blog' },
     { name: 'Digital Marketing for Hospitality', url: '/blog/digital-marketing-for-hospitality-hotels-resorts-homestays' }
@@ -168,7 +168,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            
+
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -178,7 +178,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
               Hospitality Growth Strategy Guide
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
@@ -237,10 +237,10 @@ export default function BlogPostHospitalityDigitalMarketing() {
       {/* Main Content Area with Sidebar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
+
           {/* Main Article Body (8 cols) */}
           <main className="lg:col-span-8 space-y-12">
-            
+
             {/* Featured Article Header Banner Image */}
             <figure className="overflow-hidden rounded-3xl border border-slate-200 shadow-xl bg-slate-900 group">
               <img
@@ -254,7 +254,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 GrowGuest Hospitality Marketing Framework — Direct Booking Pipeline for Independent Hotels & Stays
               </figcaption>
             </figure>
-            
+
             {/* Table of Contents Box (Mobile / Inline) */}
             <nav aria-label="Table of contents" className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <h2 className="text-lg font-extrabold text-slate-900 mb-4 flex items-center">
@@ -264,8 +264,8 @@ export default function BlogPostHospitalityDigitalMarketing() {
               <ul className="space-y-2 text-sm text-slate-700 font-medium">
                 {tableOfContents.map((item, idx) => (
                   <li key={item.id}>
-                    <a 
-                      href={`#${item.id}`} 
+                    <a
+                      href={`#${item.id}`}
                       className="hover:text-brand-teal focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded-sm transition-colors flex items-center"
                     >
                       <span className="text-slate-400 text-xs w-6">{idx + 1}.</span>
@@ -295,7 +295,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 <Percent className="w-7 h-7 mr-3 text-brand-teal flex-shrink-0" />
                 The Real Cost Hiding in Your Booking Mix
               </h2>
-              
+
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Every time a guest books through an OTA instead of calling or messaging you directly, you're paying for a customer you could have kept for free. On a mid-sized property doing even 300 room-nights a month, a 20% OTA commission can mean lakhs of rupees a year — money that never touches your books, even though the guest was findable, willing, and already interested in <em>your</em> property specifically.
               </p>
@@ -573,7 +573,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 <ShieldCheck className="w-7 h-7 mr-3 text-brand-teal flex-shrink-0" />
                 What This Looks Like in Practice
               </h2>
-              
+
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 At <strong>Stone Heritage Mukteshwar</strong> and <strong>Whispering Pines Resort (Ramgarh, Nainital)</strong>, the pattern has been consistent: the properties that move fastest on OTA-dependence aren't the ones that do everything at once. They're the ones that fix GBP and website conversion first, then build SEO and content on top of a foundation that's already converting whatever traffic arrives.
               </p>
@@ -606,7 +606,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 <Calendar className="w-7 h-7 mr-3 text-brand-teal flex-shrink-0" />
                 A Realistic Timeline (Because Nobody Ranks in 3 Days)
               </h2>
-              
+
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Anyone promising page-one Google rankings in days is either talking about paid ads (which is a different thing entirely) or overselling what's realistically possible. Here is the realistic roadmap:
               </p>
@@ -704,7 +704,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
 
           {/* Sidebar Area (4 cols) */}
           <aside aria-label="Article Sidebar" className="lg:col-span-4 space-y-8">
-            
+
             {/* Desktop Table of Contents */}
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm sticky top-24">
               <h3 className="text-base font-extrabold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center">
@@ -714,7 +714,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
               <ul className="space-y-2.5 text-xs text-slate-600 font-medium">
                 {tableOfContents.map((item) => (
                   <li key={`sidebar-${item.id}`}>
-                    <a 
+                    <a
                       href={`#${item.id}`}
                       className="hover:text-brand-teal transition-colors block py-0.5 leading-snug"
                     >
