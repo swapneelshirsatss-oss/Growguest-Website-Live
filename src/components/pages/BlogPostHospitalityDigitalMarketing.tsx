@@ -256,9 +256,9 @@ export default function BlogPostHospitalityDigitalMarketing() {
             </figure>
             
             {/* Table of Contents Box (Mobile / Inline) */}
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <nav aria-label="Table of contents" className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
               <h2 className="text-lg font-extrabold text-slate-900 mb-4 flex items-center">
-                <BarChart3 className="w-5 h-5 mr-2 text-brand-teal" />
+                <BarChart3 className="w-5 h-5 mr-2 text-brand-teal" aria-hidden="true" />
                 Table of Contents
               </h2>
               <ul className="space-y-2 text-sm text-slate-700 font-medium">
@@ -266,7 +266,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                   <li key={item.id}>
                     <a 
                       href={`#${item.id}`} 
-                      className="hover:text-brand-teal transition-colors flex items-center"
+                      className="hover:text-brand-teal focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:outline-none rounded-sm transition-colors flex items-center"
                     >
                       <span className="text-slate-400 text-xs w-6">{idx + 1}.</span>
                       <span>{item.title}</span>
@@ -274,7 +274,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </nav>
 
             {/* Introduction Paragraphs */}
             <section className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-6 text-base sm:text-lg">
@@ -406,19 +406,19 @@ export default function BlogPostHospitalityDigitalMarketing() {
 
                 <div className="grid sm:grid-cols-2 gap-4 pt-2">
                   <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
-                    <h5 className="font-bold text-slate-900 text-sm mb-1 flex items-center">
-                      <MapPin className="w-4 h-4 mr-1 text-brand-gold" />
+                    <h4 className="font-bold text-slate-900 text-sm mb-1 flex items-center">
+                      <MapPin className="w-4 h-4 mr-1 text-brand-gold" aria-hidden="true" />
                       Correct Primary Category
-                    </h5>
+                    </h4>
                     <p className="text-xs text-slate-600">
                       Don't just choose generic "Hotel". Specify "Resort", "Homestay", "Guest House", or "Bed & Breakfast" to trigger local intent.
                     </p>
                   </div>
                   <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
-                    <h5 className="font-bold text-slate-900 text-sm mb-1 flex items-center">
-                      <Star className="w-4 h-4 mr-1 text-brand-gold" />
+                    <h4 className="font-bold text-slate-900 text-sm mb-1 flex items-center">
+                      <Star className="w-4 h-4 mr-1 text-brand-gold" aria-hidden="true" />
                       Active Review Signal
-                    </h5>
+                    </h4>
                     <p className="text-xs text-slate-600">
                       Replying to every review — good or bad — signals an active, trustworthy property to Google's ranking algorithms.
                     </p>
@@ -703,7 +703,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
           </main>
 
           {/* Sidebar Area (4 cols) */}
-          <aside className="lg:col-span-4 space-y-8">
+          <aside aria-label="Article Sidebar" className="lg:col-span-4 space-y-8">
             
             {/* Desktop Table of Contents */}
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm sticky top-24">
