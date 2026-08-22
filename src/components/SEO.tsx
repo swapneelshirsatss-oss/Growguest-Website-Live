@@ -75,8 +75,8 @@ export default function SEO({
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 21.0859296,
-      "longitude": 79.0985166
+      "latitude": 21.0857691,
+      "longitude": 79.0977950
     },
     "areaServed": [
       "Nagpur",
