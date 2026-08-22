@@ -66,11 +66,11 @@ const faqs = [
   },
   {
     question: "Who leads the strategy and execution at GrowGuest?",
-    answer: "GrowGuest is founder-led. Your property audit, Google Business Profile optimization, and direct booking website fixes are personally overseen by a consultant with 18 years of digital marketing experience and 10+ years inside hospitality."
+    answer: "GrowGuest is founded and led by Swapneel Shirsat. Your property audit, Google Business Profile optimization, and direct booking website fixes are personally engineered and overseen by Swapneel, backed by 18 years of digital marketing experience and 10+ years inside hospitality."
   },
   {
     question: "Where is GrowGuest located and what areas do you serve?",
-    answer: "Our primary office is located at 60, Swami Samarth Nagari, Besa-Pipla Rd, Nagpur. We specialize in local in-person property audits for hotel, resort, homestay, and restaurant owners in Nagpur (Wardha Road, Dharampeth, Civil Lines, Sadar) and secondary hill-station markets like Uttarakhand (Mukteshwar, Ramgarh, Nainital)."
+    answer: "Our primary office is located at 60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur. Swapneel Shirsat conducts local in-person property audits for hotel, resort, homestay, and restaurant owners in Nagpur (Wardha Road, Dharampeth, Civil Lines, Sadar) and secondary hill-station markets like Uttarakhand (Mukteshwar, Ramgarh, Nainital)."
   },
   {
     question: "How do I get started with GrowGuest?",
@@ -109,7 +109,13 @@ export default function AboutPage() {
     "url": "https://growguest.in/",
     "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
     "logo": "https://growguest.in/assets/logo.png",
-    "description": "18 years of marketing experience, 10+ in hospitality. Meet the founder-led team helping hotels and homestays book direct.",
+    "description": "Founder-led hospitality digital marketing consultancy founded by Swapneel Shirsat. 18+ years marketing experience, 10+ years in hospitality helping hotels and homestays book direct.",
+    "founder": {
+      "@type": "Person",
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Founder & Principal Hospitality Marketing Consultant",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/"
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "60, Swami samarth Nagari, Besa-Pipla Rd",
@@ -134,20 +140,56 @@ export default function AboutPage() {
     ]
   };
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://growguest.in/about-hospitality-marketing-agency/#swapneel-shirsat",
+    "name": "Swapneel Shirsat",
+    "alternateName": ["Swapneel", "Swapneel Shirsat GrowGuest"],
+    "jobTitle": "Founder & Principal Hospitality Marketing Consultant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "GrowGuest Digital Growth for Hospitality",
+      "url": "https://growguest.in/"
+    },
+    "description": "Founder of GrowGuest with 18+ years of digital marketing experience and 10+ years specializing exclusively in hospitality. Helping hotels, resorts, and homestays cut OTA commissions and build direct booking engines.",
+    "image": "https://growguest.in/Image/GrowGuest%20Header.avif",
+    "url": "https://growguest.in/about-hospitality-marketing-agency/",
+    "sameAs": [
+      "https://www.linkedin.com/in/swapneel-shirsat/",
+      "https://www.google.com/maps/place/?cid=13593835757779847259",
+      "https://x.com/Growguest"
+    ],
+    "knowsAbout": [
+      "Hospitality Digital Marketing",
+      "Hotel Direct Booking Strategy",
+      "Google Business Profile Optimization for Hotels",
+      "Local SEO for Homestays & Resorts",
+      "OTA Commission Reduction (MakeMyTrip, Agoda, Booking.com)",
+      "Hotel Website Conversion Rate Optimization (CRO)",
+      "WhatsApp Reservation Automation"
+    ]
+  };
+
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About GrowGuest | Hospitality Marketing Agency Nagpur",
-    "description": "18 years of marketing experience, 10+ in hospitality. Meet the founder-led team helping hotels and homestays book direct.",
-    "url": "https://growguest.in/about-hospitality-marketing-agency/"
+    "name": "About GrowGuest | Founder Swapneel Shirsat | Hospitality Marketing Agency Nagpur",
+    "description": "Meet Swapneel Shirsat, Founder of GrowGuest. 18 years marketing experience, 10+ years in hospitality helping hotels and homestays book direct.",
+    "url": "https://growguest.in/about-hospitality-marketing-agency/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Founder & Principal Hospitality Marketing Consultant"
+    }
   };
 
   return (
     <div className="bg-slate-50 min-h-screen">
       <SEO
-        title="About GrowGuest | Hospitality Marketing Agency Nagpur"
-        description="18 years of marketing experience, 10+ in hospitality. Meet the founder-led team helping hotels and homestays book direct."
-        keywords="hospitality digital marketing agency Nagpur, 18 years marketing experience, hotel SEO consultant, Nagpur hotel marketing expert, direct booking consultant India"
+        title="About GrowGuest | Founder Swapneel Shirsat | Hospitality Marketing Agency Nagpur"
+        description="Meet Swapneel Shirsat, Founder of GrowGuest. 18 years marketing experience, 10+ in hospitality helping hotels and homestays cut OTA commissions and book direct."
+        keywords="Swapneel Shirsat, Swapneel Shirsat GrowGuest, hospitality digital marketing agency Nagpur, 18 years marketing experience, hotel SEO consultant, Nagpur hotel marketing expert, direct booking consultant India"
         canonicalUrl="https://growguest.in/about-hospitality-marketing-agency/"
         breadcrumbs={breadcrumbItems}
       />
@@ -157,6 +199,9 @@ export default function AboutPage() {
       </script>
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(personSchema)}
       </script>
       <script type="application/ld+json">
         {JSON.stringify(aboutSchema)}
@@ -179,7 +224,7 @@ export default function AboutPage() {
               className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30 mb-6"
             >
               <Sparkles className="w-4 h-4 mr-2" />
-              Founder-Led • 18+ Years Marketing Experience
+              Founder-Led by Swapneel Shirsat • 18+ Years Experience
             </motion.div>
 
             <motion.h1 
@@ -188,7 +233,7 @@ export default function AboutPage() {
               transition={{ delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
             >
-              About GrowGuest: <span className="text-brand-gold">Hospitality Marketing Agency Nagpur</span>
+              About GrowGuest: <span className="text-brand-gold">Founder-Led Hospitality Marketing</span>
             </motion.h1>
 
             <motion.p
@@ -197,7 +242,7 @@ export default function AboutPage() {
               transition={{ delay: 0.2 }}
               className="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto"
             >
-              Boutique digital growth consultancy specializing exclusively in hospitality. We solve the OTA commission bleed for independent hotel, homestay, and resort owners with an end-to-end direct booking pipeline.
+              Founded by <strong>Swapneel Shirsat</strong>, GrowGuest is a boutique digital growth consultancy specializing exclusively in hospitality. We solve the OTA commission bleed for independent hotel, homestay, and resort owners with an end-to-end direct booking pipeline.
             </motion.p>
 
             {/* AEO Direct Answer Card */}
@@ -209,10 +254,10 @@ export default function AboutPage() {
             >
               <div className="flex items-center space-x-2 text-brand-gold font-bold text-xs uppercase tracking-wider mb-2">
                 <FileText className="w-4 h-4" />
-                <span>Executive Summary: Who Is GrowGuest?</span>
+                <span>Executive Summary: Who Is Swapneel Shirsat & GrowGuest?</span>
               </div>
               <p className="text-sm sm:text-base leading-relaxed text-slate-100">
-                <strong>GrowGuest</strong> is a founder-led hospitality digital marketing agency in Nagpur backed by <strong>18 years of digital marketing experience and 10+ years dedicated exclusively inside hospitality</strong>. The agency builds customized direct booking systems — combining Google Business Profile map pack optimization, sub-1.5s website fixes, local SEO, and WhatsApp automation — to help independent property owners eliminate 15-25% OTA commission fees.
+                <strong>Swapneel Shirsat</strong> is the founder and principal consultant of <strong>GrowGuest Digital Growth for Hospitality</strong> in Nagpur. Backed by <strong>18 years of digital marketing experience and 10+ years dedicated exclusively inside hospitality</strong>, Swapneel engineers customized direct booking engines — combining Google Business Profile map pack optimization, sub-1.5s website fixes, local SEO, and WhatsApp automation — to help independent property owners recover up to 68% of third-party OTA commissions.
               </p>
             </motion.div>
 
@@ -236,7 +281,7 @@ export default function AboutPage() {
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full text-white bg-white/10 hover:bg-white/20 transition-all backdrop-blur border border-white/20"
               >
                 <PhoneCall className="w-5 h-5 mr-2" />
-                Connect on WhatsApp
+                Chat with Swapneel on WhatsApp
               </a>
             </motion.div>
 
@@ -244,7 +289,134 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Founder Story Section */}
+      {/* Featured Founder Profile Showcase */}
+      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl">
+          <div className="grid lg:grid-cols-12 gap-10 items-center">
+            
+            {/* Left: Founder Avatar & Quick Badges */}
+            <div className="lg:col-span-4 text-center space-y-5">
+              <div className="relative inline-block">
+                <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl bg-gradient-to-br from-brand-teal via-[#033023] to-slate-900 flex items-center justify-center text-brand-gold font-extrabold text-5xl sm:text-6xl shadow-2xl border-4 border-brand-gold/30 mx-auto transform hover:scale-105 transition-transform">
+                  SS
+                </div>
+                <div className="absolute -bottom-3 -right-3 bg-brand-gold text-brand-teal font-extrabold text-xs px-3.5 py-1.5 rounded-full shadow-lg border-2 border-white flex items-center">
+                  <ShieldCheck className="w-4 h-4 mr-1 text-brand-teal" />
+                  Verified Specialist
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                  Swapneel Shirsat
+                </h3>
+                <p className="text-sm font-bold text-brand-teal mt-1">
+                  Founder & Principal Hospitality Consultant
+                </p>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  GrowGuest Digital Growth for Hospitality
+                </p>
+              </div>
+
+              <div className="flex justify-center gap-2 flex-wrap">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-teal/10 text-brand-teal border border-brand-teal/20">
+                  18+ Yrs Marketing
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-gold/20 text-brand-teal border border-brand-gold/30">
+                  10+ Yrs Hospitality
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+                  Nagpur, India
+                </span>
+              </div>
+
+              <div className="pt-2 flex justify-center space-x-3">
+                <a
+                  href="https://wa.me/918956907343"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-colors"
+                >
+                  <PhoneCall className="w-3.5 h-3.5 mr-1.5" />
+                  WhatsApp Direct
+                </a>
+                <a
+                  href="mailto:hello@growguest.com"
+                  className="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white shadow-md transition-colors"
+                >
+                  Email Swapneel
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Biographical Profile & Core Ethos */}
+            <div className="lg:col-span-8 space-y-6">
+              <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block">
+                Meet the Founder
+              </span>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
+                "Direct Booking Growth Is Not Magic — It's Proper Digital Engineering."
+              </h2>
+              
+              <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
+                I'm <strong>Swapneel Shirsat</strong>, founder of GrowGuest. Over the past 18 years in digital marketing — with more than a decade spent purely inside the hospitality ecosystem — I've watched countless independent hotel and homestay owners hand over 15% to 25% of their hard-earned room revenue to OTAs like MakeMyTrip, Agoda, and Booking.com.
+              </p>
+
+              <p className="text-slate-700 text-base leading-relaxed">
+                Most agencies try to sell you social media posts and vanity likes. But hotel owners don't need likes — they need <strong>confirmed room bookings without commission bleed</strong>.
+              </p>
+
+              {/* 3 Pillars of Swapneel's Consulting Practice */}
+              <div className="grid sm:grid-cols-3 gap-4 pt-2">
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                  <div className="w-8 h-8 rounded-lg bg-brand-teal/10 text-brand-teal flex items-center justify-center font-bold text-sm mb-2">
+                    1
+                  </div>
+                  <h4 className="font-bold text-slate-900 text-sm mb-1">Direct Founder Care</h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    No junior account managers. Swapneel personally audits, designs, and oversees your property's direct booking strategy.
+                  </p>
+                </div>
+
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                  <div className="w-8 h-8 rounded-lg bg-brand-teal/10 text-brand-teal flex items-center justify-center font-bold text-sm mb-2">
+                    2
+                  </div>
+                  <h4 className="font-bold text-slate-900 text-sm mb-1">Hospitality Economics</h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Fluency in room tariff yields, off-peak occupancy dips, ADR, RevPAR, and traveler booking intent psychology.
+                  </p>
+                </div>
+
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                  <div className="w-8 h-8 rounded-lg bg-brand-teal/10 text-brand-teal flex items-center justify-center font-bold text-sm mb-2">
+                    3
+                  </div>
+                  <h4 className="font-bold text-slate-900 text-sm mb-1">In-Person Relationships</h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Face-to-face local audits across Nagpur (Wardha Rd, Dharampeth, Civil Lines, Sadar) and Uttarakhand hill stations.
+                  </p>
+                </div>
+              </div>
+
+              {/* Founder's Personal Letter / Quote Box */}
+              <div className="bg-gradient-to-br from-slate-900 to-[#02291e] text-white p-6 sm:p-7 rounded-2xl border border-white/10 shadow-lg relative">
+                <p className="text-sm sm:text-base italic text-slate-200 leading-relaxed mb-3">
+                  “When a traveler searches for a resort, hotel, or homestay in your area, your property should be their first choice — and they should book directly with your front desk over WhatsApp, not through a middleman app that cuts your margin.”
+                </p>
+                <div className="flex items-center justify-between text-xs pt-2 border-t border-white/10">
+                  <span className="font-bold text-brand-gold">— Swapneel Shirsat, Founder</span>
+                  <span className="text-slate-400">Nagpur, Maharashtra</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 18-Year Track Record & Journey Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           
@@ -259,7 +431,7 @@ export default function AboutPage() {
               Most digital marketing agencies in India are generalists. They sell social media posts to a dentist on Monday, a gym on Tuesday, and a hotel on Wednesday. They don’t understand that paying a 20% commission on a ₹4,000 room night drains a hotel owner's entire operating margin.
             </p>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              With <strong>18 years of freelance marketing experience</strong> and <strong>over a decade spent exclusively inside hospitality</strong>, GrowGuest was founded to solve one specific problem: breaking independent hotel dependence on OTAs like MakeMyTrip, Agoda, and Booking.com.
+              With <strong>18 years of freelance marketing experience</strong> and <strong>over a decade spent exclusively inside hospitality</strong>, GrowGuest was founded by Swapneel Shirsat to solve one specific problem: breaking independent hotel dependence on OTAs like MakeMyTrip, Agoda, and Booking.com.
             </p>
             <div className="bg-slate-100 p-6 rounded-2xl border-l-4 border-brand-teal text-slate-800 text-sm sm:text-base font-medium">
               “Our mission is simple: when a traveler searches for a place to stay in Nagpur or nearby hill stations, your property should be their first choice — and they should book directly with your front desk.”
@@ -268,7 +440,7 @@ export default function AboutPage() {
 
           <div className="lg:col-span-6 bg-slate-900 text-white rounded-3xl p-8 sm:p-10 border border-white/10 shadow-xl space-y-8">
             <h3 className="text-2xl font-bold text-brand-gold mb-4">
-              18-Year Track Record & Specialization
+              Swapneel's 18-Year Marketing & Hospitality Journey
             </h3>
 
             <div className="space-y-6">

@@ -49,9 +49,10 @@ export default function BlogPostHospitalityDigitalMarketing() {
     "dateModified": "2026-08-21T08:00:00+05:30",
     "author": {
       "@type": "Person",
-      "name": "GrowGuest Founder",
-      "jobTitle": "Hospitality Digital Marketing Consultant",
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Founder & Hospitality Digital Marketing Consultant",
       "url": "https://growguest.in/about-hospitality-marketing-agency/",
+      "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
       "description": "18 years of freelance marketing experience, 10+ years exclusively inside hospitality."
     },
     "publisher": {
@@ -196,7 +197,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
             >
               <span className="flex items-center">
                 <User className="w-4 h-4 mr-1.5 text-brand-gold" />
-                By GrowGuest Founder (Hospitality Specialist)
+                By Swapneel Shirsat (Hospitality Specialist)
               </span>
               <span className="text-slate-400">•</span>
               <span className="flex items-center">
@@ -687,14 +688,14 @@ export default function BlogPostHospitalityDigitalMarketing() {
               {/* Author Bio Footer Box */}
               <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-5 mt-8">
                 <div className="w-16 h-16 rounded-full bg-brand-teal text-brand-gold font-extrabold text-2xl flex items-center justify-center flex-shrink-0 shadow-md">
-                  GG
+                  SS
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 text-base">
-                    Written by GrowGuest Founder & Hospitality Specialist
+                    Written by Swapneel Shirsat — Founder & Hospitality Growth Specialist
                   </h4>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1">
-                    GrowGuest is a Nagpur-based digital marketing consultancy built specifically for hotels, resorts, and homestays — not a generalist agency treating hospitality as one vertical among many. Backed by 18 years of freelance marketing experience, 10+ years exclusively inside hospitality. Learn more on our <a href="https://growguest.in/" className="font-bold text-brand-teal hover:underline">main homepage</a>.
+                    Swapneel Shirsat is the founder of GrowGuest, a Nagpur-based digital marketing consultancy built specifically for hotels, resorts, and homestays. Backed by 18 years of digital marketing experience and 10+ years exclusively inside hospitality. Learn more about <a href="/about-hospitality-marketing-agency/" className="font-bold text-brand-teal hover:underline">Swapneel and GrowGuest</a>.
                   </p>
                 </div>
               </div>

@@ -118,9 +118,11 @@ export default function SEO({
     ],
     "founder": {
       "@type": "Person",
-      "name": "GrowGuest Founder",
-      "jobTitle": "Hospitality Digital Marketing Consultant",
-      "description": "18 years of freelance marketing experience, 10+ years exclusively inside hospitality."
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Founder & Principal Hospitality Marketing Consultant",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/",
+      "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
+      "description": "18+ years of freelance and agency digital marketing experience, 10+ years exclusively inside hospitality."
     }
   };
 

@@ -34,9 +34,10 @@ export default function BlogPostLocalSeoHillStations() {
     "dateModified": "2026-07-15T08:00:00+05:30",
     "author": {
       "@type": "Person",
-      "name": "GrowGuest Founder",
-      "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency/"
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Founder & Hospitality Digital Marketing Consultant",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/",
+      "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/"
     },
     "publisher": {
       "@type": "Organization",
