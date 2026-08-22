@@ -114,8 +114,9 @@ export default function CaseStudiesPage() {
     "description": "Real before/after booking and OTA-dependence data from hotels and homestays GrowGuest has worked with. See the results.",
     "publisher": {
       "@type": "ProfessionalService",
-      "name": "GrowGuest — Digital Marketing Agency for Hotels & Resorts",
-      "url": "https://growguest.in/"
+      "name": "GrowGuest Digital Growth for Hospitality",
+      "url": "https://growguest.in/",
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259"
     }
   };
 

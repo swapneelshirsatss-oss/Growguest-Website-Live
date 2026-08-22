@@ -115,15 +115,21 @@ export default function ContactUsPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "GrowGuest — Digital Growth for Hospitality",
+    "name": "GrowGuest Digital Growth for Hospitality",
+    "alternateName": [
+      "GrowGuest — Digital Growth for Hospitality",
+      "GrowGuest"
+    ],
     "image": "https://growguest.in/assets/logo.png",
     "@id": "https://growguest.in/#localbusiness",
     "url": "https://growguest.in/",
+    "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
     "telephone": "+918956907343",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "60, Swami Samarth Nagari, Besa-Pipla Rd",
+      "streetAddress": "60, Swami samarth Nagari, Besa-Pipla Rd",
       "addressLocality": "Nagpur",
+      "addressRegion": "Maharashtra",
       "postalCode": "440034",
       "addressCountry": "IN"
     },
@@ -146,6 +152,7 @@ export default function ContactUsPage() {
       "closes": "19:00"
     },
     "sameAs": [
+      "https://www.google.com/maps/place/?cid=13593835757779847259",
       "https://www.facebook.com/profile.php?id=61593380557986",
       "https://www.instagram.com/growguest/",
       "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
@@ -525,7 +532,7 @@ export default function ContactUsPage() {
             </div>
 
             {/* Embedded Google Map */}
-            <div className="bg-white rounded-3xl p-4 border border-slate-200 shadow-sm overflow-hidden">
+            <div className="bg-white rounded-3xl p-4 border border-slate-200 shadow-sm overflow-hidden space-y-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.6679343328093!2d79.09779500288303!3d21.085769143508152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf26c05347f1%3A0xbca701993578885b!2sGrowGuest%20Digital%20Growth%20for%20Hospitality!5e0!3m2!1sen!2sin!4v1787394673014!5m2!1sen!2sin"
                 width="100%"
@@ -537,6 +544,17 @@ export default function ContactUsPage() {
                 title="GrowGuest Digital Growth for Hospitality - Besa-Pipla Rd, Nagpur"
                 className="w-full h-[260px] rounded-2xl"
               ></iframe>
+              <div className="text-center pt-1">
+                <a
+                  href="https://www.google.com/maps/place/?cid=13593835757779847259"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-xs font-bold text-brand-teal hover:text-brand-gold transition-colors"
+                >
+                  <MapPin className="w-3.5 h-3.5 mr-1" />
+                  View GrowGuest on Google Maps (Directions & Reviews) →
+                </a>
+              </div>
             </div>
           </div>
 

@@ -141,8 +141,9 @@ export default function DirectBookingSolutionsPage() {
     "serviceType": "Direct Booking Engine & OTA Reduction Strategy",
     "provider": {
       "@type": "ProfessionalService",
-      "name": "GrowGuest — Digital Marketing Agency for Hotels & Resorts",
-      "url": "https://growguest.in/"
+      "name": "GrowGuest Digital Growth for Hospitality",
+      "url": "https://growguest.in/",
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259"
     },
     "description": "Eliminate 15-25% OTA commissions with GrowGuest's end-to-end direct booking pipeline. Google Map Pack, speed-optimized website & WhatsApp booking engine.",
     "areaServed": "Nagpur"

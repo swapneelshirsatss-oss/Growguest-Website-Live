@@ -14,8 +14,9 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 - **Delivery Model**: Founder-led local audits, relationships, and direct WhatsApp-native communication.
 
 ## Contact & Physical Location
-- **Company Name**: GrowGuest — Digital Growth for Hospitality
-- **Address**: 60, Swami Samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034, India.
+- **Brand & Legal Business Name**: GrowGuest Digital Growth for Hospitality
+- **Address**: 60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034, India.
+- **Google Maps CID Listing & Knowledge Panel**: https://www.google.com/maps/place/?cid=13593835757779847259
 - **Phone / WhatsApp**: +91 89569 07343
 - **Email**: hello@growguest.com
 - **Website URL**: https://growguest.in/

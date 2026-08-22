@@ -137,8 +137,9 @@ export default function ServicesPage() {
     "name": "Digital Marketing Services Nagpur | GrowGuest",
     "provider": {
       "@type": "ProfessionalService",
-      "name": "GrowGuest — Digital Marketing Agency",
-      "url": "https://growguest.in/"
+      "name": "GrowGuest Digital Growth for Hospitality",
+      "url": "https://growguest.in/",
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259"
     },
     "areaServed": "Nagpur",
     "hasOfferCatalog": {

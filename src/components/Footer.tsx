@@ -223,6 +223,15 @@ export default function Footer() {
               <p className="text-xs text-slate-400">
                 Book a face-to-face direct booking & local SEO audit for your hotel, resort, or restaurant in Nagpur.
               </p>
+              <a
+                href="https://www.google.com/maps/place/?cid=13593835757779847259"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-xs font-bold text-brand-gold hover:text-white transition-colors"
+              >
+                <MapPin className="w-3.5 h-3.5 mr-1" />
+                View on Google Maps (CID Listing) →
+              </a>
             </div>
             <div className="lg:col-span-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
               <iframe

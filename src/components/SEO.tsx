@@ -22,15 +22,17 @@ export default function SEO({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "GrowGuest — Digital Growth for Hospitality",
+    "name": "GrowGuest Digital Growth for Hospitality",
     "alternateName": [
       "GrowGuest",
       "Growguest",
+      "GrowGuest — Digital Growth for Hospitality",
       "GrowGuest Nagpur",
       "GrowGuest Hospitality Marketing"
     ],
     "url": "https://growguest.in/",
     "sameAs": [
+      "https://www.google.com/maps/place/?cid=13593835757779847259",
       "https://www.facebook.com/profile.php?id=61593380557986",
       "https://www.instagram.com/growguest/",
       "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
@@ -58,10 +60,16 @@ export default function SEO({
   const businessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "GrowGuest — Digital Marketing Agency for Hotels & Resorts",
+    "name": "GrowGuest Digital Growth for Hospitality",
+    "alternateName": [
+      "GrowGuest — Digital Growth for Hospitality",
+      "GrowGuest — Digital Marketing Agency for Hotels & Resorts",
+      "GrowGuest"
+    ],
     "image": ogImage,
     "@id": "https://growguest.in/#organization",
     "url": "https://growguest.in/",
+    "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
     "telephone": "+918956907343",
     "priceRange": "$$",
     "description": "Nagpur-based digital marketing for hotels, resorts & homestays. Cut OTA commissions and grow direct bookings with GrowGuest.",
@@ -100,6 +108,7 @@ export default function SEO({
       "Reduce OTA Dependence"
     ],
     "sameAs": [
+      "https://www.google.com/maps/place/?cid=13593835757779847259",
       "https://www.facebook.com/profile.php?id=61593380557986",
       "https://www.instagram.com/growguest/",
       "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
@@ -109,7 +118,7 @@ export default function SEO({
     ],
     "founder": {
       "@type": "Person",
-      "name": "Growguest Founder",
+      "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
       "description": "18 years of freelance marketing experience, 10+ years exclusively inside hospitality."
     }

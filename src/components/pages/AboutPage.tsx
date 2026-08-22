@@ -101,15 +101,21 @@ export default function AboutPage() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "GrowGuest — Digital Growth for Hospitality",
+    "name": "GrowGuest Digital Growth for Hospitality",
+    "alternateName": [
+      "GrowGuest — Digital Growth for Hospitality",
+      "GrowGuest"
+    ],
     "url": "https://growguest.in/",
+    "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
     "logo": "https://growguest.in/assets/logo.png",
     "description": "18 years of marketing experience, 10+ in hospitality. Meet the founder-led team helping hotels and homestays book direct.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "60, Swami Samarth Nagari, Besa-Pipla Rd",
+      "streetAddress": "60, Swami samarth Nagari, Besa-Pipla Rd",
       "addressLocality": "Nagpur",
       "addressRegion": "Maharashtra",
+      "postalCode": "440034",
       "countryName": "India"
     },
     "contactPoint": {
@@ -118,6 +124,7 @@ export default function AboutPage() {
       "contactType": "customer service"
     },
     "sameAs": [
+      "https://www.google.com/maps/place/?cid=13593835757779847259",
       "https://www.facebook.com/profile.php?id=61593380557986",
       "https://www.instagram.com/growguest/",
       "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
@@ -364,8 +371,19 @@ export default function AboutPage() {
               <MapPin className="w-10 h-10 text-brand-gold mx-auto" />
               <h4 className="font-bold text-xl">Visit GrowGuest Office</h4>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                60, Swami Samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra
+                60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra
               </p>
+              <div className="pt-2">
+                <a
+                  href="https://www.google.com/maps/place/?cid=13593835757779847259"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-xs font-bold text-brand-gold hover:text-white transition-colors"
+                >
+                  <MapPin className="w-3.5 h-3.5 mr-1" />
+                  View on Google Maps (CID Listing) →
+                </a>
+              </div>
               <div className="pt-2 border-t border-slate-800 text-xs text-slate-400">
                 Local in-person audits available Monday – Saturday
               </div>

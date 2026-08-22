@@ -99,7 +99,7 @@ export default function TermsOfServicePage() {
             <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 space-y-3 text-sm">
               <div className="flex items-center text-slate-800">
                 <MapPin className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
-                <span>Growguest — 60, Swami Samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034</span>
+                <span>GrowGuest Digital Growth for Hospitality — 60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034</span>
               </div>
               <div className="flex items-center text-slate-800">
                 <Phone className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
