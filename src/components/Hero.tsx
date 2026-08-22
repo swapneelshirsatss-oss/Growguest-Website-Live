@@ -152,7 +152,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.4 }}
               className="text-lg md:text-xl text-emerald-100/90 mb-9 max-w-xl leading-relaxed font-normal"
             >
-              MakeMyTrip और Agoda को 15-25% कमीशन देना बंद करें। हम आपकी प्रॉपर्टी को Google Maps पर Top-3 में लाते हैं और सीधा WhatsApp बुकिंग से 100% प्रॉफ़िट आपकी जेब में रखते हैं।
+              GrowGuest fixes both — a website, GBP, and SEO pipeline built specifically so hotels and homestays stop losing bookings to either one.
             </motion.p>
             
             <motion.div 
