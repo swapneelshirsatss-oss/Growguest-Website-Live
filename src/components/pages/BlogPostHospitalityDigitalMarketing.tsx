@@ -331,7 +331,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
               </div>
 
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Digital marketing for hospitality isn't really about "more visibility" in the abstract. It's about redirecting the guests who would have found you anyway toward booking with you directly instead of through a middleman. Learn how our <a href="https://growguest.in/hotel-direct-booking-solutions" className="font-bold text-brand-teal hover:underline">hotel direct booking solutions</a> plug this revenue bleed.
+                Digital marketing for hospitality isn't really about "more visibility" in the abstract. It's about redirecting the guests who would have found you anyway toward booking with you directly instead of through a middleman. Learn how our <a href="https://growguest.in/hotel-direct-booking-solutions/" className="font-bold text-brand-teal hover:underline">hotel direct booking solutions</a> plug this revenue bleed.
               </p>
             </section>
 
@@ -385,7 +385,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 </div>
 
                 <p className="text-slate-700 text-base leading-relaxed">
-                  Every missing piece represents a guest who was ready to book directly and didn't, simply because the website made it harder than opening the OTA app they already had installed. Elevating your <a href="https://growguest.in/blog/hotel-website-conversion-rate-optimization" className="font-bold text-brand-teal hover:underline">hotel website booking conversion</a> is the single fastest way to <a href="https://growguest.in/hotel-direct-booking-solutions" className="font-bold text-brand-teal hover:underline">reduce OTA dependence</a>.
+                  Every missing piece represents a guest who was ready to book directly and didn't, simply because the website made it harder than opening the OTA app they already had installed. Elevating your <a href="https://growguest.in/blog/hotel-website-conversion-rate-optimization/" className="font-bold text-brand-teal hover:underline">hotel website booking conversion</a> is the single fastest way to <a href="https://growguest.in/hotel-direct-booking-solutions/" className="font-bold text-brand-teal hover:underline">reduce OTA dependence</a>.
                 </p>
               </div>
 
@@ -401,7 +401,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 </div>
 
                 <p className="text-slate-700 text-base leading-relaxed">
-                  For a huge share of hospitality searches — <em>"resort near Nagpur," "homestay in Dharampeth," "boutique stay near Mukteshwar"</em> — Google shows the map pack (the 3 listings with photos and reviews) before it shows any website at all. Optimizing your <a href="https://growguest.in/blog/google-business-profile-seo-homestays-resorts" className="font-bold text-brand-teal hover:underline">Google Business Profile for hotels</a> is critical to capturing local intent for <a href="https://growguest.in/hospitality-marketing-case-studies" className="font-bold text-brand-teal hover:underline">local SEO for homestays Nagpur</a> and <a href="https://growguest.in/hotel-digital-marketing-services" className="font-bold text-brand-teal hover:underline">restaurant local SEO Nagpur</a>.
+                  For a huge share of hospitality searches — <em>"resort near Nagpur," "homestay in Dharampeth," "boutique stay near Mukteshwar"</em> — Google shows the map pack (the 3 listings with photos and reviews) before it shows any website at all. Optimizing your <a href="https://growguest.in/blog/google-business-profile-seo-homestays-resorts/" className="font-bold text-brand-teal hover:underline">Google Business Profile for hotels</a> is critical to capturing local intent for <a href="https://growguest.in/hospitality-marketing-case-studies/" className="font-bold text-brand-teal hover:underline">local SEO for homestays Nagpur</a> and <a href="https://growguest.in/hotel-digital-marketing-services/" className="font-bold text-brand-teal hover:underline">restaurant local SEO Nagpur</a>.
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-4 pt-2">
@@ -426,7 +426,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 </div>
 
                 <p className="text-slate-700 text-base leading-relaxed">
-                  Unlike organic website ranking, which can take months, GBP improvements often show movement within days to a few weeks. It is usually the fastest lever available to a property starting from zero. Read our complete <a href="https://growguest.in/blog/google-business-profile-seo-homestays-resorts" className="font-bold text-brand-teal hover:underline">Google Business Profile guide for homestays & resorts</a>.
+                  Unlike organic website ranking, which can take months, GBP improvements often show movement within days to a few weeks. It is usually the fastest lever available to a property starting from zero. Read our complete <a href="https://growguest.in/blog/google-business-profile-seo-homestays-resorts/" className="font-bold text-brand-teal hover:underline">Google Business Profile guide for homestays & resorts</a>.
                 </p>
               </div>
 
@@ -448,7 +448,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                   The highest-ROI starting point for most small properties isn't chasing <em>"best hotel in [city]"</em> (which every hotel in the city is also chasing). It's the specific, lower-competition searches: <em>"homestay near [landmark]," "resort for family event in Nagpur," "pet-friendly stay near Nainital."</em> These convert better anyway, because the searcher already knows exactly what they want.
                 </p>
                 <p className="text-slate-700 text-base leading-relaxed">
-                  Property owners looking for <a href="https://growguest.in/about-hospitality-marketing-agency" className="font-bold text-brand-teal hover:underline">small hotel digital marketing India</a> strategies can consult our dedicated <a href="https://growguest.in/hotel-digital-marketing-services" className="font-bold text-brand-teal hover:underline">Nagpur hospitality marketing consultant services</a> to build long-term search authority.
+                  Property owners looking for <a href="https://growguest.in/about-hospitality-marketing-agency/" className="font-bold text-brand-teal hover:underline">small hotel digital marketing India</a> strategies can consult our dedicated <a href="https://growguest.in/hotel-digital-marketing-services/" className="font-bold text-brand-teal hover:underline">Nagpur hospitality marketing consultant services</a> to build long-term search authority.
                 </p>
               </div>
 
@@ -480,7 +480,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 </div>
 
                 <p className="text-slate-700 text-base leading-relaxed">
-                  Guests choosing between two similarly priced properties usually pick the one that <em>feels</em> more trustworthy — and reviews, room photos, and a consistent social presence do most of that work before a guest ever reaches your booking page. A property with 150 recent, responded-to reviews beats one with 20 stale ones, even if the actual guest experience is identical. Combining active review responses with a <a href="https://growguest.in/free-hotel-digital-marketing-audit" className="font-bold text-brand-teal hover:underline">GBP audit for hospitality</a> highlights immediate competitive gaps.
+                  Guests choosing between two similarly priced properties usually pick the one that <em>feels</em> more trustworthy — and reviews, room photos, and a consistent social presence do most of that work before a guest ever reaches your booking page. A property with 150 recent, responded-to reviews beats one with 20 stale ones, even if the actual guest experience is identical. Combining active review responses with a <a href="https://growguest.in/free-hotel-digital-marketing-audit/" className="font-bold text-brand-teal hover:underline">GBP audit for hospitality</a> highlights immediate competitive gaps.
                 </p>
               </div>
 
@@ -553,13 +553,13 @@ export default function BlogPostHospitalityDigitalMarketing() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://growguest.in/free-hotel-digital-marketing-audit"
+                  href="https://growguest.in/free-hotel-digital-marketing-audit/"
                   className="inline-flex items-center px-6 py-3 rounded-full text-brand-teal font-extrabold text-sm bg-brand-gold hover:bg-brand-gold-light transition-all shadow-md"
                 >
                   Get Free Audit →
                 </a>
                 <a
-                  href="https://growguest.in/hospitality-marketing-case-studies"
+                  href="https://growguest.in/hospitality-marketing-case-studies/"
                   className="inline-flex items-center px-6 py-3 rounded-full text-white font-bold text-sm bg-white/10 hover:bg-white/20 transition-all border border-white/20"
                 >
                   View Case Studies
@@ -593,7 +593,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                   </li>
                 </ul>
                 <div className="pt-2 text-xs font-semibold text-brand-teal">
-                  <a href="https://growguest.in/hospitality-marketing-case-studies" className="hover:underline flex items-center">
+                  <a href="https://growguest.in/hospitality-marketing-case-studies/" className="hover:underline flex items-center">
                     Read the full case studies on the GrowGuest portal <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
                   </a>
                 </div>
@@ -667,7 +667,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
                   <a
-                    href="https://growguest.in/free-hotel-digital-marketing-audit"
+                    href="https://growguest.in/free-hotel-digital-marketing-audit/"
                     className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-brand-teal font-extrabold text-base bg-brand-gold hover:bg-brand-gold-light transition-all shadow-xl transform hover:-translate-y-0.5"
                   >
                     Get Your Free Direct Booking Audit →

@@ -116,7 +116,7 @@ export default function AuditPage() {
     "@type": "ContactPage",
     "name": "Free Hotel Website & Direct Booking Audit | GrowGuest",
     "description": "Get a free audit of your hotel or homestay website, GBP and booking funnel. No cost, no obligation — just a clear action plan.",
-    "url": "https://growguest.in/free-hotel-digital-marketing-audit"
+    "url": "https://growguest.in/free-hotel-digital-marketing-audit/"
   };
 
   return (
