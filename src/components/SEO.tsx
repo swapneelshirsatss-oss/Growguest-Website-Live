@@ -119,10 +119,18 @@ export default function SEO({
     "founder": {
       "@type": "Person",
       "name": "Swapneel Shirsat",
-      "jobTitle": "Founder & Principal Hospitality Marketing Consultant",
+      "jobTitle": "Director & Founder",
       "url": "https://growguest.in/about-hospitality-marketing-agency/",
       "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
-      "description": "18+ years of freelance and agency digital marketing experience, 10+ years exclusively inside hospitality."
+      "description": "Director & Founder of GrowGuest with 18+ years of digital marketing experience and 10+ years exclusively inside hospitality."
+    },
+    "director": {
+      "@type": "Person",
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Director & Founder",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/",
+      "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
+      "description": "Director & Founder of GrowGuest with 18+ years of digital marketing experience and 10+ years exclusively inside hospitality."
     }
   };
 

@@ -50,10 +50,10 @@ export default function BlogPostHospitalityDigitalMarketing() {
     "author": {
       "@type": "Person",
       "name": "Swapneel Shirsat",
-      "jobTitle": "Founder & Hospitality Digital Marketing Consultant",
+      "jobTitle": "Director & Founder — Hospitality Digital Marketing Consultant",
       "url": "https://growguest.in/about-hospitality-marketing-agency/",
       "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
-      "description": "18 years of freelance marketing experience, 10+ years exclusively inside hospitality."
+      "description": "Director & Founder of GrowGuest with 18 years of marketing experience, 10+ years exclusively inside hospitality."
     },
     "publisher": {
       "@type": "Organization",

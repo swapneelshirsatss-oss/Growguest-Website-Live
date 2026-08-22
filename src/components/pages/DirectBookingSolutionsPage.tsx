@@ -143,7 +143,12 @@ export default function DirectBookingSolutionsPage() {
       "@type": "ProfessionalService",
       "name": "GrowGuest Digital Growth for Hospitality",
       "url": "https://growguest.in/",
-      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259"
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
+      "director": {
+        "@type": "Person",
+        "name": "Swapneel Shirsat",
+        "jobTitle": "Director & Founder"
+      }
     },
     "description": "Eliminate 15-25% OTA commissions with GrowGuest's end-to-end direct booking pipeline. Google Map Pack, speed-optimized website & WhatsApp booking engine.",
     "areaServed": "Nagpur"

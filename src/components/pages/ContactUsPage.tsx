@@ -159,7 +159,21 @@ export default function ContactUsPage() {
       "https://x.com/Growguest",
       "https://www.pinterest.com/growguest",
       "https://www.linkedin.com/company/growguest-digital-growth-for-hospitality"
-    ]
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Director & Founder",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/",
+      "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/"
+    },
+    "director": {
+      "@type": "Person",
+      "name": "Swapneel Shirsat",
+      "jobTitle": "Director & Founder",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/",
+      "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/"
+    }
   };
 
   const contactPageSchema = {

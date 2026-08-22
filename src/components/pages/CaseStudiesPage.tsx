@@ -116,7 +116,12 @@ export default function CaseStudiesPage() {
       "@type": "ProfessionalService",
       "name": "GrowGuest Digital Growth for Hospitality",
       "url": "https://growguest.in/",
-      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259"
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
+      "director": {
+        "@type": "Person",
+        "name": "Swapneel Shirsat",
+        "jobTitle": "Director & Founder"
+      }
     }
   };
 

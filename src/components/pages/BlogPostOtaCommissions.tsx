@@ -42,7 +42,7 @@ export default function BlogPostOtaCommissions() {
     "author": {
       "@type": "Person",
       "name": "Swapneel Shirsat",
-      "jobTitle": "Founder & Hospitality Digital Marketing Consultant",
+      "jobTitle": "Director & Founder — Hospitality Digital Marketing Consultant",
       "url": "https://growguest.in/about-hospitality-marketing-agency/",
       "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/"
     },
