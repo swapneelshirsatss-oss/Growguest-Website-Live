@@ -41,8 +41,13 @@ export default function BlogPostWhatsAppMarketing() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "GrowGuest",
-      "url": "https://growguest.in/"
+      "name": "GrowGuest Digital Growth for Hospitality",
+      "url": "https://growguest.in/",
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://growguest.in/assets/logo.png"
+      }
     }
   };
 
@@ -86,7 +91,7 @@ export default function BlogPostWhatsAppMarketing() {
           </h1>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-emerald-100/80">
-            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#c8f169]" /> GrowGuest Founder</span>
+            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#c8f169]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
             <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#c8f169]" /> Jun 2026</span>
             <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#c8f169]" /> 4 min read</span>
           </div>
@@ -122,6 +127,21 @@ export default function BlogPostWhatsAppMarketing() {
             <li><code>/location</code>: Sends Google Maps pin + landmark directions.</li>
             <li><code>/upi</code>: Sends official QR code & direct UPI payment link.</li>
           </ul>
+
+          {/* Author Bio Footer Box */}
+          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-5 not-prose">
+            <div className="w-16 h-16 rounded-full bg-[#043f2e] text-[#c8f169] font-extrabold text-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+              SS
+            </div>
+            <div>
+              <h4 className="font-bold text-slate-900 text-base">
+                Written by Swapneel Shirsat — Director & Founder
+              </h4>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1">
+                Swapneel Shirsat is the founder and director of GrowGuest. Backed by 18+ years of digital marketing experience and 10+ years dedicated exclusively inside hospitality, Swapneel helps hotel and resort owners cut OTA commissions and build profitable direct booking pipelines. Learn more on our <a href="/about-hospitality-marketing-agency/" className="font-bold text-[#043f2e] hover:underline">About Page</a>.
+              </p>
+            </div>
+          </div>
 
           <div className="pt-8 border-t border-slate-200 not-prose">
             <div className="bg-gradient-to-br from-[#02291e] to-[#043f2e] text-white p-8 rounded-2xl">
