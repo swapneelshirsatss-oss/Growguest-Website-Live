@@ -54,49 +54,46 @@ export default function WhatsAppOtaBypass() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Pill Badge */}
-        <div className="text-center mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 shadow-lg backdrop-blur-md">
+        <div className="text-center mb-8">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-emerald-500/10 text-emerald-300 border border-emerald-500/30 shadow-lg backdrop-blur-md">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
             Direct OTA Bypass Technology
           </span>
         </div>
 
-        {/* H2 Headline Requested by User */}
-        <div className="text-center max-w-4xl mx-auto mb-14">
+        {/* H2 Headline with Polished Spacing & High Readability */}
+        <div className="text-center max-w-4xl mx-auto mb-16 px-4">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight mb-6 tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-[1.3] md:leading-[1.35] mb-8 tracking-tight"
           >
-            गेस्ट सीधा आपके{' '}
-            <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-green-400 bg-clip-text text-transparent underline decoration-emerald-500/50 decoration-wavy underline-offset-8">
-              WhatsApp
-            </span>{' '}
-            पर — बिना किसी{' '}
-            <span className="bg-gradient-to-r from-red-400 via-amber-300 to-orange-400 bg-clip-text text-transparent">
-              OTA या एग्रीगेटर के!
-            </span>
+            <span className="inline-block">गेस्ट सीधा आपके <span className="text-[#25D366] font-black drop-shadow-[0_0_20px_rgba(37,211,102,0.35)]">WhatsApp</span> पर</span>{' '}
+            <span className="text-slate-500 font-light mx-2 hidden sm:inline">—</span>
+            <span className="inline-block mt-2 sm:mt-0">बिना किसी <span className="text-orange-400 font-black">OTA या एग्रीगेटर के!</span></span>
           </motion.h2>
 
-          <motion.h3 
-            initial={{ opacity: 0, y: 20 }}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.08 }}
-            className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#C99A2E] mb-5 leading-snug px-2"
+            transition={{ delay: 0.1 }}
+            className="inline-block bg-[#c8f169]/10 border border-[#c8f169]/25 rounded-2xl px-6 py-3.5 mb-6 backdrop-blur-sm"
           >
-            हर ₹1 लाख की बुकिंग पर ₹20,000 OTA को क्यों देना? अपनी मेहनत की कमाई खुद बचाएँ।
-          </motion.h3>
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#c8f169] leading-relaxed">
+              हर ₹1 लाख की बुकिंग पर ₹20,000 OTA को क्यों देना? अपनी मेहनत की कमाई खुद बचाएँ।
+            </h3>
+          </motion.div>
           
           <motion.p 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.15 }}
-            className="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed"
+            transition={{ delay: 0.18 }}
+            className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal"
           >
-            MakeMyTrip, Booking.com, Agoda और Goibibo को <strong className="text-red-400 font-bold">15% से 25% कमीशन देने के बजाय</strong>, मेहमानों को सीधे आपके WhatsApp पर 100% डायरेक्ट बुक कराएं।
+            MakeMyTrip, Booking.com, Agoda और Goibibo को <span className="text-red-300 font-semibold underline decoration-red-400/40 underline-offset-4">15% से 25% कमीशन देने के बजाय</span>, मेहमानों को सीधे आपके WhatsApp पर 100% डायरेक्ट बुक कराएं।
           </motion.p>
         </div>
 
