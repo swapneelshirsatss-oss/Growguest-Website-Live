@@ -3,9 +3,9 @@ import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
 
 export default function TermsOfServicePage() {
-  const canonicalUrl = "https://growguest.in/terms-of-service";
+  const canonicalUrl = "https://growguest.in/terms-of-service/";
   const breadcrumbItems = [
-    { name: 'Terms of Service', url: '/terms-of-service' }
+    { name: 'Terms of Service', url: '/terms-of-service/' }
   ];
 
   return (

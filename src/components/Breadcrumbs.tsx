@@ -9,10 +9,24 @@ interface BreadcrumbsProps {
   items: BreadcrumbItem[];
 }
 
+function normalizeBreadcrumbUrl(url: string): string {
+  if (!url) return '/';
+  if (url === '/') return '/';
+  if (url === '/blog') return '/hospitality-digital-marketing-blog/';
+  if (url === '/blog/') return '/hospitality-digital-marketing-blog/';
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url.endsWith('/') ? url : `${url}/`;
+  }
+  return url.endsWith('/') ? url : `${url}/`;
+}
+
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   const allItems: BreadcrumbItem[] = [
     { name: 'Home', url: '/' },
-    ...items
+    ...items.map(item => ({
+      ...item,
+      url: normalizeBreadcrumbUrl(item.url)
+    }))
   ];
 
   return (

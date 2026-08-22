@@ -16,10 +16,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
 
 export default function BlogPostWebsiteCro() {
-  const canonicalUrl = "https://growguest.in/blog/hotel-website-conversion-rate-optimization";
+  const canonicalUrl = "https://growguest.in/blog/hotel-website-conversion-rate-optimization/";
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' },
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' },
     { name: 'Website Conversion Optimization', url: canonicalUrl }
   ];
 
@@ -36,7 +36,7 @@ export default function BlogPostWebsiteCro() {
       "@type": "Person",
       "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency"
+      "url": "https://growguest.in/about-hospitality-marketing-agency/"
     },
     "publisher": {
       "@type": "Organization",
@@ -127,7 +127,7 @@ export default function BlogPostWebsiteCro() {
                 Get a comprehensive mobile UX and speed audit for your property website.
               </p>
               <a
-                href="/free-hotel-digital-marketing-audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
               >
                 Claim Free Website Audit <ArrowRight className="w-4 h-4 ml-2" />

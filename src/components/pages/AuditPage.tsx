@@ -125,7 +125,7 @@ export default function AuditPage() {
         title="Free Hotel Website & Direct Booking Audit | GrowGuest"
         description="Get a free audit of your hotel or homestay website, GBP and booking funnel. No cost, no obligation — just a clear action plan."
         keywords="free hotel website audit, free direct booking audit, hotel SEO audit free India, homestay website audit Nagpur, Google Business Profile audit for hotels"
-        canonicalUrl="https://growguest.in/free-hotel-digital-marketing-audit"
+        canonicalUrl="https://growguest.in/free-hotel-digital-marketing-audit/"
         breadcrumbs={breadcrumbItems}
       />
 

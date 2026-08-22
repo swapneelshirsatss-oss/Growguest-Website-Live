@@ -16,10 +16,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
 
 export default function BlogPostLocalSeoHillStations() {
-  const canonicalUrl = "https://growguest.in/blog/local-seo-guide-resorts-hotels";
+  const canonicalUrl = "https://growguest.in/blog/local-seo-guide-resorts-hotels/";
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' },
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' },
     { name: 'Local SEO for Resorts', url: canonicalUrl }
   ];
 
@@ -36,7 +36,7 @@ export default function BlogPostLocalSeoHillStations() {
       "@type": "Person",
       "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency"
+      "url": "https://growguest.in/about-hospitality-marketing-agency/"
     },
     "publisher": {
       "@type": "Organization",
@@ -125,7 +125,7 @@ export default function BlogPostLocalSeoHillStations() {
                 Discover how our direct-booking playbook fills rooms throughout off-peak seasons without OTA reliance.
               </p>
               <a
-                href="/free-hotel-digital-marketing-audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
               >
                 Claim Free Resort Audit <ArrowRight className="w-4 h-4 ml-2" />

@@ -112,7 +112,7 @@ export default function DirectBookingSolutionsPage() {
   const [roomTariff, setRoomTariff] = useState<number>(4000);
 
   const breadcrumbItems = [
-    { name: 'Direct Booking Solutions', url: '/hotel-direct-booking-solutions' }
+    { name: 'Direct Booking Solutions', url: '/hotel-direct-booking-solutions/' }
   ];
 
   const avgOtaCommission = 0.20;
@@ -154,7 +154,7 @@ export default function DirectBookingSolutionsPage() {
         title="Hotel Direct Booking Solutions & OTA Reduction Strategy | GrowGuest"
         description="Eliminate 15-25% OTA commissions with GrowGuest's end-to-end direct booking pipeline. Google Map Pack, speed-optimized website & WhatsApp booking engine."
         keywords="hotel direct booking solutions, reduce OTA commissions hotel, direct booking strategy for hotels, OTA commission reduction Nagpur, hotel website booking engine, direct booking conversion rate"
-        canonicalUrl="https://growguest.in/hotel-direct-booking-solutions"
+        canonicalUrl="https://growguest.in/hotel-direct-booking-solutions/"
         breadcrumbs={breadcrumbItems}
       />
 

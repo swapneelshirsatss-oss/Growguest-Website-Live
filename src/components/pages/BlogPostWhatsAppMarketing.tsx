@@ -16,10 +16,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
 
 export default function BlogPostWhatsAppMarketing() {
-  const canonicalUrl = "https://growguest.in/blog/whatsapp-marketing-strategies-hotel-room-bookings";
+  const canonicalUrl = "https://growguest.in/blog/whatsapp-marketing-strategies-hotel-room-bookings/";
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' },
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' },
     { name: 'WhatsApp Booking Strategies', url: canonicalUrl }
   ];
 
@@ -36,7 +36,7 @@ export default function BlogPostWhatsAppMarketing() {
       "@type": "Person",
       "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency"
+      "url": "https://growguest.in/about-hospitality-marketing-agency/"
     },
     "publisher": {
       "@type": "Organization",
@@ -129,7 +129,7 @@ export default function BlogPostWhatsAppMarketing() {
                 We set up automated WhatsApp routing, pre-filled CTA buttons, and reception quick-replies.
               </p>
               <a
-                href="/free-hotel-digital-marketing-audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
               >
                 Claim Free WhatsApp Audit <ArrowRight className="w-4 h-4 ml-2" />

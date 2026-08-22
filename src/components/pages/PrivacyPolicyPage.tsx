@@ -3,9 +3,9 @@ import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
 
 export default function PrivacyPolicyPage() {
-  const canonicalUrl = "https://growguest.in/privacy-policy";
+  const canonicalUrl = "https://growguest.in/privacy-policy/";
   const breadcrumbItems = [
-    { name: 'Privacy Policy', url: '/privacy-policy' }
+    { name: 'Privacy Policy', url: '/privacy-policy/' }
   ];
 
   return (

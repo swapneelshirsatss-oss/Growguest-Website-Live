@@ -102,7 +102,7 @@ export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' }
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' }
   ];
 
   const filteredPosts = selectedCategory === "All"
@@ -116,7 +116,7 @@ export default function BlogPage() {
     "@type": "Blog",
     "name": "GrowGuest Blog | Hotel & Homestay Marketing Insights",
     "description": "Practical local SEO, Google Business Profile and direct-booking tips for independent hotels, resorts and homestays.",
-    "url": "https://growguest.in/blog",
+    "url": "https://growguest.in/hospitality-digital-marketing-blog/",
     "publisher": {
       "@type": "Organization",
       "name": "GrowGuest",
@@ -139,7 +139,7 @@ export default function BlogPage() {
     "@type": "CollectionPage",
     "name": "GrowGuest Blog | Hotel & Homestay Marketing Insights",
     "description": "Practical local SEO, Google Business Profile and direct-booking tips for independent hotels, resorts and homestays.",
-    "url": "https://growguest.in/blog"
+    "url": "https://growguest.in/hospitality-digital-marketing-blog/"
   };
 
   return (
@@ -148,7 +148,7 @@ export default function BlogPage() {
         title="GrowGuest Blog | Hotel & Homestay Marketing Insights"
         description="Practical local SEO, Google Business Profile and direct-booking tips for independent hotels, resorts and homestays."
         keywords="hotel and homestay marketing tips, local SEO, GBP, OTA commission, direct booking, hotel marketing blog India, Nagpur hotel SEO guide"
-        canonicalUrl="https://growguest.in/blog"
+        canonicalUrl="https://growguest.in/hospitality-digital-marketing-blog/"
         breadcrumbs={breadcrumbItems}
       />
 
@@ -346,7 +346,7 @@ export default function BlogPage() {
             Stop guessing your SEO rankings. Get a free, manual 4-point direct booking audit delivered to your WhatsApp within 24 to 48 hours.
           </p>
           <a
-            href="/free-hotel-digital-marketing-audit"
+            href="/free-hotel-digital-marketing-audit/"
             className="inline-flex items-center px-8 py-4 rounded-full text-brand-teal font-extrabold text-base bg-brand-gold hover:bg-brand-gold-light transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             Claim Free Direct Booking Audit →

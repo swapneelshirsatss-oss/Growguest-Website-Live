@@ -23,10 +23,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
 
 export default function BlogPostOtaCommissions() {
-  const canonicalUrl = "https://growguest.in/blog/hotel-direct-booking-strategy-reduce-ota-commissions";
+  const canonicalUrl = "https://growguest.in/blog/hotel-direct-booking-strategy-reduce-ota-commissions/";
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' },
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' },
     { name: 'Reduce OTA Commissions', url: canonicalUrl }
   ];
 
@@ -43,7 +43,7 @@ export default function BlogPostOtaCommissions() {
       "@type": "Person",
       "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency"
+      "url": "https://growguest.in/about-hospitality-marketing-agency/"
     },
     "publisher": {
       "@type": "Organization",
@@ -182,7 +182,7 @@ export default function BlogPostOtaCommissions() {
                 Get a free, no-obligation direct booking audit for your hotel, homestay, or resort. We review your Google presence, website, and commission structure.
               </p>
               <a
-                href="/free-hotel-digital-marketing-audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
               >
                 Claim Free Direct Booking Audit <ArrowRight className="w-4 h-4 ml-2" />

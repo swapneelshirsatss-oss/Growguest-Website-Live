@@ -17,10 +17,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
 
 export default function BlogPostGbpSeo() {
-  const canonicalUrl = "https://growguest.in/blog/google-business-profile-seo-homestays-resorts";
+  const canonicalUrl = "https://growguest.in/blog/google-business-profile-seo-homestays-resorts/";
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' },
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' },
     { name: 'Google Business Profile SEO', url: canonicalUrl }
   ];
 
@@ -37,7 +37,7 @@ export default function BlogPostGbpSeo() {
       "@type": "Person",
       "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency"
+      "url": "https://growguest.in/about-hospitality-marketing-agency/"
     },
     "publisher": {
       "@type": "Organization",
@@ -132,7 +132,7 @@ export default function BlogPostGbpSeo() {
                 We perform a geo-grid rank scan for Nagpur and show you where guests find you vs your competitors.
               </p>
               <a
-                href="/free-hotel-digital-marketing-audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
               >
                 Claim Free GBP Audit <ArrowRight className="w-4 h-4 ml-2" />

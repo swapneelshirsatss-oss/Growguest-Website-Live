@@ -127,7 +127,7 @@ export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const breadcrumbItems = [
-    { name: 'Services', url: '/hotel-digital-marketing-services' }
+    { name: 'Services', url: '/hotel-digital-marketing-services/' }
   ];
 
   const serviceSchema = {
@@ -162,7 +162,7 @@ export default function ServicesPage() {
         title="Digital Marketing Services Nagpur | GrowGuest"
         description="Website design, Local SEO, GBP optimization, SEO, Paid Ads, Content & Analytics automation built to grow your business in Nagpur & beyond."
         keywords="website design Nagpur, local SEO Nagpur, GBP optimization, Google ads agency Nagpur, meta ads marketing, content marketing Nagpur, lead automation"
-        canonicalUrl="https://growguest.in/hotel-digital-marketing-services"
+        canonicalUrl="https://growguest.in/hotel-digital-marketing-services/"
         breadcrumbs={breadcrumbItems}
       />
 

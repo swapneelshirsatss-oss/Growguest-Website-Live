@@ -91,7 +91,7 @@ export default function CaseStudiesPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const breadcrumbItems = [
-    { name: 'Case Studies', url: '/hospitality-marketing-case-studies' }
+    { name: 'Case Studies', url: '/hospitality-marketing-case-studies/' }
   ];
 
   const faqSchema = {
@@ -125,7 +125,7 @@ export default function CaseStudiesPage() {
         title="Hotel Marketing Case Studies | GrowGuest Results"
         description="Real before/after booking and OTA-dependence data from hotels and homestays GrowGuest has worked with. See the results."
         keywords="hotel digital marketing case studies, OTA to direct booking results, hotel booking growth case study, Nagpur hotel SEO results, direct booking conversion data"
-        canonicalUrl="https://growguest.in/hospitality-marketing-case-studies"
+        canonicalUrl="https://growguest.in/hospitality-marketing-case-studies/"
         breadcrumbs={breadcrumbItems}
       />
 

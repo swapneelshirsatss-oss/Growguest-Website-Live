@@ -70,7 +70,7 @@ export default function Header() {
                 +91 89569 07343
               </a>
               <a
-                href="/free-hotel-digital-marketing-audit"
+                href="/free-hotel-digital-marketing-audit/"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="flex items-center justify-center w-full px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-bold text-brand-teal bg-brand-gold hover:bg-brand-gold-light transition-colors"
               >

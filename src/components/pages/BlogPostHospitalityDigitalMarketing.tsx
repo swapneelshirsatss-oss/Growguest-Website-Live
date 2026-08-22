@@ -25,11 +25,11 @@ import Breadcrumbs from '../Breadcrumbs';
 import AuditForm from '../AuditForm';
 
 export default function BlogPostHospitalityDigitalMarketing() {
-  const canonicalUrl = "https://growguest.in/blog/digital-marketing-for-hospitality-hotels-resorts-homestays";
+  const canonicalUrl = "https://growguest.in/blog/digital-marketing-for-hospitality-hotels-resorts-homestays/";
 
   const breadcrumbItems = [
-    { name: 'Blog', url: '/blog' },
-    { name: 'Digital Marketing for Hospitality', url: '/blog/digital-marketing-for-hospitality-hotels-resorts-homestays' }
+    { name: 'Blog', url: '/hospitality-digital-marketing-blog/' },
+    { name: 'Digital Marketing for Hospitality', url: canonicalUrl }
   ];
 
   // Schema.org BlogPosting JSON-LD
@@ -51,7 +51,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
       "@type": "Person",
       "name": "GrowGuest Founder",
       "jobTitle": "Hospitality Digital Marketing Consultant",
-      "url": "https://growguest.in/about-hospitality-marketing-agency",
+      "url": "https://growguest.in/about-hospitality-marketing-agency/",
       "description": "18 years of freelance marketing experience, 10+ years exclusively inside hospitality."
     },
     "publisher": {

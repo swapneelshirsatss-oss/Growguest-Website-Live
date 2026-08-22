@@ -82,7 +82,7 @@ export default function AboutPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const breadcrumbItems = [
-    { name: 'About GrowGuest', url: '/about-hospitality-marketing-agency' }
+    { name: 'About GrowGuest', url: '/about-hospitality-marketing-agency/' }
   ];
 
   const faqSchema = {
@@ -132,7 +132,7 @@ export default function AboutPage() {
     "@type": "AboutPage",
     "name": "About GrowGuest | Hospitality Marketing Agency Nagpur",
     "description": "18 years of marketing experience, 10+ in hospitality. Meet the founder-led team helping hotels and homestays book direct.",
-    "url": "https://growguest.in/about-hospitality-marketing-agency"
+    "url": "https://growguest.in/about-hospitality-marketing-agency/"
   };
 
   return (
@@ -141,7 +141,7 @@ export default function AboutPage() {
         title="About GrowGuest | Hospitality Marketing Agency Nagpur"
         description="18 years of marketing experience, 10+ in hospitality. Meet the founder-led team helping hotels and homestays book direct."
         keywords="hospitality digital marketing agency Nagpur, 18 years marketing experience, hotel SEO consultant, Nagpur hotel marketing expert, direct booking consultant India"
-        canonicalUrl="https://growguest.in/about-hospitality-marketing-agency"
+        canonicalUrl="https://growguest.in/about-hospitality-marketing-agency/"
         breadcrumbs={breadcrumbItems}
       />
 

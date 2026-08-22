@@ -87,7 +87,7 @@ export default function ContactUsPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const breadcrumbItems = [
-    { name: 'Contact Us', url: '/contact-hospitality-digital-marketing-agency' }
+    { name: 'Contact Us', url: '/contact-hospitality-digital-marketing-agency/' }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -160,7 +160,7 @@ export default function ContactUsPage() {
     "@type": "ContactPage",
     "name": "Contact GrowGuest | Book Your Free Direct Booking Audit",
     "description": "Talk to GrowGuest about growing direct bookings for your hotel or homestay. WhatsApp-native, Nagpur-based, founder-led.",
-    "url": "https://growguest.in/contact-hospitality-digital-marketing-agency"
+    "url": "https://growguest.in/contact-hospitality-digital-marketing-agency/"
   };
 
   return (
@@ -169,7 +169,7 @@ export default function ContactUsPage() {
         title="Contact GrowGuest | Book Your Free Direct Booking Audit"
         description="Talk to GrowGuest about growing direct bookings for your hotel or homestay. WhatsApp-native, Nagpur-based, founder-led."
         keywords="contact hospitality digital marketing agency, book a free audit, hotel marketing consultation Nagpur, Nagpur hotel SEO consultant, direct booking consultation"
-        canonicalUrl="https://growguest.in/contact-hospitality-digital-marketing-agency"
+        canonicalUrl="https://growguest.in/contact-hospitality-digital-marketing-agency/"
         breadcrumbs={breadcrumbItems}
       />
 
