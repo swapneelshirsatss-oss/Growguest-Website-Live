@@ -110,22 +110,22 @@ export default function Footer() {
                 <a href="/" className="hover:text-brand-gold transition-colors">Home</a>
               </li>
               <li>
-                <a href="/hotel-digital-marketing-services" className="hover:text-brand-gold transition-colors">Services</a>
+                <a href="/hotel-digital-marketing-services/" className="hover:text-brand-gold transition-colors">Services</a>
               </li>
               <li>
-                <a href="/hotel-direct-booking-solutions" className="hover:text-brand-gold transition-colors">Direct Booking Solutions</a>
+                <a href="/hotel-direct-booking-solutions/" className="hover:text-brand-gold transition-colors">Direct Booking Solutions</a>
               </li>
               <li>
-                <a href="/hospitality-marketing-case-studies" className="hover:text-brand-gold transition-colors">Case Studies & Results</a>
+                <a href="/hospitality-marketing-case-studies/" className="hover:text-brand-gold transition-colors">Case Studies & Results</a>
               </li>
               <li>
-                <a href="/free-hotel-digital-marketing-audit" className="hover:text-brand-gold transition-colors">Free Direct Booking Audit</a>
+                <a href="/free-hotel-digital-marketing-audit/" className="hover:text-brand-gold transition-colors">Free Direct Booking Audit</a>
               </li>
               <li>
-                <a href="/about-hospitality-marketing-agency" className="hover:text-brand-gold transition-colors">About Growguest</a>
+                <a href="/about-hospitality-marketing-agency/" className="hover:text-brand-gold transition-colors">About Growguest</a>
               </li>
               <li>
-                <a href="/contact-hospitality-marketing-agency" className="hover:text-brand-gold transition-colors">Contact Us</a>
+                <a href="/contact-hospitality-digital-marketing-agency/" className="hover:text-brand-gold transition-colors">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -135,42 +135,42 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-base mb-4 tracking-wide">Hospitality SEO Guides</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="/hospitality-digital-marketing-blog" className="text-brand-gold font-medium hover:underline flex items-center">
+                <a href="/hospitality-digital-marketing-blog/" className="text-brand-gold font-medium hover:underline flex items-center">
                   Blog Index <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
                 </a>
               </li>
               <li>
-                <a href="/blog/digital-marketing-for-hospitality-hotels-resorts-homestays" className="hover:text-brand-gold transition-colors line-clamp-1 font-semibold text-brand-gold">
+                <a href="/blog/digital-marketing-for-hospitality-hotels-resorts-homestays/" className="hover:text-brand-gold transition-colors line-clamp-1 font-semibold text-brand-gold">
                   Digital Marketing for Hospitality
                 </a>
               </li>
               <li>
-                <a href="/blog/google-business-profile-seo-homestays-resorts" className="hover:text-brand-gold transition-colors line-clamp-1">
+                <a href="/blog/google-business-profile-seo-homestays-resorts/" className="hover:text-brand-gold transition-colors line-clamp-1">
                   Google Business Profile SEO
                 </a>
               </li>
               <li>
-                <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions" className="hover:text-brand-gold transition-colors line-clamp-1">
+                <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions/" className="hover:text-brand-gold transition-colors line-clamp-1">
                   Reduce OTA Commissions
                 </a>
               </li>
               <li>
-                <a href="/blog/hotel-website-conversion-rate-optimization" className="hover:text-brand-gold transition-colors line-clamp-1">
+                <a href="/blog/hotel-website-conversion-rate-optimization/" className="hover:text-brand-gold transition-colors line-clamp-1">
                   Website Conversion Fixes
                 </a>
               </li>
               <li>
-                <a href="/blog/local-seo-guide-resorts-hotels" className="hover:text-brand-gold transition-colors line-clamp-1">
+                <a href="/blog/local-seo-guide-resorts-hotels/" className="hover:text-brand-gold transition-colors line-clamp-1">
                   Local SEO for Resorts
                 </a>
               </li>
               <li>
-                <a href="/blog/whatsapp-marketing-strategies-hotel-room-bookings" className="hover:text-brand-gold transition-colors line-clamp-1">
+                <a href="/blog/whatsapp-marketing-strategies-hotel-room-bookings/" className="hover:text-brand-gold transition-colors line-clamp-1">
                   WhatsApp Booking Strategies
                 </a>
               </li>
               <li>
-                <a href="/blog/hotel-reputation-management-google-reviews" className="hover:text-brand-gold transition-colors line-clamp-1">
+                <a href="/blog/hotel-reputation-management-google-reviews/" className="hover:text-brand-gold transition-colors line-clamp-1">
                   Google Reviews Reputation
                 </a>
               </li>
@@ -245,8 +245,8 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Growguest — Digital Growth for Hospitality. All rights reserved.</p>
           
           <div className="flex items-center space-x-6">
-            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/privacy-policy/" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service/" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors">XML Sitemap</a>
           </div>
         </div>

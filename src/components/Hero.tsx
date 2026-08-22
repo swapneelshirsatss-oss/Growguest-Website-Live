@@ -34,7 +34,7 @@ export default function Hero() {
               </div>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-6 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-6 tracking-tight text-white">
               Every month, a slice of your 20% revenue disappears into OTA commissions and <span className="font-serif italic font-normal text-[#c8f169] drop-shadow-[0_0_25px_rgba(200,241,105,0.25)]">Lack of Digital Visibility.</span>
             </h1>
             

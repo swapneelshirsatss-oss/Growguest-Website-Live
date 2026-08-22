@@ -73,17 +73,29 @@ export default function AuditPage() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
+  const [whatsappUrl, setWhatsappUrl] = useState('');
+
   const breadcrumbItems = [
-    { name: 'Free Audit', url: '/free-hotel-digital-marketing-audit' }
+    { name: 'Free Audit', url: '/free-hotel-digital-marketing-audit/' }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    const message = `Namaste GrowGuest! I am requesting a Free Direct Booking Audit.%0A%0A*Name:* ${encodeURIComponent(formData.name)}%0A*Property:* ${encodeURIComponent(formData.propertyName)}%0A*Category:* ${encodeURIComponent(formData.propertyType)}%0A*Website:* ${encodeURIComponent(formData.websiteUrl || 'Not provided')}%0A*WhatsApp:* ${encodeURIComponent(formData.whatsapp)}`;
+    const url = `https://wa.me/918956907343?text=${message}`;
+    setWhatsappUrl(url);
+
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
-    }, 1500);
+      try {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      } catch (err) {
+        // Fallback handled by button
+      }
+    }, 600);
   };
 
   const faqSchema = {
@@ -204,12 +216,12 @@ export default function AuditPage() {
                 </p>
                 <div className="pt-2">
                   <a
-                    href="https://wa.me/918956907343"
+                    href={whatsappUrl || "https://wa.me/918956907343"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-bold text-emerald-700 hover:underline"
+                    className="inline-flex items-center justify-center px-6 py-3.5 text-base font-extrabold rounded-full text-[#043f2e] bg-[#c8f169] hover:bg-[#d8f68e] transition-all shadow-md"
                   >
-                    Need urgent assistance? Chat with us on WhatsApp →
+                    Open WhatsApp to Confirm Audit →
                   </a>
                 </div>
               </div>

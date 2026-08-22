@@ -9,9 +9,19 @@ interface Props {
   description?: string;
   keywords?: string;
   canonicalUrl?: string;
+  ogImage?: string;
 }
 
-const { title, description, keywords, canonicalUrl } = Astro.props;
+const { 
+  title = "GrowGuest — Digital Marketing Agency for Hotels & Resorts", 
+  description = "Nagpur-based digital marketing for hotels, resorts & homestays. Cut OTA commissions and grow direct bookings with GrowGuest.", 
+  keywords = "hospitality digital marketing agency, digital marketing for resorts, digital marketing for homestays, direct booking vs OTA commission, Google Business Profile for hotels, local SEO for homestays Nagpur, hotel website booking conversion, restaurant local SEO Nagpur, reduce OTA dependence", 
+  canonicalUrl = "https://growguest.in/",
+  ogImage = "https://growguest.in/Image/GrowGuest%20Header.avif"
+} = Astro.props;
+
+// Ensure canonical URL always has trailing slash if path is non-empty
+const formattedCanonicalUrl = canonicalUrl.endsWith('/') ? canonicalUrl : `${canonicalUrl}/`;
 ---
 
 <!doctype html>
@@ -28,12 +38,27 @@ const { title, description, keywords, canonicalUrl } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>{title || "GrowGuest — Digital Marketing Agency for Hotels & Resorts"}</title>
-    <meta name="description" content={description || "Nagpur-based digital marketing for hotels, resorts & homestays. Cut OTA commissions and grow direct bookings with GrowGuest."} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
     
-    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <link rel="canonical" href={formattedCanonicalUrl} />
     <meta name="indexnow-key" content="e4a19b5d2c8f3e7a1b0c9d8e7f6a5b4c" />
+
+    {/* Open Graph / Facebook */}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={formattedCanonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Growguest — Digital Growth for Hospitality" />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Growguest" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     {/* Favicons & App Icons */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -56,7 +81,7 @@ const { title, description, keywords, canonicalUrl } = Astro.props;
     <main className="flex-grow">
       <slot />
     </main>
-    <Footer client:load />
-    <WhatsAppButton client:load />
+    <Footer client:idle />
+    <WhatsAppButton client:idle />
   </body>
 </html>

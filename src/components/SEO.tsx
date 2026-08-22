@@ -1,5 +1,3 @@
-import { Helmet } from 'react-helmet-async';
-
 interface SEOProps {
   title?: string;
   description?: string;
@@ -7,20 +5,18 @@ interface SEOProps {
   canonicalUrl?: string;
   ogImage?: string;
   breadcrumbs?: Array<{ name: string; url: string }>;
+  articleSchema?: Record<string, any>;
+  faqSchema?: Record<string, any>;
 }
 
-const DEFAULT_KEYWORDS = "hospitality digital marketing agency, digital marketing for resorts, digital marketing for homestays, direct booking vs OTA commission, Google Business Profile for hotels, local SEO for homestays Nagpur, hotel website booking conversion, restaurant local SEO Nagpur, reduce OTA dependence, GBP audit for hospitality, small hotel digital marketing India, Nagpur hospitality marketing consultant";
-
 export default function SEO({
-  title = "GrowGuest — Digital Marketing Agency for Hotels & Resorts",
-  description = "Nagpur-based digital marketing for hotels, resorts & homestays. Cut OTA commissions and grow direct bookings with GrowGuest.",
-  keywords,
   canonicalUrl = "https://growguest.in/",
-  ogImage = "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
-  breadcrumbs
+  ogImage = "https://growguest.in/Image/GrowGuest%20Header.avif",
+  breadcrumbs,
+  articleSchema,
+  faqSchema
 }: SEOProps) {
-  const fullTitle = title.includes("GrowGuest") || title.includes("Growguest") ? title : `${title} | GrowGuest — Digital Marketing Agency for Hotels & Resorts`;
-  const metaKeywords = keywords || DEFAULT_KEYWORDS;
+  const formattedCanonical = canonicalUrl.endsWith('/') ? canonicalUrl : `${canonicalUrl}/`;
 
   // Generate Schema.org WebSite JSON-LD
   const websiteSchema = {
@@ -52,7 +48,9 @@ export default function SEO({
       "@type": "ListItem",
       "position": index + 1,
       "name": crumb.name,
-      "item": crumb.url.startsWith('http') ? crumb.url : `https://growguest.in${crumb.url}`
+      "item": crumb.url.startsWith('http') 
+        ? (crumb.url.endsWith('/') ? crumb.url : `${crumb.url}/`)
+        : (crumb.url.endsWith('/') ? `https://growguest.in${crumb.url}` : `https://growguest.in${crumb.url}/`)
     }))
   } : null;
 
@@ -118,54 +116,42 @@ export default function SEO({
   };
 
   return (
-    <Helmet>
-      {/* Basic HTML Meta */}
-      <title>{fullTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={metaKeywords} />
-      
-      {/* Canonical Tag */}
-      <link rel="canonical" href={canonicalUrl} />
-      <meta name="indexnow-key" content="e4a19b5d2c8f3e7a1b0c9d8e7f6a5b4c" />
-
-      {/* Favicons & App Icons */}
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="shortcut icon" href="/favicon.ico" />
-
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={ogImage} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@Growguest" />
-      <meta name="twitter:creator" content="@Growguest" />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
-
+    <>
       {/* Schema.org WebSite JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify(websiteSchema)}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
 
       {/* Schema.org Business JSON-LD Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify(businessSchema)}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
 
       {/* Schema.org Breadcrumb JSON-LD Structured Data */}
       {breadcrumbSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       )}
-    </Helmet>
+
+      {/* Schema.org Article / BlogPosting JSON-LD */}
+      {articleSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
+
+      {/* Schema.org FAQPage JSON-LD */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+    </>
   );
 }

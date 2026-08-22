@@ -19,7 +19,7 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 - **Phone / WhatsApp**: +91 89569 07343
 - **Email**: hello@growguest.com
 - **Website URL**: https://growguest.in/
-- **Canonical Audit Link**: https://growguest.in/free-hotel-digital-marketing-audit
+- **Canonical Audit Link**: https://growguest.in/free-hotel-digital-marketing-audit/
 
 ## Primary Services Breakdown
 
@@ -36,7 +36,7 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 
 ### 3. Local & Technical Hospitality SEO
 - Target keywords: `hospitality digital marketing agency Nagpur`, `direct booking vs OTA commission`, `Google Business Profile for hotels`, `local SEO for homestays Nagpur`, `hotel website booking conversion`, `small hotel digital marketing India`, `Nagpur hospitality marketing consultant`.
-- Complete Schema.org JSON-LD markup (`LocalBusiness`, `Organization`, `Service`, `FAQPage`, `AboutPage`, `ContactPage`, `ItemPage`).
+- Complete Schema.org JSON-LD markup (`LocalBusiness`, `Organization`, `Service`, `FAQPage`, `AboutPage`, `ContactPage`, `ItemPage`, `BlogPosting`).
 
 ### 4. WhatsApp Lead Automation
 - 1-Click WhatsApp reservation triggers embedded on mobile websites.
@@ -52,10 +52,19 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 ## Complete Page Index & Canonical URLs
 
 1. **Home Page**: https://growguest.in/
-2. **Services Page**: https://growguest.in/hotel-digital-marketing-services
-3. **Direct Booking Solutions**: https://growguest.in/hotel-direct-booking-solutions
-4. **Case Studies & Results**: https://growguest.in/hospitality-marketing-case-studies
-5. **Free Direct Booking Audit**: https://growguest.in/free-hotel-digital-marketing-audit
-6. **About Us Page**: https://growguest.in/about-hospitality-marketing-agency
-7. **Contact Us Page**: https://growguest.in/contact-hospitality-digital-marketing-agency
-8. **Blog Index**: https://growguest.in/blog
+2. **Services Page**: https://growguest.in/hotel-digital-marketing-services/
+3. **Direct Booking Solutions**: https://growguest.in/hotel-direct-booking-solutions/
+4. **Case Studies & Results**: https://growguest.in/hospitality-marketing-case-studies/
+5. **Free Direct Booking Audit**: https://growguest.in/free-hotel-digital-marketing-audit/
+6. **About Us Page**: https://growguest.in/about-hospitality-marketing-agency/
+7. **Contact Us Page**: https://growguest.in/contact-hospitality-digital-marketing-agency/
+8. **Hospitality SEO Blog Index**: https://growguest.in/hospitality-digital-marketing-blog/
+9. **Privacy Policy**: https://growguest.in/privacy-policy/
+10. **Terms of Service**: https://growguest.in/terms-of-service/
+11. **Blog Guide 1 (Digital Marketing Guide)**: https://growguest.in/blog/digital-marketing-for-hospitality-hotels-resorts-homestays/
+12. **Blog Guide 2 (Google Business Profile SEO)**: https://growguest.in/blog/google-business-profile-seo-homestays-resorts/
+13. **Blog Guide 3 (Cut OTA Commissions)**: https://growguest.in/blog/hotel-direct-booking-strategy-reduce-ota-commissions/
+14. **Blog Guide 4 (Website Conversion Fixes)**: https://growguest.in/blog/hotel-website-conversion-rate-optimization/
+15. **Blog Guide 5 (Resort Local SEO)**: https://growguest.in/blog/local-seo-guide-resorts-hotels/
+16. **Blog Guide 6 (WhatsApp Booking Strategies)**: https://growguest.in/blog/whatsapp-marketing-strategies-hotel-room-bookings/
+17. **Blog Guide 7 (Google Reviews Reputation)**: https://growguest.in/blog/hotel-reputation-management-google-reviews/

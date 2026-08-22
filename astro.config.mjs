@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://growguest.in',
+  trailingSlash: 'always',
   server: {
     host: '127.0.0.1',
     port: 3000,
@@ -22,7 +23,9 @@ export default defineConfig({
         !page.endsWith('/free-audit/') &&
         !page.endsWith('/about/') &&
         !page.endsWith('/contact/') &&
-        !page.endsWith('/contact-us/'),
+        !page.endsWith('/contact-us/') &&
+        !page.endsWith('/contact-hospitality-marketing-agency/') &&
+        !page.endsWith('/blog/'),
     }),
   ],
 });

@@ -510,27 +510,27 @@ export default function BlogPostHospitalityDigitalMarketing() {
                   Explore Specialized Hospitality Strategy Guides
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-3 text-xs">
-                  <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
+                  <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
                     <span className="font-bold block text-white text-sm mb-1">direct booking vs OTA commission</span>
                     Step-by-step roadmap to shift guest bookings from MakeMyTrip to direct channels.
                   </a>
-                  <a href="/blog/google-business-profile-seo-homestays-resorts" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
+                  <a href="/blog/google-business-profile-seo-homestays-resorts/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
                     <span className="font-bold block text-white text-sm mb-1">Google Business Profile for hotels</span>
                     Rank in top 3 Google Map Pack for homestays & resorts in Nagpur.
                   </a>
-                  <a href="/blog/hotel-website-conversion-rate-optimization" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
+                  <a href="/blog/hotel-website-conversion-rate-optimization/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
                     <span className="font-bold block text-white text-sm mb-1">hotel website booking conversion</span>
                     Mobile UX tweaks and sub-1.5s speed fixes to convert website visitors.
                   </a>
-                  <a href="/hospitality-marketing-case-studies" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
+                  <a href="/hospitality-marketing-case-studies/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
                     <span className="font-bold block text-white text-sm mb-1">local SEO for homestays Nagpur</span>
                     Proven results from Mukteshwar, Ramgarh, & Nagpur property owners.
                   </a>
-                  <a href="/free-hotel-digital-marketing-audit" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
+                  <a href="/free-hotel-digital-marketing-audit/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
                     <span className="font-bold block text-white text-sm mb-1">GBP audit for hospitality</span>
                     Claim a free 4-point manual direct booking audit delivered to WhatsApp.
                   </a>
-                  <a href="https://growguest.in/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
+                  <a href="/" className="p-3.5 bg-slate-800/80 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 hover:text-brand-gold transition-all block">
                     <span className="font-bold block text-white text-sm mb-1">Nagpur hospitality marketing consultant</span>
                     Visit the main GrowGuest home pillar page.
                   </a>
@@ -763,19 +763,19 @@ export default function BlogPostHospitalityDigitalMarketing() {
               </h4>
               <ul className="space-y-3 text-xs font-medium">
                 <li>
-                  <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
+                  <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions/" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
                     How to Cut OTA Commissions by 50%
                   </a>
                   <span className="text-slate-400 text-[11px]">Direct Booking Strategy</span>
                 </li>
                 <li>
-                  <a href="/blog/google-business-profile-seo-homestays-resorts" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
+                  <a href="/blog/google-business-profile-seo-homestays-resorts/" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
                     GBP SEO for Homestays & Resorts
                   </a>
                   <span className="text-slate-400 text-[11px]">Local SEO & Map Pack</span>
                 </li>
                 <li>
-                  <a href="/blog/hotel-website-conversion-rate-optimization" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
+                  <a href="/blog/hotel-website-conversion-rate-optimization/" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
                     Hotel Website Conversion Fixes
                   </a>
                   <span className="text-slate-400 text-[11px]">Website UX & Speed</span>

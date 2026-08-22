@@ -20,7 +20,7 @@ const blogPosts = [
   {
     id: 0,
     title: "Digital Marketing for Hospitality: What Actually Gets Hotels and Homestays More Direct Bookings",
-    slug: "/blog/digital-marketing-for-hospitality-hotels-resorts-homestays",
+    slug: "/blog/digital-marketing-for-hospitality-hotels-resorts-homestays/",
     category: "Direct Booking",
     readTime: "7 min read",
     date: "Aug 2026",
@@ -31,7 +31,7 @@ const blogPosts = [
   {
     id: 1,
     title: "How to Cut OTA Commissions by 50% Without Losing Booking Volume",
-    slug: "/blog/hotel-direct-booking-strategy-reduce-ota-commissions",
+    slug: "/blog/hotel-direct-booking-strategy-reduce-ota-commissions/",
     category: "Direct Booking",
     readTime: "7 min read",
     date: "Aug 2026",
@@ -42,7 +42,7 @@ const blogPosts = [
   {
     id: 2,
     title: "Google Business Profile SEO for Homestays & Resorts in Nagpur",
-    slug: "/blog/google-business-profile-seo-homestays-resorts",
+    slug: "/blog/google-business-profile-seo-homestays-resorts/",
     category: "Local SEO",
     readTime: "5 min read",
     date: "Aug 2026",
@@ -53,7 +53,7 @@ const blogPosts = [
   {
     id: 3,
     title: "Hotel Website Conversion Fixes: Turning Lookers Into Direct Bookers",
-    slug: "/blog/hotel-website-conversion-rate-optimization",
+    slug: "/blog/hotel-website-conversion-rate-optimization/",
     category: "Website UX",
     readTime: "6 min read",
     date: "Jul 2026",
@@ -64,7 +64,7 @@ const blogPosts = [
   {
     id: 4,
     title: "Local SEO Guide for Resorts & Boutique Stays in Hill Stations",
-    slug: "/blog/local-seo-guide-resorts-hotels",
+    slug: "/blog/local-seo-guide-resorts-hotels/",
     category: "Local SEO",
     readTime: "8 min read",
     date: "Jul 2026",
@@ -75,7 +75,7 @@ const blogPosts = [
   {
     id: 5,
     title: "WhatsApp Booking Strategies for Indian Hospitality Property Owners",
-    slug: "/blog/whatsapp-marketing-strategies-hotel-room-bookings",
+    slug: "/blog/whatsapp-marketing-strategies-hotel-room-bookings/",
     category: "WhatsApp Automation",
     readTime: "4 min read",
     date: "Jun 2026",
@@ -86,7 +86,7 @@ const blogPosts = [
   {
     id: 6,
     title: "Managing Google Reviews & Reputation for Independent Nagpur Hotels",
-    slug: "/blog/hotel-reputation-management-google-reviews",
+    slug: "/blog/hotel-reputation-management-google-reviews/",
     category: "Reputation",
     readTime: "5 min read",
     date: "Jun 2026",

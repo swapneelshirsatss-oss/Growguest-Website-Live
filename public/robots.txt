@@ -2,9 +2,6 @@ User-agent: *
 Allow: /
 
 # Master Sitemap Index
-Sitemap: https://growguest.in/sitemap.xml
-Sitemap: https://growguest.in/sitemap-website.xml
-Sitemap: https://growguest.in/sitemap-blog.xml
 Sitemap: https://growguest.in/sitemap-index.xml
 
 # LLM & AI Answer Engines (AEO / GEO)
