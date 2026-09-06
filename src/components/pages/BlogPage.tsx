@@ -267,11 +267,13 @@ export default function BlogPage() {
               </div>
 
               <div className="lg:col-span-5">
-                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-800">
+                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-800 aspect-[16/9]">
                   <img
                     src="/Image/GrowGuest%20Header.avif"
                     alt="Digital Marketing for Hospitality Header - GrowGuest"
-                    className="w-full h-48 sm:h-64 lg:h-56 object-cover object-center hover:scale-105 transition-transform duration-500"
+                    width={1200}
+                    height={675}
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                 </div>

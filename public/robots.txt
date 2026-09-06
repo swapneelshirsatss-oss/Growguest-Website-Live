@@ -1,9 +1,36 @@
 User-agent: *
 Allow: /
 
-# Master Sitemap Index
+# Master Sitemap Indexes
+Sitemap: https://growguest.in/sitemap.xml
 Sitemap: https://growguest.in/sitemap-index.xml
+Sitemap: https://growguest.in/sitemap-website.xml
+Sitemap: https://growguest.in/sitemap-blog.xml
 
-# LLM & AI Answer Engines (AEO / GEO)
+# AI & LLM Search Crawlers (AEO / GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 # llms.txt standard: https://llmstxt.org/
 # Full LLM documentation: https://growguest.in/llms-full.txt

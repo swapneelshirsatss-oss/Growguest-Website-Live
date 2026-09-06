@@ -51,6 +51,16 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 - **Average Google Map Pack Call Growth**: +350%
 - **Average Client Marketing ROI**: 8.4x
 
+## Client Roster & Portfolio Properties
+
+1. **The Stone Heritage**: Luxury Heritage Stay in Mukteshwar, Uttarakhand — https://thestoneheritage.in/
+2. **Whispering Pines Resort**: Mountain Resort in Ramgarh, Nainital — https://whisperingpinesresort.in/
+3. **Casa De Bello**: Boutique Stay in Kainchi Dham, Uttarakhand — https://casadebello.com/
+4. **Ethnic Trail Resort**: Nature Homestay & Resort, Kainchi Dham — https://ethnictrailhomestay.com/
+5. **The Goan House**: 3 BHK Luxury Villa with 32ft Private Pool in Baga/Arpora, North Goa — https://thegoanhouse.com/
+6. **Anurra Hotel**: Hotel & Restaurant near Kainchi Dham Ashram — https://anurrakainchidhamhotel.in/
+7. **The Mukteshwar Bungalow**: 3 BHK Luxury Mountain Villa in Kasialekh, Mukteshwar — https://themukteshwarbungalow.in/
+
 ## Complete Page Index & Canonical URLs
 
 1. **Home Page**: https://growguest.in/

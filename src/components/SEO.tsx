@@ -94,7 +94,9 @@ export default function SEO({
       "Sadar",
       "Mukteshwar",
       "Ramgarh",
-      "Nainital"
+      "Nainital",
+      "Kainchi Dham",
+      "Goa"
     ],
     "knowsAbout": [
       "Hospitality Digital Marketing Agency",

@@ -57,8 +57,9 @@ export default function BlogPostHospitalityDigitalMarketing() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "GrowGuest",
+      "name": "GrowGuest Digital Growth for Hospitality",
       "url": "https://growguest.in/",
+      "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
       "logo": {
         "@type": "ImageObject",
         "url": "https://growguest.in/assets/logo.png"
@@ -243,12 +244,15 @@ export default function BlogPostHospitalityDigitalMarketing() {
           <main className="lg:col-span-8 space-y-12">
 
             {/* Featured Article Header Banner Image */}
-            <figure className="overflow-hidden rounded-3xl border border-slate-200 shadow-xl bg-slate-900 group">
+            <figure className="overflow-hidden rounded-3xl border border-slate-200 shadow-xl bg-slate-900 group aspect-[16/9] max-h-[420px]">
               <img
                 src="/Image/GrowGuest%20Header.avif"
                 alt="Digital Marketing for Hospitality Hotels Resorts Homestays - GrowGuest Header"
                 title="Digital Marketing for Hospitality - GrowGuest"
-                className="w-full h-auto max-h-[420px] object-cover object-center group-hover:scale-102 transition-transform duration-500"
+                width={1200}
+                height={675}
+                fetchPriority="high"
+                className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
                 loading="eager"
               />
               <figcaption className="p-3.5 bg-slate-900 text-slate-300 text-xs text-center border-t border-white/10 font-medium">

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 340 100" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(-45, -15) scale(0.55)">
+    <path d="M186 100 A54 54 0 1 0 220 195 L220 155 L186 155"
+          fill="none" stroke="#12312B" stroke-width="15"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M150 150 L182 118 L206 142 L246 102"
+          fill="none" stroke="#C99A2E" stroke-width="14"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M224 102 L246 102 L246 124"
+          fill="none" stroke="#C99A2E" stroke-width="14"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="100" y="58" font-family="system-ui, -apple-system, sans-serif" font-weight="700"
+        font-size="36" letter-spacing="-1" fill="#12312B">
+    grow<tspan fill="#C99A2E">guest</tspan>
+  </text>
+  <text x="102" y="78" font-family="system-ui, -apple-system, sans-serif" font-weight="500"
+        font-size="8.5" letter-spacing="1.5" fill="#7A7A76">
+    DIGITAL GROWTH FOR HOSPITALITY
+  </text>
+</svg>
