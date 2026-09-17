@@ -10,7 +10,8 @@ import {
   Percent, 
   MessageSquare, 
   Star,
-  FileText
+  FileText,
+  CheckCircle2
 } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
@@ -24,8 +25,8 @@ const blogPosts = [
     category: "Direct Booking",
     readTime: "7 min read",
     date: "Aug 2026",
-    excerpt: "A no-fluff guide to digital marketing for hotels, resorts, and homestays — how to cut 15-25% OTA commissions and win direct bookings, from a Nagpur-based hospitality specialist.",
-    icon: <Sparkles className="w-6 h-6 text-brand-gold" />,
+    excerpt: "How independent hotels and homestays shift reservations off OTAs, protect 18–25% guest margins, and turn Google searchers into prepaid direct bookings.",
+    icon: <Sparkles className="w-5 h-5 text-brand-gold" />,
     featured: true
   },
   {
@@ -35,8 +36,8 @@ const blogPosts = [
     category: "Direct Booking",
     readTime: "7 min read",
     date: "Aug 2026",
-    excerpt: "A practical, step-by-step roadmap for independent hotel and homestay owners to shift guest bookings from MakeMyTrip, Agoda, and Booking.com to commission-free direct channels.",
-    icon: <Percent className="w-6 h-6 text-brand-gold" />,
+    excerpt: "Shift guest volume from MakeMyTrip, Agoda, and Booking.com to direct channels. Keep your room rates competitive while retaining 100% of guest revenue.",
+    icon: <Percent className="w-5 h-5 text-brand-gold" />,
     featured: false
   },
   {
@@ -46,8 +47,8 @@ const blogPosts = [
     category: "Local SEO",
     readTime: "5 min read",
     date: "Aug 2026",
-    excerpt: "Learn how to optimize your Google Business Profile (GBP) categories, geotagged room photos, and local citations to rank in the top 3 Google Map Pack in Nagpur.",
-    icon: <MapPin className="w-6 h-6 text-brand-gold" />,
+    excerpt: "Rank in Google Maps' top 3 for Nagpur tourists and corporate travelers. Setup rules for primary categories, geotagged room photos, and verified local citations.",
+    icon: <MapPin className="w-5 h-5 text-brand-gold" />,
     featured: false
   },
   {
@@ -57,8 +58,8 @@ const blogPosts = [
     category: "Website UX",
     readTime: "6 min read",
     date: "Jul 2026",
-    excerpt: "Discover simple user experience tweaks, sub-1.5s mobile speed fixes, and strategic booking CTA placements that boost your website conversion rate by 60%+.",
-    icon: <Globe className="w-6 h-6 text-brand-gold" />,
+    excerpt: "Sub-1.5s mobile page loads, sticky WhatsApp booking bars, and transparent room pricing that lift direct website reservations by 60%+.",
+    icon: <Globe className="w-5 h-5 text-brand-gold" />,
     featured: false
   },
   {
@@ -68,8 +69,8 @@ const blogPosts = [
     category: "Local SEO",
     readTime: "8 min read",
     date: "Jul 2026",
-    excerpt: "How mountain homestays in Mukteshwar, Ramgarh, and Nainital capture high-intent weekend getaway travelers searching on Google.",
-    icon: <BookOpen className="w-6 h-6 text-brand-gold" />,
+    excerpt: "Capture high-intent weekend getaway searches across Mukteshwar, Ramgarh, and Nainital. Build local authority that outranks aggregators on Google Search.",
+    icon: <BookOpen className="w-5 h-5 text-brand-gold" />,
     featured: false
   },
   {
@@ -79,8 +80,8 @@ const blogPosts = [
     category: "WhatsApp Automation",
     readTime: "4 min read",
     date: "Jun 2026",
-    excerpt: "How 1-click WhatsApp booking buttons and automated greeting flows help front-desk teams close guest inquiries before they look at OTAs.",
-    icon: <MessageSquare className="w-6 h-6 text-brand-gold" />,
+    excerpt: "Close guest inquiries in under 60 seconds. 1-click WhatsApp chat triggers and automated instant quotation flows that stop guests from bouncing to OTAs.",
+    icon: <MessageSquare className="w-5 h-5 text-brand-gold" />,
     featured: false
   },
   {
@@ -90,8 +91,8 @@ const blogPosts = [
     category: "Reputation",
     readTime: "5 min read",
     date: "Jun 2026",
-    excerpt: "Ethical strategies to acquire 5-star Google reviews, handle guest feedback gracefully, and boost your local map pack trust score.",
-    icon: <Star className="w-6 h-6 text-brand-gold" />,
+    excerpt: "Turn checkout conversations into 5-star Google reviews on autopilot. Handle negative ratings without panic and strengthen your local map pack ranking.",
+    icon: <Star className="w-5 h-5 text-brand-gold" />,
     featured: false
   }
 ];
@@ -115,7 +116,7 @@ export default function BlogPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "GrowGuest Blog | Hotel & Homestay Marketing Insights",
-    "description": "Practical local SEO, Google Business Profile and direct-booking tips for independent hotels, resorts and homestays.",
+    "description": "Practical local SEO, Google Business Profile rankings, and commission-free direct booking playbooks for independent hotels, resorts, and homestays.",
     "url": "https://growguest.in/hospitality-digital-marketing-blog/",
     "publisher": {
       "@type": "Organization",
@@ -138,7 +139,7 @@ export default function BlogPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "GrowGuest Blog | Hotel & Homestay Marketing Insights",
-    "description": "Practical local SEO, Google Business Profile and direct-booking tips for independent hotels, resorts and homestays.",
+    "description": "Practical local SEO, Google Business Profile rankings, and commission-free direct booking playbooks for independent hotels, resorts, and homestays.",
     "url": "https://growguest.in/hospitality-digital-marketing-blog/"
   };
 
@@ -146,7 +147,7 @@ export default function BlogPage() {
     <div className="bg-slate-50 min-h-screen">
       <SEO
         title="GrowGuest Blog | Hotel & Homestay Marketing Insights"
-        description="Practical local SEO, Google Business Profile and direct-booking tips for independent hotels, resorts and homestays."
+        description="Practical local SEO, Google Business Profile rankings, and commission-free direct booking playbooks for independent hotels, resorts, and homestays."
         keywords="hotel and homestay marketing tips, local SEO, GBP, OTA commission, direct booking, hotel marketing blog India, Nagpur hotel SEO guide"
         canonicalUrl="https://growguest.in/hospitality-digital-marketing-blog/"
         breadcrumbs={breadcrumbItems}
@@ -163,8 +164,8 @@ export default function BlogPage() {
 
       {/* Hero Section */}
       <section className="relative bg-brand-teal text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#C99A2E_0%,_transparent_50%)]" />
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_#C99A2E_0%,_transparent_55%)]" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -173,44 +174,47 @@ export default function BlogPage() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30 mb-6"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-brand-gold/15 text-brand-gold border border-brand-gold/30 mb-6 shadow-sm"
             >
-              <Sparkles className="w-4 h-4 mr-2" />
-              Hospitality SEO & Direct Booking Guides
+              <Sparkles className="w-4 h-4 shrink-0 text-brand-gold" />
+              <span>Hospitality SEO & Direct Booking Guides</span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-[1.12] [text-wrap:balance]"
             >
-              Hotel & Homestay <span className="text-brand-gold">Marketing Insights</span>
+              Hospitality Marketing Insights & Direct Booking Strategies
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto [text-wrap:pretty]"
             >
-              Practical, actionable guides on Google Business Profile SEO, website conversion fixes, and cutting 15-25% OTA commissions.
+              Field-tested playbooks to rank in Google Maps 3-Pack, speed up mobile booking funnels, and protect 18–25% guest margins from OTA commissions.
             </motion.p>
 
-            {/* AEO Direct Answer Summary Card */}
+            {/* AEO Direct Answer Summary Card - High-Craft Executive Briefing */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-brand-gold bg-slate-900/90 text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-10 text-left border border-white/15 bg-slate-900/90 text-slate-200 p-6 sm:p-7 rounded-2xl shadow-[0_12px_32px_-8px_rgba(0,0,0,0.5)] [box-shadow:inset_0_1px_0_0_rgba(255,255,255,0.12),0_12px_32px_-8px_rgba(0,0,0,0.5)] relative overflow-hidden backdrop-blur-sm"
             >
-              <div className="flex items-center space-x-2 text-brand-gold font-bold text-xs uppercase tracking-wider mb-2">
-                <FileText className="w-4 h-4" />
-                <span>What Is The GrowGuest Hospitality Blog?</span>
+              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-brand-gold" />
+              <div className="pl-3 sm:pl-4">
+                <div className="flex items-center gap-2 text-brand-gold font-bold text-xs uppercase tracking-wider mb-2.5">
+                  <FileText className="w-4 h-4 shrink-0 text-brand-gold" />
+                  <span>Direct-Booking Knowledge Base &bull; GrowGuest</span>
+                </div>
+                <p className="text-sm sm:text-base leading-relaxed text-slate-100 [text-wrap:pretty]">
+                  GrowGuest publishes field-tested digital growth playbooks for independent hoteliers, resort operators, and homestay owners across India. Every guide provides verified, step-by-step implementations for <strong>Google Business Profile Map Pack rankings</strong>, <strong>frictionless WhatsApp booking funnels</strong>, and <strong>cutting OTA commission leakages down to zero</strong>.
+                </p>
               </div>
-              <p className="text-sm sm:text-base leading-relaxed text-slate-100">
-                The <strong>GrowGuest Blog</strong> is a dedicated digital marketing resource for independent hotel, resort, homestay, and restaurant owners in India. It provides practical guides on <strong>local SEO, Google Map Pack rankings, OTA commission reduction strategies, and WhatsApp booking automation</strong>.
-              </p>
             </motion.div>
 
           </div>
@@ -218,16 +222,16 @@ export default function BlogPage() {
       </section>
 
       {/* Category Filter Tabs */}
-      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-200">
+      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-200/80">
         <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${
+              className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal ${
                 selectedCategory === cat
-                  ? 'bg-brand-teal text-white shadow-md'
-                  : 'bg-white text-slate-700 hover:bg-slate-200 border border-slate-200'
+                  ? 'bg-brand-teal text-white shadow-sm ring-1 ring-brand-teal'
+                  : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-xs'
               }`}
             >
               {cat}
@@ -241,41 +245,44 @@ export default function BlogPage() {
         
         {/* Featured Banner Post */}
         {selectedCategory === "All" && (
-          <div className="bg-slate-900 text-white rounded-3xl p-8 md:p-12 border border-white/10 shadow-xl overflow-hidden relative">
-            <div className="absolute top-4 right-4 bg-brand-gold text-brand-teal px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider z-20">
+          <div className="bg-slate-900 text-white rounded-3xl p-7 sm:p-10 lg:p-12 border border-white/10 shadow-[0_16px_40px_-8px_rgba(4,63,46,0.35)] overflow-hidden relative">
+            <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-brand-gold text-brand-teal px-3.5 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider z-20 shadow-sm">
               Featured Guide
             </div>
             
-            <div className="grid lg:grid-cols-12 gap-8 items-center">
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-7">
-                <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">
-                  {featuredPost.category} • {featuredPost.readTime}
+                <span className="text-xs font-bold text-brand-gold uppercase tracking-widest inline-flex items-center gap-2 mb-3">
+                  <span>{featuredPost.category}</span>
+                  <span className="opacity-60">&bull;</span>
+                  <span>{featuredPost.readTime}</span>
                 </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-[1.18] tracking-tight [text-wrap:balance]">
                   {featuredPost.title}
                 </h2>
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl [text-wrap:pretty]">
                   {featuredPost.excerpt}
                 </p>
                 <a
                   href={featuredPost.slug}
-                  className="inline-flex items-center px-6 py-3.5 rounded-full text-brand-teal font-extrabold text-sm bg-brand-gold hover:bg-brand-gold-light transition-all shadow-md"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-brand-teal font-extrabold text-sm bg-brand-gold hover:bg-brand-gold-light transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
-                  Read Full Strategy Guide
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                  <span>Read Full Strategy Guide</span>
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </a>
               </div>
 
               <div className="lg:col-span-5">
-                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-800 aspect-[16/9]">
+                <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-slate-800 aspect-[16/9] relative group">
                   <img
                     src="/Image/GrowGuest%20Header.avif"
                     alt="Digital Marketing for Hospitality Header - GrowGuest"
                     width={1200}
                     height={675}
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                     loading="lazy"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none" />
                 </div>
               </div>
             </div>
@@ -285,39 +292,41 @@ export default function BlogPage() {
         {/* Blog Post Grid */}
         <div>
           <div className="flex items-center justify-between mb-8">
-            <h3 className="text-2xl font-bold text-slate-900">
+            <h3 className="text-2xl font-bold text-slate-900 tracking-tight">
               {selectedCategory === "All" ? "All Hospitality Marketing Guides" : `${selectedCategory} Articles`}
             </h3>
-            <span className="text-xs text-slate-500 font-semibold">
-              Showing {filteredPosts.length} article(s)
+            <span className="text-xs text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full border border-slate-200/60">
+              Showing {filteredPosts.length} article{filteredPosts.length === 1 ? '' : 's'}
             </span>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredPosts.map((post) => (
               <motion.article
                 key={post.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col justify-between"
+                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_20px_-4px_rgba(15,23,42,0.06)] hover:shadow-[0_4px_6px_rgba(15,23,42,0.03),0_16px_32px_-6px_rgba(15,23,42,0.1)] hover:-translate-y-1 hover:border-brand-teal/30 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-brand-teal/10 text-brand-teal">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-teal/10 text-brand-teal border border-brand-teal/15">
                       {post.category}
                     </span>
-                    <span className="text-xs text-slate-400 flex items-center font-medium">
-                      <Clock className="w-3.5 h-3.5 mr-1 text-slate-400" />
-                      {post.readTime}
+                    <span className="text-xs text-slate-400 flex items-center gap-1 font-medium">
+                      <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <span>{post.readTime}</span>
                     </span>
                   </div>
 
-                  <h4 className="text-xl font-bold text-slate-900 mb-3 hover:text-brand-teal transition-colors leading-snug">
-                    <a href={post.slug}>{post.title}</a>
+                  <h4 className="text-lg sm:text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-teal transition-colors duration-200 leading-snug tracking-tight [text-wrap:balance]">
+                    <a href={post.slug} className="hover:underline decoration-brand-teal/40 underline-offset-4">
+                      {post.title}
+                    </a>
                   </h4>
 
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 [text-wrap:pretty]">
                     {post.excerpt}
                   </p>
                 </div>
@@ -326,9 +335,10 @@ export default function BlogPage() {
                   <span className="text-slate-400 font-medium">{post.date}</span>
                   <a
                     href={post.slug}
-                    className="font-bold text-brand-teal hover:text-brand-gold transition-colors flex items-center"
+                    className="font-bold text-brand-teal group-hover:text-brand-teal-light transition-colors duration-200 inline-flex items-center gap-1.5"
                   >
-                    Read Guide <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                    <span>Read Guide</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-200" />
                   </a>
                 </div>
               </motion.article>
@@ -340,19 +350,32 @@ export default function BlogPage() {
 
       {/* Free Audit Callout Banner */}
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 text-center border border-white/10 shadow-xl">
-          <h3 className="text-2xl sm:text-3xl font-extrabold mb-3">
-            Want A Custom Audit For Your Hotel or Homestay?
-          </h3>
-          <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-8">
-            Stop guessing your SEO rankings. Get a free, manual 4-point direct booking audit delivered to your WhatsApp within 24 to 48 hours.
-          </p>
-          <a
-            href="/free-hotel-digital-marketing-audit/"
-            className="inline-flex items-center px-8 py-4 rounded-full text-brand-teal font-extrabold text-base bg-brand-gold hover:bg-brand-gold-light transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-          >
-            Claim Free Direct Booking Audit →
-          </a>
+        <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 text-center border border-white/10 shadow-[0_16px_40px_-8px_rgba(0,0,0,0.4)] relative overflow-hidden">
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3 tracking-tight leading-tight [text-wrap:balance]">
+              Stop Losing 18% to 25% on Every Guest Reservation
+            </h3>
+            <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-7 [text-wrap:pretty] leading-relaxed">
+              Get a personalized, manual 4-point direct booking and local SEO audit for your property. Delivered to your WhatsApp within 24 to 48 hours.
+            </p>
+            <div>
+              <a
+                href="/free-hotel-digital-marketing-audit/"
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-brand-teal font-extrabold text-sm sm:text-base bg-brand-gold hover:bg-brand-gold-light transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
+                <span>Claim Free Direct Booking Audit</span>
+                <ArrowRight className="w-4 h-4 shrink-0" />
+              </a>
+            </div>
+            <p className="text-xs text-slate-400 mt-4 font-medium flex items-center justify-center gap-2 flex-wrap">
+              <CheckCircle2 className="w-3.5 h-3.5 text-brand-gold inline shrink-0" />
+              <span>100% Free</span>
+              <span className="opacity-40">&bull;</span>
+              <span>Zero Obligation</span>
+              <span className="opacity-40">&bull;</span>
+              <span>Manual Review by Specialists (No Bot Spam)</span>
+            </p>
+          </div>
         </div>
       </section>
 
