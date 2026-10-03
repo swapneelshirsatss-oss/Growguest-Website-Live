@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { ArrowRight } from 'lucide-react';
 
 // 1. Original Google Business Profile (GMB) Storefront Logo Icon
 function GmbOriginalLogo() {
@@ -30,7 +31,58 @@ function MobileWebsiteLogo() {
   );
 }
 
-// 3. Google Mobile Search Logo Icon
+// 3. Paid Ads (Google & Meta) Logo Icon
+function PaidAdsLogo() {
+  return (
+    <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="16" stroke="#4285F4" strokeWidth="2.5" strokeDasharray="3 3" />
+      <circle cx="22" cy="22" r="10" fill="#eef2e3" stroke="#EA4335" strokeWidth="2" />
+      <circle cx="22" cy="22" r="5" fill="#FBBC05" />
+      <circle cx="22" cy="22" r="2.5" fill="#043f2e" />
+      <path d="M26 26L38 38M38 38V30M38 38H30" stroke="#34A853" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// 4. OTA Management (MakeMyTrip, Booking.com, Agoda) Logo Icon
+function OtaManagementLogo() {
+  return (
+    <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="8" y="14" width="32" height="26" rx="3" fill="#FFFFFF" stroke="#043f2e" strokeWidth="2.5" />
+      <rect x="13" y="19" width="5" height="5" rx="1" fill="#e41d36" />
+      <rect x="22" y="19" width="5" height="5" rx="1" fill="#003580" />
+      <rect x="30" y="19" width="5" height="5" rx="1" fill="#34A853" />
+      <rect x="13" y="27" width="5" height="5" rx="1" fill="#4285F4" />
+      <rect x="22" y="27" width="5" height="5" rx="1" fill="#FBBC05" />
+      <rect x="30" y="27" width="5" height="5" rx="1" fill="#043f2e" />
+      <path d="M16 8C20 5 28 5 32 8" stroke="#043f2e" strokeWidth="2.5" strokeLinecap="round" />
+      <polygon points="30,5 34,8 30,11" fill="#043f2e" />
+    </svg>
+  );
+}
+
+// 5. Social Media Management (Instagram Reels & Storytelling) Logo Icon
+function SocialMediaLogo() {
+  return (
+    <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="igGradHome" x1="6" y1="42" x2="42" y2="6" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#fdf497" offset="0%" />
+          <stop stopColor="#fdf497" offset="5%" />
+          <stop stopColor="#fd5949" offset="45%" />
+          <stop stopColor="#d6249f" offset="60%" />
+          <stop stopColor="#285AEB" offset="90%" />
+        </linearGradient>
+      </defs>
+      <rect x="8" y="8" width="32" height="32" rx="9" fill="url(#igGradHome)" />
+      <rect x="12" y="12" width="24" height="24" rx="6" stroke="#FFFFFF" strokeWidth="2.5" fill="none" />
+      <polygon points="21,19 30,24 21,29" fill="#FFFFFF" />
+      <circle cx="31" cy="17" r="2" fill="#FFFFFF" />
+    </svg>
+  );
+}
+
+// 6. Google Mobile Search Logo Icon
 function GoogleSearchLogo() {
   return (
     <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +95,7 @@ function GoogleSearchLogo() {
   );
 }
 
-// 4. Official WhatsApp Logo Icon
+// 7. Official WhatsApp Logo Icon
 function WhatsAppOriginalLogo() {
   return (
     <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,28 +107,53 @@ function WhatsAppOriginalLogo() {
 
 const services = [
   {
+    icon: <PaidAdsLogo />,
+    title: "Paid Ads — Google & Social Media",
+    description: "High-ROAS Google Search, Google Hotel Ads, and targeted Instagram Reels campaigns. We capture high-intent travelers and deliver pre-filled booking inquiries directly to your front desk with Click-to-WhatsApp triggers.",
+    outcome: "Immediate high-intent bookings with 8.5x+ average ROAS.",
+    link: "/hotel-paid-ads-google-meta/"
+  },
+  {
+    icon: <OtaManagementLogo />,
+    title: "Hospitality OTA Management",
+    description: "Complete listing optimization across MakeMyTrip, Agoda, Booking.com, and Goibibo. We maintain rate parity, optimize 95%+ content scores, sync channel manager calendars, and turn OTA lookers into direct bookers.",
+    outcome: "Max OTA visibility + 40% shifted to 0% direct commission.",
+    link: "/hotel-ota-management-services/"
+  },
+  {
+    icon: <SocialMediaLogo />,
+    title: "Social Media & Video Storytelling",
+    description: "Cinematic Instagram Reels, suite walkthroughs, dining showcases, and monthly content calendars. We automate DM responses so every 'What is the price?' comment instantly becomes a confirmed reservation.",
+    outcome: "A magnetic social brand that turns followers into guests.",
+    link: "/hospitality-social-media-management/"
+  },
+  {
     icon: <GmbOriginalLogo />,
     title: "Google Business Profile Fixes",
     description: "When someone searches 'Hotel near me', you need to show up first. We optimize your Google Maps listing, manage reviews, and ensure your contact details are one click away, so guests call you instead of scrolling past.",
-    outcome: "More calls and walk-ins directly from Google Maps."
+    outcome: "More direct phone calls and walk-ins from Google Maps.",
+    link: "/free-hotel-digital-marketing-audit/"
   },
   {
     icon: <MobileWebsiteLogo />,
     title: "Direct Booking Website",
-    description: "OTAs look professional, which builds trust. If your website looks broken or old, guests go back to MakeMyTrip. We build fast, mobile-friendly websites that make it incredibly easy for guests to trust you and book directly.",
-    outcome: "Higher conversion rate: Lookers turn into bookers."
+    description: "OTAs look professional, which builds trust. If your website looks broken or old, guests go back to MakeMyTrip. We build sub-1.5s fast, mobile-friendly websites that make it effortless for guests to book directly.",
+    outcome: "Higher conversion rate: Lookers turn into direct bookers.",
+    link: "/hotel-direct-booking-solutions/"
   },
   {
     icon: <GoogleSearchLogo />,
-    title: "Local SEO for Nagpur",
-    description: "We make sure your property ranks high when people search for terms like 'Best resort in Nagpur' or 'Homestay for families'. We do the technical work in the background so your property stays visible year-round.",
-    outcome: "Consistent, free traffic from Google search."
+    title: "Local SEO for Nagpur & Destinations",
+    description: "We make sure your property ranks high when people search for terms like 'Best resort in Nagpur' or 'Homestay for families'. We do the technical SEO work in the background so your property stays visible year-round.",
+    outcome: "Consistent, compounding free traffic from Google search.",
+    link: "/hospitality-digital-marketing-blog/"
   },
   {
     icon: <WhatsAppOriginalLogo />,
     title: "WhatsApp Booking Flow",
-    description: "Most owners miss out because they don't reply fast enough. We set up professional WhatsApp business profiles and automated greetings so when a guest clicks 'Chat on WhatsApp' from your site, they get an instant, professional response.",
-    outcome: "Faster replies = Fewer lost bookings."
+    description: "Most owners miss out because they don't reply fast enough. We set up professional WhatsApp business profiles and automated greetings so when a guest clicks 'Chat on WhatsApp', they get an instant, professional response.",
+    outcome: "Faster replies = Fewer lost room bookings.",
+    link: "/hotel-direct-booking-solutions/"
   }
 ];
 
@@ -89,29 +166,29 @@ export default function Services() {
             PRACTICAL DIGITAL FIXES
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#043f2e] mb-4">
-            What We Actually Do
+            Services by GrowGuest
           </h2>
           <p className="text-[#242423] text-lg leading-relaxed">
-            Just the practical digital fixes required to make your hotel, homestay, or restaurant generate its own bookings.
+            The complete hospitality growth stack required to eliminate OTA commission bleed and build an automated direct-booking pipeline.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+              transition={{ delay: index * 0.08 }}
+              whileHover={{ y: -6 }}
               className="bg-[#fcfcfc] rounded-3xl p-8 shadow-lg border border-slate-200/80 hover:shadow-2xl hover:border-[#043f2e]/40 transition-all flex flex-col justify-between"
             >
               <div>
                 <div className="w-16 h-16 bg-[#eef2e3] rounded-2xl flex items-center justify-center mb-6 border border-[#043f2e]/10 shadow-sm">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-extrabold text-[#043f2e] mb-4">
+                <h3 className="text-2xl font-extrabold text-[#043f2e] mb-3 leading-snug">
                   {service.title}
                 </h3>
                 <p className="text-[#242423] leading-relaxed mb-6 text-sm">
@@ -119,16 +196,39 @@ export default function Services() {
                 </p>
               </div>
 
-              <div className="bg-[#eef2e3] p-4 rounded-2xl border border-[#043f2e]/10">
-                <span className="block text-xs font-bold text-[#043f2e] uppercase tracking-wider mb-1">
-                  Business Outcome:
-                </span>
-                <span className="text-[#043f2e] font-bold text-sm">
-                  {service.outcome}
-                </span>
+              <div>
+                <div className="bg-[#eef2e3] p-4 rounded-2xl border border-[#043f2e]/10 mb-4">
+                  <span className="block text-xs font-bold text-[#043f2e] uppercase tracking-wider mb-1">
+                    Business Outcome:
+                  </span>
+                  <span className="text-[#043f2e] font-bold text-sm">
+                    {service.outcome}
+                  </span>
+                </div>
+
+                {service.link && (
+                  <a
+                    href={service.link}
+                    className="inline-flex items-center text-sm font-extrabold text-[#043f2e] hover:text-emerald-700 transition-colors group"
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" />
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* View All Services CTA */}
+        <div className="mt-14 text-center">
+          <a
+            href="/hotel-digital-marketing-services/"
+            className="inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-extrabold text-[#043f2e] bg-[#c8f169] hover:bg-[#d8f68e] shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 border border-[#043f2e]/15"
+          >
+            Explore Complete Digital Services Suite
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
         </div>
       </div>
     </section>

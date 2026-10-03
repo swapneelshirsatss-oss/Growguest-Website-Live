@@ -65,6 +65,10 @@ export default function BlogPostHospitalityDigitalMarketing() {
         "url": "https://growguest.in/assets/logo.png"
       }
     },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#hero-heading", "#direct-answer-summary"]
+    },
     "keywords": [
       "digital marketing for hospitality",
       "digital marketing for hotels and resorts",
@@ -181,6 +185,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
             </motion.div>
 
             <motion.h1
+              id="hero-heading"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
@@ -223,7 +228,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 <FileText className="w-4 h-4" />
                 <span>Executive Summary & Key Takeaway</span>
               </div>
-              <p className="text-sm sm:text-base leading-relaxed text-slate-100 mb-3">
+              <p id="direct-answer-summary" className="text-sm sm:text-base leading-relaxed text-slate-100 mb-3">
                 <strong>Digital marketing for hospitality</strong> is not about vanity likes or generic branding. It is an end-to-end direct booking pipeline that eliminates 15-25% OTA commissions (MakeMyTrip, Agoda, Booking.com) by optimizing Google Business Profile, building mobile-first high-converting hotel websites, capturing local search intent, and leveraging WhatsApp booking channels.
               </p>
               <div className="pt-2 border-t border-white/10 flex items-center text-xs text-brand-gold font-semibold">

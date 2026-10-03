@@ -48,6 +48,10 @@ export default function BlogPostWebsiteCro() {
         "@type": "ImageObject",
         "url": "https://growguest.in/assets/logo.png"
       }
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#hero-heading", "#direct-answer-summary"]
     }
   };
 
@@ -86,7 +90,7 @@ export default function BlogPostWebsiteCro() {
             Website UX & Speed
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+          <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             Hotel Website Conversion Fixes: Turning Lookers Into Direct Bookers
           </h1>
 
@@ -101,6 +105,15 @@ export default function BlogPostWebsiteCro() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <article className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
           
+          <div className="bg-emerald-50 border-l-4 border-[#043f2e] p-6 rounded-r-xl not-prose mb-8">
+            <div className="text-xs uppercase tracking-wider font-bold text-[#043f2e] mb-2 flex items-center">
+              <Globe className="w-4 h-4 mr-1 text-[#043f2e]" /> Quick Answer: How to Optimize Hotel Website Conversion Rates
+            </div>
+            <p id="direct-answer-summary" className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium m-0">
+              To convert website traffic into direct bookings, independent hotel websites must achieve sub-1.5 second mobile load speeds, implement sticky bottom WhatsApp reservation buttons, display transparent rate parity guarantees, and present verified guest room photos without complex booking engine checkouts.
+            </p>
+          </div>
+
           <p className="text-xl text-slate-800 font-medium">
             Getting traffic to your hotel website is only half the battle. If 1,000 people visit your website every month but only 5 book directly (a 0.5% conversion rate), you are leaving tens of thousands of rupees on the table.
           </p>

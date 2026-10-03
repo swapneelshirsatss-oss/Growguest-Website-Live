@@ -102,27 +102,33 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links / Main Pages */}
+          {/* Column 2: Quick Links / Main Pages & Services */}
           <div>
-            <h4 className="text-white font-semibold text-base mb-4 tracking-wide">Main Pages</h4>
+            <h4 className="text-white font-semibold text-base mb-4 tracking-wide">Services & Solutions</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="/" className="hover:text-brand-gold transition-colors">Home</a>
+                <a href="/hotel-digital-marketing-services/" className="hover:text-brand-gold transition-colors font-medium text-slate-300">All Services Overview</a>
               </li>
               <li>
-                <a href="/hotel-digital-marketing-services/" className="hover:text-brand-gold transition-colors">Services</a>
+                <a href="/hotel-paid-ads-google-meta/" className="hover:text-brand-gold transition-colors">Paid Ads (Google & Meta)</a>
               </li>
               <li>
-                <a href="/hotel-direct-booking-solutions/" className="hover:text-brand-gold transition-colors">Direct Booking Solutions</a>
+                <a href="/hotel-ota-management-services/" className="hover:text-brand-gold transition-colors">OTA Management (MMT/Agoda)</a>
+              </li>
+              <li>
+                <a href="/hospitality-social-media-management/" className="hover:text-brand-gold transition-colors">Social Media & Reels</a>
+              </li>
+              <li>
+                <a href="/hotel-direct-booking-solutions/" className="hover:text-brand-gold transition-colors">Direct Booking Engine</a>
               </li>
               <li>
                 <a href="/hospitality-marketing-case-studies/" className="hover:text-brand-gold transition-colors">Case Studies & Results</a>
               </li>
               <li>
-                <a href="/free-hotel-digital-marketing-audit/" className="hover:text-brand-gold transition-colors">Free Direct Booking Audit</a>
+                <a href="/free-hotel-digital-marketing-audit/" className="hover:text-brand-gold transition-colors text-brand-gold font-semibold">Free Direct Booking Audit</a>
               </li>
               <li>
-                <a href="/about-hospitality-marketing-agency/" className="hover:text-brand-gold transition-colors">About Growguest</a>
+                <a href="/about-hospitality-marketing-agency/" className="hover:text-brand-gold transition-colors">About GrowGuest</a>
               </li>
               <li>
                 <a href="/contact-hospitality-digital-marketing-agency/" className="hover:text-brand-gold transition-colors">Contact Us</a>

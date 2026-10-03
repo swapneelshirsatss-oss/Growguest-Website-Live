@@ -9,6 +9,9 @@ import DirectBookingSolutionsPage from './components/pages/DirectBookingSolution
 import CaseStudiesPage from './components/pages/CaseStudiesPage';
 import AuditPage from './components/pages/AuditPage';
 import BlogPostHospitalityDigitalMarketing from './components/pages/BlogPostHospitalityDigitalMarketing';
+import PaidAdsPage from './components/pages/PaidAdsPage';
+import OtaManagementPage from './components/pages/OtaManagementPage';
+import SocialMediaManagementPage from './components/pages/SocialMediaManagementPage';
 
 export default function App() {
   return (
@@ -19,6 +22,9 @@ export default function App() {
         <Route path="/hotel-digital-marketing-services" element={<ServicesPage />} />
         <Route path="/hospitality-digital-marketing-services" element={<ServicesPage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/hotel-paid-ads-google-meta" element={<PaidAdsPage />} />
+        <Route path="/hotel-ota-management-services" element={<OtaManagementPage />} />
+        <Route path="/hospitality-social-media-management" element={<SocialMediaManagementPage />} />
         <Route path="/hotel-direct-booking-solutions" element={<DirectBookingSolutionsPage />} />
         <Route path="/direct-booking-solutions" element={<DirectBookingSolutionsPage />} />
         <Route path="/hospitality-marketing-case-studies" element={<CaseStudiesPage />} />

@@ -49,6 +49,10 @@ export default function BlogPostGbpSeo() {
         "@type": "ImageObject",
         "url": "https://growguest.in/assets/logo.png"
       }
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#hero-heading", "#direct-answer-summary"]
     }
   };
 
@@ -87,7 +91,7 @@ export default function BlogPostGbpSeo() {
             Local SEO & Map Pack
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+          <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             Google Business Profile SEO for Homestays & Resorts in Nagpur
           </h1>
 
@@ -102,6 +106,15 @@ export default function BlogPostGbpSeo() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <article className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
           
+          <div className="bg-emerald-50 border-l-4 border-[#043f2e] p-6 rounded-r-xl not-prose mb-8">
+            <div className="text-xs uppercase tracking-wider font-bold text-[#043f2e] mb-2 flex items-center">
+              <MapPin className="w-4 h-4 mr-1 text-[#043f2e]" /> Quick Answer: How to Rank #1 on Google Maps in Nagpur
+            </div>
+            <p id="direct-answer-summary" className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium m-0">
+              To rank a hotel, homestay, or resort in Nagpur's Google Map 3-Pack, property owners must select the exact primary category (e.g., Bed & Breakfast vs Hotel), upload geotagged 4K room photos, achieve high review velocity with localized keyword responses, and maintain 100% NAP citation consistency across local directories.
+            </p>
+          </div>
+
           <p className="text-xl text-slate-800 font-medium">
             When a corporate executive lands at Dr. Babasaheb Ambedkar International Airport or a tourist looks for a weekend resort around Nagpur, they don't scroll through 50 pages of search results. They open Google Maps and tap on one of the top 3 listings.
           </p>

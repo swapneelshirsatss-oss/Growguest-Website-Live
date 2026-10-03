@@ -55,6 +55,10 @@ export default function BlogPostOtaCommissions() {
         "@type": "ImageObject",
         "url": "https://growguest.in/assets/logo.png"
       }
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#hero-heading", "#direct-answer-summary"]
     }
   };
 
@@ -102,7 +106,7 @@ export default function BlogPostOtaCommissions() {
             Direct Booking Economics
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+          <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             How to Cut OTA Commissions by 50% Without Losing Booking Volume
           </h1>
 
@@ -119,7 +123,7 @@ export default function BlogPostOtaCommissions() {
         <article className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
           
           <div className="bg-emerald-50 border-l-4 border-[#043f2e] p-6 rounded-r-xl">
-            <p className="text-lg font-medium text-[#043f2e] m-0">
+            <p id="direct-answer-summary" className="text-lg font-medium text-[#043f2e] m-0">
               <strong>The Hard Truth:</strong> If your hotel does ₹10 Lakhs in monthly room revenue and 75% comes from MakeMyTrip and Agoda at an average 20% commission, you are handing ₹1.5 Lakhs every single month to intermediaries. Over 3 years, that is ₹54 Lakhs — enough to remodel your entire property or open a new wing.
             </p>
           </div>

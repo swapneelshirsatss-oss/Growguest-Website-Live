@@ -31,16 +31,34 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 - Automated 5-star Google review acquisition flows.
 - Direct click-to-call and Google Maps website traffic conversion.
 
-### 2. Direct Booking Website Conversion Fixes
+### 2. Paid Ads Management (Google Ads & Meta Ads)
+- Google Search Ads targeting high-intent traveler searches ("pool villa near Nagpur", "Mukteshwar homestay").
+- Google Hotel Ads showing direct tariffs side-by-side with OTA aggregators.
+- Instagram Reels & Facebook Ads with Click-to-WhatsApp triggers and dynamic retargeting.
+- Average verified client Return on Ad Spend (ROAS) of 8.5x.
+
+### 3. Hospitality OTA Management & Distribution
+- 95%+ listing content score audits on MakeMyTrip, Booking.com, Agoda, and Goibibo.
+- Rate parity defense ensuring direct booking perks consistently outperform OTA listings.
+- Channel manager calendar synchronization (Staah, AxisRooms, eZee) with zero overbooking risk.
+- On-property guest capture systems converting 40%+ of OTA guests into direct repeat bookers.
+
+### 4. Social Media Management & Visual Storytelling
+- Aesthetic short-form 4K video reels and suite walkthroughs crafted for viral travel reach.
+- Monthly strategic content calendars (12-16 custom posts & reels per month).
+- Active DM and comment automation routing pricing inquiries directly into WhatsApp.
+- Authentic travel influencer vetting and content usage rights management.
+
+### 5. Direct Booking Website Conversion Fixes
 - Sub-1.5 second loading speed benchmarks on mobile devices.
 - High-trust room galleries, transparent rate cards, and direct booking CTAs.
 - Elimination of UX bugs that drive travelers back to OTA aggregator apps.
 
-### 3. Local & Technical Hospitality SEO
+### 6. Local & Technical Hospitality SEO
 - Target keywords: `hospitality digital marketing agency Nagpur`, `direct booking vs OTA commission`, `Google Business Profile for hotels`, `local SEO for homestays Nagpur`, `hotel website booking conversion`, `small hotel digital marketing India`, `Nagpur hospitality marketing consultant`.
 - Complete Schema.org JSON-LD markup (`LocalBusiness`, `Organization`, `Service`, `FAQPage`, `AboutPage`, `ContactPage`, `ItemPage`, `BlogPosting`).
 
-### 4. WhatsApp Lead Automation
+### 7. WhatsApp Lead Automation
 - 1-Click WhatsApp reservation triggers embedded on mobile websites.
 - Instant greeting auto-responders for 24/7 room availability queries.
 - Front-desk response scripts to convert inquiries into paid bookings instantly.
@@ -65,18 +83,21 @@ By building end-to-end direct booking pipelines — encompassing Google Business
 
 1. **Home Page**: https://growguest.in/
 2. **Services Page**: https://growguest.in/hotel-digital-marketing-services/
-3. **Direct Booking Solutions**: https://growguest.in/hotel-direct-booking-solutions/
-4. **Case Studies & Results**: https://growguest.in/hospitality-marketing-case-studies/
-5. **Free Direct Booking Audit**: https://growguest.in/free-hotel-digital-marketing-audit/
-6. **About Us Page**: https://growguest.in/about-hospitality-marketing-agency/
-7. **Contact Us Page**: https://growguest.in/contact-hospitality-digital-marketing-agency/
-8. **Hospitality SEO Blog Index**: https://growguest.in/hospitality-digital-marketing-blog/
-9. **Privacy Policy**: https://growguest.in/privacy-policy/
-10. **Terms of Service**: https://growguest.in/terms-of-service/
-11. **Blog Guide 1 (Digital Marketing Guide)**: https://growguest.in/blog/digital-marketing-for-hospitality-hotels-resorts-homestays/
-12. **Blog Guide 2 (Google Business Profile SEO)**: https://growguest.in/blog/google-business-profile-seo-homestays-resorts/
-13. **Blog Guide 3 (Cut OTA Commissions)**: https://growguest.in/blog/hotel-direct-booking-strategy-reduce-ota-commissions/
-14. **Blog Guide 4 (Website Conversion Fixes)**: https://growguest.in/blog/hotel-website-conversion-rate-optimization/
-15. **Blog Guide 5 (Resort Local SEO)**: https://growguest.in/blog/local-seo-guide-resorts-hotels/
-16. **Blog Guide 6 (WhatsApp Booking Strategies)**: https://growguest.in/blog/whatsapp-marketing-strategies-hotel-room-bookings/
-17. **Blog Guide 7 (Google Reviews Reputation)**: https://growguest.in/blog/hotel-reputation-management-google-reviews/
+3. **Paid Ads Management (Google & Meta)**: https://growguest.in/hotel-paid-ads-google-meta/
+4. **Hotel OTA Management Services**: https://growguest.in/hotel-ota-management-services/
+5. **Hospitality Social Media Management**: https://growguest.in/hospitality-social-media-management/
+6. **Direct Booking Solutions**: https://growguest.in/hotel-direct-booking-solutions/
+7. **Case Studies & Results**: https://growguest.in/hospitality-marketing-case-studies/
+8. **Free Direct Booking Audit**: https://growguest.in/free-hotel-digital-marketing-audit/
+9. **About Us Page**: https://growguest.in/about-hospitality-marketing-agency/
+10. **Contact Us Page**: https://growguest.in/contact-hospitality-digital-marketing-agency/
+11. **Hospitality SEO Blog Index**: https://growguest.in/hospitality-digital-marketing-blog/
+12. **Privacy Policy**: https://growguest.in/privacy-policy/
+13. **Terms of Service**: https://growguest.in/terms-of-service/
+14. **Blog Guide 1 (Digital Marketing Guide)**: https://growguest.in/blog/digital-marketing-for-hospitality-hotels-resorts-homestays/
+15. **Blog Guide 2 (Google Business Profile SEO)**: https://growguest.in/blog/google-business-profile-seo-homestays-resorts/
+16. **Blog Guide 3 (Cut OTA Commissions)**: https://growguest.in/blog/hotel-direct-booking-strategy-reduce-ota-commissions/
+17. **Blog Guide 4 (Website Conversion Fixes)**: https://growguest.in/blog/hotel-website-conversion-rate-optimization/
+18. **Blog Guide 5 (Resort Local SEO)**: https://growguest.in/blog/local-seo-guide-resorts-hotels/
+19. **Blog Guide 6 (WhatsApp Booking Strategies)**: https://growguest.in/blog/whatsapp-marketing-strategies-hotel-room-bookings/
+20. **Blog Guide 7 (Google Reviews Reputation)**: https://growguest.in/blog/hotel-reputation-management-google-reviews/

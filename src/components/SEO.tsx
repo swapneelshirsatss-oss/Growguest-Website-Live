@@ -31,6 +31,9 @@ export default function SEO({
       "GrowGuest Hospitality Marketing"
     ],
     "url": "https://growguest.in/",
+    "publisher": {
+      "@id": "https://growguest.in/#organization"
+    },
     "sameAs": [
       "https://www.google.com/maps/place/?cid=13593835757779847259",
       "https://www.facebook.com/profile.php?id=61593380557986",
@@ -67,10 +70,12 @@ export default function SEO({
       "GrowGuest"
     ],
     "image": ogImage,
+    "logo": "https://growguest.in/assets/logo.png",
     "@id": "https://growguest.in/#organization",
     "url": "https://growguest.in/",
     "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
     "telephone": "+918956907343",
+    "email": "hello@growguest.com",
     "priceRange": "$$",
     "description": "Nagpur-based digital marketing for hotels, resorts & homestays. Cut OTA commissions and grow direct bookings with GrowGuest.",
     "address": {
@@ -85,6 +90,21 @@ export default function SEO({
       "@type": "GeoCoordinates",
       "latitude": 21.0857691,
       "longitude": 79.0977950
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918956907343",
+      "contactType": "customer service",
+      "email": "hello@growguest.com",
+      "availableLanguage": ["English", "Hindi", "Marathi"]
     },
     "areaServed": [
       "Nagpur",
@@ -121,7 +141,7 @@ export default function SEO({
     "founder": {
       "@type": "Person",
       "name": "Swapneel Shirsat",
-      "jobTitle": "Director & Founder",
+      "jobTitle": "Director & Founder — Hospitality Digital Marketing Consultant",
       "url": "https://growguest.in/about-hospitality-marketing-agency/",
       "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
       "description": "Director & Founder of GrowGuest with 18+ years of digital marketing experience and 10+ years exclusively inside hospitality."
@@ -129,7 +149,7 @@ export default function SEO({
     "director": {
       "@type": "Person",
       "name": "Swapneel Shirsat",
-      "jobTitle": "Director & Founder",
+      "jobTitle": "Director & Founder — Hospitality Digital Marketing Consultant",
       "url": "https://growguest.in/about-hospitality-marketing-agency/",
       "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/",
       "description": "Director & Founder of GrowGuest with 18+ years of digital marketing experience and 10+ years exclusively inside hospitality."

@@ -48,6 +48,10 @@ export default function BlogPostWhatsAppMarketing() {
         "@type": "ImageObject",
         "url": "https://growguest.in/assets/logo.png"
       }
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["#hero-heading", "#direct-answer-summary"]
     }
   };
 
@@ -86,7 +90,7 @@ export default function BlogPostWhatsAppMarketing() {
             WhatsApp Automation
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+          <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
             WhatsApp Booking Strategies for Indian Hospitality Property Owners
           </h1>
 
@@ -101,6 +105,15 @@ export default function BlogPostWhatsAppMarketing() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <article className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
           
+          <div className="bg-emerald-50 border-l-4 border-[#043f2e] p-6 rounded-r-xl not-prose mb-8">
+            <div className="text-xs uppercase tracking-wider font-bold text-[#043f2e] mb-2 flex items-center">
+              <MessageSquare className="w-4 h-4 mr-1 text-[#043f2e]" /> Quick Answer: How WhatsApp Drives Direct Hotel Bookings
+            </div>
+            <p id="direct-answer-summary" className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium m-0">
+              WhatsApp direct booking triggers eliminate booking abandonment by offering 1-click inquiry buttons with pre-filled dates, automated 24/7 instant tariff responses, and direct UPI payment links, delivering 3.5x higher booking conversion rates than traditional multi-step web forms.
+            </p>
+          </div>
+
           <p className="text-xl text-slate-800 font-medium">
             In India, WhatsApp is not just a messaging app — it is the primary operating system for daily commerce. When a guest can click one button on your website or Google profile and immediately chat with your front desk, conversion friction drops to near zero.
           </p>
