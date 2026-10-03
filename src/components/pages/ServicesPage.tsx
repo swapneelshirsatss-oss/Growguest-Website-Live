@@ -14,7 +14,8 @@ import {
   PhoneCall, 
   Sparkles,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  AlertTriangle
 } from 'lucide-react';
 import SEO from '../SEO';
 import Breadcrumbs from '../Breadcrumbs';
@@ -167,6 +168,10 @@ const faqs = [
   {
     question: "Can we start with a Free Direct Booking Audit before hiring?",
     answer: "Yes, 100%! We provide an in-depth, zero-obligation 4-point property audit analyzing your Google Map Pack visibility, website loading speed, OTA commission bleed, and local search opportunities delivered directly to WhatsApp within 24 to 48 hours."
+  },
+  {
+    question: "How does GrowGuest solve zero Google visibility and the OTA commission trap?",
+    answer: "We deploy a targeted two-step direct revenue system. First, we fix your search engine presence through Google Business Profile optimization, local 3-pack SEO, and high-intent Google Hotel Ads so nearby travelers find your property directly. Second, we eliminate OTA commission bleed by launching a mobile-first direct booking website with 1-click WhatsApp reservation triggers and automated guest retention, shifting 30% to 50%+ of your bookings from 18-25% OTA commissions to 100% direct profit."
   }
 ];
 
@@ -255,7 +260,7 @@ export default function ServicesPage() {
               transition={{ delay: 0.2 }}
               className="text-lg sm:text-xl text-emerald-100/90 leading-relaxed mb-9"
             >
-              From high-ROI Paid Ads (Google & Meta) and expert OTA Management to cinematic Social Media, Local SEO, and direct booking web engines — we build your entire direct revenue pipeline.
+              Struggling with zero Google visibility and bleeding profits to the heavy OTA commission trap? We build end-to-end direct booking engines, local SEO dominance, and high-ROAS paid ads to reclaim your hotel's revenue.
             </motion.p>
 
             <motion.div
@@ -285,6 +290,42 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Problem Callout: Zero Google Visibility & OTA Commission Trap */}
+      <section className="relative -mt-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-[#02291e] border-2 border-[#c8f169]/30 rounded-3xl p-6 sm:p-8 shadow-2xl text-white backdrop-blur-md"
+        >
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-[#c8f169]/15 border border-[#c8f169]/30 flex items-center justify-center flex-shrink-0 text-[#c8f169] mt-1">
+                <AlertTriangle className="w-6 h-6" />
+              </div>
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#c8f169] block mb-1">
+                  The Dual Trap Costing Property Owners 20%+ In Profit
+                </span>
+                <h2 className="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-2">
+                  Zero Google Visibility & The Heavy OTA Commission Trap
+                </h2>
+                <p className="text-sm sm:text-base text-emerald-100/80 leading-relaxed">
+                  When travelers search for stays in your area, being invisible on Google forces you into total reliance on OTAs — surrendering 18% to 25% of your gross revenue on every booking. GrowGuest engineers the exact direct booking systems needed to break this cycle.
+                </p>
+              </div>
+            </div>
+            <a
+              href="#audit"
+              className="inline-flex items-center justify-center px-6 py-3.5 rounded-full text-xs sm:text-sm font-extrabold bg-[#c8f169] text-[#043f2e] hover:bg-[#d8f68e] transition-all flex-shrink-0 whitespace-nowrap shadow-[0_0_20px_rgba(200,241,105,0.3)] hover:shadow-[0_0_30px_rgba(200,241,105,0.5)] transform hover:-translate-y-0.5"
+            >
+              Fix Your Leaks
+              <ArrowRight className="ml-1.5 w-4 h-4" />
+            </a>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Core Services Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -295,7 +336,7 @@ export default function ServicesPage() {
             End-to-End Digital Services
           </h2>
           <p className="text-[#242423] text-lg leading-relaxed">
-            Engineered specifically for independent hotels, resorts, and homestays to capture high-intent travelers and maximize commission-free direct revenue.
+            Engineered specifically to eliminate Google search invisibility and break free from OTA commission bleed — capturing high-intent travelers directly for independent hotels, resorts, and homestays.
           </p>
         </div>
 
