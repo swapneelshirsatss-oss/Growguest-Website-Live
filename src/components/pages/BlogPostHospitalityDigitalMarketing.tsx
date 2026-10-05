@@ -147,7 +147,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen text-slate-900">
+    <div className="bg-[#fcfbf9] min-h-screen text-[#141716]">
       <SEO
         title="Digital Marketing for Hospitality: Practical Guide | GrowGuest"
         description="A no-fluff guide to digital marketing for hotels, resorts, and homestays — how to cut OTA commissions and win direct bookings, from a Nagpur-based hospitality specialist."
@@ -167,10 +167,8 @@ export default function BlogPostHospitalityDigitalMarketing() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Header / Hero Section */}
-      <header className="relative bg-brand-teal text-white pt-16 pb-20 lg:pt-20 lg:pb-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#C99A2E_0%,_transparent_50%)]" />
-        </div>
+      <header className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
@@ -178,10 +176,10 @@ export default function BlogPostHospitalityDigitalMarketing() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30 mb-6"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
             >
-              <Sparkles className="w-4 h-4 mr-2" />
-              Hospitality Growth Strategy Guide
+              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span>Hospitality Growth Strategy Guide</span>
             </motion.div>
 
             <motion.h1
@@ -191,7 +189,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
               transition={{ delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6"
             >
-              Digital Marketing for Hospitality: What Actually Gets Hotels and Homestays More Direct Bookings
+              Digital Marketing for Hospitality: <span className="font-serif italic font-normal text-[#dfad3c]">What Actually Gets More Direct Bookings</span>
             </motion.h1>
 
             {/* Author Meta Info */}
@@ -199,20 +197,20 @@ export default function BlogPostHospitalityDigitalMarketing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15 }}
-              className="flex items-center justify-center flex-wrap gap-4 text-xs sm:text-sm text-slate-200 font-medium mb-8"
+              className="flex items-center justify-center flex-wrap gap-4 text-xs sm:text-sm text-slate-300 font-medium mb-8"
             >
               <span className="flex items-center">
-                <User className="w-4 h-4 mr-1.5 text-brand-gold" />
+                <User className="w-4 h-4 mr-1.5 text-[#dfad3c]" />
                 By Swapneel Shirsat (Hospitality Specialist)
               </span>
-              <span className="text-slate-400">•</span>
+              <span className="text-white/20">•</span>
               <span className="flex items-center">
-                <Calendar className="w-4 h-4 mr-1.5 text-brand-gold" />
+                <Calendar className="w-4 h-4 mr-1.5 text-[#dfad3c]" />
                 Updated Aug 2026
               </span>
-              <span className="text-slate-400">•</span>
+              <span className="text-white/20">•</span>
               <span className="flex items-center">
-                <Clock className="w-4 h-4 mr-1.5 text-brand-gold" />
+                <Clock className="w-4 h-4 mr-1.5 text-[#dfad3c]" />
                 7 Min Read
               </span>
             </motion.div>
@@ -222,17 +220,17 @@ export default function BlogPostHospitalityDigitalMarketing() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-left border-l-4 border-brand-gold bg-slate-900/90 text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
-              <div className="flex items-center space-x-2 text-brand-gold font-bold text-xs uppercase tracking-wider mb-2">
+              <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <FileText className="w-4 h-4" />
                 <span>Executive Summary & Key Takeaway</span>
               </div>
-              <p id="direct-answer-summary" className="text-sm sm:text-base leading-relaxed text-slate-100 mb-3">
-                <strong>Digital marketing for hospitality</strong> is not about vanity likes or generic branding. It is an end-to-end direct booking pipeline that eliminates 15-25% OTA commissions (MakeMyTrip, Agoda, Booking.com) by optimizing Google Business Profile, building mobile-first high-converting hotel websites, capturing local search intent, and leveraging WhatsApp booking channels.
+              <p id="direct-answer-summary" className="text-sm sm:text-base leading-relaxed text-slate-200 mb-3">
+                <strong className="text-white">Digital marketing for hospitality</strong> is not about vanity likes or generic branding. It is an end-to-end direct booking pipeline that eliminates 15-25% OTA commissions (MakeMyTrip, Agoda, Booking.com) by optimizing Google Business Profile, building mobile-first high-converting hotel websites, capturing local search intent, and leveraging WhatsApp booking channels.
               </p>
-              <div className="pt-2 border-t border-white/10 flex items-center text-xs text-brand-gold font-semibold">
-                <ShieldCheck className="w-4 h-4 mr-1.5" />
+              <div className="pt-2 border-t border-white/10 flex items-center text-xs text-[#dfad3c] font-semibold">
+                <ShieldCheck className="w-4 h-4 mr-1.5 text-[#25d366]" />
                 Pillar Guide by <a href="https://growguest.in/" className="underline hover:text-white ml-1">GrowGuest — Nagpur Hospitality Marketing Agency</a>
               </div>
             </motion.div>
@@ -739,14 +737,14 @@ export default function BlogPostHospitalityDigitalMarketing() {
                   href="https://growguest.in/"
                   className="text-xs font-bold text-brand-teal hover:text-brand-gold transition-colors flex items-center"
                 >
-                  Visit GrowGuest Home Pillar Page <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
+                  Visit GrowGuest Home Pillar Page <ArrowUpRight className="w-3.5 h-3.5 ml-1 text-[#c99a2e]" />
                 </a>
               </div>
             </div>
 
             {/* Quick Contact & Consultation Widget */}
-            <div className="bg-slate-900 text-white p-6 rounded-2xl border border-white/10 shadow-md space-y-4">
-              <div className="text-brand-gold font-bold text-xs uppercase tracking-wider flex items-center">
+            <div className="bg-[#071510] text-white p-6 rounded-3xl border border-[#dfad3c]/20 shadow-md space-y-4">
+              <div className="text-[#dfad3c] font-bold text-xs uppercase tracking-wider flex items-center">
                 <PhoneCall className="w-3.5 h-3.5 mr-1.5" />
                 <span>Nagpur Local Consultancy</span>
               </div>
@@ -760,35 +758,35 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 href="https://wa.me/918956907343"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl font-extrabold text-xs text-slate-900 bg-brand-gold hover:bg-brand-gold-light transition-all"
+                className="btn btn-gold w-full text-center justify-center text-xs py-2.5"
               >
                 Connect With Founder on WhatsApp
               </a>
             </div>
 
             {/* Related Blog Links Widget */}
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-              <h4 className="font-bold text-slate-900 text-sm tracking-wide uppercase text-slate-400">
+            <div className="bg-white p-6 rounded-3xl border border-[rgba(16,41,32,0.08)] shadow-sm space-y-4">
+              <h4 className="font-bold text-[#071510] text-sm tracking-wide uppercase text-slate-400">
                 Related Hospitality Guides
               </h4>
               <ul className="space-y-3 text-xs font-medium">
                 <li>
-                  <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions/" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
+                  <a href="/blog/hotel-direct-booking-strategy-reduce-ota-commissions/" className="text-[#071510] hover:text-[#c99a2e] transition-colors block font-bold">
                     How to Cut OTA Commissions by 50%
                   </a>
-                  <span className="text-slate-400 text-[11px]">Direct Booking Strategy</span>
+                  <span className="text-[#546059] text-[11px]">Direct Booking Strategy</span>
                 </li>
                 <li>
-                  <a href="/blog/google-business-profile-seo-homestays-resorts/" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
+                  <a href="/blog/google-business-profile-seo-homestays-resorts/" className="text-[#071510] hover:text-[#c99a2e] transition-colors block font-bold">
                     GBP SEO for Homestays & Resorts
                   </a>
-                  <span className="text-slate-400 text-[11px]">Local SEO & Map Pack</span>
+                  <span className="text-[#546059] text-[11px]">Local SEO & Map Pack</span>
                 </li>
                 <li>
-                  <a href="/blog/hotel-website-conversion-rate-optimization/" className="text-slate-800 hover:text-brand-teal transition-colors block font-bold">
+                  <a href="/blog/hotel-website-conversion-rate-optimization/" className="text-[#071510] hover:text-[#c99a2e] transition-colors block font-bold">
                     Hotel Website Conversion Fixes
                   </a>
-                  <span className="text-slate-400 text-[11px]">Website UX & Speed</span>
+                  <span className="text-[#546059] text-[11px]">Website UX & Speed</span>
                 </li>
               </ul>
             </div>
@@ -799,12 +797,12 @@ export default function BlogPostHospitalityDigitalMarketing() {
       </div>
 
       {/* Embedded Audit Form at Bottom */}
-      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200">
-        <div className="text-center mb-8">
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-[rgba(16,41,32,0.08)]">
+        <div className="text-center mb-10">
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
             Request Your Free Direct Booking Audit
           </h3>
-          <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto mt-2">
+          <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto mt-2">
             Fill out the simple form below. We'll analyze your GBP, website load speed, and direct conversion setup, then send your manual report directly to WhatsApp.
           </p>
         </div>

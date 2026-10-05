@@ -41,13 +41,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                 <ChevronRight className="w-4 h-4 text-slate-400 mx-2 flex-shrink-0" />
               )}
               {isLast ? (
-                <span className="font-medium text-brand-teal truncate" aria-current="page">
+                <span className="font-semibold text-[#c99a2e] truncate" aria-current="page">
                   {item.name}
                 </span>
               ) : (
                 <a
                   href={item.url}
-                  className="flex items-center hover:text-brand-teal transition-colors"
+                  className="flex items-center hover:text-[#c99a2e] transition-colors"
                 >
                   {index === 0 && <Home className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />}
                   <span>{item.name}</span>

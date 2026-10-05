@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
   ];
 
   return (
-    <div className="bg-[#fcfcfc] text-[#242423] min-h-screen">
+    <div className="bg-[#fcfbf9] text-[#141716] min-h-screen">
       <SEO
         title="Privacy Policy | Growguest — Digital Growth for Hospitality"
         description="Learn how Growguest collects, uses, and safeguards your data. We respect property owner confidentiality and guest privacy under Indian IT & DPDP regulations."
@@ -20,16 +20,17 @@ export default function PrivacyPolicyPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#02291e] via-[#043f2e] to-[#02291e] text-white py-16 lg:py-20 border-b border-emerald-500/20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 backdrop-blur-md mb-6">
-            <Shield className="w-4 h-4 mr-2" />
-            Data Protection & Transparency
+      <section className="relative bg-[#071510] text-white py-16 lg:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+            <span>Data Protection & Transparency</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-            Privacy Policy
+            Privacy <span className="font-serif italic font-normal text-[#dfad3c]">Policy</span>
           </h1>
-          <p className="text-base sm:text-lg text-emerald-100/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
             Last Updated: August 2026. How Growguest collects, handles, and protects information for hospitality property owners and website visitors.
           </p>
         </div>
@@ -37,11 +38,11 @@ export default function PrivacyPolicyPage() {
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-sm space-y-10 text-slate-700 leading-relaxed">
+        <div className="bg-white rounded-3xl border border-[rgba(16,41,32,0.08)] p-8 sm:p-12 shadow-sm space-y-10 text-[#546059] leading-relaxed">
           
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4 flex items-center gap-2">
-              <Eye className="w-6 h-6 text-[#78c51c]" />
+            <h2 className="text-2xl font-bold text-[#071510] mb-4 flex items-center gap-2">
+              <Eye className="w-6 h-6 text-[#c99a2e]" />
               1. Overview & Commitment
             </h2>
             <p>
@@ -50,23 +51,23 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4 flex items-center gap-2">
-              <FileText className="w-6 h-6 text-[#78c51c]" />
+            <h2 className="text-2xl font-bold text-[#071510] mb-4 flex items-center gap-2">
+              <FileText className="w-6 h-6 text-[#c99a2e]" />
               2. Information We Collect
             </h2>
             <p className="mb-3">
               We collect information only when voluntarily provided by you through our website audit forms, WhatsApp inquiries, contact forms, or direct phone conversations:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Contact Information:</strong> Full name, business email address, WhatsApp/mobile phone number.</li>
-              <li><strong>Property Details:</strong> Property name, city/location (e.g. Nagpur, Mukteshwar), room inventory count, average room rate (ARR), and current OTA commission estimates for the Direct Booking Audit.</li>
-              <li><strong>Technical Web Analytics:</strong> Anonymous browser type, referring URL, time on page, and device type collected through privacy-respecting analytics tools to improve site performance.</li>
+              <li><strong className="text-[#071510]">Contact Information:</strong> Full name, business email address, WhatsApp/mobile phone number.</li>
+              <li><strong className="text-[#071510]">Property Details:</strong> Property name, city/location (e.g. Nagpur, Mukteshwar), room inventory count, average room rate (ARR), and current OTA commission estimates for the Direct Booking Audit.</li>
+              <li><strong className="text-[#071510]">Technical Web Analytics:</strong> Anonymous browser type, referring URL, time on page, and device type collected through privacy-respecting analytics tools to improve site performance.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4 flex items-center gap-2">
-              <Lock className="w-6 h-6 text-[#78c51c]" />
+            <h2 className="text-2xl font-bold text-[#071510] mb-4 flex items-center gap-2">
+              <Lock className="w-6 h-6 text-[#c99a2e]" />
               3. How We Use Your Information
             </h2>
             <p className="mb-3">Your data is strictly used for legitimate business purposes:</p>
@@ -74,13 +75,13 @@ export default function PrivacyPolicyPage() {
               <li>To prepare and deliver customized <strong>Free Direct Booking Audits</strong>, Google Business Profile analyses, and OTA commission leakage calculations.</li>
               <li>To respond to your inquiries via WhatsApp, email, or telephone.</li>
               <li>To provide ongoing digital marketing, SEO, and website conversion services if engaged.</li>
-              <li>We <strong>never sell, rent, or trade</strong> your business contact information or property financial figures to third-party brokers or advertisers.</li>
+              <li>We <strong className="text-[#071510]">never sell, rent, or trade</strong> your business contact information or property financial figures to third-party brokers or advertisers.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4 flex items-center gap-2">
-              <CheckCircle2 className="w-6 h-6 text-[#78c51c]" />
+            <h2 className="text-2xl font-bold text-[#071510] mb-4 flex items-center gap-2">
+              <CheckCircle2 className="w-6 h-6 text-[#25d366]" />
               4. Property Data Confidentiality & Non-Disclosure
             </h2>
             <p>
@@ -89,7 +90,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               5. Third-Party Integrations & Cookies
             </h2>
             <p>
@@ -98,7 +99,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               6. Indian Data Protection Compliance (DPDP Act 2023)
             </h2>
             <p>
@@ -106,24 +107,24 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          <div className="pt-6 border-t border-slate-200">
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+          <div className="pt-6 border-t border-[rgba(16,41,32,0.08)]">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               7. Contact Our Privacy Officer
             </h2>
             <p className="mb-4">
               If you have any questions regarding this Privacy Policy or wish to exercise your data rights, please contact us:
             </p>
-            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 space-y-3 text-sm">
-              <div className="flex items-center text-slate-800">
-                <MapPin className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
+            <div className="bg-[#f7f5ef] rounded-2xl p-6 border border-[rgba(16,41,32,0.08)] space-y-3 text-sm">
+              <div className="flex items-center text-[#071510]">
+                <MapPin className="w-4 h-4 mr-2 text-[#c99a2e] flex-shrink-0" />
                 <span>GrowGuest Digital Growth for Hospitality — 60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034</span>
               </div>
-              <div className="flex items-center text-slate-800">
-                <Phone className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
+              <div className="flex items-center text-[#071510]">
+                <Phone className="w-4 h-4 mr-2 text-[#c99a2e] flex-shrink-0" />
                 <span>+91 89569 07343 (WhatsApp & Call)</span>
               </div>
-              <div className="flex items-center text-slate-800">
-                <Mail className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
+              <div className="flex items-center text-[#071510]">
+                <Mail className="w-4 h-4 mr-2 text-[#c99a2e] flex-shrink-0" />
                 <span>hello@growguest.com</span>
               </div>
             </div>

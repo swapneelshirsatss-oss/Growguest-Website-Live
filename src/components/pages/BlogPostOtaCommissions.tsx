@@ -86,7 +86,7 @@ export default function BlogPostOtaCommissions() {
   };
 
   return (
-    <div className="bg-[#fcfcfc] text-[#242423] min-h-screen">
+    <div className="bg-[#fcfbf9] text-[#141716] min-h-screen">
       <SEO
         title="How to Cut OTA Commissions by 50% for Hotels & Homestays | Growguest"
         description="Learn how independent hotels and homestays cut 15-25% OTA commissions on MakeMyTrip, Agoda, and Booking.com while maintaining 80%+ occupancy."
@@ -99,118 +99,120 @@ export default function BlogPostOtaCommissions() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Header */}
-      <header className="relative bg-gradient-to-b from-[#02291e] via-[#043f2e] to-[#02291e] text-white pt-16 pb-20 lg:pt-20 lg:pb-24 overflow-hidden border-b border-emerald-500/20">
+      <header className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 mb-6">
-            <Percent className="w-4 h-4 mr-2" />
-            Direct Booking Economics
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+            <span>Direct Booking Economics</span>
           </div>
 
           <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-            How to Cut OTA Commissions by 50% Without Losing Booking Volume
+            How to Cut OTA Commissions by 50% <span className="font-serif italic font-normal text-[#dfad3c]">Without Losing Booking Volume</span>
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-emerald-100/80">
-            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#c8f169]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
-            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#c8f169]" /> Aug 2026</span>
-            <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#c8f169]" /> 7 min read</span>
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-300">
+            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
+            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> Aug 2026</span>
+            <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> 7 min read</span>
           </div>
         </div>
       </header>
 
       {/* Main Content Layout */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <article className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
+        <article className="prose prose-lg max-w-none text-[#546059] leading-relaxed space-y-8">
           
-          <div className="bg-emerald-50 border-l-4 border-[#043f2e] p-6 rounded-r-xl">
-            <p id="direct-answer-summary" className="text-lg font-medium text-[#043f2e] m-0">
-              <strong>The Hard Truth:</strong> If your hotel does ₹10 Lakhs in monthly room revenue and 75% comes from MakeMyTrip and Agoda at an average 20% commission, you are handing ₹1.5 Lakhs every single month to intermediaries. Over 3 years, that is ₹54 Lakhs — enough to remodel your entire property or open a new wing.
+          <div className="bg-[#0c2018] border-l-4 border-[#dfad3c] p-6 sm:p-7 rounded-r-2xl border-y border-r border-white/10 shadow-xl not-prose mb-8">
+            <p id="direct-answer-summary" className="text-base sm:text-lg font-medium text-slate-200 m-0">
+              <strong className="text-[#dfad3c]">The Hard Truth:</strong> If your hotel does ₹10 Lakhs in monthly room revenue and 75% comes from MakeMyTrip and Agoda at an average 20% commission, you are handing ₹1.5 Lakhs every single month to intermediaries. Over 3 years, that is ₹54 Lakhs — enough to remodel your entire property or open a new wing.
             </p>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#043f2e]">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
             1. The "Billboard Effect": Use OTAs, Don't Be Used by Them
           </h2>
           <p>
             The biggest mistake hoteliers make is viewing OTAs as an enemy to cut off completely on day one. OTAs spend billions of dollars on advertising. Guests discover your property on MakeMyTrip, but smart travelers search your hotel name on Google before booking to check recent reviews, food menus, or better rates.
           </p>
           <p>
-            If your Google Business Profile is verified and your website offers a clear <strong>"Best Direct Rate Guarantee + Free Early Check-in"</strong>, 30% to 40% of those guests will book directly with you instead of returning to the OTA.
+            If your Google Business Profile is verified and your website offers a clear <strong className="text-[#071510]">"Best Direct Rate Guarantee + Free Early Check-in"</strong>, 30% to 40% of those guests will book directly with you instead of returning to the OTA.
           </p>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#043f2e]">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
             2. The 4-Pillar Direct Booking Engine
           </h2>
           <div className="grid sm:grid-cols-2 gap-4 not-prose my-6">
-            <div className="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="flex items-center gap-2 font-bold text-slate-900 mb-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            <div className="p-5 bg-white border border-[rgba(16,41,32,0.08)] rounded-2xl shadow-sm hover:border-[#dfad3c]/40 transition-all">
+              <div className="flex items-center gap-2 font-bold text-[#071510] mb-2">
+                <CheckCircle2 className="w-5 h-5 text-[#25d366]" />
                 Pillar 1: Google Map Pack Top-3
               </div>
-              <p className="text-sm text-slate-600">Capture local travelers searching "hotels near airport Nagpur" or "resort with pool near me" with geotagged photos and local citations.</p>
+              <p className="text-sm text-[#546059]">Capture local travelers searching "hotels near airport Nagpur" or "resort with pool near me" with geotagged photos and local citations.</p>
             </div>
-            <div className="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="flex items-center gap-2 font-bold text-slate-900 mb-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            <div className="p-5 bg-white border border-[rgba(16,41,32,0.08)] rounded-2xl shadow-sm hover:border-[#dfad3c]/40 transition-all">
+              <div className="flex items-center gap-2 font-bold text-[#071510] mb-2">
+                <CheckCircle2 className="w-5 h-5 text-[#25d366]" />
                 Pillar 2: Frictionless WhatsApp Booking
               </div>
-              <p className="text-sm text-slate-600">Indian travelers prefer WhatsApp. A 1-click WhatsApp quote button converts 3x better than complex multi-step checkout forms.</p>
+              <p className="text-sm text-[#546059]">Indian travelers prefer WhatsApp. A 1-click WhatsApp quote button converts 3x better than complex multi-step checkout forms.</p>
             </div>
-            <div className="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="flex items-center gap-2 font-bold text-slate-900 mb-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            <div className="p-5 bg-white border border-[rgba(16,41,32,0.08)] rounded-2xl shadow-sm hover:border-[#dfad3c]/40 transition-all">
+              <div className="flex items-center gap-2 font-bold text-[#071510] mb-2">
+                <CheckCircle2 className="w-5 h-5 text-[#25d366]" />
                 Pillar 3: Rate Parity & Direct Perks
               </div>
-              <p className="text-sm text-slate-600">Offer direct bookers complimentary breakfast, flexible cancellation, or late checkout rather than violating OTA rate parity.</p>
+              <p className="text-sm text-[#546059]">Offer direct bookers complimentary breakfast, flexible cancellation, or late checkout rather than violating OTA rate parity.</p>
             </div>
-            <div className="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
-              <div className="flex items-center gap-2 font-bold text-slate-900 mb-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            <div className="p-5 bg-white border border-[rgba(16,41,32,0.08)] rounded-2xl shadow-sm hover:border-[#dfad3c]/40 transition-all">
+              <div className="flex items-center gap-2 font-bold text-[#071510] mb-2">
+                <CheckCircle2 className="w-5 h-5 text-[#25d366]" />
                 Pillar 4: Guest Repeat Database
               </div>
-              <p className="text-sm text-slate-600">Collect guest WhatsApp numbers at reception check-in. Never allow a guest who has stayed once to re-book through an OTA.</p>
+              <p className="text-sm text-[#546059]">Collect guest WhatsApp numbers at reception check-in. Never allow a guest who has stayed once to re-book through an OTA.</p>
             </div>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#043f2e]">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
             3. Calculating Your Real Commission Loss
           </h2>
           <p>
             Use this simple math to understand what 50% commission reduction means for your bottom line:
           </p>
-          <div className="bg-slate-900 text-white p-6 rounded-xl font-mono text-sm space-y-2 not-prose my-6">
-            <div>Monthly OTA Payout: ₹2,00,000</div>
-            <div>Direct Booking Target: Shift 50% to Direct Channels</div>
-            <div>Monthly Profit Saved: ₹1,00,000 / month</div>
-            <div className="text-[#c8f169] font-bold">Annual Added Net Profit: ₹12,00,000 / year (100% margin)</div>
+          <div className="bg-[#0c2018] border border-[#dfad3c]/20 text-white p-6 rounded-2xl font-mono text-sm space-y-2 not-prose my-6 shadow-md">
+            <div className="text-slate-300">Monthly OTA Payout: ₹2,00,000</div>
+            <div className="text-slate-300">Direct Booking Target: Shift 50% to Direct Channels</div>
+            <div className="text-[#dfad3c] font-bold">Monthly Profit Saved: ₹1,00,000 / month</div>
+            <div className="text-[#25d366] font-bold text-base pt-1 border-t border-white/10">Annual Added Net Profit: ₹12,00,000 / year (100% margin)</div>
           </div>
 
           {/* Author Bio Footer Box */}
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-5 not-prose">
-            <div className="w-16 h-16 rounded-full bg-[#043f2e] text-[#c8f169] font-extrabold text-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col sm:flex-row items-center gap-5 not-prose">
+            <div className="w-16 h-16 rounded-2xl bg-[#071510] text-[#dfad3c] border-2 border-[#dfad3c]/30 font-extrabold text-2xl flex items-center justify-center flex-shrink-0 shadow-md">
               SS
             </div>
             <div>
-              <h4 className="font-bold text-slate-900 text-base">
+              <h4 className="font-bold text-[#071510] text-base">
                 Written by Swapneel Shirsat — Director & Founder
               </h4>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1">
-                Swapneel Shirsat is the founder and director of GrowGuest. Backed by 18+ years of digital marketing experience and 10+ years dedicated exclusively inside hospitality, Swapneel helps hotel and resort owners cut OTA commissions and build profitable direct booking pipelines. Learn more on our <a href="/about-hospitality-marketing-agency/" className="font-bold text-[#043f2e] hover:underline">About Page</a>.
+              <p className="text-[#546059] text-xs sm:text-sm leading-relaxed mt-1">
+                Swapneel Shirsat is the founder and director of GrowGuest. Backed by 18+ years of digital marketing experience and 10+ years dedicated exclusively inside hospitality, Swapneel helps hotel and resort owners cut OTA commissions and build profitable direct booking pipelines. Learn more on our <a href="/about-hospitality-marketing-agency/" className="font-bold text-[#c99a2e] hover:underline">About Page</a>.
               </p>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-slate-200 not-prose">
-            <div className="bg-gradient-to-br from-[#02291e] to-[#043f2e] text-white p-8 rounded-2xl">
+          <div className="pt-8 border-t border-[rgba(16,41,32,0.08)] not-prose">
+            <div className="bg-[#071510] text-white p-8 sm:p-10 rounded-3xl border border-[#dfad3c]/20 shadow-xl">
               <h3 className="text-2xl font-extrabold mb-3">Want to know exactly where your OTA leakage is?</h3>
-              <p className="text-emerald-100/90 mb-6">
+              <p className="text-slate-300 mb-6 leading-relaxed">
                 Get a free, no-obligation direct booking audit for your hotel, homestay, or resort. We review your Google presence, website, and commission structure.
               </p>
               <a
                 href="/free-hotel-digital-marketing-audit/"
-                className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
+                className="btn btn-gold inline-flex"
               >
-                Claim Free Direct Booking Audit <ArrowRight className="w-4 h-4 ml-2" />
+                <span>Claim Free Direct Booking Audit</span>
+                <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>

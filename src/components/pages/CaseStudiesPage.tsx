@@ -126,7 +126,7 @@ export default function CaseStudiesPage() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
+    <div className="bg-[#fcfbf9] min-h-screen text-[#141716]">
       <SEO
         title="Hotel Marketing Case Studies | GrowGuest Results"
         description="Real before/after booking and OTA-dependence data from hotels and homestays GrowGuest has worked with. See the results."
@@ -144,10 +144,9 @@ export default function CaseStudiesPage() {
 
       <Breadcrumbs items={breadcrumbItems} />
 
-      <section className="relative bg-brand-teal text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#C99A2E_0%,_transparent_50%)]" />
-        </div>
+      {/* Hero Section */}
+      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -155,10 +154,10 @@ export default function CaseStudiesPage() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30 mb-6"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
             >
-              <Award className="w-4 h-4 mr-2" />
-              Verified Hospitality Performance Data • Nagpur & Beyond
+              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span>Verified Hospitality Performance Data • Nagpur & Beyond</span>
             </motion.div>
 
             <motion.h1 
@@ -167,14 +166,14 @@ export default function CaseStudiesPage() {
               transition={{ delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
             >
-              Hotel Marketing Case Studies: <span className="text-brand-gold">Real Direct Booking Results</span>
+              Hotel Marketing Case Studies: <span className="font-serif italic font-normal text-[#dfad3c]">Real Direct Booking Results</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
             >
               We measure success by one metric: how much OTA commission money stays in your bank account. Explore verified before-and-after data from independent hotels, resorts, and homestays.
             </motion.p>
@@ -183,14 +182,14 @@ export default function CaseStudiesPage() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-brand-gold bg-slate-900/90 text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
-              <div className="flex items-center space-x-2 text-brand-gold font-bold text-xs uppercase tracking-wider mb-2">
+              <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <Sparkles className="w-4 h-4" />
                 <span>Executive Summary: Hotel Growth Case Studies</span>
               </div>
-              <p className="text-sm sm:text-base leading-relaxed text-slate-100">
-                Independent properties partnering with GrowGuest achieve an average <strong>3.5x increase in direct Google Map Pack calls</strong> and reduce OTA commission payouts by <strong>35% to 68% within 90 days</strong> through speed-optimized websites, local SEO, and 1-click WhatsApp booking flows.
+              <p className="text-sm sm:text-base leading-relaxed text-slate-200">
+                Independent properties partnering with GrowGuest achieve an average <strong className="text-white">3.5x increase in direct Google Map Pack calls</strong> and reduce OTA commission payouts by <strong className="text-[#dfad3c]">35% to 68% within 90 days</strong> through speed-optimized websites, local SEO, and 1-click WhatsApp booking flows.
               </p>
             </motion.div>
 
@@ -202,19 +201,20 @@ export default function CaseStudiesPage() {
             >
               <a
                 href="#audit"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-brand-teal bg-brand-gold hover:bg-brand-gold-light transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="btn btn-gold"
               >
-                Get Free Property Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <span>Get Free Property Audit</span>
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
               <a
                 href="https://wa.me/918956907343"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full text-white bg-white/10 hover:bg-white/20 transition-all backdrop-blur border border-white/20"
+                className="btn btn-outline"
+                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
-                <PhoneCall className="w-5 h-5 mr-2" />
-                Speak with Consultant
+                <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
+                <span>Speak with Consultant</span>
               </a>
             </motion.div>
 
@@ -222,11 +222,12 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <section className="bg-slate-900 text-slate-300 py-8 border-y border-white/10">
+      {/* Metrics Bar */}
+      <section className="bg-[#0c2018] text-slate-300 py-8 border-y border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <span className="text-3xl sm:text-4xl font-extrabold text-emerald-400 block mb-1">
+              <span className="text-3xl sm:text-4xl font-extrabold text-[#25d366] block mb-1">
                 ₹15,00,000+
               </span>
               <span className="text-xs sm:text-sm font-medium text-slate-400">
@@ -234,7 +235,7 @@ export default function CaseStudiesPage() {
               </span>
             </div>
             <div>
-              <span className="text-3xl sm:text-4xl font-extrabold text-brand-gold block mb-1">
+              <span className="text-3xl sm:text-4xl font-extrabold text-[#dfad3c] block mb-1">
                 +180%
               </span>
               <span className="text-xs sm:text-sm font-medium text-slate-400">
@@ -250,7 +251,7 @@ export default function CaseStudiesPage() {
               </span>
             </div>
             <div>
-              <span className="text-3xl sm:text-4xl font-extrabold text-purple-400 block mb-1">
+              <span className="text-3xl sm:text-4xl font-extrabold text-emerald-400 block mb-1">
                 8.4x
               </span>
               <span className="text-xs sm:text-sm font-medium text-slate-400">
@@ -261,15 +262,16 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {/* Case Studies List */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">
+          <span className="text-xs font-mono font-semibold text-[#c99a2e] uppercase tracking-wider block mb-2">
             Verified Property Performance
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
             Real Before & After Case Studies
           </h2>
-          <p className="text-slate-600 text-lg">
+          <p className="text-[#546059] text-lg">
             Detailed breakdown of how GrowGuest solved local search invisibility and high OTA commission bleed for hospitality owners.
           </p>
         </div>
@@ -282,40 +284,40 @@ export default function CaseStudiesPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-xl transition-shadow"
+              className="bg-white rounded-3xl border border-[rgba(16,41,32,0.08)] shadow-sm overflow-hidden hover:shadow-xl hover:border-[#dfad3c]/40 transition-all"
             >
               <div className="p-8 md:p-10">
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-brand-teal/10 text-brand-teal border border-brand-teal/20">
+                  <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold bg-[#dfad3c]/15 text-[#c99a2e] border border-[#dfad3c]/25">
                     <MapPin className="w-3.5 h-3.5 mr-1" />
                     {study.badge}
                   </span>
-                  <span className="text-xs text-slate-400 font-semibold uppercase tracking-wider">
+                  <span className="text-xs text-[#546059] font-mono font-semibold uppercase tracking-wider">
                     Verified Case Study #{idx + 1}
                   </span>
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">
+                <h3 className="text-2xl md:text-3xl font-extrabold text-[#071510] mb-6">
                   {study.title}
                 </h3>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  <div className="bg-red-50/50 p-6 rounded-2xl border border-red-100">
+                  <div className="bg-red-50/40 p-6 rounded-2xl border border-red-100">
                     <h4 className="text-sm font-bold text-red-900 uppercase tracking-wider mb-2 flex items-center">
                       <span className="w-2 h-2 rounded-full bg-red-500 mr-2"></span>
                       The Challenge / Problem
                     </h4>
-                    <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    <p className="text-[#546059] text-sm sm:text-base leading-relaxed">
                       {study.challenge}
                     </p>
                   </div>
 
-                  <div className="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100">
+                  <div className="bg-emerald-50/40 p-6 rounded-2xl border border-emerald-100">
                     <h4 className="text-sm font-bold text-emerald-900 uppercase tracking-wider mb-2 flex items-center">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#25d366] mr-2"></span>
                       The GrowGuest Strategy
                     </h4>
-                    <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    <p className="text-[#546059] text-sm sm:text-base leading-relaxed">
                       {study.solution}
                     </p>
                   </div>
@@ -323,26 +325,26 @@ export default function CaseStudiesPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                   {study.metrics.map((metric, i) => (
-                    <div key={i} className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-center">
-                      <span className="text-xs font-bold text-slate-500 uppercase block mb-2">
+                    <div key={i} className="bg-[#f7f5ef] p-5 rounded-2xl border border-[rgba(16,41,32,0.08)] text-center">
+                      <span className="text-xs font-bold text-[#546059] uppercase block mb-2">
                         {metric.label}
                       </span>
                       <div className="flex items-center justify-center space-x-2 text-xs text-slate-400 mb-1">
                         <span className="line-through">{metric.before}</span>
-                        <ArrowRight className="w-3.5 h-3.5 text-brand-teal" />
+                        <ArrowRight className="w-3.5 h-3.5 text-[#c99a2e]" />
                       </div>
-                      <div className="text-lg font-black text-brand-teal">
+                      <div className="text-lg font-black text-[#071510]">
                         {metric.after}
                       </div>
-                      <span className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                      <span className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#dfad3c]/20 text-[#071510]">
                         {metric.highlight}
                       </span>
                     </div>
                   ))}
                 </div>
 
-                <div className="bg-brand-teal/5 p-6 rounded-2xl border border-brand-teal/20 italic text-slate-700 text-sm sm:text-base flex items-start">
-                  <span className="text-3xl text-brand-gold font-serif mr-3 leading-none">“</span>
+                <div className="bg-[#fcfbf9] p-6 rounded-2xl border border-[#dfad3c]/25 italic text-[#546059] text-sm sm:text-base flex items-start">
+                  <span className="text-3xl text-[#c99a2e] font-serif mr-3 leading-none">“</span>
                   <p className="pt-1">{study.testimonial}</p>
                 </div>
               </div>
@@ -351,13 +353,14 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-slate-100 border-t border-slate-200">
+      {/* FAQ Section */}
+      <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.06)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">
+            <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
               Case Study & Results FAQ
             </h2>
-            <p className="text-slate-600">
+            <p className="text-[#546059]">
               Common questions about our verified before-and-after results and property audits.
             </p>
           </div>
@@ -366,23 +369,23 @@ export default function CaseStudiesPage() {
             {faqs.map((faq, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden transition-shadow shadow-sm"
+                className="bg-white rounded-2xl border border-[rgba(16,41,32,0.08)] overflow-hidden shadow-xs"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                 >
-                  <span className="font-bold text-slate-900 text-lg pr-4">
+                  <span className="font-bold text-[#071510] text-lg pr-4">
                     {faq.question}
                   </span>
                   {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-brand-teal flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#c99a2e] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                  <div className="px-6 pb-6 text-[#546059] leading-relaxed border-t border-slate-100 pt-4 text-sm">
                     {faq.answer}
                   </div>
                 )}

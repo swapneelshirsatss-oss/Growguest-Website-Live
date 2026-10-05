@@ -9,7 +9,7 @@ export default function TermsOfServicePage() {
   ];
 
   return (
-    <div className="bg-[#fcfcfc] text-[#242423] min-h-screen">
+    <div className="bg-[#fcfbf9] text-[#141716] min-h-screen">
       <SEO
         title="Terms of Service | Growguest — Digital Growth for Hospitality"
         description="Terms and conditions governing the use of Growguest website, free direct booking audit tools, and consulting engagements."
@@ -20,16 +20,17 @@ export default function TermsOfServicePage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#02291e] via-[#043f2e] to-[#02291e] text-white py-16 lg:py-20 border-b border-emerald-500/20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 backdrop-blur-md mb-6">
-            <FileCheck className="w-4 h-4 mr-2" />
-            Service Agreement & Guidelines
+      <section className="relative bg-[#071510] text-white py-16 lg:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+            <span>Service Agreement & Guidelines</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-            Terms of Service
+            Terms of <span className="font-serif italic font-normal text-[#dfad3c]">Service</span>
           </h1>
-          <p className="text-base sm:text-lg text-emerald-100/80 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
             Last Updated: August 2026. Standard terms governing website use, audit tools, and marketing engagements with Growguest.
           </p>
         </div>
@@ -37,10 +38,10 @@ export default function TermsOfServicePage() {
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-sm space-y-10 text-slate-700 leading-relaxed">
+        <div className="bg-white rounded-3xl border border-[rgba(16,41,32,0.08)] p-8 sm:p-12 shadow-sm space-y-10 text-[#546059] leading-relaxed">
           
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               1. Acceptance of Terms
             </h2>
             <p>
@@ -49,11 +50,11 @@ export default function TermsOfServicePage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               2. Free Direct Booking Audit Scope
             </h2>
             <p className="mb-3">
-              Our <strong>Free Direct Booking Audit</strong> provides an independent preliminary assessment of a property's digital footprint (including Google Business Profile visibility, mobile website UX, and OTA leakage).
+              Our <strong className="text-[#071510]">Free Direct Booking Audit</strong> provides an independent preliminary assessment of a property's digital footprint (including Google Business Profile visibility, mobile website UX, and OTA leakage).
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>The audit is provided free of cost with zero obligation to hire Growguest.</li>
@@ -63,7 +64,7 @@ export default function TermsOfServicePage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               3. Consulting Engagements & Deliverables
             </h2>
             <p>
@@ -72,7 +73,7 @@ export default function TermsOfServicePage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               4. Intellectual Property & Advisory Content
             </h2>
             <p>
@@ -81,7 +82,7 @@ export default function TermsOfServicePage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               5. Governing Law & Jurisdiction
             </h2>
             <p>
@@ -89,24 +90,24 @@ export default function TermsOfServicePage() {
             </p>
           </div>
 
-          <div className="pt-6 border-t border-slate-200">
-            <h2 className="text-2xl font-bold text-[#043f2e] mb-4">
+          <div className="pt-6 border-t border-[rgba(16,41,32,0.08)]">
+            <h2 className="text-2xl font-bold text-[#071510] mb-4">
               6. Contact Information
             </h2>
             <p className="mb-4">
               For any questions or legal notices regarding these Terms of Service:
             </p>
-            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 space-y-3 text-sm">
-              <div className="flex items-center text-slate-800">
-                <MapPin className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
+            <div className="bg-[#f7f5ef] rounded-2xl p-6 border border-[rgba(16,41,32,0.08)] space-y-3 text-sm">
+              <div className="flex items-center text-[#071510]">
+                <MapPin className="w-4 h-4 mr-2 text-[#c99a2e] flex-shrink-0" />
                 <span>GrowGuest Digital Growth for Hospitality — 60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034</span>
               </div>
-              <div className="flex items-center text-slate-800">
-                <Phone className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
+              <div className="flex items-center text-[#071510]">
+                <Phone className="w-4 h-4 mr-2 text-[#c99a2e] flex-shrink-0" />
                 <span>+91 89569 07343</span>
               </div>
-              <div className="flex items-center text-slate-800">
-                <Mail className="w-4 h-4 mr-2 text-[#043f2e] flex-shrink-0" />
+              <div className="flex items-center text-[#071510]">
+                <Mail className="w-4 h-4 mr-2 text-[#c99a2e] flex-shrink-0" />
                 <span>hello@growguest.com</span>
               </div>
             </div>

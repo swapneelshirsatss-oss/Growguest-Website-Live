@@ -167,7 +167,7 @@ export default function ApproachPage() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
+    <div className="bg-[#fcfbf9] text-[#141716] min-h-screen">
       <SEO
         title="Hospitality Marketing Methodology & Direct Booking Framework | GrowGuest"
         description="GrowGuest's proven 3-pillar hospitality marketing methodology: High-Converting Web Architecture, Google Maps 3-Pack Local SEO, and WhatsApp Automation. Built for hotels and homestays."
@@ -189,10 +189,8 @@ export default function ApproachPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-[#043f2e] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#c8f169_0%,_transparent_60%)]" />
-        </div>
+      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -200,10 +198,10 @@ export default function ApproachPage() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 mb-6"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
             >
-              <Zap className="w-4 h-4 mr-2" />
-              THE GROWGUEST HOSPITALITY FRAMEWORK
+              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span>THE GROWGUEST HOSPITALITY FRAMEWORK</span>
             </motion.div>
 
             <motion.h1 
@@ -213,14 +211,14 @@ export default function ApproachPage() {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
             >
               You Craft The Hospitality.<br />
-              <span className="text-[#c8f169]">We Engineer The Pipeline To Fill It.</span>
+              <span className="font-serif italic font-normal text-[#dfad3c]">We Engineer The Pipeline To Fill It.</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
             >
               A stunning property without a connected direct booking journey surrenders 18% to 25% of its gross revenue to OTAs. Here is the exact 3-pillar framework we use to turn lookers into commission-free direct guests.
             </motion.p>
@@ -229,14 +227,14 @@ export default function ApproachPage() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#c8f169] bg-slate-900/90 text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
-              <div className="flex items-center space-x-2 text-[#c8f169] font-bold text-xs uppercase tracking-wider mb-2">
+              <div className="flex items-center space-x-2 text-[#dfad3c] font-mono font-bold text-xs uppercase tracking-wider mb-2">
                 <Sparkles className="w-4 h-4" />
                 <span>Executive Summary: Founder-Led Hospitality Engineering</span>
               </div>
-              <p className="text-sm sm:text-base leading-relaxed text-slate-100">
-                Created by <strong>Swapneel Shirsat</strong> (18+ years digital marketing, 10+ years exclusively inside hospitality), this methodology addresses the root cause of OTA commission bleed: slow websites, invisible Google Maps profiles, and sluggish inquiry handling. By uniting <strong>Speed & CRO</strong>, <strong>Local Google Dominance</strong>, and <strong>WhatsApp Automation</strong>, independent hotels reclaim ₹1,00,000+ to ₹5,00,000+ in annual profit.
+              <p className="text-sm sm:text-base leading-relaxed text-slate-200">
+                Created by <strong className="text-white">Swapneel Shirsat</strong> (18+ years digital marketing, 10+ years exclusively inside hospitality), this methodology addresses the root cause of OTA commission bleed: slow websites, invisible Google Maps profiles, and sluggish inquiry handling. By uniting <strong className="text-white">Speed & CRO</strong>, <strong className="text-white">Local Google Dominance</strong>, and <strong className="text-white">WhatsApp Automation</strong>, independent hotels reclaim ₹1,00,000+ to ₹5,00,000+ in annual profit.
               </p>
             </motion.div>
 
@@ -248,19 +246,19 @@ export default function ApproachPage() {
             >
               <a
                 href="#audit"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-[#043f2e] bg-[#c8f169] hover:bg-[#d8f68e] transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="btn btn-gold inline-flex"
               >
-                Request Free Growth Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <span>Request Free Growth Audit</span>
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
               <a
                 href="https://wa.me/918956907343"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full text-white bg-white/10 hover:bg-white/20 transition-all backdrop-blur border border-white/20"
+                className="btn btn-outline border-white/20 text-white hover:bg-white/10 inline-flex"
               >
-                <PhoneCall className="w-5 h-5 mr-2" />
-                WhatsApp Strategy Call
+                <PhoneCall className="w-4 h-4 mr-2 text-[#dfad3c]" />
+                <span>WhatsApp Strategy Call</span>
               </a>
             </motion.div>
 
@@ -269,23 +267,23 @@ export default function ApproachPage() {
       </section>
 
       {/* Trust Stats Bar */}
-      <section className="bg-slate-900 text-slate-300 py-6 border-y border-white/10">
+      <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-medium">
             <div className="flex items-center justify-center space-x-2">
-              <Zap className="w-5 h-5 text-[#c8f169] flex-shrink-0" />
+              <Zap className="w-4 h-4 text-[#dfad3c] flex-shrink-0" />
               <span>Sub-1.5s Web Speed</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <MapPin className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+              <MapPin className="w-4 h-4 text-[#dfad3c] flex-shrink-0" />
               <span>Google Maps 3-Pack Dominance</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <MessageSquare className="w-5 h-5 text-blue-400 flex-shrink-0" />
+              <MessageSquare className="w-4 h-4 text-[#dfad3c] flex-shrink-0" />
               <span>1-Click WhatsApp Funnel</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <ShieldCheck className="w-5 h-5 text-purple-400 flex-shrink-0" />
+              <ShieldCheck className="w-4 h-4 text-[#dfad3c] flex-shrink-0" />
               <span>18+ Yrs Marketing Experience</span>
             </div>
           </div>
@@ -295,14 +293,14 @@ export default function ApproachPage() {
       {/* The 3 Pillars Section */}
       <section className="py-20 lg:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#043f2e] bg-[#c8f169]/30 px-3.5 py-1 rounded-full uppercase tracking-widest inline-block mb-3">
-            Core Architecture
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+            <span>CORE ARCHITECTURE</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] tracking-tight mb-4">
             The Three Pillars of Direct Booking Growth
           </h2>
-          <p className="text-slate-600 text-lg leading-relaxed">
-            Every dollar in direct booking revenue requires three connected gears. When all three run in unison, independent properties consistently beat OTA aggregators.
+          <p className="text-[#546059] text-lg leading-relaxed">
+            Every direct booking rupee requires three connected gears. When all three run in unison, independent properties consistently outperform OTA aggregators.
           </p>
         </div>
 
@@ -310,33 +308,33 @@ export default function ApproachPage() {
           {pillars.map((pillar, idx) => (
             <div 
               key={idx}
-              className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden"
+              className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:shadow-xl hover:border-[#dfad3c]/40 transition-all relative overflow-hidden"
             >
               <div className="grid lg:grid-cols-12 gap-8 items-start">
                 <div className="lg:col-span-4">
-                  <span className="font-mono text-xs font-bold tracking-wider text-[#043f2e] bg-slate-100 px-3 py-1 rounded-md mb-4 inline-block">
+                  <span className="font-mono text-xs font-bold tracking-wider text-[#dfad3c] bg-[#071510] px-3.5 py-1.5 rounded-lg mb-4 inline-block">
                     PILLAR {pillar.num} / {pillar.tag}
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-3">
                     {pillar.title}
                   </h3>
-                  <p className="text-sm font-medium text-[#043f2e] mb-4">
+                  <p className="text-sm font-semibold text-[#0c2018] mb-4">
                     {pillar.headline}
                   </p>
-                  <div className="inline-block bg-[#043f2e] text-[#c8f169] text-xs font-bold px-3.5 py-1.5 rounded-full">
+                  <div className="inline-block bg-[#071510] text-[#dfad3c] border border-[#dfad3c]/30 text-xs font-bold px-3.5 py-1.5 rounded-full">
                     {pillar.metric}
                   </div>
                 </div>
 
                 <div className="lg:col-span-8 space-y-6">
-                  <p className="text-slate-600 leading-relaxed text-base">
+                  <p className="text-[#546059] leading-relaxed text-base">
                     {pillar.description}
                   </p>
                   
-                  <div className="grid sm:grid-cols-2 gap-3 pt-4 border-t border-slate-100">
+                  <div className="grid sm:grid-cols-2 gap-3 pt-4 border-t border-[rgba(16,41,32,0.08)]">
                     {pillar.features.map((feat, fIdx) => (
-                      <div key={fIdx} className="flex items-start text-sm text-slate-700">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
+                      <div key={fIdx} className="flex items-start text-sm text-[#546059]">
+                        <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
                         <span>{feat}</span>
                       </div>
                     ))}
@@ -349,16 +347,16 @@ export default function ApproachPage() {
       </section>
 
       {/* The 4-Step Operational Blueprint */}
-      <section className="py-20 bg-slate-900 text-white">
+      <section className="py-20 bg-[#071510] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-bold text-[#c8f169] uppercase tracking-widest block mb-2">
+            <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-widest block mb-2">
               HOW WE WORK WITH YOU
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
               The 4-Step Operational Blueprint
             </h2>
-            <p className="text-slate-400 text-lg">
+            <p className="text-slate-300 text-lg">
               No generic playbooks. A systematic, step-by-step process tailored to your property's exact location, room count, and current commission leakage.
             </p>
           </div>
@@ -367,14 +365,14 @@ export default function ApproachPage() {
             {blueprintSteps.map((item, idx) => (
               <div 
                 key={idx}
-                className="bg-slate-800/80 rounded-2xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between hover:border-[#c8f169]/40 transition-colors"
+                className="bg-[#0c2018] rounded-2xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between hover:border-[#dfad3c]/40 transition-colors"
               >
                 <div>
                   <div className="flex justify-between items-center mb-6">
-                    <span className="font-mono text-xs font-bold text-[#c8f169] tracking-wider">
+                    <span className="font-mono text-xs font-bold text-[#dfad3c] tracking-wider">
                       STEP {item.step}
                     </span>
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 bg-white/5 px-2.5 py-1 rounded">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-300 bg-white/5 px-2.5 py-1 rounded">
                       {item.phase}
                     </span>
                   </div>
@@ -393,7 +391,7 @@ export default function ApproachPage() {
           <div className="mt-14 text-center">
             <a 
               href="/hospitality-marketing-case-studies/" 
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-bold bg-[#c8f169] text-[#043f2e] hover:bg-[#d8f68e] transition-all"
+              className="btn btn-gold inline-flex"
             >
               <span>See Real Case Studies & Property Results</span>
               <ArrowRight className="w-4 h-4 ml-2" />
@@ -405,62 +403,62 @@ export default function ApproachPage() {
       {/* Verified Property Proof Cards */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold text-[#043f2e] uppercase tracking-widest block mb-2">
+          <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
             PROVEN RESULTS
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
             Field-Tested Across Premier Retreats
           </h2>
-          <p className="text-slate-600 text-lg">
+          <p className="text-[#546059] text-lg">
             From luxury boutique resorts in Nainital to heritage private villas in North Goa and Nagpur homestays.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
             <div>
-              <div className="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full inline-block mb-3">
+              <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
                 MUKTESHWAR, UTTARAKHAND
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">The Stone Heritage</h3>
-              <p className="text-xs font-semibold text-[#043f2e] mb-4">📈 +42% Direct Bookings via WhatsApp</p>
-              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+              <h3 className="text-xl font-extrabold text-[#071510] mb-2">The Stone Heritage</h3>
+              <p className="text-xs font-semibold text-[#0c2018] mb-4">📈 +42% Direct Bookings via WhatsApp</p>
+              <p className="text-sm text-[#546059] leading-relaxed mb-4">
                 Traditional stone cottage retreat. Engineered custom direct rate packages and Google Maps optimization, diverting weekend buyouts from OTAs.
               </p>
             </div>
-            <a href="https://thestoneheritage.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#043f2e] hover:underline inline-flex items-center">
+            <a href="https://thestoneheritage.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
               Visit Property Website ↗
             </a>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
             <div>
-              <div className="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full inline-block mb-3">
+              <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
                 RAMGARH, NAINITAL
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Whispering Pines Resort</h3>
-              <p className="text-xs font-semibold text-[#043f2e] mb-4">⚡ OTA Share Cut from 75% to 38%</p>
-              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+              <h3 className="text-xl font-extrabold text-[#071510] mb-2">Whispering Pines Resort</h3>
+              <p className="text-xs font-semibold text-[#0c2018] mb-4">⚡ OTA Share Cut from 75% to 38%</p>
+              <p className="text-sm text-[#546059] leading-relaxed mb-4">
                 Tranquil orchard destination resort. Captured top 3 Google Business Profile rankings for Ramgarh family vacations and corporate retreats.
               </p>
             </div>
-            <a href="https://whisperingpinesresort.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#043f2e] hover:underline inline-flex items-center">
+            <a href="https://whisperingpinesresort.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
               Visit Property Website ↗
             </a>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
             <div>
-              <div className="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full inline-block mb-3">
+              <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
                 ASSAGAO, NORTH GOA
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">The Goan House</h3>
-              <p className="text-xs font-semibold text-[#043f2e] mb-4">✨ 100% Commission-Free Buyouts</p>
-              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+              <h3 className="text-xl font-extrabold text-[#071510] mb-2">The Goan House</h3>
+              <p className="text-xs font-semibold text-[#0c2018] mb-4">✨ 100% Commission-Free Buyouts</p>
+              <p className="text-sm text-[#546059] leading-relaxed mb-4">
                 Exclusive Portuguese heritage villa. Deployed a friction-free WhatsApp concierge reservation pipeline for affluent family and group buyouts.
               </p>
             </div>
-            <a href="https://thegoanhouse.com/" target="_blank" rel="noopener" className="text-xs font-bold text-[#043f2e] hover:underline inline-flex items-center">
+            <a href="https://thegoanhouse.com/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
               Visit Property Website ↗
             </a>
           </div>
@@ -468,16 +466,16 @@ export default function ApproachPage() {
       </section>
 
       {/* FAQ Accordion Section */}
-      <section className="py-20 bg-slate-100 border-t border-slate-200">
+      <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-xs font-bold text-[#043f2e] uppercase tracking-widest block mb-2">
+            <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-widest block mb-2">
               FREQUENTLY ASKED QUESTIONS
             </span>
-            <h2 className="text-3xl font-extrabold text-slate-900 mb-3">
+            <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
               Methodology & Growth Questions
             </h2>
-            <p className="text-slate-600">
+            <p className="text-[#546059]">
               Clear, honest answers about shifting room nights from OTAs to direct channels.
             </p>
           </div>
@@ -486,24 +484,24 @@ export default function ApproachPage() {
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs"
+                className="bg-white rounded-2xl border border-[rgba(16,41,32,0.08)] overflow-hidden shadow-xs hover:border-[#dfad3c]/40 transition-all"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                   aria-expanded={openFaq === idx}
                 >
-                  <span className="text-base sm:text-lg font-bold text-slate-900 pr-4">
+                  <span className="text-base sm:text-lg font-bold text-[#071510] pr-4">
                     {faq.question}
                   </span>
                   {openFaq === idx ? (
-                    <ChevronUp className="w-5 h-5 text-[#043f2e] flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === idx && (
-                  <div className="px-6 pb-6 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                  <div className="px-6 pb-6 text-sm sm:text-base text-[#546059] leading-relaxed border-t border-[rgba(16,41,32,0.06)] pt-4">
                     {faq.answer}
                   </div>
                 )}
@@ -515,15 +513,15 @@ export default function ApproachPage() {
 
       {/* Embedded Audit Form Section */}
       <section id="audit" className="py-20 lg:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-xl">
           <div className="text-center mb-8">
-            <span className="text-xs font-bold text-[#043f2e] bg-[#c8f169]/40 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+            <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
               ZERO RISK · IN-PERSON OR REMOTE
             </span>
-            <h2 className="text-3xl font-extrabold text-slate-900 mb-2">
+            <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
               Apply This Methodology to Your Property
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
+            <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto">
               Request a free 360° direct booking audit. We will inspect your Google Business Profile, site speed, and OTA commission leakage.
             </p>
           </div>

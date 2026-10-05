@@ -71,7 +71,7 @@ export default function BlogPostLocalSeoHillStations() {
   };
 
   return (
-    <div className="bg-[#fcfcfc] text-[#242423] min-h-screen">
+    <div className="bg-[#fcfbf9] text-[#141716] min-h-screen">
       <SEO
         title="Local SEO Guide for Resorts & Hill Station Stays | Growguest"
         description="How mountain homestays in Mukteshwar, Ramgarh, and Nainital capture high-intent weekend getaway travelers searching on Google."
@@ -83,42 +83,43 @@ export default function BlogPostLocalSeoHillStations() {
 
       <Breadcrumbs items={breadcrumbItems} />
 
-      <header className="relative bg-gradient-to-b from-[#02291e] via-[#043f2e] to-[#02291e] text-white pt-16 pb-20 lg:pt-20 lg:pb-24 overflow-hidden border-b border-emerald-500/20">
+      <header className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 mb-6">
-            <Mountain className="w-4 h-4 mr-2" />
-            Destination & Resort SEO
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+            <span>Destination & Resort SEO</span>
           </div>
 
           <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-            Local SEO Guide for Resorts & Boutique Stays in Hill Stations
+            Local SEO Guide for <span className="font-serif italic font-normal text-[#dfad3c]">Resorts & Boutique Stays in Hill Stations</span>
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-emerald-100/80">
-            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#c8f169]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
-            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#c8f169]" /> Jul 2026</span>
-            <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#c8f169]" /> 8 min read</span>
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-300">
+            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
+            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> Jul 2026</span>
+            <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> 8 min read</span>
           </div>
         </div>
       </header>
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <article className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
+        <article className="prose prose-lg max-w-none text-[#546059] leading-relaxed space-y-8">
           
-          <div className="bg-emerald-50 border-l-4 border-[#043f2e] p-6 rounded-r-xl not-prose mb-8">
-            <div className="text-xs uppercase tracking-wider font-bold text-[#043f2e] mb-2 flex items-center">
-              <Mountain className="w-4 h-4 mr-1 text-[#043f2e]" /> Quick Answer: How Hill-Station Stays Dominate Local Search
+          <div className="bg-[#0c2018] border-l-4 border-[#dfad3c] p-6 sm:p-7 rounded-r-2xl border-y border-r border-white/10 shadow-xl not-prose mb-8">
+            <div className="text-xs uppercase tracking-wider font-bold text-[#dfad3c] mb-2 flex items-center">
+              <Mountain className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> Quick Answer: How Hill-Station Stays Dominate Local Search
             </div>
-            <p id="direct-answer-summary" className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium m-0">
+            <p id="direct-answer-summary" className="text-slate-200 text-sm sm:text-base leading-relaxed font-medium m-0">
               Boutique resorts and hill-station homestays outrank aggregators by optimizing for high-intent long-tail keywords (e.g., 'pet-friendly Mukteshwar cottage'), building highway feeder route guides from metro hubs (Delhi NCR, Lucknow), and maintaining verified Google Business Profiles with accurate mountain driving directions.
             </p>
           </div>
 
-          <p className="text-xl text-slate-800 font-medium">
+          <p className="text-xl text-[#071510] font-medium leading-relaxed">
             Resorts and boutique homestays in scenic hill destinations like Mukteshwar, Ramgarh, Nainital, and Pench face a unique challenge: their guests aren't local residents. They are urban travelers from Delhi NCR, Mumbai, and Nagpur planning weekend escapes and workations.
           </p>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#043f2e]">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
             1. Targeting Long-Tail Experience Keywords
           </h2>
           <p>
@@ -130,65 +131,66 @@ export default function BlogPostLocalSeoHillStations() {
             <li>"Homestay in Ramgarh with snow view and bonfire"</li>
           </ul>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#043f2e]">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
             2. Creating Local Destination Guides
           </h2>
           <p>
             Publishing local area guides ("Top 5 Scenic Sunset Spots in Mukteshwar", "Driving Guide from Delhi to Ramgarh") builds authority and captures travelers in the planning phase, leading them straight to your direct booking offer.
           </p>
 
-          <div className="bg-slate-900 text-white p-6 sm:p-8 rounded-2xl border border-white/10 not-prose my-8">
-            <h3 className="text-lg font-bold text-[#c8f169] mb-3 flex items-center">
-              <Compass className="w-5 h-5 mr-2" /> Feeder Metro Highway Driving Corridors
+          <div className="bg-[#071510] text-white p-6 sm:p-8 rounded-3xl border border-[#dfad3c]/20 shadow-xl not-prose my-8">
+            <h3 className="text-lg font-bold text-[#dfad3c] mb-3 flex items-center">
+              <Compass className="w-5 h-5 mr-2 text-[#dfad3c]" /> Feeder Metro Highway Driving Corridors
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
               Targeting weekend getaway travelers requires optimizing for the primary highway drive corridors connecting major feeder cities to hill station destinations:
             </p>
             <div className="grid sm:grid-cols-3 gap-4 text-xs">
-              <div className="bg-white/5 p-3.5 rounded-xl border border-white/10">
+              <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                 <div className="font-bold text-white mb-1">Delhi NCR ➔ Kumaon Hills</div>
                 <div className="text-slate-400">Via NH-9 / NH-109</div>
-                <div className="text-[#c8f169] font-medium mt-1">320 km • 7.5 hrs</div>
+                <div className="text-[#dfad3c] font-medium mt-1">320 km • 7.5 hrs</div>
               </div>
-              <div className="bg-white/5 p-3.5 rounded-xl border border-white/10">
+              <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                 <div className="font-bold text-white mb-1">Lucknow / Bareilly ➔ Nainital</div>
                 <div className="text-slate-400">Via NH-30 / NH-109</div>
-                <div className="text-[#c8f169] font-medium mt-1">380 km • 8 hrs</div>
+                <div className="text-[#dfad3c] font-medium mt-1">380 km • 8 hrs</div>
               </div>
-              <div className="bg-white/5 p-3.5 rounded-xl border border-white/10">
+              <div className="bg-white/5 p-4 rounded-2xl border border-white/10">
                 <div className="font-bold text-white mb-1">Chandigarh / Dehradun ➔ Ramgarh</div>
                 <div className="text-slate-400">Via NH-7 / NH-309</div>
-                <div className="text-[#c8f169] font-medium mt-1">420 km • 9.5 hrs</div>
+                <div className="text-[#dfad3c] font-medium mt-1">420 km • 9.5 hrs</div>
               </div>
             </div>
           </div>
 
           {/* Author Bio Footer Box */}
-          <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-5 not-prose">
-            <div className="w-16 h-16 rounded-full bg-[#043f2e] text-[#c8f169] font-extrabold text-2xl flex items-center justify-center flex-shrink-0 shadow-md">
+          <div className="bg-white p-6 sm:p-7 rounded-3xl border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col sm:flex-row items-center gap-5 not-prose">
+            <div className="w-16 h-16 rounded-2xl bg-[#071510] text-[#dfad3c] border-2 border-[#dfad3c]/30 font-extrabold text-2xl flex items-center justify-center flex-shrink-0 shadow-md">
               SS
             </div>
             <div>
-              <h4 className="font-bold text-slate-900 text-base">
+              <h4 className="font-bold text-[#071510] text-base">
                 Written by Swapneel Shirsat — Director & Founder
               </h4>
-              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mt-1">
-                Swapneel Shirsat is the founder and director of GrowGuest. Backed by 18+ years of digital marketing experience and 10+ years dedicated exclusively inside hospitality, Swapneel helps hotel and resort owners cut OTA commissions and build profitable direct booking pipelines. Learn more on our <a href="/about-hospitality-marketing-agency/" className="font-bold text-[#043f2e] hover:underline">About Page</a>.
+              <p className="text-[#546059] text-xs sm:text-sm leading-relaxed mt-1">
+                Swapneel Shirsat is the founder and director of GrowGuest. Backed by 18+ years of digital marketing experience and 10+ years dedicated exclusively inside hospitality, Swapneel helps hotel and resort owners cut OTA commissions and build profitable direct booking pipelines. Learn more on our <a href="/about-hospitality-marketing-agency/" className="font-bold text-[#c99a2e] hover:underline">About Page</a>.
               </p>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-slate-200 not-prose">
-            <div className="bg-gradient-to-br from-[#02291e] to-[#043f2e] text-white p-8 rounded-2xl">
+          <div className="pt-8 border-t border-[rgba(16,41,32,0.08)] not-prose">
+            <div className="bg-[#071510] text-white p-8 sm:p-10 rounded-3xl border border-[#dfad3c]/20 shadow-xl">
               <h3 className="text-2xl font-extrabold mb-3">Own a resort or boutique homestay?</h3>
-              <p className="text-emerald-100/90 mb-6">
+              <p className="text-slate-300 mb-6 leading-relaxed">
                 Discover how our direct-booking playbook fills rooms throughout off-peak seasons without OTA reliance.
               </p>
               <a
                 href="/free-hotel-digital-marketing-audit/"
-                className="inline-flex items-center px-6 py-3.5 rounded-full bg-[#c8f169] text-[#043f2e] font-extrabold hover:bg-[#d8f68e] transition-all shadow-md"
+                className="btn btn-gold inline-flex"
               >
-                Claim Free Resort Audit <ArrowRight className="w-4 h-4 ml-2" />
+                <span>Claim Free Resort Audit</span>
+                <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </div>
           </div>

@@ -74,7 +74,7 @@ export default function CalculatorPage() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
+    <div className="bg-[#fcfbf9] text-[#141716] min-h-screen">
       <SEO
         title="Hotel OTA Commission Calculator & Direct ROI Savings Tool | GrowGuest"
         description="Calculate how much money your hotel or homestay loses to MakeMyTrip, Agoda, and Booking.com commissions. See real direct booking ROI and savings."
@@ -93,17 +93,18 @@ export default function CalculatorPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Hero Intro */}
-      <section className="relative bg-[#043f2e] text-white pt-16 pb-12 overflow-hidden">
+      <section className="relative bg-[#071510] text-white pt-16 pb-16 lg:pt-24 lg:pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#c8f169]/15 border border-[#c8f169]/30 text-[#c8f169] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-            <Sparkles className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
             <span>INTERACTIVE FINANCIAL TOOL</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-            Hotel OTA Commission & Direct ROI Calculator
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+            Hotel OTA Commission & <span className="font-serif italic font-normal text-[#dfad3c]">Direct ROI Calculator</span>
           </h1>
-          <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
             See exactly how much revenue third-party aggregators (MakeMyTrip, Agoda, Booking.com) take from your property—and how much profit you reclaim by going direct.
           </p>
         </div>
@@ -114,55 +115,55 @@ export default function CalculatorPage() {
 
       {/* Educational Breakdown Section */}
       <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm space-y-8">
           <div>
-            <span className="text-xs font-bold text-[#043f2e] uppercase tracking-wider block mb-2">
+            <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-wider block mb-2">
               HOW THE MATH WORKS
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-4">
               Understanding Your Property's Commission Bleed
             </h2>
-            <p className="text-slate-600 leading-relaxed text-base">
+            <p className="text-[#546059] leading-relaxed text-base">
               When an independent hotel generates ₹3,00,000 to ₹10,00,000 in monthly room revenue, relying on OTAs for 65%+ of bookings results in <strong>₹36,000 to ₹1,20,000+ paid in middleman commissions every single month</strong>. Over a year, this amounts to ₹4,30,000 to ₹14,00,000+ extracted directly from your bottom line.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100">
-            <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+          <div className="grid sm:grid-cols-3 gap-6 pt-4 border-t border-[rgba(16,41,32,0.08)]">
+            <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
               <span className="text-xs font-bold text-red-600 uppercase block mb-1">THE OTA TAX</span>
-              <p className="text-xl font-extrabold text-slate-900 mb-1">18% – 25%</p>
-              <p className="text-xs text-slate-500">Deducted from gross booking revenue on every single completed stay.</p>
+              <p className="text-2xl font-extrabold text-[#071510] mb-1">18% – 25%</p>
+              <p className="text-xs text-[#546059]">Deducted from gross booking revenue on every single completed stay.</p>
             </div>
-            <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-              <span className="text-xs font-bold text-emerald-700 uppercase block mb-1">THE DIRECT TARGET</span>
-              <p className="text-xl font-extrabold text-slate-900 mb-1">25% – 50%</p>
-              <p className="text-xs text-slate-500">Realistic share of bookings that can be diverted to your website and WhatsApp.</p>
+            <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
+              <span className="text-xs font-bold text-[#0c2018] uppercase block mb-1">THE DIRECT TARGET</span>
+              <p className="text-2xl font-extrabold text-[#071510] mb-1">25% – 50%</p>
+              <p className="text-xs text-[#546059]">Realistic share of bookings that can be diverted to your website and WhatsApp.</p>
             </div>
-            <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-              <span className="text-xs font-bold text-[#043f2e] uppercase block mb-1">ANNUAL RETENTION</span>
-              <p className="text-xl font-extrabold text-slate-900 mb-1">₹1L – ₹5L+</p>
-              <p className="text-xs text-slate-500">Net operating profit retained in your business bank account.</p>
+            <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
+              <span className="text-xs font-bold text-[#dfad3c] uppercase block mb-1">ANNUAL RETENTION</span>
+              <p className="text-2xl font-extrabold text-[#071510] mb-1">₹1L – ₹5L+</p>
+              <p className="text-xs text-[#546059]">Net operating profit retained in your business bank account.</p>
             </div>
           </div>
 
-          <div className="pt-6 border-t border-slate-100">
-            <h3 className="text-lg font-bold text-slate-900 mb-3">4 Ways to Capture Direct Bookings Without Parity Penalties:</h3>
-            <ul className="space-y-3 text-sm text-slate-700">
+          <div className="pt-6 border-t border-[rgba(16,41,32,0.08)]">
+            <h3 className="text-lg font-bold text-[#071510] mb-3">4 Ways to Capture Direct Bookings Without Parity Penalties:</h3>
+            <ul className="space-y-3 text-sm text-[#546059]">
               <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong>Google Maps 3-Pack Rank:</strong> Rank your Google Business Profile so local travelers call you directly instead of launching an app.</span>
+                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                <span><strong className="text-[#071510]">Google Maps 3-Pack Rank:</strong> Rank your Google Business Profile so local travelers call you directly instead of launching an app.</span>
               </li>
               <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong>Google Hotel Free Booking Links:</strong> Claim free direct booking listing spots alongside OTA ads inside Google Search.</span>
+                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                <span><strong className="text-[#071510]">Google Hotel Free Booking Links:</strong> Claim free direct booking listing spots alongside OTA ads inside Google Search.</span>
               </li>
               <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong>Direct Value Perks:</strong> Offer early check-in, free high-speed Wi-Fi, or welcome drinks that OTAs cannot duplicate.</span>
+                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                <span><strong className="text-[#071510]">Direct Value Perks:</strong> Offer early check-in, free high-speed Wi-Fi, or welcome drinks that OTAs cannot duplicate.</span>
               </li>
               <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong>Instant WhatsApp Concierge:</strong> Respond within 2 minutes with room photos and instant booking confirmation.</span>
+                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                <span><strong className="text-[#071510]">Instant WhatsApp Concierge:</strong> Respond within 2 minutes with room photos and instant booking confirmation.</span>
               </li>
             </ul>
           </div>
@@ -170,13 +171,13 @@ export default function CalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-100 border-t border-slate-200">
+      <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-slate-900 mb-2">
+            <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
               Frequently Asked Questions
             </h2>
-            <p className="text-slate-600 text-sm">
+            <p className="text-[#546059] text-sm">
               Everything you need to know about OTA commission structures and direct booking ROI.
             </p>
           </div>
@@ -185,24 +186,24 @@ export default function CalculatorPage() {
             {faqs.map((faq, idx) => (
               <div 
                 key={idx}
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs"
+                className="bg-white rounded-2xl border border-[rgba(16,41,32,0.08)] overflow-hidden shadow-xs hover:border-[#dfad3c]/40 transition-all"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                   aria-expanded={openFaq === idx}
                 >
-                  <span className="text-base sm:text-lg font-bold text-slate-900 pr-4">
+                  <span className="text-base sm:text-lg font-bold text-[#071510] pr-4">
                     {faq.question}
                   </span>
                   {openFaq === idx ? (
-                    <ChevronUp className="w-5 h-5 text-[#043f2e] flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === idx && (
-                  <div className="px-6 pb-6 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                  <div className="px-6 pb-6 text-sm sm:text-base text-[#546059] leading-relaxed border-t border-[rgba(16,41,32,0.06)] pt-4">
                     {faq.answer}
                   </div>
                 )}
@@ -214,15 +215,15 @@ export default function CalculatorPage() {
 
       {/* Free Audit Form Section */}
       <section id="audit" className="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-xl">
           <div className="text-center mb-8">
-            <span className="text-xs font-bold text-[#043f2e] bg-[#c8f169]/40 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+            <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
               LOCK IN YOUR SAVINGS
             </span>
-            <h2 className="text-3xl font-extrabold text-slate-900 mb-2">
+            <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
               Get Your Free Direct Booking Audit
             </h2>
-            <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
+            <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto">
               Ready to stop losing 20% on every booking? Request a customized audit of your property's OTA commission bleed and direct channels.
             </p>
           </div>

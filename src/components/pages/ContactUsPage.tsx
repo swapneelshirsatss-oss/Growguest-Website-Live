@@ -185,7 +185,7 @@ export default function ContactUsPage() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
+    <div className="bg-[#fcfbf9] min-h-screen text-[#141716]">
       <SEO
         title="Contact GrowGuest | Book Your Free Direct Booking Audit"
         description="Talk to GrowGuest about growing direct bookings for your hotel or homestay. WhatsApp-native, Nagpur-based, founder-led."
@@ -207,10 +207,8 @@ export default function ContactUsPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-brand-teal text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#C99A2E_0%,_transparent_50%)]" />
-        </div>
+      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -218,10 +216,10 @@ export default function ContactUsPage() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30 mb-6"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
             >
-              <Sparkles className="w-4 h-4 mr-2" />
-              WhatsApp-Native • Founder-Led • Nagpur Office
+              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span>WhatsApp-Native • Founder-Led • Nagpur Office</span>
             </motion.div>
 
             <motion.h1 
@@ -230,14 +228,14 @@ export default function ContactUsPage() {
               transition={{ delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
             >
-              Contact GrowGuest: <span className="text-brand-gold">Book Your Free Audit</span>
+              Contact GrowGuest: <span className="font-serif italic font-normal text-[#dfad3c]">Book Your Free Audit</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
             >
               Talk to our founder-led hospitality digital marketing agency in Nagpur. We'll analyze your OTA commission bleed and build a direct booking action plan for your property.
             </motion.p>
@@ -247,14 +245,14 @@ export default function ContactUsPage() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-brand-gold bg-slate-900/90 text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
-              <div className="flex items-center space-x-2 text-brand-gold font-bold text-xs uppercase tracking-wider mb-2">
+              <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <FileText className="w-4 h-4" />
                 <span>How To Contact GrowGuest For A Hotel Marketing Audit?</span>
               </div>
-              <p className="text-sm sm:text-base leading-relaxed text-slate-100">
-                You can contact <strong>GrowGuest</strong> via WhatsApp (+91 89569 07343), phone call, or email (hello@growguest.com). For property owners in Nagpur (Wardha Road, Dharampeth, Civil Lines, Sadar), local in-person property walkthroughs and audits can be scheduled at our headquarters on Besa-Pipla Road or at your hotel premises.
+              <p className="text-sm sm:text-base leading-relaxed text-slate-200">
+                You can contact <strong className="text-white">GrowGuest</strong> via WhatsApp (+91 89569 07343), phone call, or email (hello@growguest.com). For property owners in Nagpur (Wardha Road, Dharampeth, Civil Lines, Sadar), local in-person property walkthroughs and audits can be scheduled at our headquarters on Besa-Pipla Road or at your hotel premises.
               </p>
             </motion.div>
 
@@ -272,15 +270,15 @@ export default function ContactUsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
               className={`bg-white rounded-3xl p-6 border ${
-                channel.isPrimary ? 'border-emerald-300 ring-2 ring-emerald-500/20 shadow-lg' : 'border-slate-200 shadow-sm'
-              } flex flex-col justify-between hover:shadow-xl transition-shadow`}
+                channel.isPrimary ? 'border-[#dfad3c] ring-2 ring-[#dfad3c]/20 shadow-md' : 'border-[rgba(16,41,32,0.08)] shadow-sm'
+              } flex flex-col justify-between hover:shadow-xl hover:border-[#dfad3c]/40 transition-all`}
             >
               <div>
-                <div className="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
+                <div className="w-14 h-14 bg-[#f7f5ef] rounded-2xl flex items-center justify-center mb-4">
                   {channel.icon}
                 </div>
-                <h3 className="font-bold text-slate-900 text-lg mb-2">{channel.title}</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
+                <h3 className="font-bold text-[#071510] text-lg mb-2">{channel.title}</h3>
+                <p className="text-xs sm:text-sm text-[#546059] leading-relaxed mb-6">
                   {channel.description}
                 </p>
               </div>
@@ -291,8 +289,8 @@ export default function ContactUsPage() {
                 rel="noopener noreferrer"
                 className={`inline-flex items-center justify-center w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all ${
                   channel.isPrimary
-                    ? 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-md'
-                    : 'bg-slate-100 hover:bg-brand-teal hover:text-white text-slate-800'
+                    ? 'bg-[#25d366] hover:bg-[#20ba5a] text-white shadow-md'
+                    : 'bg-[#071510] hover:bg-[#0c2018] text-white'
                 }`}
               >
                 {channel.actionText}
@@ -307,12 +305,12 @@ export default function ContactUsPage() {
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           
           {/* Form Column */}
-          <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200">
+          <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-[rgba(16,41,32,0.08)]">
             <div className="mb-8">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-brand-teal mb-2">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-2">
                 Book Your Direct Booking Strategy Audit
               </h2>
-              <p className="text-slate-600 text-sm sm:text-base">
+              <p className="text-[#546059] text-sm sm:text-base">
                 Drop your details below and our founder will send you a personalized digital audit report.
               </p>
             </div>
@@ -340,7 +338,7 @@ export default function ContactUsPage() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-bold text-slate-800 mb-2">
+                  <label htmlFor="name" className="block text-sm font-bold text-[#071510] mb-2">
                     Your Full Name *
                   </label>
                   <input
@@ -349,14 +347,14 @@ export default function ContactUsPage() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900"
+                    className="w-full px-4 py-3.5 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                     placeholder="e.g. Vikram Deshmukh"
                   />
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="propertyName" className="block text-sm font-bold text-slate-800 mb-2">
+                    <label htmlFor="propertyName" className="block text-sm font-bold text-[#071510] mb-2">
                       Property Name & City *
                     </label>
                     <input
@@ -365,20 +363,20 @@ export default function ContactUsPage() {
                       required
                       value={formData.propertyName}
                       onChange={(e) => setFormData({...formData, propertyName: e.target.value})}
-                      className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900"
+                      className="w-full px-4 py-3.5 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                       placeholder="e.g. Royal Crown Hotel, Nagpur"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="propertyType" className="block text-sm font-bold text-slate-800 mb-2">
+                    <label htmlFor="propertyType" className="block text-sm font-bold text-[#071510] mb-2">
                       Property Category *
                     </label>
                     <select
                       id="propertyType"
                       value={formData.propertyType}
                       onChange={(e) => setFormData({...formData, propertyType: e.target.value})}
-                      className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900 bg-white"
+                      className="w-full px-4 py-3.5 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                     >
                       <option value="hotel">Hotel / Resort</option>
                       <option value="homestay">Homestay / Villa</option>
@@ -390,7 +388,7 @@ export default function ContactUsPage() {
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="whatsapp" className="block text-sm font-bold text-slate-800 mb-2">
+                    <label htmlFor="whatsapp" className="block text-sm font-bold text-[#071510] mb-2">
                       WhatsApp Number *
                     </label>
                     <input
@@ -399,20 +397,20 @@ export default function ContactUsPage() {
                       required
                       value={formData.whatsapp}
                       onChange={(e) => setFormData({...formData, whatsapp: e.target.value})}
-                      className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900"
+                      className="w-full px-4 py-3.5 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                       placeholder="+91 98765 43210"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="preferredContact" className="block text-sm font-bold text-slate-800 mb-2">
+                    <label htmlFor="preferredContact" className="block text-sm font-bold text-[#071510] mb-2">
                       Preferred Communication Format *
                     </label>
                     <select
                       id="preferredContact"
                       value={formData.preferredContact}
                       onChange={(e) => setFormData({...formData, preferredContact: e.target.value})}
-                      className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900 bg-white"
+                      className="w-full px-4 py-3.5 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                     >
                       <option value="whatsapp">WhatsApp Audit Report</option>
                       <option value="call">Phone Call Consultation</option>
@@ -422,7 +420,7 @@ export default function ContactUsPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="websiteUrl" className="block text-sm font-bold text-slate-800 mb-2">
+                  <label htmlFor="websiteUrl" className="block text-sm font-bold text-[#071510] mb-2">
                     Website or Google Maps Link <span className="text-xs font-normal text-slate-500">(Optional)</span>
                   </label>
                   <input
@@ -430,13 +428,13 @@ export default function ContactUsPage() {
                     id="websiteUrl"
                     value={formData.websiteUrl}
                     onChange={(e) => setFormData({...formData, websiteUrl: e.target.value})}
-                    className="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900"
+                    className="w-full px-4 py-3.5 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                     placeholder="https://yourhotel.com or Google Business Profile link"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-bold text-slate-800 mb-2">
+                  <label htmlFor="message" className="block text-sm font-bold text-[#071510] mb-2">
                     Your Current Direct Booking Challenges <span className="text-xs font-normal text-slate-500">(Optional)</span>
                   </label>
                   <textarea
@@ -444,7 +442,7 @@ export default function ContactUsPage() {
                     rows={3}
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all text-slate-900"
+                    className="w-full px-4 py-3 rounded-xl border border-[rgba(16,41,32,0.15)] focus:ring-2 focus:ring-[#dfad3c] focus:border-[#dfad3c] outline-none transition-all text-[#071510] bg-[#fcfbf9]"
                     placeholder="e.g. Currently paying 22% to MakeMyTrip, want to get more direct calls from Google Maps."
                   ></textarea>
                 </div>
@@ -452,26 +450,22 @@ export default function ContactUsPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-4 rounded-xl text-brand-teal font-extrabold text-lg transition-all ${
-                    isSubmitting 
-                      ? 'bg-brand-gold/70 cursor-not-allowed' 
-                      : 'bg-brand-gold hover:bg-brand-gold-light shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'
-                  }`}
+                  className="btn btn-gold w-full text-center justify-center py-4 text-base"
                 >
                   {isSubmitting ? 'Sending Request...' : 'Book My Free Direct Booking Audit'}
                 </button>
 
-                <div className="flex items-center justify-center space-x-4 text-xs text-slate-500 pt-2">
+                <div className="flex items-center justify-center space-x-4 text-xs text-[#546059] pt-2">
                   <span className="flex items-center">
-                    <ShieldCheck className="w-4 h-4 text-emerald-600 mr-1" />
+                    <ShieldCheck className="w-4 h-4 text-[#25d366] mr-1" />
                     100% Free
                   </span>
                   <span className="flex items-center">
-                    <Clock className="w-4 h-4 text-brand-gold mr-1" />
+                    <Clock className="w-4 h-4 text-[#c99a2e] mr-1" />
                     Fast Response
                   </span>
                   <span className="flex items-center">
-                    <CheckCircle2 className="w-4 h-4 text-blue-600 mr-1" />
+                    <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-1" />
                     No Obligation
                   </span>
                 </div>
@@ -481,8 +475,8 @@ export default function ContactUsPage() {
 
           {/* Map & Office Address Column */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-slate-900 text-white rounded-3xl p-8 border border-white/10 shadow-lg space-y-6">
-              <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block">
+            <div className="bg-[#071510] text-white rounded-3xl p-8 border border-[#dfad3c]/20 shadow-lg space-y-6">
+              <span className="text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-wider block">
                 Office Information
               </span>
               <h3 className="text-2xl font-bold">
@@ -491,47 +485,47 @@ export default function ContactUsPage() {
 
               <div className="space-y-4 text-sm text-slate-300">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#dfad3c] flex-shrink-0 mt-0.5" />
                   <span>60, Swami Samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034</span>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-brand-gold flex-shrink-0" />
-                  <a href="tel:+918956907343" className="hover:text-brand-gold transition-colors font-medium">
+                  <Phone className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
+                  <a href="tel:+918956907343" className="hover:text-[#dfad3c] transition-colors font-medium">
                     +91 89569 07343
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-brand-gold flex-shrink-0" />
-                  <a href="mailto:hello@growguest.com" className="hover:text-brand-gold transition-colors font-medium">
+                  <Mail className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
+                  <a href="mailto:hello@growguest.com" className="hover:text-[#dfad3c] transition-colors font-medium">
                     hello@growguest.com
                   </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <Clock className="w-5 h-5 text-brand-gold flex-shrink-0" />
+                  <Clock className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
                   <span>Mon – Sat: 9:00 AM – 7:00 PM IST</span>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-800 space-y-3">
+              <div className="pt-4 border-t border-white/10 space-y-3">
                 <div>
-                  <span className="text-xs text-brand-gold font-semibold block mb-2 uppercase tracking-wider">
+                  <span className="text-xs text-[#dfad3c] font-semibold block mb-2 uppercase tracking-wider">
                     Official Social Channels
                   </span>
                   <div className="flex items-center space-x-3 text-xs text-slate-300 flex-wrap gap-y-2">
-                    <a href="https://www.facebook.com/profile.php?id=61593380557986" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">Facebook</a>
+                    <a href="https://www.facebook.com/profile.php?id=61593380557986" target="_blank" rel="noopener noreferrer" className="hover:text-[#dfad3c] transition-colors font-medium">Facebook</a>
                     <span>•</span>
-                    <a href="https://www.instagram.com/growguest/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">Instagram</a>
+                    <a href="https://www.instagram.com/growguest/" target="_blank" rel="noopener noreferrer" className="hover:text-[#dfad3c] transition-colors font-medium">Instagram</a>
                     <span>•</span>
-                    <a href="https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">YouTube</a>
+                    <a href="https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA" target="_blank" rel="noopener noreferrer" className="hover:text-[#dfad3c] transition-colors font-medium">YouTube</a>
                     <span>•</span>
-                    <a href="https://x.com/Growguest" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">X (Twitter)</a>
+                    <a href="https://x.com/Growguest" target="_blank" rel="noopener noreferrer" className="hover:text-[#dfad3c] transition-colors font-medium">X (Twitter)</a>
                     <span>•</span>
-                    <a href="https://www.pinterest.com/growguest" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">Pinterest</a>
+                    <a href="https://www.pinterest.com/growguest" target="_blank" rel="noopener noreferrer" className="hover:text-[#dfad3c] transition-colors font-medium">Pinterest</a>
                     <span>•</span>
-                    <a href="https://www.linkedin.com/company/growguest-digital-growth-for-hospitality" target="_blank" rel="noopener noreferrer" className="hover:text-brand-gold transition-colors font-medium">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/growguest-digital-growth-for-hospitality" target="_blank" rel="noopener noreferrer" className="hover:text-[#dfad3c] transition-colors font-medium">LinkedIn</a>
                   </div>
                 </div>
                 <div>
@@ -546,7 +540,7 @@ export default function ContactUsPage() {
             </div>
 
             {/* Embedded Google Map */}
-            <div className="bg-white rounded-3xl p-4 border border-slate-200 shadow-sm overflow-hidden space-y-3">
+            <div className="bg-white rounded-3xl p-4 border border-[rgba(16,41,32,0.08)] shadow-sm overflow-hidden space-y-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.6679343328093!2d79.09779500288303!3d21.085769143508152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf26c05347f1%3A0xbca701993578885b!2sGrowGuest%20Digital%20Growth%20for%20Hospitality!5e0!3m2!1sen!2sin!4v1787394673014!5m2!1sen!2sin"
                 width="100%"
@@ -563,7 +557,7 @@ export default function ContactUsPage() {
                   href="https://www.google.com/maps/place/?cid=13593835757779847259"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-bold text-brand-teal hover:text-brand-gold transition-colors"
+                  className="inline-flex items-center text-xs font-bold text-[#c99a2e] hover:text-[#dfad3c] transition-colors"
                 >
                   <MapPin className="w-3.5 h-3.5 mr-1" />
                   View GrowGuest on Google Maps (Directions & Reviews) →
@@ -576,13 +570,13 @@ export default function ContactUsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white border-t border-slate-200">
+      <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.06)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">
+            <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
               Frequently Asked Contact Questions
             </h2>
-            <p className="text-slate-600">
+            <p className="text-[#546059]">
               Clear answers about consulting with GrowGuest.
             </p>
           </div>
@@ -591,23 +585,23 @@ export default function ContactUsPage() {
             {faqs.map((faq, index) => (
               <div 
                 key={index} 
-                className="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden transition-shadow"
+                className="bg-white rounded-2xl border border-[rgba(16,41,32,0.08)] overflow-hidden shadow-xs"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                 >
-                  <span className="font-bold text-slate-900 text-lg pr-4">
+                  <span className="font-bold text-[#071510] text-lg pr-4">
                     {faq.question}
                   </span>
                   {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-brand-teal flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#c99a2e] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-200 pt-4 bg-white">
+                  <div className="px-6 pb-6 text-[#546059] leading-relaxed border-t border-slate-100 pt-4 text-sm">
                     {faq.answer}
                   </div>
                 )}

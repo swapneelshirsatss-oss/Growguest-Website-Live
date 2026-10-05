@@ -24,42 +24,42 @@ import AuditForm from '../AuditForm';
 
 const socialServices = [
   {
-    icon: <Video className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Video className="w-8 h-8 text-[#dfad3c]" />,
     title: "Cinematic Short-Form Video & Reels",
     subtitle: "High-craft visuals that spark immediate travel desire",
     description: "Travelers book feelings, not room specifications. We produce aesthetic, scroll-stopping Instagram Reels showcasing early morning mist on the balcony, poolside sunsets, luxury bathtub ambiance, and sizzling dining experiences.",
     tags: ["Instagram Reels", "YouTube Shorts", "Drone & 4K Walkthroughs"]
   },
   {
-    icon: <Calendar className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Calendar className="w-8 h-8 text-[#dfad3c]" />,
     title: "Monthly Strategic Content Calendars",
     subtitle: "Consistent multi-channel posting across Instagram & Facebook",
     description: "No more last-minute scrambling for content. We plan 12-16 bespoke monthly posts and reels around 5 core hospitality pillars: Room Tours, Culinary Masterpieces, Local Experiences, Guest Stories, and Limited Weekend Offers.",
     tags: ["12-16 Posts/Month", "Storytelling Pillars", "Scheduled Automation"]
   },
   {
-    icon: <MessageCircle className="w-8 h-8 text-[#043f2e]" />,
+    icon: <MessageCircle className="w-8 h-8 text-[#dfad3c]" />,
     title: "Active DM & Comment-to-WhatsApp Booking Conversion",
     subtitle: "Turn casual 'Price please?' comments into confirmed room revenue",
     description: "Unanswered Instagram DMs are lost room nights. We set up fast-response conversational workflows and scripts that immediately guide interested commenters into a 1-click WhatsApp conversation with your reservation desk.",
     tags: ["Instant DM Reply", "Comment Automation", "Direct WhatsApp Handoff"]
   },
   {
-    icon: <Users className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Users className="w-8 h-8 text-[#dfad3c]" />,
     title: "Travel Influencer & Creator Collaborations",
     subtitle: "Vetted hospitality influencers who deliver high-converting assets",
     description: "We protect you from free-stay freeloaders. We vet travel creators based on authentic local engagement, negotiate deliverable contracts (Reels, high-res photos, story links), and manage on-property production.",
     tags: ["Creator Vetting", "Zero Fake Followers", "Reusable Media Rights"]
   },
   {
-    icon: <Camera className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Camera className="w-8 h-8 text-[#dfad3c]" />,
     title: "User-Generated Content (UGC) & Social Proof",
     subtitle: "Encourage guests to tag your property and repost their delight",
     description: "Happy guests are your best sales team. We design on-property 'Instagrammable photo corners', launch guest photo contests, and curate genuine traveler stories that build unbeatable social credibility.",
     tags: ["Photo Spots", "Guest Story Reposting", "Authentic Trust"]
   },
   {
-    icon: <Share2 className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Share2 className="w-8 h-8 text-[#dfad3c]" />,
     title: "Omnichannel Brand Consistency & Bio Optimization",
     subtitle: "Optimize your profile bio, highlights, and direct booking links",
     description: "We transform your Instagram, Facebook, and Google Business profiles into direct booking hubs. From custom highlight covers (Rooms, Menu, Pool, Reviews) to 1-click direct reservation links with tracking parameters.",
@@ -138,7 +138,7 @@ export default function SocialMediaManagementPage() {
   };
 
   return (
-    <div className="bg-[#eef2e3] min-h-screen">
+    <div className="bg-[#fcfbf9] min-h-screen text-[#141716]">
       <SEO
         title="Hospitality Social Media Management | Instagram Reels & Storytelling | GrowGuest"
         description="Bespoke social media management for hotels, resorts, and homestays. Cinematic Instagram Reels, monthly content calendars, creator vetting, and direct WhatsApp DM booking funnels."
@@ -157,8 +157,10 @@ export default function SocialMediaManagementPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-[#02291e] via-[#043f2e] to-[#02291e] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden border-b border-emerald-500/20">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[750px] h-[450px] bg-[#c8f169]/10 rounded-full blur-[160px] pointer-events-none" />
+      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)]" />
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -166,10 +168,10 @@ export default function SocialMediaManagementPage() {
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 mb-6 backdrop-blur-md"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
             >
-              <Sparkles className="w-4 h-4 mr-2" />
-              Visual Storytelling & Direct Social Revenue
+              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span>VISUAL STORYTELLING & SOCIAL COMMERCE</span>
             </motion.div>
 
             <motion.h1 
@@ -178,14 +180,15 @@ export default function SocialMediaManagementPage() {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight"
             >
-              Hospitality Social Media: <span className="font-serif italic font-normal text-[#c8f169]">Turn Followers into Direct Bookings</span>
+              Hospitality Social Media:<br />
+              <span className="font-serif italic font-normal text-[#dfad3c]">Turn Followers into Direct Bookings</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg sm:text-xl text-emerald-100/90 leading-relaxed mb-8 max-w-2xl mx-auto"
+              className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto"
             >
               No more lifeless greeting cards or generic posters. We create cinematic Instagram Reels, room walkthroughs, and automated DM funnels that turn travel inspiration into confirmed reservations.
             </motion.p>
@@ -198,19 +201,20 @@ export default function SocialMediaManagementPage() {
             >
               <a
                 href="#audit"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-extrabold rounded-full text-[#043f2e] bg-[#c8f169] hover:bg-[#d8f68e] transition-all shadow-[0_0_30px_rgba(200,241,105,0.35)] hover:shadow-[0_0_45px_rgba(200,241,105,0.55)] transform hover:-translate-y-1"
+                className="btn btn-gold"
               >
-                Claim Free Social Media Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <span>Claim Free Social Media Audit</span>
+                <span className="btn-arrow">↗</span>
               </a>
               <a
                 href="https://wa.me/918956907343"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-white bg-white/10 hover:bg-white/20 transition-all backdrop-blur border border-white/20"
+                className="btn btn-outline"
+                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
-                <PhoneCall className="w-5 h-5 mr-2" />
-                Discuss Content Strategy
+                <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
+                <span>Discuss Content Strategy</span>
               </a>
             </motion.div>
 
@@ -219,11 +223,11 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Metrics Bar */}
-      <section className="bg-[#02291e] text-slate-300 py-6 border-b border-white/10">
+      <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-semibold">
             <div className="flex items-center justify-center space-x-2">
-              <Instagram className="w-5 h-5 text-[#c8f169] flex-shrink-0" />
+              <Instagram className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
               <span>Instagram & Facebook Growth</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
@@ -235,7 +239,7 @@ export default function SocialMediaManagementPage() {
               <span>Authentic Guest Engagement</span>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <TrendingUp className="w-5 h-5 text-[#c8f169] flex-shrink-0" />
+              <TrendingUp className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
               <span>Direct WhatsApp DM Funnels</span>
             </div>
           </div>
@@ -244,15 +248,15 @@ export default function SocialMediaManagementPage() {
 
       {/* Why Most Hotel Social Media Fails */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#fcfcfc] rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-lg">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm">
           <div className="max-w-3xl mb-12">
-            <span className="text-xs font-extrabold uppercase tracking-widest text-[#043f2e] bg-[#c8f169] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#043f2e]/20">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
               THE ENGAGEMENT GAP
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#043f2e] mb-4">
-              Why Stock Posters & Festival Wishes Don't Sell Rooms
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
+              Why Stock Posters & Festival Wishes <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Don't Sell Rooms</em>
             </h2>
-            <p className="text-[#242423] text-base sm:text-lg leading-relaxed">
+            <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
               When a traveler browses Instagram for their next weekend escape, they don't care about a "Happy World Environment Day" graphic. They want to see the steam rising from the hot coffee, the panoramic mountain sunrise, the fresh bed linen, and the sparkling private pool.
             </p>
           </div>
@@ -263,7 +267,7 @@ export default function SocialMediaManagementPage() {
                 <AlertCircle className="w-6 h-6" />
                 <h3 className="text-lg">What Amateur Agencies Post</h3>
               </div>
-              <ul className="space-y-3 text-sm text-[#242423]">
+              <ul className="space-y-3 text-sm text-[#222724]">
                 <li className="flex items-start">
                   <span className="text-red-500 mr-2 font-bold">✕</span>
                   Generic Canva templates and greeting cards that get 3 likes.
@@ -283,26 +287,26 @@ export default function SocialMediaManagementPage() {
               </ul>
             </div>
 
-            <div className="bg-emerald-50/60 p-6 rounded-2xl border border-emerald-200">
-              <div className="flex items-center space-x-3 mb-4 text-[#043f2e] font-extrabold">
-                <CheckCircle2 className="w-6 h-6 text-emerald-600" />
+            <div className="bg-[#fbf6e8]/60 p-6 rounded-2xl border border-[#dfad3c]/30">
+              <div className="flex items-center space-x-3 mb-4 text-[#071510] font-extrabold">
+                <CheckCircle2 className="w-6 h-6 text-[#25d366]" />
                 <h3 className="text-lg">The GrowGuest Social Storytelling Engine</h3>
               </div>
-              <ul className="space-y-3 text-sm text-[#242423]">
+              <ul className="space-y-3 text-sm text-[#222724]">
                 <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2 font-bold">✓</span>
+                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
                   Cinematic short-form 4K reels edited with trending hospitality audio.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2 font-bold">✓</span>
+                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
                   Multi-angle suite walkthroughs and culinary highlights that build wanderlust.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2 font-bold">✓</span>
+                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
                   Instant DM automation converting pricing inquiries directly into WhatsApp leads.
                 </li>
                 <li className="flex items-start">
-                  <span className="text-emerald-600 mr-2 font-bold">✓</span>
+                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
                   Strict influencer vetting ensuring real local travelers and reusable ad media.
                 </li>
               </ul>
@@ -314,13 +318,13 @@ export default function SocialMediaManagementPage() {
       {/* 6 Social Media Pillars */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-extrabold uppercase tracking-widest text-[#043f2e] bg-[#c8f169] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#043f2e]/20">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
             CONTENT PILLARS
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#043f2e] mb-4">
-            End-to-End Social Media Management
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
+            End-to-End <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Social Media Management</em>
           </h2>
-          <p className="text-[#242423] text-lg leading-relaxed">
+          <p className="text-[#546059] text-lg leading-relaxed">
             From creative ideation and video editing to community management and influencer curation, we handle your entire visual brand.
           </p>
         </div>
@@ -334,29 +338,29 @@ export default function SocialMediaManagementPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -6 }}
-              className="bg-[#fcfcfc] rounded-3xl p-8 shadow-lg border border-slate-200/80 hover:shadow-2xl hover:border-[#043f2e]/40 transition-all flex flex-col justify-between"
+              className="bg-white rounded-3xl p-8 shadow-sm border border-[rgba(16,41,32,0.08)] hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between"
             >
               <div>
-                <div className="w-14 h-14 bg-[#eef2e3] rounded-2xl flex items-center justify-center mb-6 border border-[#043f2e]/10 shadow-sm">
+                <div className="w-14 h-14 bg-[#fbf6e8] rounded-2xl flex items-center justify-center mb-6 border border-[#dfad3c]/20 shadow-xs">
                   {service.icon}
                 </div>
 
-                <span className="text-[11px] font-extrabold uppercase tracking-wider text-emerald-700 mb-2 block">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] mb-2 block font-semibold">
                   {service.subtitle}
                 </span>
 
-                <h3 className="text-xl font-extrabold text-[#043f2e] mb-3">
+                <h3 className="text-xl font-extrabold text-[#071510] mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-[#242423] leading-relaxed mb-6 text-sm">
+                <p className="text-[#546059] leading-relaxed mb-6 text-sm">
                   {service.description}
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-[rgba(16,41,32,0.08)]">
                 {service.tags.map((tag, tIdx) => (
-                  <span key={tIdx} className="bg-[#eef2e3] text-[#043f2e] font-bold text-xs px-2.5 py-1 rounded-md border border-[#043f2e]/10">
+                  <span key={tIdx} className="bg-[#f7f5ef] text-[#071510] font-semibold text-xs px-2.5 py-1 rounded-md border border-[rgba(16,41,32,0.08)]">
                     {tag}
                   </span>
                 ))}
@@ -367,18 +371,18 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Social Booking Funnel Simulator */}
-      <section className="py-20 bg-[#02291e] text-white border-y border-emerald-500/20">
+      <section className="py-20 bg-[#071510] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#043f2e] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
+          <div className="bg-[#0c2018] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
-                <span className="inline-block text-xs font-bold text-[#c8f169] uppercase tracking-widest mb-3">
+                <span className="inline-block text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-widest mb-3">
                   SOCIAL REVENUE SIMULATOR
                 </span>
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
-                  Calculate Your Monthly Social Booking Potential
+                  Calculate Your Monthly <span className="font-serif italic font-normal text-[#dfad3c]">Social Booking Potential</span>
                 </h2>
-                <p className="text-emerald-100/90 text-base mb-8">
+                <p className="text-slate-300 text-base mb-8">
                   See how an engaged local following and automated DM-to-WhatsApp routing translates directly into confirmed room nights.
                 </p>
 
@@ -386,7 +390,7 @@ export default function SocialMediaManagementPage() {
                   <div>
                     <div className="flex justify-between text-sm font-medium mb-2">
                       <span>Target Engaged Instagram Audience:</span>
-                      <span className="text-[#c8f169] font-bold">{monthlyFollowers.toLocaleString('en-IN')} followers</span>
+                      <span className="text-[#dfad3c] font-bold">{monthlyFollowers.toLocaleString('en-IN')} followers</span>
                     </div>
                     <input 
                       type="range" 
@@ -395,18 +399,18 @@ export default function SocialMediaManagementPage() {
                       step="1000"
                       value={monthlyFollowers} 
                       onChange={(e) => setMonthlyFollowers(Number(e.target.value))}
-                      className="w-full h-2 bg-emerald-950 rounded-lg appearance-none cursor-pointer accent-[#c8f169]"
+                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#dfad3c]"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#02291e] p-8 rounded-2xl border border-[#c8f169]/30 text-center space-y-6 shadow-xl">
+              <div className="bg-[#071510] p-8 rounded-2xl border border-[#dfad3c]/30 text-center space-y-6 shadow-xl">
                 <div>
                   <span className="text-xs text-slate-300 uppercase tracking-widest font-semibold block mb-1">
                     Estimated Direct Social Revenue / Mo
                   </span>
-                  <span className="text-4xl md:text-5xl font-black text-[#c8f169]">
+                  <span className="text-4xl md:text-5xl font-black text-emerald-400">
                     ₹{Math.round(estimatedRevenue).toLocaleString('en-IN')}
                   </span>
                   <span className="block text-xs text-emerald-200/80 mt-1">
@@ -414,22 +418,23 @@ export default function SocialMediaManagementPage() {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 pt-4 border-t border-emerald-900">
-                  <div className="bg-[#043f2e]/60 p-3 rounded-xl border border-white/5">
-                    <span className="text-[11px] text-slate-300 block uppercase">Est. DM Inquiries</span>
+                <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                  <div className="bg-[#0c2018] p-3 rounded-xl border border-white/5">
+                    <span className="text-[11px] text-slate-400 block uppercase">Est. DM Inquiries</span>
                     <span className="text-xl font-bold text-white">~{estimatedInquiries} leads</span>
                   </div>
-                  <div className="bg-[#043f2e]/60 p-3 rounded-xl border border-white/5">
-                    <span className="text-[11px] text-[#c8f169] block uppercase">Est. Room Bookings</span>
+                  <div className="bg-[#0c2018] p-3 rounded-xl border border-white/5">
+                    <span className="text-[11px] text-[#dfad3c] block uppercase">Est. Room Bookings</span>
                     <span className="text-xl font-bold text-emerald-400">~{estimatedDirectBookings} rooms</span>
                   </div>
                 </div>
 
                 <a 
                   href="#audit" 
-                  className="inline-flex items-center justify-center w-full py-4 px-6 rounded-full text-[#043f2e] font-extrabold bg-[#c8f169] hover:bg-[#d8f68e] transition-all shadow-lg"
+                  className="btn btn-gold w-full justify-center"
                 >
-                  Boost Your Property Socials Today
+                  <span>Boost Your Property Socials Today</span>
+                  <span className="btn-arrow">↗</span>
                 </a>
               </div>
             </div>
@@ -438,13 +443,16 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-[#fcfcfc] border-t border-slate-200/80">
+      <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-[#043f2e] mb-3">
-              Frequently Asked Questions About Social Media Management
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+              COMMON QUESTIONS
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-3">
+              Frequently Asked Questions About <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Social Media Management</em>
             </h2>
-            <p className="text-[#242423]">
+            <p className="text-[#546059]">
               How we help boutique hotels and resorts transform their social presence into revenue.
             </p>
           </div>
@@ -453,23 +461,23 @@ export default function SocialMediaManagementPage() {
             {faqs.map((faq, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs"
+                className="bg-white rounded-2xl border border-[rgba(16,41,32,0.08)] overflow-hidden shadow-xs"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                 >
-                  <span className="font-bold text-[#043f2e] text-lg pr-4">
+                  <span className="font-bold text-[#071510] text-lg pr-4">
                     {faq.question}
                   </span>
                   {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-[#043f2e] flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#c99a2e] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-6 text-[#242423] leading-relaxed border-t border-slate-100 pt-4 text-sm">
+                  <div className="px-6 pb-6 text-[#546059] leading-relaxed border-t border-slate-100 pt-4 text-sm">
                     {faq.answer}
                   </div>
                 )}

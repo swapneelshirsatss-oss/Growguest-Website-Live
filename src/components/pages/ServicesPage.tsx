@@ -26,7 +26,7 @@ const servicesList = [
     id: 'website-design-development',
     number: '01',
     emoji: '🚀',
-    icon: <Globe className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Globe className="w-8 h-8 text-[#dfad3c]" />,
     title: 'Website Design & Development',
     tagline: 'High-Converting & Sub-1.5s Direct Booking Websites',
     bullets: [
@@ -41,7 +41,7 @@ const servicesList = [
     id: 'local-seo-gbp',
     number: '02',
     emoji: '📍',
-    icon: <MapPin className="w-8 h-8 text-[#043f2e]" />,
+    icon: <MapPin className="w-8 h-8 text-[#dfad3c]" />,
     title: 'Local SEO & Google Business Profile (GBP)',
     tagline: 'Dominating Local Google Maps & Nearby Search 3-Pack',
     bullets: [
@@ -56,7 +56,7 @@ const servicesList = [
     id: 'paid-ads-google-meta',
     number: '03',
     emoji: '🎯',
-    icon: <Target className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Target className="w-8 h-8 text-[#dfad3c]" />,
     title: 'Paid Ads — Google Ads & Social Media Ads',
     tagline: 'High-ROAS Google Search, Hotel Ads & Instagram Campaigns',
     bullets: [
@@ -71,7 +71,7 @@ const servicesList = [
     id: 'ota-management',
     number: '04',
     emoji: '🏨',
-    icon: <Building2 className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Building2 className="w-8 h-8 text-[#dfad3c]" />,
     title: 'OTA Management & Distribution',
     tagline: 'MakeMyTrip, Booking.com & Agoda Optimization',
     bullets: [
@@ -86,7 +86,7 @@ const servicesList = [
     id: 'social-media-management',
     number: '05',
     emoji: '📸',
-    icon: <Instagram className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Instagram className="w-8 h-8 text-[#dfad3c]" />,
     title: 'Social Media Management & Visual Storytelling',
     tagline: 'Cinematic Instagram Reels & Guest Experience Ambiance',
     bullets: [
@@ -101,7 +101,7 @@ const servicesList = [
     id: 'seo-search-engine-optimization',
     number: '06',
     emoji: '🔍',
-    icon: <Search className="w-8 h-8 text-[#043f2e]" />,
+    icon: <Search className="w-8 h-8 text-[#dfad3c]" />,
     title: 'Search Engine Optimization (SEO)',
     tagline: 'Sustainable High-Ranking Google Search Visibility',
     bullets: [
@@ -116,7 +116,7 @@ const servicesList = [
     id: 'whatsapp-booking-flow',
     number: '07',
     emoji: '💬',
-    icon: <MessageSquare className="w-8 h-8 text-[#043f2e]" />,
+    icon: <MessageSquare className="w-8 h-8 text-[#dfad3c]" />,
     title: 'WhatsApp Booking Flow & Lead Automation',
     tagline: '1-Click Direct Chat Reservation Engine for Indian Guests',
     bullets: [
@@ -131,7 +131,7 @@ const servicesList = [
     id: 'analytics-lead-automation',
     number: '08',
     emoji: '📊',
-    icon: <BarChart3 className="w-8 h-8 text-[#043f2e]" />,
+    icon: <BarChart3 className="w-8 h-8 text-[#dfad3c]" />,
     title: 'Analytics, Conversion Tracking & Revenue Reports',
     tagline: 'Data-Driven Insights & Transparent Profit Attribution',
     bullets: [
@@ -215,7 +215,7 @@ export default function ServicesPage() {
   };
 
   return (
-    <div className="bg-[#eef2e3] min-h-screen">
+    <div className="bg-[#fcfbf9] min-h-screen text-[#141716]">
       <SEO
         title="Hotel Digital Marketing Services Nagpur | GrowGuest"
         description="Comprehensive hospitality marketing by GrowGuest: Website design, Google & Meta Paid Ads, OTA Management, Social Media Management, Local SEO & WhatsApp booking flows."
@@ -231,18 +231,20 @@ export default function ServicesPage() {
       <Breadcrumbs items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-[#02291e] via-[#043f2e] to-[#02291e] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden border-b border-emerald-500/20">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[750px] h-[450px] bg-[#c8f169]/10 rounded-full blur-[160px] pointer-events-none" />
+      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)]" />
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 mb-6 backdrop-blur-md"
+              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
             >
-              <Sparkles className="w-4 h-4 mr-2" />
-              Specialized Hospitality Growth Architecture
+              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span>SPECIALIZED HOSPITALITY GROWTH ARCHITECTURE</span>
             </motion.div>
 
             <motion.h1 
@@ -251,14 +253,15 @@ export default function ServicesPage() {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight"
             >
-              Hospitality Digital Marketing: <span className="font-serif italic font-normal text-[#c8f169]">Services by GrowGuest</span>
+              Hospitality Digital Marketing:<br />
+              <span className="font-serif italic font-normal text-[#dfad3c]">Services by GrowGuest</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg sm:text-xl text-emerald-100/90 leading-relaxed mb-9"
+              className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-9"
             >
               Struggling with zero Google visibility and bleeding profits to the heavy OTA commission trap? We build end-to-end direct booking engines, local SEO dominance, and high-ROAS paid ads to reclaim your hotel's revenue.
             </motion.p>
@@ -271,19 +274,20 @@ export default function ServicesPage() {
             >
               <a
                 href="#audit"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-extrabold rounded-full text-[#043f2e] bg-[#c8f169] hover:bg-[#d8f68e] transition-all shadow-[0_0_30px_rgba(200,241,105,0.35)] hover:shadow-[0_0_45px_rgba(200,241,105,0.55)] transform hover:-translate-y-1"
+                className="btn btn-gold"
               >
-                Claim Free Growth Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <span>Claim Free Growth Audit</span>
+                <span className="btn-arrow">↗</span>
               </a>
               <a
                 href="https://wa.me/918956907343"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-white bg-white/10 hover:bg-white/20 transition-all backdrop-blur border border-white/20"
+                className="btn btn-outline"
+                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
-                <PhoneCall className="w-5 h-5 mr-2" />
-                WhatsApp Consultation
+                <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
+                <span>WhatsApp Consultation</span>
               </a>
             </motion.div>
           </div>
@@ -296,31 +300,31 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-[#02291e] border-2 border-[#c8f169]/30 rounded-3xl p-6 sm:p-8 shadow-2xl text-white backdrop-blur-md"
+          className="bg-[#0c2018] border border-[#dfad3c]/30 rounded-3xl p-6 sm:p-8 shadow-2xl text-white backdrop-blur-md"
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#c8f169]/15 border border-[#c8f169]/30 flex items-center justify-center flex-shrink-0 text-[#c8f169] mt-1">
+              <div className="w-12 h-12 rounded-2xl bg-[#dfad3c]/15 border border-[#dfad3c]/30 flex items-center justify-center flex-shrink-0 text-[#dfad3c] mt-1">
                 <AlertTriangle className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#c8f169] block mb-1">
+                <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#dfad3c] block mb-1">
                   The Dual Trap Costing Property Owners 20%+ In Profit
                 </span>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-2">
                   Zero Google Visibility & The Heavy OTA Commission Trap
                 </h2>
-                <p className="text-sm sm:text-base text-emerald-100/80 leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
                   When travelers search for stays in your area, being invisible on Google forces you into total reliance on OTAs — surrendering 18% to 25% of your gross revenue on every booking. GrowGuest engineers the exact direct booking systems needed to break this cycle.
                 </p>
               </div>
             </div>
             <a
               href="#audit"
-              className="inline-flex items-center justify-center px-6 py-3.5 rounded-full text-xs sm:text-sm font-extrabold bg-[#c8f169] text-[#043f2e] hover:bg-[#d8f68e] transition-all flex-shrink-0 whitespace-nowrap shadow-[0_0_20px_rgba(200,241,105,0.3)] hover:shadow-[0_0_30px_rgba(200,241,105,0.5)] transform hover:-translate-y-0.5"
+              className="btn btn-gold text-xs sm:text-sm whitespace-nowrap shrink-0"
             >
-              Fix Your Leaks
-              <ArrowRight className="ml-1.5 w-4 h-4" />
+              <span>Fix Your Leaks</span>
+              <span className="btn-arrow">↗</span>
             </a>
           </div>
         </motion.div>
@@ -329,13 +333,13 @@ export default function ServicesPage() {
       {/* Core Services Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-extrabold uppercase tracking-widest text-[#043f2e] bg-[#c8f169] px-3.5 py-1.5 rounded-full inline-block mb-3 border border-[#043f2e]/20">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
             OUR CORE OFFERINGS
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#043f2e] mb-4">
-            End-to-End Digital Services
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
+            End-to-End <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Digital Services</em>
           </h2>
-          <p className="text-[#242423] text-lg leading-relaxed">
+          <p className="text-[#546059] text-lg leading-relaxed">
             Engineered specifically to eliminate Google search invisibility and break free from OTA commission bleed — capturing high-intent travelers directly for independent hotels, resorts, and homestays.
           </p>
         </div>
@@ -349,32 +353,32 @@ export default function ServicesPage() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
               whileHover={{ y: -6 }}
-              className="bg-[#fcfcfc] rounded-3xl p-8 shadow-lg border border-slate-200/80 hover:shadow-2xl hover:border-[#043f2e]/40 transition-all flex flex-col justify-between relative overflow-hidden"
+              className="bg-white rounded-3xl p-8 shadow-sm border border-[rgba(16,41,32,0.08)] hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between relative overflow-hidden group"
             >
-              <div className="absolute top-0 right-0 bg-[#043f2e] text-[#c8f169] px-4 py-1.5 rounded-bl-2xl font-extrabold text-xs">
+              <div className="absolute top-0 right-0 bg-[#0c2018] text-[#dfad3c] border-b border-l border-[#dfad3c]/20 px-4 py-1.5 rounded-bl-2xl font-mono text-xs font-bold">
                 {service.number}
               </div>
 
               <div>
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="w-14 h-14 bg-[#eef2e3] rounded-2xl flex items-center justify-center border border-[#043f2e]/10">
+                  <div className="w-14 h-14 bg-[#fbf6e8] rounded-2xl flex items-center justify-center border border-[#dfad3c]/20 text-[#dfad3c]">
                     {service.icon}
                   </div>
                   <span className="text-2xl">{service.emoji}</span>
                 </div>
 
-                <span className="text-[11px] font-extrabold uppercase tracking-wider text-emerald-700 mb-2 block">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] mb-2 block font-semibold">
                   {service.tagline}
                 </span>
 
-                <h3 className="text-2xl font-extrabold text-[#043f2e] mb-4 leading-snug">
+                <h3 className="text-2xl font-extrabold text-[#071510] mb-4 leading-snug">
                   {service.title}
                 </h3>
 
                 <ul className="space-y-3 mb-6">
                   {service.bullets.map((bullet, bIdx) => (
-                    <li key={bIdx} className="flex items-start text-sm text-[#242423] leading-snug font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2.5 flex-shrink-0 mt-0.5" />
+                    <li key={bIdx} className="flex items-start text-sm text-[#222724] leading-snug font-medium">
+                      <CheckCircle2 className="w-4 h-4 text-[#25d366] mr-2.5 flex-shrink-0 mt-0.5" />
                       <span>{bullet}</span>
                     </li>
                   ))}
@@ -382,11 +386,11 @@ export default function ServicesPage() {
               </div>
 
               <div>
-                <div className="bg-[#eef2e3] rounded-2xl p-4 border border-[#043f2e]/10 mb-4">
-                  <span className="text-[11px] font-bold text-[#043f2e] uppercase tracking-wider block mb-1">
+                <div className="bg-[#f7f5ef] rounded-2xl p-4 border border-[rgba(16,41,32,0.08)] mb-5">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] block mb-1 font-semibold">
                     Expected Business Result:
                   </span>
-                  <p className="text-xs text-[#043f2e] font-semibold leading-relaxed">
+                  <p className="text-xs text-[#141716] font-semibold leading-relaxed">
                     {service.outcome}
                   </p>
                 </div>
@@ -394,7 +398,7 @@ export default function ServicesPage() {
                 {service.link && (
                   <a
                     href={service.link}
-                    className="inline-flex items-center text-sm font-extrabold text-[#043f2e] hover:text-emerald-700 transition-colors group"
+                    className="inline-flex items-center text-sm font-bold text-[#071510] group-hover:text-[#c99a2e] transition-colors"
                   >
                     <span>Explore Service Details</span>
                     <ArrowRight className="w-4 h-4 ml-1.5 transform group-hover:translate-x-1 transition-transform" />
@@ -407,13 +411,16 @@ export default function ServicesPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-[#fcfcfc] border-t border-slate-200/80">
+      <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-[#043f2e] mb-3">
-              Frequently Asked Questions
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+              COMMON QUESTIONS
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-3">
+              Frequently Asked <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Questions</em>
             </h2>
-            <p className="text-[#242423]">
+            <p className="text-[#546059]">
               Have questions about our hospitality digital marketing services? Here are straight answers.
             </p>
           </div>
@@ -422,23 +429,23 @@ export default function ServicesPage() {
             {faqs.map((faq, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs"
+                className="bg-white rounded-2xl border border-[rgba(16,41,32,0.08)] overflow-hidden shadow-xs"
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full text-left p-6 flex justify-between items-center focus:outline-none"
                 >
-                  <span className="font-bold text-[#043f2e] text-lg pr-4">
+                  <span className="font-bold text-[#071510] text-lg pr-4">
                     {faq.question}
                   </span>
                   {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-[#043f2e] flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#c99a2e] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === index && (
-                  <div className="px-6 pb-6 text-[#242423] leading-relaxed border-t border-slate-100 pt-4 text-sm">
+                  <div className="px-6 pb-6 text-[#546059] leading-relaxed border-t border-slate-100 pt-4 text-sm">
                     {faq.answer}
                   </div>
                 )}
