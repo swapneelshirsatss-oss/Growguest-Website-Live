@@ -190,7 +190,7 @@ export default function Footer() {
               <li>
                 <div className="flex items-start text-slate-300">
                   <MapPin className="w-4 h-4 mr-2 text-brand-gold flex-shrink-0 mt-0.5" />
-                  <span>60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur</span>
+                  <span>60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034, India</span>
                 </div>
               </li>
               <li>
@@ -224,7 +224,7 @@ export default function Footer() {
               </div>
               <h4 className="text-white font-semibold text-lg">Visit GrowGuest</h4>
               <p className="text-sm text-slate-300 leading-relaxed">
-                60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra
+                60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034, India
               </p>
               <p className="text-xs text-slate-400">
                 Book a face-to-face direct booking & local SEO audit for your hotel, resort, or restaurant in Nagpur.
