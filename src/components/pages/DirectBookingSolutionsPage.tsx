@@ -276,7 +276,7 @@ export default function DirectBookingSolutionsPage() {
 
       <WhatsAppOtaBypass />
 
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="disparity" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">
             The Hard Truth About OTAs

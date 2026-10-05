@@ -795,6 +795,52 @@ em {
 .disparity-card.ota strong { color: var(--pine-950); }
 .disparity-card.growguest strong { color: #ffffff; }
 
+.disparity-bridge {
+  margin-top: 48px;
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.disparity-bridge::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold-400), var(--pine-700));
+}
+
+.disparity-bridge h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 2.2vw, 28px);
+  color: var(--pine-950);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.disparity-bridge p {
+  color: var(--charcoal-600);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+
+.disparity-bridge-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 /* --- 9. APPROACH SECTION --- */
 .approach-section {
   padding: 88px 0;
