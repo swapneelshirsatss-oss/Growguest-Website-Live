@@ -90,23 +90,24 @@ export default function CalculatorPage() {
         {JSON.stringify(faqSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Intro */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-16 lg:pt-24 lg:pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
-            <span>INTERACTIVE FINANCIAL TOOL</span>
-          </div>
+      <section className="pt-8 pb-10 lg:pt-10 lg:pb-12 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-            Hotel OTA Commission & <span className="font-serif italic font-normal text-[#dfad3c]">Direct ROI Calculator</span>
-          </h1>
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            See exactly how much revenue third-party aggregators (MakeMyTrip, Agoda, Booking.com) take from your property—and how much profit you reclaim by going direct.
-          </p>
+          <div className="max-w-4xl">
+            <div className="hero-pill-badge mb-6">
+              <span className="pulse-dot" />
+              <span>INTERACTIVE FINANCIAL TOOL</span>
+            </div>
+
+            <h1 className="hero-title mb-6">
+              Hotel OTA Commission & <em>Direct ROI Calculator</em>
+            </h1>
+            <p className="hero-desc mb-6">
+              See exactly how much revenue third-party aggregators (MakeMyTrip, Agoda, Booking.com) take from your property—and how much profit you reclaim by going direct.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -114,65 +115,67 @@ export default function CalculatorPage() {
       <OtaCalculator />
 
       {/* Educational Breakdown Section */}
-      <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm space-y-8">
-          <div>
-            <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-wider block mb-2">
-              HOW THE MATH WORKS
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-4">
-              Understanding Your Property's Commission Bleed
-            </h2>
-            <p className="text-[#546059] leading-relaxed text-base">
-              When an independent hotel generates ₹3,00,000 to ₹10,00,000 in monthly room revenue, relying on OTAs for 65%+ of bookings results in <strong>₹36,000 to ₹1,20,000+ paid in middleman commissions every single month</strong>. Over a year, this amounts to ₹4,30,000 to ₹14,00,000+ extracted directly from your bottom line.
-            </p>
-          </div>
+      <section className="py-16">
+        <div className="container max-w-5xl">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm space-y-8">
+            <div>
+              <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-wider block mb-2">
+                HOW THE MATH WORKS
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-4">
+                Understanding Your Property's Commission Bleed
+              </h2>
+              <p className="text-[#546059] leading-relaxed text-base">
+                When an independent hotel generates ₹3,00,000 to ₹10,00,000 in monthly room revenue, relying on OTAs for 65%+ of bookings results in <strong>₹36,000 to ₹1,20,000+ paid in middleman commissions every single month</strong>. Over a year, this amounts to ₹4,30,000 to ₹14,00,000+ extracted directly from your bottom line.
+              </p>
+            </div>
 
-          <div className="grid sm:grid-cols-3 gap-6 pt-4 border-t border-[rgba(16,41,32,0.08)]">
-            <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
-              <span className="text-xs font-bold text-red-600 uppercase block mb-1">THE OTA TAX</span>
-              <p className="text-2xl font-extrabold text-[#071510] mb-1">18% – 25%</p>
-              <p className="text-xs text-[#546059]">Deducted from gross booking revenue on every single completed stay.</p>
+            <div className="grid sm:grid-cols-3 gap-6 pt-4 border-t border-[rgba(16,41,32,0.08)]">
+              <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
+                <span className="text-xs font-bold text-red-600 uppercase block mb-1">THE OTA TAX</span>
+                <p className="text-2xl font-extrabold text-[#071510] mb-1">18% – 25%</p>
+                <p className="text-xs text-[#546059]">Deducted from gross booking revenue on every single completed stay.</p>
+              </div>
+              <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
+                <span className="text-xs font-bold text-[#0c2018] uppercase block mb-1">THE DIRECT TARGET</span>
+                <p className="text-2xl font-extrabold text-[#071510] mb-1">25% – 50%</p>
+                <p className="text-xs text-[#546059]">Realistic share of bookings that can be diverted to your website and WhatsApp.</p>
+              </div>
+              <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
+                <span className="text-xs font-bold text-[#dfad3c] uppercase block mb-1">ANNUAL RETENTION</span>
+                <p className="text-2xl font-extrabold text-[#071510] mb-1">₹1L – ₹5L+</p>
+                <p className="text-xs text-[#546059]">Net operating profit retained in your business bank account.</p>
+              </div>
             </div>
-            <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
-              <span className="text-xs font-bold text-[#0c2018] uppercase block mb-1">THE DIRECT TARGET</span>
-              <p className="text-2xl font-extrabold text-[#071510] mb-1">25% – 50%</p>
-              <p className="text-xs text-[#546059]">Realistic share of bookings that can be diverted to your website and WhatsApp.</p>
-            </div>
-            <div className="p-5 bg-[#fcfbf9] rounded-2xl border border-[rgba(16,41,32,0.06)]">
-              <span className="text-xs font-bold text-[#dfad3c] uppercase block mb-1">ANNUAL RETENTION</span>
-              <p className="text-2xl font-extrabold text-[#071510] mb-1">₹1L – ₹5L+</p>
-              <p className="text-xs text-[#546059]">Net operating profit retained in your business bank account.</p>
-            </div>
-          </div>
 
-          <div className="pt-6 border-t border-[rgba(16,41,32,0.08)]">
-            <h3 className="text-lg font-bold text-[#071510] mb-3">4 Ways to Capture Direct Bookings Without Parity Penalties:</h3>
-            <ul className="space-y-3 text-sm text-[#546059]">
-              <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong className="text-[#071510]">Google Maps 3-Pack Rank:</strong> Rank your Google Business Profile so local travelers call you directly instead of launching an app.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong className="text-[#071510]">Google Hotel Free Booking Links:</strong> Claim free direct booking listing spots alongside OTA ads inside Google Search.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong className="text-[#071510]">Direct Value Perks:</strong> Offer early check-in, free high-speed Wi-Fi, or welcome drinks that OTAs cannot duplicate.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
-                <span><strong className="text-[#071510]">Instant WhatsApp Concierge:</strong> Respond within 2 minutes with room photos and instant booking confirmation.</span>
-              </li>
-            </ul>
+            <div className="pt-6 border-t border-[rgba(16,41,32,0.08)]">
+              <h3 className="text-lg font-bold text-[#071510] mb-3">4 Ways to Capture Direct Bookings Without Parity Penalties:</h3>
+              <ul className="space-y-3 text-sm text-[#546059]">
+                <li className="flex items-start">
+                  <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-[#071510]">Google Maps 3-Pack Rank:</strong> Rank your Google Business Profile so local travelers call you directly instead of launching an app.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-[#071510]">Google Hotel Free Booking Links:</strong> Claim free direct booking listing spots alongside OTA ads inside Google Search.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-[#071510]">Direct Value Perks:</strong> Offer early check-in, free high-speed Wi-Fi, or welcome drinks that OTAs cannot duplicate.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-[#071510]">Instant WhatsApp Concierge:</strong> Respond within 2 minutes with room photos and instant booking confirmation.</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
               Frequently Asked Questions
@@ -214,21 +217,23 @@ export default function CalculatorPage() {
       </section>
 
       {/* Free Audit Form Section */}
-      <section id="audit" className="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-xl">
-          <div className="text-center mb-8">
-            <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
-              LOCK IN YOUR SAVINGS
-            </span>
-            <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
-              Get Your Free Direct Booking Audit
-            </h2>
-            <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto">
-              Ready to stop losing 20% on every booking? Request a customized audit of your property's OTA commission bleed and direct channels.
-            </p>
-          </div>
+      <section id="audit" className="py-16 lg:py-20">
+        <div className="container max-w-4xl">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-xl">
+            <div className="text-center mb-8">
+              <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+                LOCK IN YOUR SAVINGS
+              </span>
+              <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
+                Get Your Free Direct Booking Audit
+              </h2>
+              <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto">
+                Ready to stop losing 20% on every booking? Request a customized audit of your property's OTA commission bleed and direct channels.
+              </p>
+            </div>
 
-          <AuditForm />
+            <AuditForm />
+          </div>
         </div>
       </section>
 

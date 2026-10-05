@@ -171,23 +171,18 @@ export default function DirectBookingSolutionsPage() {
         {JSON.stringify(serviceSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)]" />
-        </div>
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span className="pulse-dot" />
               <span>DIRECT BOOKING PIPELINE ARCHITECTURE</span>
             </motion.div>
 
@@ -195,26 +190,26 @@ export default function DirectBookingSolutionsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              className="hero-title mb-6"
             >
-              Hotel Direct Booking Solutions:<br />
-              <span className="font-serif italic font-normal text-[#dfad3c]">Stop Paying 20% OTA Commissions</span>
+              Hotel Direct Booking Solutions: <em>Stop Paying 20% OTA Commissions</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="hero-desc mb-8"
             >
               We build high-converting direct booking engines for independent hotels, resorts, and homestays. Dominate Google Map Pack, own your guest relationships, and convert lookers into commission-free direct bookings.
             </motion.p>
 
+            {/* AEO Direct Answer Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018]/95 text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <Sparkles className="w-4 h-4" />
@@ -229,10 +224,10 @@ export default function DirectBookingSolutionsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="hero-actions"
             >
               <a
-                href="#audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="btn btn-gold"
               >
                 <span>Get Free Direct Booking Audit</span>
@@ -243,7 +238,6 @@ export default function DirectBookingSolutionsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
                 <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>WhatsApp Strategy Call</span>
@@ -256,7 +250,7 @@ export default function DirectBookingSolutionsPage() {
 
       {/* Trust Metrics Bar */}
       <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-medium">
             <div className="flex items-center justify-center space-x-2">
               <Percent className="w-5 h-5 text-emerald-400 flex-shrink-0" />
@@ -281,56 +275,58 @@ export default function DirectBookingSolutionsPage() {
       <WhatsAppOtaBypass />
 
       {/* OTA Comparison Matrix */}
-      <section id="disparity" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-            THE HARD TRUTH ABOUT OTAS
+      <section id="disparity" className="py-16 scroll-mt-24">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+              THE HARD TRUTH ABOUT OTAS
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
+              OTAs vs. <em className="font-serif italic font-normal text-[#c99a2e] not-italic">GrowGuest Direct Pipeline</em>
+            </h2>
+            <p className="text-[#546059] text-lg">
+              See how relying on third-party aggregators drains your property profit compared to owning your direct booking engine.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
-            OTAs vs. <em className="font-serif italic font-normal text-[#c99a2e] not-italic">GrowGuest Direct Pipeline</em>
-          </h2>
-          <p className="text-[#546059] text-lg">
-            See how relying on third-party aggregators drains your property profit compared to owning your direct booking engine.
-          </p>
-        </div>
 
-        <div className="overflow-x-auto bg-white rounded-3xl shadow-sm border border-[rgba(16,41,32,0.08)]">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-[#071510] text-white">
-                <th className="p-5 sm:p-6 text-sm sm:text-base font-bold">Key Feature</th>
-                <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-red-400">OTA Dependence (MakeMyTrip/Agoda)</th>
-                <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-[#dfad3c] bg-[#0c2018]">GrowGuest Direct Pipeline</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-100">
-              {comparisonMatrix.map((item, index) => (
-                <tr key={index} className="hover:bg-slate-50/80 transition-colors">
-                  <td className="p-5 sm:p-6 font-semibold text-[#071510] text-sm sm:text-base">
-                    {item.feature}
-                  </td>
-                  <td className="p-5 sm:p-6 text-slate-600 text-sm sm:text-base">
-                    <div className="flex items-start">
-                      <XCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                      <span>{item.ota}</span>
-                    </div>
-                  </td>
-                  <td className="p-5 sm:p-6 text-slate-900 font-semibold text-sm sm:text-base bg-[#fbf6e8]/40">
-                    <div className="flex items-start text-emerald-900">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
-                      <span>{item.growguest}</span>
-                    </div>
-                  </td>
+          <div className="overflow-x-auto bg-white rounded-3xl shadow-sm border border-[rgba(16,41,32,0.08)]">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-[#071510] text-white">
+                  <th className="p-5 sm:p-6 text-sm sm:text-base font-bold">Key Feature</th>
+                  <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-red-400">OTA Dependence (MakeMyTrip/Agoda)</th>
+                  <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-[#dfad3c] bg-[#0c2018]">GrowGuest Direct Pipeline</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {comparisonMatrix.map((item, index) => (
+                  <tr key={index} className="hover:bg-slate-50/80 transition-colors">
+                    <td className="p-5 sm:p-6 font-semibold text-[#071510] text-sm sm:text-base">
+                      {item.feature}
+                    </td>
+                    <td className="p-5 sm:p-6 text-slate-600 text-sm sm:text-base">
+                      <div className="flex items-start">
+                        <XCircle className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <span>{item.ota}</span>
+                      </div>
+                    </td>
+                    <td className="p-5 sm:p-6 text-slate-900 font-semibold text-sm sm:text-base bg-[#fbf6e8]/40">
+                      <div className="flex items-start text-emerald-900">
+                        <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
+                        <span>{item.growguest}</span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
       {/* 4 Pillars Section */}
       <section className="py-20 bg-[#f7f5ef] border-y border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
               SYSTEM ARCHITECTURE
@@ -384,7 +380,7 @@ export default function DirectBookingSolutionsPage() {
 
       {/* ROI Savings Calculator Section */}
       <section className="py-20 bg-[#071510] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="bg-[#0c2018] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
@@ -467,7 +463,7 @@ export default function DirectBookingSolutionsPage() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
               QUESTIONS & ANSWERS

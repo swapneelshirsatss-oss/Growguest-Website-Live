@@ -17,27 +17,25 @@ export default function TermsOfServicePage() {
         canonicalUrl={canonicalUrl}
       />
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Header */}
-      <section className="relative bg-[#071510] text-white py-16 lg:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+      <header className="pt-8 pb-10 lg:pt-10 lg:pb-12 relative">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8">
+          <Breadcrumbs items={breadcrumbItems} maxWidth="4xl" className="px-0 pt-0 pb-6" />
+          <div className="hero-pill-badge mb-6">
+            <span className="pulse-dot" />
             <span>Service Agreement & Guidelines</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-            Terms of <span className="font-serif italic font-normal text-[#dfad3c]">Service</span>
+          <h1 className="hero-title mb-4">
+            Terms of <em className="font-serif italic font-normal text-[#c99a2e]">Service</em>
           </h1>
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="hero-desc">
             Last Updated: August 2026. Standard terms governing website use, audit tools, and marketing engagements with Growguest.
           </p>
         </div>
-      </section>
+      </header>
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <main className="max-w-4xl mx-auto px-5 sm:px-8 pb-16">
         <div className="bg-white rounded-3xl border border-[rgba(16,41,32,0.08)] p-8 sm:p-12 shadow-sm space-y-10 text-[#546059] leading-relaxed">
           
           <div>

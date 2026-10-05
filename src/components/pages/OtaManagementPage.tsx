@@ -155,23 +155,18 @@ export default function OtaManagementPage() {
         {JSON.stringify(faqSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)]" />
-        </div>
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span className="pulse-dot" />
               <span>STRATEGIC CHANNEL & YIELD OPTIMIZATION</span>
             </motion.div>
 
@@ -179,17 +174,16 @@ export default function OtaManagementPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight"
+              className="hero-title mb-6"
             >
-              Hotel OTA Management:<br />
-              <span className="font-serif italic font-normal text-[#dfad3c]">Turn Aggregators into Direct Billboards</span>
+              Hotel OTA Management: <em>Turn Aggregators into Direct Billboards</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto"
+              className="hero-desc mb-8"
             >
               Take back control of your room inventory on MakeMyTrip, Booking.com, and Agoda. We boost your OTA ranking scores while converting OTA guests into commission-free direct bookers.
             </motion.p>
@@ -198,10 +192,10 @@ export default function OtaManagementPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="hero-actions"
             >
               <a
-                href="#audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="btn btn-gold"
               >
                 <span>Claim Free OTA Audit</span>
@@ -212,7 +206,6 @@ export default function OtaManagementPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
                 <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>Discuss OTA Strategy</span>
@@ -225,7 +218,7 @@ export default function OtaManagementPage() {
 
       {/* Metrics Bar */}
       <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-semibold">
             <div className="flex items-center justify-center space-x-2">
               <Building2 className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
@@ -248,77 +241,80 @@ export default function OtaManagementPage() {
       </section>
 
       {/* OTA Bleed Breakdown */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm">
-          <div className="max-w-3xl mb-12">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-              COMMISSION REALITY
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
-              Stop Being Held Hostage by <em className="font-serif italic font-normal text-[#c99a2e] not-italic">OTA Algorithms</em>
-            </h2>
-            <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
-              When an independent hotel leaves OTA listings unattended, OTAs run wild: undercutting official room prices, pushing competitor hotels in your listing recommendations, and eating 20% of your hard-earned revenue.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-red-50/60 p-6 rounded-2xl border border-red-200">
-              <div className="flex items-center space-x-3 mb-4 text-red-700 font-extrabold">
-                <AlertTriangle className="w-6 h-6" />
-                <h3 className="text-lg">Unmanaged OTA Pitfalls</h3>
+      <section className="py-16">
+        <div className="container">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm">
+            <div className="max-w-3xl mb-12">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+                COMMISSION REALITY
               </div>
-              <ul className="space-y-3 text-sm text-[#222724]">
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Low content scores that bury your property on page 4 of search results.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Uncontrolled discounts and parity violations that undercut your direct site.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Overbooking disasters and double-sold rooms caused by manual inventory updates.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Paying 20% commission repeatedly for returning guests because no contact info was saved.
-                </li>
-              </ul>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
+                Stop Being Held Hostage by <em className="font-serif italic font-normal text-[#c99a2e] not-italic">OTA Algorithms</em>
+              </h2>
+              <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
+                When an independent hotel leaves OTA listings unattended, OTAs run wild: undercutting official room prices, pushing competitor hotels in your listing recommendations, and eating 20% of your hard-earned revenue.
+              </p>
             </div>
 
-            <div className="bg-[#fbf6e8]/60 p-6 rounded-2xl border border-[#dfad3c]/30">
-              <div className="flex items-center space-x-3 mb-4 text-[#071510] font-extrabold">
-                <CheckCircle2 className="w-6 h-6 text-[#25d366]" />
-                <h3 className="text-lg">The GrowGuest OTA Optimization Playbook</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-red-50/60 p-6 rounded-2xl border border-red-200">
+                <div className="flex items-center space-x-3 mb-4 text-red-700 font-extrabold">
+                  <AlertTriangle className="w-6 h-6" />
+                  <h3 className="text-lg">Unmanaged OTA Pitfalls</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-[#222724]">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Low content scores that bury your property on page 4 of search results.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Uncontrolled discounts and parity violations that undercut your direct site.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Overbooking disasters and double-sold rooms caused by manual inventory updates.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Paying 20% commission repeatedly for returning guests because no contact info was saved.
+                  </li>
+                </ul>
               </div>
-              <ul className="space-y-3 text-sm text-[#222724]">
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  95%+ content score across all platforms to capture high organic algorithm rank.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  Strict rate parity enforcement with exclusive value-add perks on direct channels.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  Automated channel manager sync (Staah, AxisRooms, eZee) with zero overbooking risk.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  On-property guest capture systems that turn first-time OTA guests into direct repeat stays.
-                </li>
-              </ul>
+
+              <div className="bg-[#fbf6e8]/60 p-6 rounded-2xl border border-[#dfad3c]/30">
+                <div className="flex items-center space-x-3 mb-4 text-[#071510] font-extrabold">
+                  <CheckCircle2 className="w-6 h-6 text-[#25d366]" />
+                  <h3 className="text-lg">The GrowGuest OTA Optimization Playbook</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-[#222724]">
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    95%+ content score across all platforms to capture high organic algorithm rank.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    Strict rate parity enforcement with exclusive value-add perks on direct channels.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    Automated channel manager sync (Staah, AxisRooms, eZee) with zero overbooking risk.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    On-property guest capture systems that turn first-time OTA guests into direct repeat stays.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* 6 OTA Services Breakdown */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
             WHAT WE MANAGE
           </div>
@@ -369,11 +365,12 @@ export default function OtaManagementPage() {
             </motion.div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* Commission Recovery Calculator */}
       <section className="py-20 bg-[#071510] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="bg-[#0c2018] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
@@ -461,7 +458,7 @@ export default function OtaManagementPage() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
               COMMON QUESTIONS

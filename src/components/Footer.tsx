@@ -65,15 +65,15 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Navigation</h4>
             <ul className="footer-links">
-              <li><a href="/">Home /</a></li>
-              <li><a href="/hotel-direct-booking-solutions/">OTA vs Direct /</a></li>
-              <li><a href="/approach/">Methodology /</a></li>
-              <li><a href="/hotel-digital-marketing-services/">Hospitality Services /</a></li>
-              <li><a href="/hospitality-marketing-case-studies/">Case Studies /</a></li>
-              <li><a href="/calculator/">Direct ROI Calculator /</a></li>
-              <li><a href="/about-hospitality-marketing-agency/">About Swapneel /</a></li>
-              <li><a href="/hospitality-digital-marketing-blog/">Hospitality Blog /</a></li>
-              <li><a href="/contact-hospitality-digital-marketing-agency/">Contact Us /</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/hotel-direct-booking-solutions/">OTA vs Direct</a></li>
+              <li><a href="/approach/">Methodology</a></li>
+              <li><a href="/hotel-digital-marketing-services/">Hospitality Services</a></li>
+              <li><a href="/hospitality-marketing-case-studies/">Case Studies</a></li>
+              <li><a href="/calculator/">Direct ROI Calculator</a></li>
+              <li><a href="/about-hospitality-marketing-agency/">About Swapneel</a></li>
+              <li><a href="/hospitality-digital-marketing-blog/">Hospitality Blog</a></li>
+              <li><a href="/contact-hospitality-digital-marketing-agency/">Contact Us</a></li>
             </ul>
           </div>
 
@@ -81,13 +81,13 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Key Solutions</h4>
             <ul className="footer-links">
-              <li><a href="/hotel-direct-booking-solutions/">Direct Booking Strategy /</a></li>
-              <li><a href="/hotel-digital-marketing-services/">Google Business Profile /</a></li>
-              <li><a href="/hotel-digital-marketing-services/">Local SEO for Homestays /</a></li>
-              <li><a href="/hotel-ota-management-services/">Hotel OTA Management /</a></li>
-              <li><a href="/hotel-paid-ads-google-meta/">Paid Ads (Google & Meta) /</a></li>
-              <li><a href="/hospitality-social-media-management/">Social Media Management /</a></li>
-              <li><a href="/free-hotel-digital-marketing-audit/">Free Direct Booking Audit /</a></li>
+              <li><a href="/hotel-direct-booking-solutions/">Direct Booking Strategy</a></li>
+              <li><a href="/hotel-digital-marketing-services/">Google Business Profile</a></li>
+              <li><a href="/hotel-digital-marketing-services/">Local SEO for Homestays</a></li>
+              <li><a href="/hotel-ota-management-services/">Hotel OTA Management</a></li>
+              <li><a href="/hotel-paid-ads-google-meta/">Paid Ads (Google & Meta)</a></li>
+              <li><a href="/hospitality-social-media-management/">Social Media Management</a></li>
+              <li><a href="/free-hotel-digital-marketing-audit/">Free Direct Booking Audit</a></li>
             </ul>
           </div>
 

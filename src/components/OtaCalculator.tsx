@@ -34,7 +34,7 @@ export default function OtaCalculator() {
       {/* Background Radial Glow */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-900/20 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Description */}

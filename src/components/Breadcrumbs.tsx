@@ -7,6 +7,8 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbsProps {
   items: BreadcrumbItem[];
+  maxWidth?: '7xl' | '4xl' | '5xl' | 'full';
+  className?: string;
 }
 
 function normalizeBreadcrumbUrl(url: string): string {
@@ -20,7 +22,7 @@ function normalizeBreadcrumbUrl(url: string): string {
   return url.endsWith('/') ? url : `${url}/`;
 }
 
-export default function Breadcrumbs({ items }: BreadcrumbsProps) {
+export default function Breadcrumbs({ items, maxWidth = '7xl', className = '' }: BreadcrumbsProps) {
   const allItems: BreadcrumbItem[] = [
     { name: 'Home', url: '/' },
     ...items.map(item => ({
@@ -29,16 +31,24 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
     }))
   ];
 
+  const maxWClass = maxWidth === '4xl' 
+    ? 'max-w-4xl' 
+    : maxWidth === '5xl' 
+      ? 'max-w-5xl' 
+      : maxWidth === 'full' 
+        ? 'w-full' 
+        : 'max-w-7xl';
+
   return (
-    <nav aria-label="Breadcrumb" className="py-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <ol className="flex items-center space-x-2 text-sm text-slate-500 overflow-x-auto whitespace-nowrap">
+    <nav aria-label="Breadcrumb" className={`pt-6 pb-2 px-4 sm:px-6 lg:px-8 ${maxWClass} mx-auto ${className}`}>
+      <ol className="flex items-center space-x-2 text-xs sm:text-sm text-[#546059] overflow-x-auto whitespace-nowrap">
         {allItems.map((item, index) => {
           const isLast = index === allItems.length - 1;
 
           return (
             <li key={item.url} className="flex items-center">
               {index > 0 && (
-                <ChevronRight className="w-4 h-4 text-slate-400 mx-2 flex-shrink-0" />
+                <ChevronRight className="w-3.5 h-3.5 text-[#88968e] mx-1.5 flex-shrink-0" />
               )}
               {isLast ? (
                 <span className="font-semibold text-[#c99a2e] truncate" aria-current="page">
@@ -47,9 +57,9 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
               ) : (
                 <a
                   href={item.url}
-                  className="flex items-center hover:text-[#c99a2e] transition-colors"
+                  className="flex items-center hover:text-[#071510] transition-colors"
                 >
-                  {index === 0 && <Home className="w-3.5 h-3.5 mr-1.5 flex-shrink-0" />}
+                  {index === 0 && <Home className="w-3.5 h-3.5 mr-1.5 text-[#88968e] flex-shrink-0" />}
                   <span>{item.name}</span>
                 </a>
               )}

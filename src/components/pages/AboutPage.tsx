@@ -215,40 +215,37 @@ export default function AboutPage() {
         {JSON.stringify(aboutSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+      <section className="pt-8 pb-14 lg:pt-10 lg:pb-16 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
-              <span>Founder-Led by Swapneel Shirsat • 18+ Years Experience</span>
+              <span className="pulse-dot" />
+              <span>FOUNDER-LED · 18+ YEARS MARKETING · 10+ YEARS HOSPITALITY</span>
             </motion.div>
 
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              className="hero-title mb-6"
             >
-              About GrowGuest: <span className="font-serif italic font-normal text-[#dfad3c]">Founder-Led Hospitality Marketing</span>
+              About GrowGuest: <em>Founder-Led Hospitality Marketing</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="hero-desc mb-8"
             >
-              Founded by <strong className="text-white">Swapneel Shirsat</strong>, GrowGuest is a boutique digital growth consultancy specializing exclusively in hospitality. We solve the OTA commission bleed for independent hotel, homestay, and resort owners with an end-to-end direct booking pipeline.
+              Founded by <strong className="text-[#071510]">Swapneel Shirsat</strong>, GrowGuest is a boutique digital growth consultancy specializing exclusively in hospitality. We solve the OTA commission bleed for independent hotel, homestay, and resort owners with an end-to-end direct booking pipeline.
             </motion.p>
 
             {/* AEO Direct Answer Card */}
@@ -256,7 +253,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <FileText className="w-4 h-4" />
@@ -271,7 +268,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="hero-actions mb-0"
             >
               <a
                 href="#audit"
@@ -285,7 +282,6 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
                 <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>Chat with Swapneel on WhatsApp</span>
@@ -297,7 +293,7 @@ export default function AboutPage() {
       </section>
 
       {/* Featured Founder Profile Showcase */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 container">
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:border-[#dfad3c]/30 transition-all">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             
@@ -424,7 +420,7 @@ export default function AboutPage() {
       </section>
 
       {/* 18-Year Track Record & Journey Section */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 container">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-6 space-y-6">
@@ -473,8 +469,8 @@ export default function AboutPage() {
       </section>
 
       {/* 4 Core Value Pillars */}
-      <section className="py-20 bg-[#f7f5ef] border-y border-[rgba(16,41,32,0.06)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-[#f7f5ef] border-y border-[rgba(16,41,32,0.06)]">
+        <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-semibold text-[#c99a2e] uppercase tracking-wider block mb-2">
               Our Core Principles
@@ -515,7 +511,7 @@ export default function AboutPage() {
       </section>
 
       {/* Nagpur Office & Local Presence */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 container">
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:border-[#dfad3c]/30 transition-all">
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             

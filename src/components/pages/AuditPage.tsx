@@ -136,47 +136,45 @@ export default function AuditPage() {
         {JSON.stringify(contactSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
-              <span>100% Free • No Obligation • WhatsApp Delivery</span>
+              <span className="pulse-dot" />
+              <span>100% FREE · NO OBLIGATION · WHATSAPP DELIVERY</span>
             </motion.div>
 
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              className="hero-title mb-6"
             >
-              Free Hotel Website & <span className="font-serif italic font-normal text-[#dfad3c]">Direct Booking Audit</span>
+              Free Hotel Website & <em>Direct Booking Audit</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="hero-desc mb-8"
             >
               Find out exactly how much commission you lose to OTAs and get a step-by-step action plan to rank #1 on Google Maps and double your direct guest inquiries.
             </motion.p>
 
+            {/* AEO Direct Answer Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <FileText className="w-4 h-4" />
@@ -192,8 +190,9 @@ export default function AuditPage() {
       </section>
 
       {/* Main Request Form & Pillars Grid */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-12 gap-12 items-start">
+      <section className="py-12">
+        <div className="container">
+          <div className="grid lg:grid-cols-12 gap-12 items-start">
           
           <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-[rgba(16,41,32,0.08)]">
             <div className="mb-8">
@@ -380,11 +379,12 @@ export default function AuditPage() {
           </div>
 
         </div>
+        </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.06)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
               Frequently Asked Questions

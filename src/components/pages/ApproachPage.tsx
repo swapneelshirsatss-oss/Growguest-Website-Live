@@ -186,21 +186,18 @@ export default function ApproachPage() {
         {JSON.stringify(faqSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span className="pulse-dot" />
               <span>THE GROWGUEST HOSPITALITY FRAMEWORK</span>
             </motion.div>
 
@@ -208,26 +205,26 @@ export default function ApproachPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              className="hero-title mb-6"
             >
-              You Craft The Hospitality.<br />
-              <span className="font-serif italic font-normal text-[#dfad3c]">We Engineer The Pipeline To Fill It.</span>
+              You Craft The Hospitality. <em>We Engineer The Pipeline To Fill It.</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="hero-desc mb-8"
             >
               A stunning property without a connected direct booking journey surrenders 18% to 25% of its gross revenue to OTAs. Here is the exact 3-pillar framework we use to turn lookers into commission-free direct guests.
             </motion.p>
 
+            {/* AEO Direct Answer Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-mono font-bold text-xs uppercase tracking-wider mb-2">
                 <Sparkles className="w-4 h-4" />
@@ -242,10 +239,10 @@ export default function ApproachPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="hero-actions"
             >
               <a
-                href="#audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="btn btn-gold inline-flex"
               >
                 <span>Request Free Growth Audit</span>
@@ -255,9 +252,9 @@ export default function ApproachPage() {
                 href="https://wa.me/918956907343"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline border-white/20 text-white hover:bg-white/10 inline-flex"
+                className="btn btn-outline inline-flex"
               >
-                <PhoneCall className="w-4 h-4 mr-2 text-[#dfad3c]" />
+                <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>WhatsApp Strategy Call</span>
               </a>
             </motion.div>
@@ -268,7 +265,7 @@ export default function ApproachPage() {
 
       {/* Trust Stats Bar */}
       <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-medium">
             <div className="flex items-center justify-center space-x-2">
               <Zap className="w-4 h-4 text-[#dfad3c] flex-shrink-0" />
@@ -291,64 +288,66 @@ export default function ApproachPage() {
       </section>
 
       {/* The 3 Pillars Section */}
-      <section className="py-20 lg:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-            <span>CORE ARCHITECTURE</span>
+      <section className="py-16 lg:py-24">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+              <span>CORE ARCHITECTURE</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] tracking-tight mb-4">
+              The Three Pillars of Direct Booking Growth
+            </h2>
+            <p className="text-[#546059] text-lg leading-relaxed">
+              Every direct booking rupee requires three connected gears. When all three run in unison, independent properties consistently outperform OTA aggregators.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] tracking-tight mb-4">
-            The Three Pillars of Direct Booking Growth
-          </h2>
-          <p className="text-[#546059] text-lg leading-relaxed">
-            Every direct booking rupee requires three connected gears. When all three run in unison, independent properties consistently outperform OTA aggregators.
-          </p>
-        </div>
 
-        <div className="space-y-12">
-          {pillars.map((pillar, idx) => (
-            <div 
-              key={idx}
-              className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:shadow-xl hover:border-[#dfad3c]/40 transition-all relative overflow-hidden"
-            >
-              <div className="grid lg:grid-cols-12 gap-8 items-start">
-                <div className="lg:col-span-4">
-                  <span className="font-mono text-xs font-bold tracking-wider text-[#dfad3c] bg-[#071510] px-3.5 py-1.5 rounded-lg mb-4 inline-block">
-                    PILLAR {pillar.num} / {pillar.tag}
-                  </span>
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-3">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-sm font-semibold text-[#0c2018] mb-4">
-                    {pillar.headline}
-                  </p>
-                  <div className="inline-block bg-[#071510] text-[#dfad3c] border border-[#dfad3c]/30 text-xs font-bold px-3.5 py-1.5 rounded-full">
-                    {pillar.metric}
+          <div className="space-y-12">
+            {pillars.map((pillar, idx) => (
+              <div 
+                key={idx}
+                className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:shadow-xl hover:border-[#dfad3c]/40 transition-all relative overflow-hidden"
+              >
+                <div className="grid lg:grid-cols-12 gap-8 items-start">
+                  <div className="lg:col-span-4">
+                    <span className="font-mono text-xs font-bold tracking-wider text-[#dfad3c] bg-[#071510] px-3.5 py-1.5 rounded-lg mb-4 inline-block">
+                      PILLAR {pillar.num} / {pillar.tag}
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510] mb-3">
+                      {pillar.title}
+                    </h3>
+                    <p className="text-sm font-semibold text-[#0c2018] mb-4">
+                      {pillar.headline}
+                    </p>
+                    <div className="inline-block bg-[#071510] text-[#dfad3c] border border-[#dfad3c]/30 text-xs font-bold px-3.5 py-1.5 rounded-full">
+                      {pillar.metric}
+                    </div>
                   </div>
-                </div>
 
-                <div className="lg:col-span-8 space-y-6">
-                  <p className="text-[#546059] leading-relaxed text-base">
-                    {pillar.description}
-                  </p>
-                  
-                  <div className="grid sm:grid-cols-2 gap-3 pt-4 border-t border-[rgba(16,41,32,0.08)]">
-                    {pillar.features.map((feat, fIdx) => (
-                      <div key={fIdx} className="flex items-start text-sm text-[#546059]">
-                        <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
-                        <span>{feat}</span>
-                      </div>
-                    ))}
+                  <div className="lg:col-span-8 space-y-6">
+                    <p className="text-[#546059] leading-relaxed text-base">
+                      {pillar.description}
+                    </p>
+                    
+                    <div className="grid sm:grid-cols-2 gap-3 pt-4 border-t border-[rgba(16,41,32,0.08)]">
+                      {pillar.features.map((feat, fIdx) => (
+                        <div key={fIdx} className="flex items-start text-sm text-[#546059]">
+                          <CheckCircle2 className="w-4 h-4 text-[#dfad3c] mr-2 flex-shrink-0 mt-0.5" />
+                          <span>{feat}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* The 4-Step Operational Blueprint */}
       <section className="py-20 bg-[#071510] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-widest block mb-2">
               HOW WE WORK WITH YOU
@@ -401,73 +400,75 @@ export default function ApproachPage() {
       </section>
 
       {/* Verified Property Proof Cards */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
-            PROVEN RESULTS
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
-            Field-Tested Across Premier Retreats
-          </h2>
-          <p className="text-[#546059] text-lg">
-            From luxury boutique resorts in Nainital to heritage private villas in North Goa and Nagpur homestays.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
-            <div>
-              <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
-                MUKTESHWAR, UTTARAKHAND
-              </div>
-              <h3 className="text-xl font-extrabold text-[#071510] mb-2">The Stone Heritage</h3>
-              <p className="text-xs font-semibold text-[#0c2018] mb-4">📈 +42% Direct Bookings via WhatsApp</p>
-              <p className="text-sm text-[#546059] leading-relaxed mb-4">
-                Traditional stone cottage retreat. Engineered custom direct rate packages and Google Maps optimization, diverting weekend buyouts from OTAs.
-              </p>
-            </div>
-            <a href="https://thestoneheritage.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
-              Visit Property Website ↗
-            </a>
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+              PROVEN RESULTS
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
+              Field-Tested Across Premier Retreats
+            </h2>
+            <p className="text-[#546059] text-lg">
+              From luxury boutique resorts in Nainital to heritage private villas in North Goa and Nagpur homestays.
+            </p>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
-            <div>
-              <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
-                RAMGARH, NAINITAL
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
+              <div>
+                <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
+                  MUKTESHWAR, UTTARAKHAND
+                </div>
+                <h3 className="text-xl font-extrabold text-[#071510] mb-2">The Stone Heritage</h3>
+                <p className="text-xs font-semibold text-[#0c2018] mb-4">📈 +42% Direct Bookings via WhatsApp</p>
+                <p className="text-sm text-[#546059] leading-relaxed mb-4">
+                  Traditional stone cottage retreat. Engineered custom direct rate packages and Google Maps optimization, diverting weekend buyouts from OTAs.
+                </p>
               </div>
-              <h3 className="text-xl font-extrabold text-[#071510] mb-2">Whispering Pines Resort</h3>
-              <p className="text-xs font-semibold text-[#0c2018] mb-4">⚡ OTA Share Cut from 75% to 38%</p>
-              <p className="text-sm text-[#546059] leading-relaxed mb-4">
-                Tranquil orchard destination resort. Captured top 3 Google Business Profile rankings for Ramgarh family vacations and corporate retreats.
-              </p>
+              <a href="https://thestoneheritage.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
+                Visit Property Website ↗
+              </a>
             </div>
-            <a href="https://whisperingpinesresort.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
-              Visit Property Website ↗
-            </a>
-          </div>
 
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
-            <div>
-              <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
-                ASSAGAO, NORTH GOA
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
+              <div>
+                <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
+                  RAMGARH, NAINITAL
+                </div>
+                <h3 className="text-xl font-extrabold text-[#071510] mb-2">Whispering Pines Resort</h3>
+                <p className="text-xs font-semibold text-[#0c2018] mb-4">⚡ OTA Share Cut from 75% to 38%</p>
+                <p className="text-sm text-[#546059] leading-relaxed mb-4">
+                  Tranquil orchard destination resort. Captured top 3 Google Business Profile rankings for Ramgarh family vacations and corporate retreats.
+                </p>
               </div>
-              <h3 className="text-xl font-extrabold text-[#071510] mb-2">The Goan House</h3>
-              <p className="text-xs font-semibold text-[#0c2018] mb-4">✨ 100% Commission-Free Buyouts</p>
-              <p className="text-sm text-[#546059] leading-relaxed mb-4">
-                Exclusive Portuguese heritage villa. Deployed a friction-free WhatsApp concierge reservation pipeline for affluent family and group buyouts.
-              </p>
+              <a href="https://whisperingpinesresort.in/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
+                Visit Property Website ↗
+              </a>
             </div>
-            <a href="https://thegoanhouse.com/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
-              Visit Property Website ↗
-            </a>
+
+            <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[rgba(16,41,32,0.08)] shadow-sm flex flex-col justify-between hover:border-[#dfad3c]/40 transition-all">
+              <div>
+                <div className="text-xs font-mono font-bold text-[#dfad3c] bg-[#071510] px-3 py-1 rounded-full inline-block mb-3">
+                  ASSAGAO, NORTH GOA
+                </div>
+                <h3 className="text-xl font-extrabold text-[#071510] mb-2">The Goan House</h3>
+                <p className="text-xs font-semibold text-[#0c2018] mb-4">✨ 100% Commission-Free Buyouts</p>
+                <p className="text-sm text-[#546059] leading-relaxed mb-4">
+                  Exclusive Portuguese heritage villa. Deployed a friction-free WhatsApp concierge reservation pipeline for affluent family and group buyouts.
+                </p>
+              </div>
+              <a href="https://thegoanhouse.com/" target="_blank" rel="noopener" className="text-xs font-bold text-[#c99a2e] hover:underline inline-flex items-center">
+                Visit Property Website ↗
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Accordion Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-widest block mb-2">
               FREQUENTLY ASKED QUESTIONS
@@ -512,21 +513,23 @@ export default function ApproachPage() {
       </section>
 
       {/* Embedded Audit Form Section */}
-      <section id="audit" className="py-20 lg:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-xl">
-          <div className="text-center mb-8">
-            <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
-              ZERO RISK · IN-PERSON OR REMOTE
-            </span>
-            <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
-              Apply This Methodology to Your Property
-            </h2>
-            <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto">
-              Request a free 360° direct booking audit. We will inspect your Google Business Profile, site speed, and OTA commission leakage.
-            </p>
-          </div>
+      <section id="audit" className="py-16 lg:py-20">
+        <div className="container max-w-4xl">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-xl">
+            <div className="text-center mb-8">
+              <span className="text-xs font-mono font-bold text-[#dfad3c] bg-[#dfad3c]/10 border border-[#dfad3c]/30 px-3.5 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+                ZERO RISK · IN-PERSON OR REMOTE
+              </span>
+              <h2 className="text-3xl font-extrabold text-[#071510] mb-2">
+                Apply This Methodology to Your Property
+              </h2>
+              <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto">
+                Request a free 360° direct booking audit. We will inspect your Google Business Profile, site speed, and OTA commission leakage.
+              </p>
+            </div>
 
-          <AuditForm />
+            <AuditForm />
+          </div>
         </div>
       </section>
 

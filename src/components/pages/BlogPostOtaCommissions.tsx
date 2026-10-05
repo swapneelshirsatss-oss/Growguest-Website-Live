@@ -96,36 +96,36 @@ export default function BlogPostOtaCommissions() {
         faqSchema={faqSchema}
       />
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Header */}
-      <header className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+      <header className="pt-8 pb-10 lg:pt-10 lg:pb-12 relative">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8">
+          <Breadcrumbs items={breadcrumbItems} maxWidth="4xl" className="px-0 pt-0 pb-6" />
+          <div className="hero-pill-badge mb-6">
+            <span className="pulse-dot" />
             <span>Direct Booking Economics</span>
           </div>
 
-          <h1 id="hero-heading" className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-            How to Cut OTA Commissions by 50% <span className="font-serif italic font-normal text-[#dfad3c]">Without Losing Booking Volume</span>
+          <h1 id="hero-heading" className="hero-title mb-6">
+            How to Cut OTA Commissions by 50% <em className="font-serif italic font-normal text-[#c99a2e]">Without Losing Booking Volume</em>
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-300">
-            <span className="flex items-center"><User className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
-            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> Aug 2026</span>
-            <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#dfad3c]" /> 7 min read</span>
+          <div className="flex flex-wrap items-center gap-6 text-sm text-[#546059] pb-6 border-b border-[rgba(16,41,32,0.08)]">
+            <span className="flex items-center text-[#071510] font-semibold"><User className="w-4 h-4 mr-1.5 text-[#c99a2e]" /> By Swapneel Shirsat (Hospitality Specialist)</span>
+            <span className="text-[#546059]/40">•</span>
+            <span className="flex items-center"><Calendar className="w-4 h-4 mr-1.5 text-[#c99a2e]" /> Aug 2026</span>
+            <span className="text-[#546059]/40">•</span>
+            <span className="flex items-center"><Clock className="w-4 h-4 mr-1.5 text-[#c99a2e]" /> 7 min read</span>
           </div>
         </div>
       </header>
 
       {/* Main Content Layout */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <main className="max-w-4xl mx-auto px-5 sm:px-8 pb-16">
         <article className="prose prose-lg max-w-none text-[#546059] leading-relaxed space-y-8">
           
-          <div className="bg-[#0c2018] border-l-4 border-[#dfad3c] p-6 sm:p-7 rounded-r-2xl border-y border-r border-white/10 shadow-xl not-prose mb-8">
-            <p id="direct-answer-summary" className="text-base sm:text-lg font-medium text-slate-200 m-0">
-              <strong className="text-[#dfad3c]">The Hard Truth:</strong> If your hotel does ₹10 Lakhs in monthly room revenue and 75% comes from MakeMyTrip and Agoda at an average 20% commission, you are handing ₹1.5 Lakhs every single month to intermediaries. Over 3 years, that is ₹54 Lakhs — enough to remodel your entire property or open a new wing.
+          <div className="bg-[#f7f5ef] border-l-4 border-[#c99a2e] p-6 sm:p-7 rounded-r-2xl border-y border-r border-[rgba(16,41,32,0.08)] shadow-xs not-prose mb-8">
+            <p id="direct-answer-summary" className="text-base sm:text-lg font-medium text-[#222724] m-0">
+              <strong className="text-[#c99a2e]">The Hard Truth:</strong> If your hotel does ₹10 Lakhs in monthly room revenue and 75% comes from MakeMyTrip and Agoda at an average 20% commission, you are handing ₹1.5 Lakhs every single month to intermediaries. Over 3 years, that is ₹54 Lakhs — enough to remodel your entire property or open a new wing.
             </p>
           </div>
 

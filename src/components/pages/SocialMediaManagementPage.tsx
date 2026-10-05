@@ -154,23 +154,18 @@ export default function SocialMediaManagementPage() {
         {JSON.stringify(faqSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)]" />
-        </div>
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-16 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span className="pulse-dot" />
               <span>VISUAL STORYTELLING & SOCIAL COMMERCE</span>
             </motion.div>
 
@@ -178,17 +173,16 @@ export default function SocialMediaManagementPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight"
+              className="hero-title mb-6"
             >
-              Hospitality Social Media:<br />
-              <span className="font-serif italic font-normal text-[#dfad3c]">Turn Followers into Direct Bookings</span>
+              Hospitality Social Media: <em className="font-serif italic font-normal text-[#c99a2e]">Turn Followers into Direct Bookings</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto"
+              className="hero-desc mb-8"
             >
               No more lifeless greeting cards or generic posters. We create cinematic Instagram Reels, room walkthroughs, and automated DM funnels that turn travel inspiration into confirmed reservations.
             </motion.p>
@@ -197,7 +191,7 @@ export default function SocialMediaManagementPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="flex flex-wrap items-center gap-4"
             >
               <a
                 href="#audit"
@@ -211,20 +205,18 @@ export default function SocialMediaManagementPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
                 <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>Discuss Content Strategy</span>
               </a>
             </motion.div>
-
           </div>
         </div>
       </section>
 
       {/* Metrics Bar */}
       <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-semibold">
             <div className="flex items-center justify-center space-x-2">
               <Instagram className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
@@ -247,7 +239,8 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Why Most Hotel Social Media Fails */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20">
+        <div className="container">
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm">
           <div className="max-w-3xl mb-12">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
@@ -313,66 +306,69 @@ export default function SocialMediaManagementPage() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* 6 Social Media Pillars */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-            CONTENT PILLARS
+      <section className="py-20">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+              CONTENT PILLARS
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
+              End-to-End <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Social Media Management</em>
+            </h2>
+            <p className="text-[#546059] text-lg leading-relaxed">
+              From creative ideation and video editing to community management and influencer curation, we handle your entire visual brand.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
-            End-to-End <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Social Media Management</em>
-          </h2>
-          <p className="text-[#546059] text-lg leading-relaxed">
-            From creative ideation and video editing to community management and influencer curation, we handle your entire visual brand.
-          </p>
-        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {socialServices.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -6 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-[rgba(16,41,32,0.08)] hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-14 h-14 bg-[#fbf6e8] rounded-2xl flex items-center justify-center mb-6 border border-[#dfad3c]/20 shadow-xs">
-                  {service.icon}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {socialServices.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -6 }}
+                className="bg-white rounded-3xl p-8 shadow-sm border border-[rgba(16,41,32,0.08)] hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-14 h-14 bg-[#fbf6e8] rounded-2xl flex items-center justify-center mb-6 border border-[#dfad3c]/20 shadow-xs">
+                    {service.icon}
+                  </div>
+
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] mb-2 block font-semibold">
+                    {service.subtitle}
+                  </span>
+
+                  <h3 className="text-xl font-extrabold text-[#071510] mb-3">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-[#546059] leading-relaxed mb-6 text-sm">
+                    {service.description}
+                  </p>
                 </div>
 
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] mb-2 block font-semibold">
-                  {service.subtitle}
-                </span>
-
-                <h3 className="text-xl font-extrabold text-[#071510] mb-3">
-                  {service.title}
-                </h3>
-
-                <p className="text-[#546059] leading-relaxed mb-6 text-sm">
-                  {service.description}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-[rgba(16,41,32,0.08)]">
-                {service.tags.map((tag, tIdx) => (
-                  <span key={tIdx} className="bg-[#f7f5ef] text-[#071510] font-semibold text-xs px-2.5 py-1 rounded-md border border-[rgba(16,41,32,0.08)]">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-[rgba(16,41,32,0.08)]">
+                  {service.tags.map((tag, tIdx) => (
+                    <span key={tIdx} className="bg-[#f7f5ef] text-[#071510] font-semibold text-xs px-2.5 py-1 rounded-md border border-[rgba(16,41,32,0.08)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Social Booking Funnel Simulator */}
       <section className="py-20 bg-[#071510] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="bg-[#0c2018] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
@@ -444,7 +440,7 @@ export default function SocialMediaManagementPage() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
               COMMON QUESTIONS

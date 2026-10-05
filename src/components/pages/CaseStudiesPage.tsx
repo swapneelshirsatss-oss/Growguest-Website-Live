@@ -142,47 +142,45 @@ export default function CaseStudiesPage() {
         {JSON.stringify(pageSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
-              <span>Verified Hospitality Performance Data • Nagpur & Beyond</span>
+              <span className="pulse-dot" />
+              <span>VERIFIED PERFORMANCE DATA · NAGPUR & BEYOND</span>
             </motion.div>
 
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6"
+              className="hero-title mb-6"
             >
-              Hotel Marketing Case Studies: <span className="font-serif italic font-normal text-[#dfad3c]">Real Direct Booking Results</span>
+              Hotel Marketing Case Studies: <em>Real Direct Booking Results</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="hero-desc mb-8"
             >
               We measure success by one metric: how much OTA commission money stays in your bank account. Explore verified before-and-after data from independent hotels, resorts, and homestays.
             </motion.p>
 
+            {/* AEO Direct Answer Card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
                 <Sparkles className="w-4 h-4" />
@@ -197,10 +195,10 @@ export default function CaseStudiesPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="hero-actions"
             >
               <a
-                href="#audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="btn btn-gold"
               >
                 <span>Get Free Property Audit</span>
@@ -211,7 +209,6 @@ export default function CaseStudiesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
                 <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>Speak with Consultant</span>
@@ -224,7 +221,7 @@ export default function CaseStudiesPage() {
 
       {/* Metrics Bar */}
       <section className="bg-[#0c2018] text-slate-300 py-8 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <span className="text-3xl sm:text-4xl font-extrabold text-[#25d366] block mb-1">
@@ -263,8 +260,9 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Case Studies List */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-mono font-semibold text-[#c99a2e] uppercase tracking-wider block mb-2">
             Verified Property Performance
           </span>
@@ -351,11 +349,12 @@ export default function CaseStudiesPage() {
             </motion.div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.06)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
               Case Study & Results FAQ

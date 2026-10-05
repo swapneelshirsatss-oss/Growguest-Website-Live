@@ -155,23 +155,18 @@ export default function PaidAdsPage() {
         {JSON.stringify(faqSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)]" />
-        </div>
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span className="pulse-dot" />
               <span>HIGH-ROAS PERFORMANCE MARKETING</span>
             </motion.div>
 
@@ -179,17 +174,16 @@ export default function PaidAdsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight"
+              className="hero-title mb-6"
             >
-              Paid Ads Management:<br />
-              <span className="font-serif italic font-normal text-[#dfad3c]">Google Ads & Social Media</span>
+              Paid Ads Management: <em>Google Ads & Social Media</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto"
+              className="hero-desc mb-8"
             >
               Stop wasting money on boosted posts and untargeted clicks. We craft laser-focused Google Search, Google Hotel Ads, and Instagram Reels campaigns that deliver verified direct room bookings.
             </motion.p>
@@ -198,10 +192,10 @@ export default function PaidAdsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="flex flex-col sm:flex-row justify-center gap-4"
+              className="hero-actions"
             >
               <a
-                href="#audit"
+                href="/free-hotel-digital-marketing-audit/"
                 className="btn btn-gold"
               >
                 <span>Claim Free Ads Audit</span>
@@ -212,7 +206,6 @@ export default function PaidAdsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"
-                style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.25)' }}
               >
                 <PhoneCall className="w-4 h-4 mr-2 text-[#25d366]" />
                 <span>Discuss Ads Strategy</span>
@@ -225,7 +218,7 @@ export default function PaidAdsPage() {
 
       {/* Metrics Bar */}
       <section className="bg-[#0c2018] text-slate-300 py-6 border-y border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm font-semibold">
             <div className="flex items-center justify-center space-x-2">
               <TrendingUp className="w-5 h-5 text-[#dfad3c] flex-shrink-0" />
@@ -248,132 +241,136 @@ export default function PaidAdsPage() {
       </section>
 
       {/* Why Typical Ads Fail vs GrowGuest */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm">
-          <div className="max-w-3xl mb-12">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-              THE PAIN POINT
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
-              Why 85% of Hotel Ads Fail to <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Generate Bookings</em>
-            </h2>
-            <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
-              Most generic marketing agencies treat a boutique hotel like an e-commerce shop. They waste thousands on broad keywords like "Nagpur hotels" or blindly boost Instagram posts that get likes from random accounts without generating a single reservation.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-red-50/60 p-6 rounded-2xl border border-red-200">
-              <div className="flex items-center space-x-3 mb-4 text-red-700 font-extrabold">
-                <ShieldAlert className="w-6 h-6" />
-                <h3 className="text-lg">What Generic Agencies Do (Wasted Spend)</h3>
+      <section className="py-16">
+        <div className="container">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm">
+            <div className="max-w-3xl mb-12">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+                THE PAIN POINT
               </div>
-              <ul className="space-y-3 text-sm text-[#222724]">
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Broad keywords that trigger on job searches or student queries.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Pushing traffic to slow, broken websites with confusing reservation forms.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  Boosting generic greeting cards on Instagram that only collect empty likes.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-500 mr-2 font-bold">✕</span>
-                  No WhatsApp direct routing, leaving inquiries unanswered for hours.
-                </li>
-              </ul>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] mb-4">
+                Why 85% of Hotel Ads Fail to <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Generate Bookings</em>
+              </h2>
+              <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
+                Most generic marketing agencies treat a boutique hotel like an e-commerce shop. They waste thousands on broad keywords like "Nagpur hotels" or blindly boost Instagram posts that get likes from random accounts without generating a single reservation.
+              </p>
             </div>
 
-            <div className="bg-[#fbf6e8]/60 p-6 rounded-2xl border border-[#dfad3c]/30">
-              <div className="flex items-center space-x-3 mb-4 text-[#071510] font-extrabold">
-                <CheckCircle2 className="w-6 h-6 text-[#25d366]" />
-                <h3 className="text-lg">The GrowGuest Hospitality Paid Ads Engine</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-red-50/60 p-6 rounded-2xl border border-red-200">
+                <div className="flex items-center space-x-3 mb-4 text-red-700 font-extrabold">
+                  <ShieldAlert className="w-6 h-6" />
+                  <h3 className="text-lg">What Generic Agencies Do (Wasted Spend)</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-[#222724]">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Broad keywords that trigger on job searches or student queries.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Pushing traffic to slow, broken websites with confusing reservation forms.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    Boosting generic greeting cards on Instagram that only collect empty likes.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 font-bold">✕</span>
+                    No WhatsApp direct routing, leaving inquiries unanswered for hours.
+                  </li>
+                </ul>
               </div>
-              <ul className="space-y-3 text-sm text-[#222724]">
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  Bottom-of-funnel exact intent keywords ("pool villa near Nagpur for weekend").
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  Sub-1.5 second landing pages designed purely to secure phone calls & chats.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  Short-form cinematic video reels that spark genuine travel desire.
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#25d366] mr-2 font-bold">✓</span>
-                  Instant Click-to-WhatsApp triggers that land pre-filled bookings at your front desk.
-                </li>
-              </ul>
+
+              <div className="bg-[#fbf6e8]/60 p-6 rounded-2xl border border-[#dfad3c]/30">
+                <div className="flex items-center space-x-3 mb-4 text-[#071510] font-extrabold">
+                  <CheckCircle2 className="w-6 h-6 text-[#25d366]" />
+                  <h3 className="text-lg">The GrowGuest Hospitality Paid Ads Engine</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-[#222724]">
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    Bottom-of-funnel exact intent keywords ("pool villa near Nagpur for weekend").
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    Sub-1.5 second landing pages designed purely to secure phone calls & chats.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    Short-form cinematic video reels that spark genuine travel desire.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#25d366] mr-2 font-bold">✓</span>
+                    Instant Click-to-WhatsApp triggers that land pre-filled bookings at your front desk.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* 6 Paid Ad Pillars */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-            OUR AD STRATEGY
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+              OUR AD STRATEGY
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
+              Complete Multi-Channel <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Paid Ad Architecture</em>
+            </h2>
+            <p className="text-[#546059] text-lg leading-relaxed">
+              Every campaign is built from the ground up for hospitality ROI — intercepting active searchers and nurturing passive travelers into guests.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#071510] mb-4">
-            Complete Multi-Channel <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Paid Ad Architecture</em>
-          </h2>
-          <p className="text-[#546059] text-lg leading-relaxed">
-            Every campaign is built from the ground up for hospitality ROI — intercepting active searchers and nurturing passive travelers into guests.
-          </p>
-        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {adChannels.map((channel, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -6 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-[rgba(16,41,32,0.08)] hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-14 h-14 bg-[#fbf6e8] rounded-2xl flex items-center justify-center mb-6 border border-[#dfad3c]/20 shadow-xs">
-                  {channel.icon}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {adChannels.map((channel, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -6 }}
+                className="bg-white rounded-3xl p-8 shadow-sm border border-[rgba(16,41,32,0.08)] hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-14 h-14 bg-[#fbf6e8] rounded-2xl flex items-center justify-center mb-6 border border-[#dfad3c]/20 shadow-xs">
+                    {channel.icon}
+                  </div>
+
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] mb-2 block font-semibold">
+                    {channel.subtitle}
+                  </span>
+
+                  <h3 className="text-xl font-extrabold text-[#071510] mb-3">
+                    {channel.title}
+                  </h3>
+
+                  <p className="text-[#546059] leading-relaxed mb-6 text-sm">
+                    {channel.description}
+                  </p>
                 </div>
 
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#c99a2e] mb-2 block font-semibold">
-                  {channel.subtitle}
-                </span>
-
-                <h3 className="text-xl font-extrabold text-[#071510] mb-3">
-                  {channel.title}
-                </h3>
-
-                <p className="text-[#546059] leading-relaxed mb-6 text-sm">
-                  {channel.description}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-[rgba(16,41,32,0.08)]">
-                {channel.tags.map((tag, tIdx) => (
-                  <span key={tIdx} className="bg-[#f7f5ef] text-[#071510] font-semibold text-xs px-2.5 py-1 rounded-md border border-[rgba(16,41,32,0.08)]">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-[rgba(16,41,32,0.08)]">
+                  {channel.tags.map((tag, tIdx) => (
+                    <span key={tIdx} className="bg-[#f7f5ef] text-[#071510] font-semibold text-xs px-2.5 py-1 rounded-md border border-[rgba(16,41,32,0.08)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Interactive Ad Spend & ROAS Calculator */}
       <section className="py-20 bg-[#071510] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="bg-[#0c2018] rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
@@ -461,7 +458,7 @@ export default function PaidAdsPage() {
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.08)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/10 border border-[#dfad3c]/25 text-[#c99a2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
               QUESTIONS & ANSWERS

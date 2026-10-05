@@ -50,7 +50,7 @@ export default function AuditForm() {
       {/* Background Ambience */}
       <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-emerald-700/10 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Context & Hotline */}

@@ -160,38 +160,35 @@ export default function BlogPage() {
         {JSON.stringify(collectionSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Hero Section */}
-      <section className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+      <section className="pt-8 pb-12 lg:pt-10 lg:pb-16 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
-              <span>Hospitality SEO & Direct Booking Guides</span>
+              <span className="pulse-dot" />
+              <span>HOSPITALITY SEO & DIRECT BOOKING GUIDES</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight"
+              className="hero-title mb-6"
             >
-              Hospitality Marketing Insights & <span className="font-serif italic font-normal text-[#dfad3c]">Direct Booking Strategies</span>
+              Hospitality Marketing Insights & <em className="font-serif italic font-normal text-[#c99a2e]">Direct Booking Strategies</em>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto"
+              className="hero-desc mb-8"
             >
               Field-tested playbooks to rank in Google Maps 3-Pack, speed up mobile booking funnels, and protect 18–25% guest margins from OTA commissions.
             </motion.p>
@@ -201,42 +198,44 @@ export default function BlogPage() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.25 }}
-              className="mb-10 text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="border-l-4 border-[#c99a2e] bg-[#f7f5ef] text-[#222724] p-6 sm:p-7 rounded-r-2xl border-y border-r border-[rgba(16,41,32,0.08)] shadow-xs"
             >
-              <div className="flex items-center gap-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2.5">
-                <FileText className="w-4 h-4 shrink-0 text-[#dfad3c]" />
+              <div className="flex items-center gap-2 text-[#c99a2e] font-bold text-xs uppercase tracking-wider mb-2.5">
+                <FileText className="w-4 h-4 shrink-0 text-[#c99a2e]" />
                 <span>Direct-Booking Knowledge Base &bull; GrowGuest</span>
               </div>
-              <p className="text-sm sm:text-base leading-relaxed text-slate-200">
-                GrowGuest publishes field-tested digital growth playbooks for independent hoteliers, resort operators, and homestay owners across India. Every guide provides verified, step-by-step implementations for <strong className="text-white">Google Business Profile Map Pack rankings</strong>, <strong className="text-white">frictionless WhatsApp booking funnels</strong>, and <strong className="text-[#dfad3c]">cutting OTA commission leakages down to zero</strong>.
+              <p className="text-sm sm:text-base leading-relaxed text-[#546059]">
+                GrowGuest publishes field-tested digital growth playbooks for independent hoteliers, resort operators, and homestay owners across India. Every guide provides verified, step-by-step implementations for <strong className="text-[#071510]">Google Business Profile Map Pack rankings</strong>, <strong className="text-[#071510]">frictionless WhatsApp booking funnels</strong>, and <strong className="text-[#c99a2e]">cutting OTA commission leakages down to zero</strong>.
               </p>
             </motion.div>
-
           </div>
         </div>
       </section>
 
       {/* Category Filter Tabs */}
-      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-[rgba(16,41,32,0.08)]">
-        <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer focus:outline-none ${
-                selectedCategory === cat
-                  ? 'bg-[#dfad3c] text-[#071510] shadow-sm font-bold'
-                  : 'bg-white text-[#546059] hover:bg-[#f7f5ef] hover:text-[#071510] border border-[rgba(16,41,32,0.08)] shadow-xs'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+      <section className="py-8 border-b border-[rgba(16,41,32,0.08)]">
+        <div className="container">
+          <div className="flex items-center justify-center flex-wrap gap-2 sm:gap-3">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer focus:outline-none ${
+                  selectedCategory === cat
+                    ? 'bg-[#dfad3c] text-[#071510] shadow-sm font-bold'
+                    : 'bg-white text-[#546059] hover:bg-[#f7f5ef] hover:text-[#071510] border border-[rgba(16,41,32,0.08)] shadow-xs'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Main Blog Articles Container */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section className="py-16">
+        <div className="container space-y-16">
         
         {/* Featured Banner Post */}
         {selectedCategory === "All" && (
@@ -340,36 +339,38 @@ export default function BlogPage() {
             ))}
           </div>
         </div>
-
-      </section>
+      </div>
+    </section>
 
       {/* Free Audit Callout Banner */}
-      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#071510] text-white rounded-3xl p-8 sm:p-12 text-center border border-[#dfad3c]/20 shadow-xl relative overflow-hidden">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3 leading-tight">
-              Stop Losing 18% to 25% on Every Guest Reservation
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-7 leading-relaxed">
-              Get a personalized, manual 4-point direct booking and local SEO audit for your property. Delivered to your WhatsApp within 24 to 48 hours.
-            </p>
-            <div>
-              <a
-                href="/free-hotel-digital-marketing-audit/"
-                className="btn btn-gold inline-flex"
-              >
-                <span>Claim Free Direct Booking Audit</span>
-                <ArrowRight className="w-4 h-4 shrink-0 ml-2" />
-              </a>
+      <section className="py-12">
+        <div className="container">
+          <div className="bg-[#071510] text-white rounded-3xl p-8 sm:p-12 text-center border border-[#dfad3c]/20 shadow-xl relative overflow-hidden">
+            <div className="max-w-3xl mx-auto">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3 leading-tight">
+                Stop Losing 18% to 25% on Every Guest Reservation
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-7 leading-relaxed">
+                Get a personalized, manual 4-point direct booking and local SEO audit for your property. Delivered to your WhatsApp within 24 to 48 hours.
+              </p>
+              <div>
+                <a
+                  href="/free-hotel-digital-marketing-audit/"
+                  className="btn btn-gold inline-flex"
+                >
+                  <span>Claim Free Direct Booking Audit</span>
+                  <ArrowRight className="w-4 h-4 shrink-0 ml-2" />
+                </a>
+              </div>
+              <p className="text-xs text-slate-400 mt-4 font-medium flex items-center justify-center gap-2 flex-wrap">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#dfad3c] inline shrink-0" />
+                <span>100% Free</span>
+                <span className="opacity-40">&bull;</span>
+                <span>Zero Obligation</span>
+                <span className="opacity-40">&bull;</span>
+                <span>Manual Review by Specialists (No Bot Spam)</span>
+              </p>
             </div>
-            <p className="text-xs text-slate-400 mt-4 font-medium flex items-center justify-center gap-2 flex-wrap">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#dfad3c] inline shrink-0" />
-              <span>100% Free</span>
-              <span className="opacity-40">&bull;</span>
-              <span>Zero Obligation</span>
-              <span className="opacity-40">&bull;</span>
-              <span>Manual Review by Specialists (No Bot Spam)</span>
-            </p>
           </div>
         </div>
       </section>

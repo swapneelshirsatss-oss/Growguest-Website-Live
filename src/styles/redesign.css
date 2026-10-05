@@ -1775,7 +1775,28 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 /* --- 18. RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 1200px) {
+  .desktop-nav {
+    gap: 18px;
+  }
+  .nav-link {
+    font-size: 13.5px;
+  }
+}
+
 @media (max-width: 1024px) {
+  :root {
+    --header-h: 74px;
+  }
+
+  .desktop-nav, .header-cta-group .btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -1813,18 +1834,6 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 @media (max-width: 768px) {
-  :root {
-    --header-h: 74px;
-  }
-
-  .desktop-nav, .header-cta-group .btn {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
   .container {
     padding: 0 20px;
   }

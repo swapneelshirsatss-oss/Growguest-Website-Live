@@ -164,21 +164,18 @@ export default function BlogPostHospitalityDigitalMarketing() {
         {JSON.stringify(faqSchema)}
       </script>
 
-      <Breadcrumbs items={breadcrumbItems} />
-
       {/* Header / Hero Section */}
-      <header className="relative bg-[#071510] text-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_#dfad3c_0%,_transparent_65%)] opacity-15 pointer-events-none" />
+      <header className="pt-8 pb-10 lg:pt-10 lg:pb-12 relative">
+        <div className="container">
+          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center">
-
+          <div className="max-w-4xl">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-6"
+              className="hero-pill-badge mb-6"
             >
-              <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+              <span className="pulse-dot" />
               <span>Hospitality Growth Strategy Guide</span>
             </motion.div>
 
@@ -187,9 +184,9 @@ export default function BlogPostHospitalityDigitalMarketing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6"
+              className="hero-title mb-6"
             >
-              Digital Marketing for Hospitality: <span className="font-serif italic font-normal text-[#dfad3c]">What Actually Gets More Direct Bookings</span>
+              Digital Marketing for Hospitality: <em className="font-serif italic font-normal text-[#c99a2e]">What Actually Gets More Direct Bookings</em>
             </motion.h1>
 
             {/* Author Meta Info */}
@@ -197,20 +194,20 @@ export default function BlogPostHospitalityDigitalMarketing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15 }}
-              className="flex items-center justify-center flex-wrap gap-4 text-xs sm:text-sm text-slate-300 font-medium mb-8"
+              className="flex items-center flex-wrap gap-4 text-xs sm:text-sm text-[#546059] font-medium mb-8 pb-6 border-b border-[rgba(16,41,32,0.08)]"
             >
-              <span className="flex items-center">
-                <User className="w-4 h-4 mr-1.5 text-[#dfad3c]" />
+              <span className="flex items-center text-[#071510] font-semibold">
+                <User className="w-4 h-4 mr-1.5 text-[#c99a2e]" />
                 By Swapneel Shirsat (Hospitality Specialist)
               </span>
-              <span className="text-white/20">•</span>
+              <span className="text-[#546059]/40">•</span>
               <span className="flex items-center">
-                <Calendar className="w-4 h-4 mr-1.5 text-[#dfad3c]" />
+                <Calendar className="w-4 h-4 mr-1.5 text-[#c99a2e]" />
                 Updated Aug 2026
               </span>
-              <span className="text-white/20">•</span>
+              <span className="text-[#546059]/40">•</span>
               <span className="flex items-center">
-                <Clock className="w-4 h-4 mr-1.5 text-[#dfad3c]" />
+                <Clock className="w-4 h-4 mr-1.5 text-[#c99a2e]" />
                 7 Min Read
               </span>
             </motion.div>
@@ -220,27 +217,26 @@ export default function BlogPostHospitalityDigitalMarketing() {
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-left border-l-4 border-[#dfad3c] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
+              className="border-l-4 border-[#c99a2e] bg-[#f7f5ef] text-[#222724] p-6 sm:p-7 rounded-r-2xl border-y border-r border-[rgba(16,41,32,0.08)] shadow-xs"
             >
-              <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
+              <div className="flex items-center space-x-2 text-[#c99a2e] font-bold text-xs uppercase tracking-wider mb-2">
                 <FileText className="w-4 h-4" />
                 <span>Executive Summary & Key Takeaway</span>
               </div>
-              <p id="direct-answer-summary" className="text-sm sm:text-base leading-relaxed text-slate-200 mb-3">
-                <strong className="text-white">Digital marketing for hospitality</strong> is not about vanity likes or generic branding. It is an end-to-end direct booking pipeline that eliminates 15-25% OTA commissions (MakeMyTrip, Agoda, Booking.com) by optimizing Google Business Profile, building mobile-first high-converting hotel websites, capturing local search intent, and leveraging WhatsApp booking channels.
+              <p id="direct-answer-summary" className="text-sm sm:text-base leading-relaxed text-[#546059] mb-3">
+                <strong className="text-[#071510]">Digital marketing for hospitality</strong> is not about vanity likes or generic branding. It is an end-to-end direct booking pipeline that eliminates 15-25% OTA commissions (MakeMyTrip, Agoda, Booking.com) by optimizing Google Business Profile, building mobile-first high-converting hotel websites, capturing local search intent, and leveraging WhatsApp booking channels.
               </p>
-              <div className="pt-2 border-t border-white/10 flex items-center text-xs text-[#dfad3c] font-semibold">
+              <div className="pt-2 border-t border-[rgba(16,41,32,0.08)] flex items-center text-xs text-[#c99a2e] font-semibold">
                 <ShieldCheck className="w-4 h-4 mr-1.5 text-[#25d366]" />
-                Pillar Guide by <a href="https://growguest.in/" className="underline hover:text-white ml-1">GrowGuest — Nagpur Hospitality Marketing Agency</a>
+                Pillar Guide by <a href="https://growguest.in/" className="underline hover:text-[#071510] ml-1">GrowGuest — Nagpur Hospitality Marketing Agency</a>
               </div>
             </motion.div>
-
           </div>
         </div>
       </header>
 
       {/* Main Content Area with Sidebar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div className="container py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
           {/* Main Article Body (8 cols) */}
@@ -797,16 +793,18 @@ export default function BlogPostHospitalityDigitalMarketing() {
       </div>
 
       {/* Embedded Audit Form at Bottom */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-[rgba(16,41,32,0.08)]">
-        <div className="text-center mb-10">
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
-            Request Your Free Direct Booking Audit
-          </h3>
-          <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto mt-2">
-            Fill out the simple form below. We'll analyze your GBP, website load speed, and direct conversion setup, then send your manual report directly to WhatsApp.
-          </p>
+      <section className="py-16 border-t border-[rgba(16,41,32,0.08)]">
+        <div className="container">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
+              Request Your Free Direct Booking Audit
+            </h3>
+            <p className="text-[#546059] text-sm sm:text-base max-w-xl mx-auto mt-2">
+              Fill out the simple form below. We'll analyze your GBP, website load speed, and direct conversion setup, then send your manual report directly to WhatsApp.
+            </p>
+          </div>
+          <AuditForm />
         </div>
-        <AuditForm />
       </section>
 
     </div>
