@@ -17,7 +17,7 @@ export default function Partners() {
       name: "Whispering Pines Resort",
       subtitle: "Ramgarh, Nainital",
       url: "https://whisperingpinesresort.in/",
-      logo: "/Image/whispering-pines-casa-de-bello.webp"
+      logo: "/Image/Whsipering Pines by casa de bello.webp"
     },
     { 
       name: "Casa De Bello Kainchi Dham",

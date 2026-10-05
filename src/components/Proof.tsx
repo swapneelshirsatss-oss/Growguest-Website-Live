@@ -16,7 +16,7 @@ export default function Proof() {
       title: "Whispering Pines Resort",
       location: "RAMGARH, NAINITAL",
       type: "BOUTIQUE RESORT",
-      image: "/Image/whispering-pines-casa-de-bello.webp",
+      image: "/Image/Whsipering Pines by casa de bello.webp",
       url: "https://whisperingpinesresort.in/",
       metric: "OTA Share Cut from 75% to 38%",
       description: "Tranquil orchard destination resort. Captured top 3 Google Business Profile rankings for Ramgarh family vacations and corporate retreats."
