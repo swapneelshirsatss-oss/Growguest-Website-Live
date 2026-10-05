@@ -69,8 +69,8 @@ export default function Footer() {
               <li><a href="/hotel-direct-booking-solutions/">OTA vs Direct</a></li>
               <li><a href="/approach/">Methodology</a></li>
               <li><a href="/hotel-digital-marketing-services/">Hospitality Services</a></li>
-              <li><a href="/hospitality-marketing-case-studies/">Case Studies</a></li>
-              <li><a href="/calculator/">Direct ROI Calculator</a></li>
+              <li><a href="/hospitality-marketing-case-studies/">Properties & Case Studies</a></li>
+              <li><a href="/calculator/">ROI Calculator</a></li>
               <li><a href="/about-hospitality-marketing-agency/">About Swapneel</a></li>
               <li><a href="/hospitality-digital-marketing-blog/">Hospitality Blog</a></li>
               <li><a href="/contact-hospitality-digital-marketing-agency/">Contact Us</a></li>
@@ -82,8 +82,8 @@ export default function Footer() {
             <h4>Key Solutions</h4>
             <ul className="footer-links">
               <li><a href="/hotel-direct-booking-solutions/">Direct Booking Strategy</a></li>
-              <li><a href="/hotel-digital-marketing-services/">Google Business Profile</a></li>
-              <li><a href="/hotel-digital-marketing-services/">Local SEO for Homestays</a></li>
+              <li><a href="/hotel-digital-marketing-services/">Google Business Profile & Local SEO</a></li>
+              <li><a href="/hotel-digital-marketing-services/">Conversion-Optimized Websites</a></li>
               <li><a href="/hotel-ota-management-services/">Hotel OTA Management</a></li>
               <li><a href="/hotel-paid-ads-google-meta/">Paid Ads (Google & Meta)</a></li>
               <li><a href="/hospitality-social-media-management/">Social Media Management</a></li>
@@ -122,9 +122,9 @@ export default function Footer() {
             © {new Date().getFullYear()} GrowGuest Digital Growth for Hospitality. All rights reserved.
           </div>
           <div style={{ display: 'flex', gap: '16px' }}>
-            <a href="/privacy-policy/" style={{ color: '#8fa69c' }}>Privacy Policy /</a>
-            <a href="/terms-of-service/" style={{ color: '#8fa69c' }}>Terms of Service /</a>
-            <a href="/sitemap-website.xml" style={{ color: '#8fa69c' }}>Sitemap XML /</a>
+            <a href="/privacy-policy/" style={{ color: '#8fa69c' }}>Privacy Policy</a>
+            <a href="/terms-of-service/" style={{ color: '#8fa69c' }}>Terms of Service</a>
+            <a href="/sitemap-website.xml" style={{ color: '#8fa69c' }}>Sitemap XML</a>
           </div>
         </div>
       </div>

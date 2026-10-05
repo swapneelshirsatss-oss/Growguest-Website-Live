@@ -21,11 +21,9 @@ export default function Header() {
           <a className="nav-link" href="/hotel-direct-booking-solutions/">OTA vs Direct</a>
           <a className="nav-link" href="/approach/">Methodology</a>
           <a className="nav-link" href="/hotel-digital-marketing-services/">Services</a>
-          <a className="nav-link" href="/hospitality-marketing-case-studies/">Case Studies</a>
+          <a className="nav-link" href="/hospitality-marketing-case-studies/">Properties</a>
           <a className="nav-link" href="/calculator/">ROI Calculator</a>
-          <a className="nav-link" href="/about-hospitality-marketing-agency/">About Us</a>
-          <a className="nav-link" href="/hospitality-digital-marketing-blog/">Blog</a>
-          <a className="nav-link" href="/contact-hospitality-digital-marketing-agency/">Contact</a>
+          <a className="nav-link" href="/about-hospitality-marketing-agency/">About</a>
         </nav>
 
         {/* Header CTA Group */}
@@ -68,11 +66,9 @@ export default function Header() {
           <a className="nav-link" href="/hotel-direct-booking-solutions/" onClick={() => setIsMobileMenuOpen(false)}>OTA vs Direct</a>
           <a className="nav-link" href="/approach/" onClick={() => setIsMobileMenuOpen(false)}>Methodology</a>
           <a className="nav-link" href="/hotel-digital-marketing-services/" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
-          <a className="nav-link" href="/hospitality-marketing-case-studies/" onClick={() => setIsMobileMenuOpen(false)}>Case Studies</a>
+          <a className="nav-link" href="/hospitality-marketing-case-studies/" onClick={() => setIsMobileMenuOpen(false)}>Properties</a>
           <a className="nav-link" href="/calculator/" onClick={() => setIsMobileMenuOpen(false)}>ROI Calculator</a>
-          <a className="nav-link" href="/about-hospitality-marketing-agency/" onClick={() => setIsMobileMenuOpen(false)}>About Us</a>
-          <a className="nav-link" href="/hospitality-digital-marketing-blog/" onClick={() => setIsMobileMenuOpen(false)}>Blog</a>
-          <a className="nav-link" href="/contact-hospitality-digital-marketing-agency/" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+          <a className="nav-link" href="/about-hospitality-marketing-agency/" onClick={() => setIsMobileMenuOpen(false)}>About</a>
           <a className="btn btn-gold btn-sm" href="/free-hotel-digital-marketing-audit/" onClick={() => setIsMobileMenuOpen(false)} style={{ marginTop: '12px', justifyContent: 'center' }}>
             <span>Get Free Audit</span>
             <span className="btn-arrow">↗</span>
