@@ -155,9 +155,9 @@ export default function SocialMediaManagementPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-8 pb-12 lg:pt-10 lg:pb-16 relative">
+      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
+          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
 
           <div className="max-w-4xl">
             <motion.div
@@ -175,7 +175,7 @@ export default function SocialMediaManagementPage() {
               transition={{ delay: 0.1 }}
               className="hero-title mb-6"
             >
-              Hospitality Social Media: <em className="font-serif italic font-normal text-[#c99a2e]">Turn Followers into Direct Bookings</em>
+              Hospitality Social Media: <br className="hidden sm:inline" /><em>Turn Followers into Direct Bookings</em>
             </motion.h1>
 
             <motion.p

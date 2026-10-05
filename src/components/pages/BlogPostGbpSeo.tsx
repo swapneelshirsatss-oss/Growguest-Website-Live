@@ -82,7 +82,7 @@ export default function BlogPostGbpSeo() {
         faqSchema={faqSchema}
       />
 
-      <header className="pt-8 pb-10 lg:pt-10 lg:pb-12 relative">
+      <header className="pt-10 pb-12 lg:pt-14 lg:pb-16 relative">
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
           <Breadcrumbs items={breadcrumbItems} maxWidth="4xl" className="px-0 pt-0 pb-6" />
           <div className="hero-pill-badge mb-6">

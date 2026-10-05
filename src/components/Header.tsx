@@ -45,7 +45,7 @@ export default function Header() {
 
         {/* Header CTA Group */}
         <div className="header-cta-group">
-          <a className="btn btn-gold btn-sm" href="/free-hotel-digital-marketing-audit/">
+          <a className="btn btn-primary btn-sm" href="/free-hotel-digital-marketing-audit/">
             <span>Free Growth Audit</span>
             <span className="btn-arrow">↗</span>
           </a>

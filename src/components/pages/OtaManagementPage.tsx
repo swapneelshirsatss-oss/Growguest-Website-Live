@@ -156,9 +156,9 @@ export default function OtaManagementPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-8 pb-12 lg:pt-10 lg:pb-14 relative">
+      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
+          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
 
           <div className="max-w-4xl">
             <motion.div
@@ -176,7 +176,7 @@ export default function OtaManagementPage() {
               transition={{ delay: 0.1 }}
               className="hero-title mb-6"
             >
-              Hotel OTA Management: <em>Turn Aggregators into Direct Billboards</em>
+              Hotel OTA Management: <br className="hidden sm:inline" /><em>Turn Aggregators into Direct Billboards</em>
             </motion.h1>
 
             <motion.p

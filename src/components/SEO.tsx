@@ -70,7 +70,7 @@ export default function SEO({
       "GrowGuest"
     ],
     "image": ogImage,
-    "logo": "https://growguest.in/assets/logo.png",
+    "logo": "https://growguest.in/assets/growguest-logo.svg",
     "@id": "https://growguest.in/#organization",
     "url": "https://growguest.in/",
     "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
