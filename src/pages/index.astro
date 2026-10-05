@@ -1,13 +1,1143 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Home from '../components/pages/Home';
+// Server-rendered Astro page using exact luxury redesign from D:\Growguest-Website-Live\growguest-redesign
+const title = "GrowGuest — Boutique Digital Marketing & Direct Booking Consultancy for Hotels & Resorts";
+const description = "Eliminate 18-25% OTA commission bleed. GrowGuest helps boutique hotels, resorts, and homestays build high-converting direct booking pipelines through Google Business Profile optimization, website CRO, and WhatsApp automation.";
+const canonicalUrl = "https://growguest.in/";
 ---
 
-<Layout
-  title="GrowGuest — Hospitality Digital Marketing & Direct Booking Consultancy"
-  description="Nagpur digital marketing for hotels, resorts & homestays. Stop 18-25% OTA commissions, dominate Google Maps, and grow direct bookings. Get your free audit today."
-  keywords="hospitality digital marketing agency Nagpur, direct booking vs OTA commission, Google Business Profile for hotels, local SEO for homestays Nagpur, hotel website booking conversion, restaurant local SEO Nagpur, reduce OTA dependence, GBP audit for hospitality, small hotel digital marketing India, Swapneel Shirsat GrowGuest"
-  canonicalUrl="https://growguest.in/"
->
-  <Home client:load />
-</Layout>
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K9JFFTNL');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="keywords" content="hospitality digital marketing agency Nagpur, direct booking vs OTA commission, Google Business Profile for hotels, local SEO for homestays Nagpur, hotel website booking conversion, restaurant local SEO Nagpur, reduce OTA dependence, GBP audit for hospitality, small hotel digital marketing India, Swapneel Shirsat GrowGuest">
+  <link rel="canonical" href={canonicalUrl}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="indexnow-key" content="e4a19b5d2c8f3e7a1b0c9d8e7f6a5b4c">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/growguest-icon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="theme-color" content="#0c2018">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content="https://growguest.in/Image/GrowGuest%20Header.avif">
+  <meta property="og:site_name" content="GrowGuest — Digital Growth for Hospitality">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="@Growguest">
+  <meta property="twitter:creator" content="@Growguest">
+  <meta property="twitter:url" content={canonicalUrl}>
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+  <meta property="twitter:image" content="https://growguest.in/Image/GrowGuest%20Header.avif">
+
+  <!-- AEO / GEO Discovery -->
+  <link rel="alternate" type="text/markdown" href="/llms.txt" title="GrowGuest LLM Knowledge Base">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+        "@id": "https://growguest.in/#organization",
+        "name": "GrowGuest Digital Growth for Hospitality",
+        "alternateName": [
+          "GrowGuest",
+          "Growguest",
+          "GrowGuest — Digital Growth for Hospitality",
+          "GrowGuest Nagpur"
+        ],
+        "url": "https://growguest.in/",
+        "logo": "https://growguest.in/assets/growguest-logo.svg",
+        "image": "https://growguest.in/Image/GrowGuest%20Header.avif",
+        "description": "Boutique digital marketing consultancy specializing exclusively in hospitality (hotels, resorts, homestays, restaurants) to eliminate OTA commission bleed.",
+        "founder": {
+          "@type": "Person",
+          "name": "Swapneel Shirsat",
+          "jobTitle": "Director & Founder — Hospitality Digital Marketing Consultant",
+          "url": "https://growguest.in/about-hospitality-marketing-agency/",
+          "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/"
+        },
+        "director": {
+          "@type": "Person",
+          "name": "Swapneel Shirsat",
+          "jobTitle": "Director & Founder — Hospitality Digital Marketing Consultant",
+          "url": "https://growguest.in/about-hospitality-marketing-agency/",
+          "sameAs": "https://www.linkedin.com/in/swapneel-shirsat/"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "60, Swami samarth Nagari, Besa-Pipla Rd",
+          "addressLocality": "Nagpur",
+          "addressRegion": "Maharashtra",
+          "postalCode": "440034",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.0857691,
+          "longitude": 79.0977950
+        },
+        "hasMap": "https://www.google.com/maps/place/?cid=13593835757779847259",
+        "telephone": "+918956907343",
+        "email": "hello@growguest.com",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.google.com/maps/place/?cid=13593835757779847259",
+          "https://www.facebook.com/profile.php?id=61593380557986",
+          "https://www.instagram.com/growguest/",
+          "https://www.youtube.com/channel/UCYfFotUC6n9Zgvv_V9LOXiA",
+          "https://x.com/Growguest",
+          "https://www.pinterest.com/growguest",
+          "https://www.linkedin.com/company/growguest-digital-growth-for-hospitality"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://growguest.in/#website",
+        "url": "https://growguest.in/",
+        "name": "GrowGuest Digital Growth for Hospitality",
+        "publisher": {
+          "@id": "https://growguest.in/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://growguest.in/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do we have to completely stop using OTAs like MakeMyTrip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not at all. OTAs serve as a discovery billboard for new travelers. Our goal is to capture travelers who discover your name on MakeMyTrip or Booking.com and then search Google to inspect your property directly. By offering an easier, faster, and better-incentivized direct booking route, you keep the 18%–25% commission in your pocket."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What exactly does the Free Growth Audit cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We conduct a comprehensive 360° inspection: Google Business Profile visibility in your destination, mobile loading speed, room presentation clarity, rate disparity between OTAs and your own website, and the friction in your WhatsApp enquiry flow. You receive concrete, actionable recommendations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is GrowGuest suitable for small homestays or heritage villas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Boutique properties with 3 to 20 rooms benefit the most because OTAs take a huge portion of their operational margin. Shifting just 10 to 15 bookings each month directly to WhatsApp can save ₹40,000 to ₹1,00,000+ in annual commissions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why focus on WhatsApp rather than expensive booking engines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In India, leisure travelers want reassurance before paying ₹15,000–₹50,000 for a stay. They ask about mountain views, road conditions, child meals, and pet policies. WhatsApp provides immediate human reassurance with a 98% open rate, closing high-value reservations far more effectively than cold checkout forms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you structure your consulting engagements and fees?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every property has different room inventory, seasonal peaks, and existing digital assets. Following your free audit, we provide a transparent, fixed-scope proposal with clear deliverables. There are no hidden fees or locked contracts."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9JFFTNL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand-link" href="/" aria-label="GrowGuest Home">
+        <img class="brand-logo" src="/assets/growguest-logo.svg" alt="GrowGuest — Digital Growth for Hospitality" width="490" height="130">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a class="nav-link" href="#disparity">OTA vs Direct</a>
+        <a class="nav-link" href="#approach">Methodology</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#properties">Properties</a>
+        <a class="nav-link" href="#calculator">ROI Calculator</a>
+        <a class="nav-link" href="#about">About Swapneel</a>
+      </nav>
+
+      <!-- Header CTA Group -->
+      <div class="header-cta-group">
+        <a class="btn btn-primary btn-sm" href="#audit">
+          <span>Free Growth Audit</span>
+          <span class="btn-arrow">↗</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav" aria-label="Mobile Navigation">
+    <a class="nav-link" href="#disparity">OTA vs Direct</a>
+    <a class="nav-link" href="#approach">Methodology</a>
+    <a class="nav-link" href="#services">Services</a>
+    <a class="nav-link" href="#properties">Properties</a>
+    <a class="nav-link" href="#calculator">ROI Calculator</a>
+    <a class="nav-link" href="#about">About Swapneel</a>
+    <a class="btn btn-gold btn-sm" href="#audit" style="margin-top: 12px; justify-content: center;">
+      <span>Get Free Audit</span>
+      <span class="btn-arrow">↗</span>
+    </a>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>HOSPITALITY DIGITAL GROWTH · NAGPUR · UTTARAKHAND · PAN-INDIA</span>
+          </div>
+
+          <h1 class="hero-title">
+            Beautiful stays.<br>
+            Stronger brands.<br>
+            <em>More direct bookings.</em>
+          </h1>
+
+          <p class="hero-desc">
+            We help independent hotels, boutique resorts, and heritage homestays stop the 18%–25% OTA commission bleed. Transform passive searches into high-margin direct enquiries through Google Business Profile dominance, website conversion fixes, and automated WhatsApp booking pipelines.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#audit">
+              <span>Claim Free Growth Audit</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+            <a class="btn btn-outline" href="#calculator">
+              <span>Calculate Commission Leak</span>
+              <span class="btn-arrow">↓</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Trust Bar -->
+          <div class="hero-metrics-bar">
+            <div class="metric-item">
+              <span class="metric-num tnum">10+ Yrs</span>
+              <span class="metric-label">Exclusively In Hospitality</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num tnum">₹4.8 Cr+</span>
+              <span class="metric-label">Direct Revenue Unlocked</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num tnum">18–25%</span>
+              <span class="metric-label">OTA Bleed Stopped</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num tnum">100+</span>
+              <span class="metric-label">Properties Audited</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column (Showcase Card) -->
+        <div class="hero-visual-card">
+          <div class="hero-img-frame">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1500&q=85" alt="Luxury sunlit boutique resort pool surrounded by lush tropical gardens" fetchpriority="high">
+            
+            <div class="hero-overlay-tag">
+              <span style="color: #25d366;">●</span>
+              <span>BOUTIQUE RESORT SHOWCASE</span>
+            </div>
+
+            <div class="hero-live-badge tnum">
+              ✦ 0% OTA COMMISSION
+            </div>
+
+            <!-- Floating Live Inquiry Preview -->
+            <div class="hero-floating-inquiry">
+              <div class="inquiry-header">
+                <span class="inquiry-tag">DIRECT WHATSAPP RESERVATION</span>
+                <span class="inquiry-saved tnum">Saved ₹6,240 Commission</span>
+              </div>
+              <p class="inquiry-text">
+                “Hi Swapneel, saw the direct rates for The Stone Heritage Himalayan cottage. We’d like to confirm the family suite for 3 nights next weekend!”
+              </p>
+              <div class="inquiry-meta">
+                <span>Mukteshwar, Nainital • Verified Guest</span>
+                <span style="color: #25d366; font-weight: 700;">Direct Channel • 0% Fee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CLIENTS / TRUST TICKER ==================== -->
+    <section class="clients-section" aria-label="Partner Properties">
+      <div class="container clients-inner">
+        <span class="clients-title">PROVEN WITH PREMIER INDEPENDENT STAYS</span>
+        <div class="clients-grid">
+          <div class="client-logo-item" title="Casa De Bello Luxury Stays">
+            <img src="/assets/Casa-logo.webp" alt="Casa De Bello" width="120" height="32">
+          </div>
+          <div class="client-logo-item" title="The Stone Heritage Mukteshwar">
+            <span class="client-name-fallback">The Stone Heritage</span>
+          </div>
+          <div class="client-logo-item" title="Whispering Pines Resort Ramgarh">
+            <span class="client-name-fallback">Whispering Pines Resort</span>
+          </div>
+          <div class="client-logo-item" title="The Goan House Assagao">
+            <img src="/assets/the-goan-house-logo.webp" alt="The Goan House" width="110" height="32">
+          </div>
+          <div class="client-logo-item" title="Anurra Hotel Kainchi Dham">
+            <img src="/assets/anurra-hotel-logo.svg" alt="Anurra Hotel" width="100" height="32">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DIRECT BOOKING VS OTA DISPARITY ==================== -->
+    <section class="disparity-section" id="disparity">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>THE REALITY CHECK FOR PROPERTY OWNERS</span>
+          </div>
+          <h2 class="section-title">Why pay 20% on guests who <em>already know you?</em></h2>
+          <p class="section-subtitle">
+            Most travellers discover you on an OTA, then immediately search Google for your website and reviews. If your direct booking journey is slow or missing, you hand that booking back to MakeMyTrip or Booking.com—along with your hard-earned profits.
+          </p>
+        </div>
+
+        <div class="disparity-grid">
+          <!-- The OTA Trap -->
+          <div class="disparity-card ota">
+            <div class="eyebrow" style="color: #c81e1e;">THE COMMODITY CHANNEL</div>
+            <h3>The OTA Trap (MakeMyTrip, Agoda, Booking.com)</h3>
+            <p class="card-subtitle">High commission taxes eating into your gross margins.</p>
+            
+            <ul class="comparison-list">
+              <li>
+                <span class="comp-icon cross">✕</span>
+                <div>
+                  <strong>18% to 25% Commission Bleed</strong>
+                  On a ₹3,00,000 monthly room revenue, you sacrifice ₹54,000 to ₹75,000 every single month.
+                </div>
+              </li>
+              <li>
+                <span class="comp-icon cross">✕</span>
+                <div>
+                  <strong>Masked Guest Contact Data</strong>
+                  OTAs hide the guest’s real phone and email, making repeat direct marketing impossible.
+                </div>
+              </li>
+              <li>
+                <span class="comp-icon cross">✕</span>
+                <div>
+                  <strong>Delayed 15–45 Day Payout Cycles</strong>
+                  Your revenue sits in OTA accounts instead of flowing into your daily operational cash flow.
+                </div>
+              </li>
+              <li>
+                <span class="comp-icon cross">✕</span>
+                <div>
+                  <strong>Competitor Ads Displayed on Your Listing</strong>
+                  OTAs show cheaper neighboring hotels right under your photos to trigger price wars.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- The GrowGuest Direct Engine -->
+          <div class="disparity-card growguest">
+            <div class="eyebrow gold">
+              <span class="pulse-dot"></span>
+              <span>THE HIGH-MARGIN PIPELINE</span>
+            </div>
+            <h3>The GrowGuest Direct Booking Engine</h3>
+            <p class="card-subtitle">Direct reservations, zero commissions, and complete guest ownership.</p>
+            
+            <ul class="comparison-list">
+              <li>
+                <span class="comp-icon check">✓</span>
+                <div>
+                  <strong>0% Commission on Direct Stays</strong>
+                  Keep 100% of your room revenue in your bank account, preserving your property's net profit.
+                </div>
+              </li>
+              <li>
+                <span class="comp-icon check">✓</span>
+                <div>
+                  <strong>100% Direct Guest WhatsApp Ownership</strong>
+                  Build a proprietary guest database for seasonal campaigns, birthdays, and high-margin repeat visits.
+                </div>
+              </li>
+              <li>
+                <span class="comp-icon check">✓</span>
+                <div>
+                  <strong>Instant Direct Payments to Your Bank</strong>
+                  UPI, netbanking, or direct advance transfers without holding periods or processing deductions.
+                </div>
+              </li>
+              <li>
+                <span class="comp-icon check">✓</span>
+                <div>
+                  <strong>Google Maps 3-Pack & Brand Exclusivity</strong>
+                  Dominate local search results and present your unique property story without distraction.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== METHODOLOGY / APPROACH ==================== -->
+    <section class="approach-section" id="approach">
+      <div class="container">
+        <div class="section-head left">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>OUR THREE-PILLAR FRAMEWORK</span>
+          </div>
+          <h2 class="section-title">You craft the hospitality.<br>We engineer the pipeline <em>to fill it.</em></h2>
+          <p class="section-subtitle">
+            A beautiful property without a connected booking journey is leaving money on the table. We assemble three essential components to ensure every interested traveler books directly.
+          </p>
+        </div>
+
+        <div class="approach-pillars">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <span class="pillar-num">01 / ARCHITECTURE</span>
+            <h3>High-Converting Web Architecture</h3>
+            <p>
+              Sub-second loading times, mobile-optimized room showcases, and transparent rate disparity callouts that clearly prove booking direct offers the best value.
+            </p>
+            <span class="pillar-tag">SPEED & CRO ENGINE</span>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <span class="pillar-num">02 / DOMINANCE</span>
+            <h3>Google Maps 3-Pack & Local SEO</h3>
+            <p>
+              Capture high-intent searches for “resort in [location]” and “luxury homestay near me”. Complete GBP optimization, review management, and direct booking links.
+            </p>
+            <span class="pillar-tag">GOOGLE BUSINESS PROFILE</span>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <span class="pillar-num">03 / CONVERSION</span>
+            <h3>WhatsApp Automation Funnel</h3>
+            <p>
+              In India, high-ticket stays convert on WhatsApp. We engineer 1-click inquiry buttons, pre-formatted booking details, and automated rate quotes for your reservations team.
+            </p>
+            <span class="pillar-tag">WHATSAPP CONCIERGE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES BENTO GRID ==================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>END-TO-END HOSPITALITY SERVICES</span>
+          </div>
+          <h2 class="section-title">One growth partner.<br><em>Every guest touchpoint.</em></h2>
+          <p class="section-subtitle">
+            From making a memorable first impression on Google to converting enquiries in under 2 minutes. Click any service to tailor your free audit.
+          </p>
+        </div>
+
+        <div class="services-bento">
+          <!-- Service 1 -->
+          <div class="service-card" data-service="Direct Booking Strategy & Parity">
+            <div class="service-card-top">
+              <div class="service-icon-box">↗</div>
+              <span class="service-index">01</span>
+            </div>
+            <h3>Direct Booking Strategy & Parity</h3>
+            <p>
+              Audit your OTA rate parity, identify leakage points, and design direct booking perks (free breakfast, early check-in) that make booking on your website a no-brainer.
+            </p>
+            <div class="service-card-action">
+              <span>Tailor Audit For Strategy</span>
+              <span class="btn-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-service="High-Converting Hospitality Website">
+            <div class="service-card-top">
+              <div class="service-icon-box">▧</div>
+              <span class="service-index">02</span>
+            </div>
+            <h3>Conversion-Optimized Websites</h3>
+            <p>
+              Fast, elegant, and mobile-first websites designed for hospitality. Highlighting room suites, experiential amenities, guest reviews, and frictionless enquiry triggers.
+            </p>
+            <div class="service-card-action">
+              <span>Audit Your Website CRO</span>
+              <span class="btn-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-service="Google Business Profile & Local SEO">
+            <div class="service-card-top">
+              <div class="service-icon-box">⌕</div>
+              <span class="service-index">03</span>
+            </div>
+            <h3>Google Business Profile & Local SEO</h3>
+            <p>
+              Rank in the coveted Google Maps 3-Pack for destination keywords. We audit categories, attributes, photo storytelling, and review velocity to drive organic calls.
+            </p>
+            <div class="service-card-action">
+              <span>Inspect Google Maps Rank</span>
+              <span class="btn-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-service="High-ROI Performance Advertising">
+            <div class="service-card-top">
+              <div class="service-icon-box">◎</div>
+              <span class="service-index">04</span>
+            </div>
+            <h3>High-ROI Performance Advertising</h3>
+            <p>
+              Google Search Ads that protect your brand name against OTA bidding piracy, and visual Meta campaigns reaching families and couples planning weekend getaways.
+            </p>
+            <div class="service-card-action">
+              <span>Scale Paid Guest Acquisition</span>
+              <span class="btn-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card" data-service="Hospitality Content & Storytelling">
+            <div class="service-card-top">
+              <div class="service-icon-box">✳</div>
+              <span class="service-index">05</span>
+            </div>
+            <h3>Content, Photography & Storytelling</h3>
+            <p>
+              Give travellers a visceral sense of arrival. Creative direction for property photography, culinary showcases, and authentic Instagram reels that justify premium room tariffs.
+            </p>
+            <div class="service-card-action">
+              <span>Upgrade Visual Positioning</span>
+              <span class="btn-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card" data-service="WhatsApp Concierge & OTA Distribution">
+            <div class="service-card-top">
+              <div class="service-icon-box">⇄</div>
+              <span class="service-index">06</span>
+            </div>
+            <h3>WhatsApp Concierge & Distribution</h3>
+            <p>
+              Connect OTA channel managers with 1-click WhatsApp enquiry funnels. Equip your reservations team with pre-written quotation templates that close bookings instantly.
+            </p>
+            <div class="service-card-action">
+              <span>Deploy WhatsApp Engine</span>
+              <span class="btn-arrow">↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROPERTIES SHOWCASE ==================== -->
+    <section class="properties-section" id="properties">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>VERIFIED CASE STUDIES</span>
+          </div>
+          <h2 class="section-title">Hospitality comes in<br><em>many beautiful forms.</em></h2>
+          <p class="section-subtitle">
+            Explore authentic independent properties partnered with GrowGuest. Real results, direct bookings, and reduced commission overheads.
+          </p>
+        </div>
+
+        <div class="property-cards-grid">
+          <!-- Property 1 -->
+          <article class="property-showcase-card">
+            <div class="prop-img-wrapper">
+              <img src="/assets/stone-heritage-mukteshwar.webp" alt="The Stone Heritage Mukteshwar stone cottage overlooking Himalayan peaks" loading="lazy">
+              <span class="prop-badge-type">HIMALAYAN RETREAT</span>
+              <a class="prop-badge-external" href="https://thestoneheritage.in/" target="_blank" rel="noopener" aria-label="Visit The Stone Heritage website">↗</a>
+            </div>
+            <div class="prop-details">
+              <span class="prop-location">MUKTESHWAR, UTTARAKHAND</span>
+              <h3>The Stone Heritage</h3>
+              <div class="prop-result-pill">
+                <span>📈</span>
+                <span class="tnum">+42% Direct Bookings via WhatsApp</span>
+              </div>
+              <p style="font-size: 13px; color: var(--charcoal-600); margin-bottom: 16px;">
+                Traditional stone cottage retreat. Engineered custom direct rate packages and Google Maps optimization, diverting weekend buyouts from OTAs.
+              </p>
+              <a class="prop-link-cta" href="https://thestoneheritage.in/" target="_blank" rel="noopener">
+                <span>Explore thestoneheritage.in</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Property 2 -->
+          <article class="property-showcase-card">
+            <div class="prop-img-wrapper">
+              <img src="/assets/whispering-pines-casa-de-bello.webp" alt="Whispering Pines Resort Ramgarh nestled in serene deodar forest" loading="lazy">
+              <span class="prop-badge-type">BOUTIQUE RESORT</span>
+              <a class="prop-badge-external" href="https://whisperingpinesresort.in/" target="_blank" rel="noopener" aria-label="Visit Whispering Pines Resort website">↗</a>
+            </div>
+            <div class="prop-details">
+              <span class="prop-location">RAMGARH, NAINITAL</span>
+              <h3>Whispering Pines Resort</h3>
+              <div class="prop-result-pill">
+                <span>⚡</span>
+                <span class="tnum">OTA Share Cut from 75% to 38%</span>
+              </div>
+              <p style="font-size: 13px; color: var(--charcoal-600); margin-bottom: 16px;">
+                Tranquil orchard destination resort. Captured top 3 Google Business Profile rankings for Ramgarh family vacations and corporate retreats.
+              </p>
+              <a class="prop-link-cta" href="https://whisperingpinesresort.in/" target="_blank" rel="noopener">
+                <span>Explore whisperingpinesresort.in</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Property 3 -->
+          <article class="property-showcase-card">
+            <div class="prop-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80" alt="The Goan House luxury heritage Portuguese villa in Assagao with private pool" loading="lazy">
+              <span class="prop-badge-type">PRIVATE HERITAGE VILLA</span>
+              <a class="prop-badge-external" href="https://thegoanhouse.com/" target="_blank" rel="noopener" aria-label="Visit The Goan House website">↗</a>
+            </div>
+            <div class="prop-details">
+              <span class="prop-location">ASSAGAO, NORTH GOA</span>
+              <h3>The Goan House</h3>
+              <div class="prop-result-pill">
+                <span>✨</span>
+                <span class="tnum">100% Commission-Free Buyouts</span>
+              </div>
+              <p style="font-size: 13px; color: var(--charcoal-600); margin-bottom: 16px;">
+                Exclusive Portuguese heritage villa. Deployed a friction-free WhatsApp concierge reservation pipeline for affluent family and group buyouts.
+              </p>
+              <a class="prop-link-cta" href="https://thegoanhouse.com/" target="_blank" rel="noopener">
+                <span>Explore thegoanhouse.com</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DIRECT BOOKING ROI CALCULATOR ==================== -->
+    <section class="calc-section" id="calculator">
+      <div class="container calc-grid">
+        <!-- Calc Description -->
+        <div class="calc-left">
+          <div class="eyebrow gold">
+            <span class="pulse-dot"></span>
+            <span>INTERACTIVE FINANCIAL TOOL</span>
+          </div>
+          <h2>What could more <em>direct bookings mean?</em></h2>
+          <p>
+            Adjust the sliders to simulate shifting a percentage of your OTA revenue to direct website and WhatsApp channels. Watch how much commission you reclaim every year.
+          </p>
+          <p class="fine-print">
+            *Planning calculation based on gross room revenue. Illustrative model demonstrating direct commission savings. Excludes payment gateway fees and operating overheads.
+          </p>
+        </div>
+
+        <!-- Calc Controls & Live Results Box -->
+        <div class="calc-box-container">
+          <!-- Slider 1: Monthly Room Revenue -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="calc-revenue">Monthly Room Revenue</label>
+              <span class="slider-val-badge tnum" id="val-revenue">₹3,00,000</span>
+            </div>
+            <input type="range" id="calc-revenue" min="50000" max="2500000" step="10000" value="300000" aria-label="Monthly Room Revenue in INR">
+          </div>
+
+          <!-- Slider 2: OTA Share -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="calc-ota-share">Current Share Booked via OTAs</label>
+              <span class="slider-val-badge tnum" id="val-ota-share">65%</span>
+            </div>
+            <input type="range" id="calc-ota-share" min="10" max="100" step="5" value="65" aria-label="Current Share Booked via OTAs in Percentage">
+          </div>
+
+          <!-- Slider 3: Average OTA Commission -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="calc-ota-fee">Average OTA Commission Rate</label>
+              <span class="slider-val-badge tnum" id="val-ota-fee">18%</span>
+            </div>
+            <input type="range" id="calc-ota-fee" min="10" max="30" step="1" value="18" aria-label="Average OTA Commission Rate in Percentage">
+          </div>
+
+          <!-- Slider 4: Share Shifted to Direct -->
+          <div class="slider-group">
+            <div class="slider-label-row">
+              <label for="calc-shift">Share of OTA Revenue Shifted to Direct</label>
+              <span class="slider-val-badge tnum" id="val-shift">25%</span>
+            </div>
+            <input type="range" id="calc-shift" min="5" max="100" step="5" value="25" aria-label="Share of OTA Revenue Shifted to Direct in Percentage">
+          </div>
+
+          <!-- Live Output Card -->
+          <div class="calc-results-panel">
+            <div class="calc-metrics-split">
+              <div class="calc-metric-box">
+                <span>Monthly Commission Avoided</span>
+                <strong class="tnum" id="res-monthly-savings">₹8,775 / mo</strong>
+              </div>
+              <div class="calc-metric-box">
+                <span>Annual Profit Retained</span>
+                <strong class="tnum" id="res-annual-savings">₹1,05,300 / yr</strong>
+              </div>
+            </div>
+
+            <p class="calc-formula-detail tnum" id="res-formula-detail">
+              ₹3,00,000 revenue × 65% OTA share × 25% shifted to direct × 18% commission rate saved.
+            </p>
+
+            <button class="btn btn-gold calc-cta-btn" id="calc-to-audit-btn" type="button">
+              <span>Lock In These Direct Savings</span>
+              <span class="btn-arrow">↗</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOUNDER & 4-STEP PROCESS ==================== -->
+    <section class="process-section" id="about">
+      <div class="container">
+        <!-- Founder Profile Card -->
+        <div class="founder-editorial-card">
+          <div class="founder-info">
+            <div class="eyebrow">
+              <span class="pulse-dot"></span>
+              <span>DIRECTOR & FOUNDER</span>
+            </div>
+            <h3>Swapneel Shirsat</h3>
+            <p class="founder-title-badge">18+ YEARS DIGITAL MARKETING · 10+ YEARS HOSPITALITY</p>
+            <p class="founder-quote">
+              “Independent properties have the authentic charm travelers crave. Our mission is to ensure owners don’t surrender 20% of their life’s work to aggregators just to get noticed.”
+            </p>
+            <p class="founder-p">
+              Based in Nagpur and consulting for premier retreats from Maharashtra to Uttarakhand, Swapneel works directly with property owners. No junior account managers, no generic automated reports—just practical hospitality engineering that fills rooms.
+            </p>
+            <div class="founder-badges">
+              <span class="founder-pill">📍 Nagpur HQ (440034)</span>
+              <span class="founder-pill">🌲 Uttarakhand Specialist</span>
+              <span class="founder-pill">✓ 100% In-Person Audits</span>
+            </div>
+          </div>
+
+          <div>
+            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border-medium); box-shadow: var(--shadow-sm);">
+              <h4 style="font-size: 17px; margin-bottom: 12px; color: var(--pine-950);">Why Work With GrowGuest?</h4>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 14px; color: var(--charcoal-600);">
+                <li style="display: flex; gap: 10px;">
+                  <strong style="color: var(--gold-500);">01</strong>
+                  <span><strong>Zero Junior Delegates:</strong> Swapneel personally reviews your Google presence, OTA listings, and website.</span>
+                </li>
+                <li style="display: flex; gap: 10px;">
+                  <strong style="color: var(--gold-500);">02</strong>
+                  <span><strong>Hospitality-Only Focus:</strong> We don’t do e-commerce or SaaS. We live and breathe ADR, RevPAR, and room nights.</span>
+                </li>
+                <li style="display: flex; gap: 10px;">
+                  <strong style="color: var(--gold-500);">03</strong>
+                  <span><strong>WhatsApp-Native Workflows:</strong> Systems built for how Indian travelers and frontline resort managers actually communicate.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Step Process Grid -->
+        <div class="section-head left" style="margin-bottom: 36px;">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>A PRACTICAL BLUEPRINT</span>
+          </div>
+          <h2 class="section-title">Less guesswork.<br><em>A clear path to direct growth.</em></h2>
+        </div>
+
+        <div class="process-steps-grid">
+          <div class="process-step-item">
+            <div class="step-num-tag">STEP 01 / AUDIT</div>
+            <h4>Analyze The Bleed</h4>
+            <p>We review your OTA commission spend, Google Maps rankings, mobile speed, and current enquiry conversion points.</p>
+          </div>
+          <div class="process-step-item">
+            <div class="step-num-tag">STEP 02 / BLUEPRINT</div>
+            <h4>Prioritize Opportunities</h4>
+            <p>Develop a tailored plan addressing rate parity, high-margin direct perks, and immediate Google Business Profile fixes.</p>
+          </div>
+          <div class="process-step-item">
+            <div class="step-num-tag">STEP 03 / ACTIVATE</div>
+            <h4>Deploy The Channels</h4>
+            <p>Upgrade your website speed, implement WhatsApp reservation funnels, and claim high-intent local search rankings.</p>
+          </div>
+          <div class="process-step-item">
+            <div class="step-num-tag">STEP 04 / RETAIN</div>
+            <h4>Scale Direct Bookings</h4>
+            <p>Build a proprietary guest database to secure commission-free repeat visits and seasonal holiday buyouts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-left">
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>COMMON QUESTIONS</span>
+          </div>
+          <h2>Clear answers for <em>property owners.</em></h2>
+          <p style="font-size: 15px; color: var(--charcoal-600); margin-top: 14px;">
+            Have a specific scenario in mind? Let’s talk directly over WhatsApp or a quick phone call.
+          </p>
+          <a class="btn btn-outline btn-sm" href="#audit" style="margin-top: 24px;">
+            <span>Ask A Question</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item active">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>Do we have to completely stop using OTAs like MakeMyTrip?</span>
+              <span class="faq-chevron">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Not at all. OTAs serve as a discovery billboard for new travelers. Our goal is to capture travelers who discover your name on MakeMyTrip or Booking.com and then search Google to inspect your property directly. By offering an easier, faster, and better-incentivized direct booking route, you keep the 18%–25% commission in your pocket.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What exactly does the Free Growth Audit cover?</span>
+              <span class="faq-chevron">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We conduct a comprehensive 360° inspection: Google Business Profile visibility in your destination, mobile loading speed, room presentation clarity, rate disparity between OTAs and your own website, and the friction in your WhatsApp enquiry flow. You receive concrete, actionable recommendations.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Is GrowGuest suitable for small homestays or heritage villas?</span>
+              <span class="faq-chevron">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! Boutique properties with 3 to 20 rooms benefit the most because OTAs take a huge portion of their operational margin. Shifting just 10 to 15 bookings each month directly to WhatsApp can save ₹40,000 to ₹1,00,000+ in annual commissions.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Why focus on WhatsApp rather than expensive booking engines?</span>
+              <span class="faq-chevron">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                In India, leisure travelers want reassurance before paying ₹15,000–₹50,000 for a stay. They ask about mountain views, road conditions, child meals, and pet policies. WhatsApp provides immediate human reassurance with a 98% open rate, closing high-value reservations far more effectively than cold checkout forms.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How do you structure your consulting engagements and fees?</span>
+              <span class="faq-chevron">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Every property has different room inventory, seasonal peaks, and existing digital assets. Following your free audit, we provide a transparent, fixed-scope proposal with clear deliverables. There are no hidden fees or locked contracts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FREE AUDIT / WHATSAPP LEAD ENGINE ==================== -->
+    <section class="audit-section" id="audit">
+      <div class="container audit-grid">
+        <!-- Audit Left Side -->
+        <div class="audit-left">
+          <div class="eyebrow gold">
+            <span class="pulse-dot"></span>
+            <span>GET STARTED IN 2 MINUTES</span>
+          </div>
+          <h2>Let’s make room for <em>more direct growth.</em></h2>
+          <p>
+            Share a few details about your property. Swapneel will personally evaluate your Google Maps ranking, website conversion journey, and OTA commission leak.
+          </p>
+
+          <div class="direct-phone-box">
+            <span>PREFER A DIRECT PHONE CALL?</span>
+            <a class="phone-link" href="tel:+918956907343">
+              <span>📞 +91 89569 07343</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+            <p style="font-size: 12px; color: #a2bdb1; margin-top: 6px;">
+              English & Hindi • Direct conversation with founder
+            </p>
+          </div>
+
+          <div style="font-size: 13px; color: #b6cec4; line-height: 1.6;">
+            <strong>Confidentiality Guarantee:</strong> Your property figures and details remain 100% private. No spam, no automated generic sales decks.
+          </div>
+        </div>
+
+        <!-- Audit Right Side (Form) -->
+        <div class="audit-form-card">
+          <h3>Request Free Direct Booking Audit</h3>
+          <p class="form-subtitle">Direct response delivered via WhatsApp within 24 hours.</p>
+
+          <form id="audit-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="audit-name">Your Full Name *</label>
+                <input class="form-control" type="text" id="audit-name" name="name" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="audit-type">Property Type *</label>
+                <select class="form-control" id="audit-type" name="type" required>
+                  <option value="">Select Property Type</option>
+                  <option value="Boutique Hotel">Boutique Hotel</option>
+                  <option value="Heritage Homestay">Heritage Homestay</option>
+                  <option value="Luxury Resort">Luxury Resort</option>
+                  <option value="Private Villa">Private Villa</option>
+                  <option value="Restaurant / Dining">Restaurant / Dining</option>
+                  <option value="Other Stay">Other Hospitality Stay</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="audit-property">Property Name & City / Location *</label>
+                <input class="form-control" type="text" id="audit-property" name="property" placeholder="e.g. Pine Estate, Mukteshwar" required>
+              </div>
+
+              <div class="form-group">
+                <label for="audit-rooms">Total Room Keys <span>(approx)</span></label>
+                <input class="form-control" type="text" id="audit-rooms" name="rooms" placeholder="e.g. 12 Rooms or 3 Villas">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="audit-website">Website or Google Maps Link <span>(optional)</span></label>
+              <input class="form-control" type="url" id="audit-website" name="website" placeholder="https://yourproperty.com or Google Maps URL">
+            </div>
+
+            <div class="form-group">
+              <label for="audit-goal">Primary Goal For Growth *</label>
+              <select class="form-control" id="audit-goal" name="goal" required>
+                <option value="Direct Booking vs OTA Strategy">Reduce OTA Commission Bleed</option>
+                <option value="Google Business Profile & Local SEO">Rank Higher on Google Maps (GBP 3-Pack)</option>
+                <option value="High-Converting Hospitality Website">Fix Website & Direct Booking Conversion</option>
+                <option value="WhatsApp Concierge & OTA Distribution">Set Up 1-Click WhatsApp Booking Funnel</option>
+                <option value="High-ROI Performance Advertising">Launch Profitable Google & Meta Ads</option>
+                <option value="Hospitality Content & Storytelling">Elevate Visual Branding & Storytelling</option>
+              </select>
+            </div>
+
+            <button class="btn btn-whatsapp" type="submit" style="width: 100%; justify-content: center; padding: 16px;">
+              <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.84a8.18 8.18 0 0 1-5.82 2.41c-1.45 0-2.88-.39-4.14-1.13l-.3-.18-3.12.82.83-3.04-.19-.31c-.81-1.3-1.24-2.81-1.24-4.37 0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43l-.48-.01c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+              </svg>
+              <span>Send Details via WhatsApp</span>
+              <span class="btn-arrow">↗</span>
+            </button>
+
+            <p class="form-note">
+              Opens WhatsApp with your pre-filled inquiry. You can review and edit before sending.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img class="footer-logo" src="/assets/growguest-logo.svg" alt="GrowGuest — Digital Growth for Hospitality" width="490" height="130">
+          <p>
+            Boutique hospitality digital marketing consultancy. Helping independent hotels, homestays, and resorts establish high-margin direct booking pipelines.
+          </p>
+          <div style="font-size: 12px; color: #8fa69c;">
+            Director & Founder: <strong>Swapneel Shirsat</strong>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Overview /</a></li>
+            <li><a href="#disparity">OTA vs Direct /</a></li>
+            <li><a href="#approach">Methodology /</a></li>
+            <li><a href="#services">Hospitality Services /</a></li>
+            <li><a href="#properties">Featured Properties /</a></li>
+            <li><a href="#calculator">Direct ROI Calculator /</a></li>
+            <li><a href="#about">About Swapneel /</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Key Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Direct Booking Strategy /</a></li>
+            <li><a href="#services">Google Business Profile /</a></li>
+            <li><a href="#services">Local SEO for Homestays /</a></li>
+            <li><a href="#services">Hotel Website CRO /</a></li>
+            <li><a href="#services">WhatsApp Booking Automation /</a></li>
+            <li><a href="#services">OTA Rate Parity Audits /</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Headquarters</h4>
+          <div class="footer-address">
+            <p><strong>GrowGuest Digital Growth for Hospitality</strong></p>
+            <p>60, Swami samarth Nagari, Besa-Pipla Rd,</p>
+            <p>Nagpur, Maharashtra 440034, India</p>
+            <p style="margin-top: 10px;">
+              <a href="https://www.google.com/maps/place/?cid=13593835757779847259" target="_blank" rel="noopener">
+                View on Google Maps (CID Profile) ↗
+              </a>
+            </p>
+            <p style="margin-top: 8px;">
+              WhatsApp / Tel: <a href="tel:+918956907343">+91 89569 07343</a>
+            </p>
+            <p>
+              Email: <a href="mailto:hello@growguest.com">hello@growguest.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 GrowGuest Digital Growth for Hospitality. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="https://growguest.in/privacy-policy/">Privacy Policy /</a>
+          <a href="https://growguest.in/terms-of-service/">Terms of Service /</a>
+          <a href="#hero">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING STICKY WHATSAPP CONCIERGE ==================== -->
+  <a class="floating-whatsapp" href="https://wa.me/918956907343?text=Hi%20Swapneel%2C%20I%20would%20like%20to%20discuss%20a%20Direct%20Booking%20Audit%20for%20my%20hospitality%20property." target="_blank" rel="noopener noreferrer" aria-label="Direct WhatsApp Chat with Swapneel Shirsat">
+    <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.84a8.18 8.18 0 0 1-5.82 2.41c-1.45 0-2.88-.39-4.14-1.13l-.3-.18-3.12.82.83-3.04-.19-.31c-.81-1.3-1.24-2.81-1.24-4.37 0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43l-.48-.01c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+    </svg>
+    <span>Chat with Swapneel</span>
+  </a>
+
+  <!-- Redesign Interaction Script -->
+  <script is:inline src="/app.js"></script>
+</body>
+</html>
