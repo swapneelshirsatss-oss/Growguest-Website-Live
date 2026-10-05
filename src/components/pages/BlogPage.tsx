@@ -161,9 +161,9 @@ export default function BlogPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-8 pb-12 lg:pt-10 lg:pb-16 relative">
+      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
+          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
 
           <div className="max-w-4xl">
             <motion.div

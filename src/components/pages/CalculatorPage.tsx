@@ -91,9 +91,9 @@ export default function CalculatorPage() {
       </script>
 
       {/* Hero Intro */}
-      <section className="pt-8 pb-10 lg:pt-10 lg:pb-12 relative">
+      <section className="pt-10 pb-12 lg:pt-14 lg:pb-16 relative">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} className="px-0 pt-0 pb-6" />
+          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
 
           <div className="max-w-4xl">
             <div className="hero-pill-badge mb-6">

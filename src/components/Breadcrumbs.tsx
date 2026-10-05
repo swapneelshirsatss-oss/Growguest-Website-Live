@@ -31,6 +31,12 @@ export default function Breadcrumbs({ items, maxWidth = '7xl', className = '' }:
     }))
   ];
 
+  const hasCustomPadding = className.includes('px-') || className.includes('p-');
+  const paddingClass = hasCustomPadding ? '' : 'px-4 sm:px-6 lg:px-8';
+  
+  const hasCustomTopPadding = className.includes('pt-') || className.includes('py-') || className.includes('p-');
+  const topPaddingClass = hasCustomTopPadding ? '' : 'pt-6 pb-2';
+
   const maxWClass = maxWidth === '4xl' 
     ? 'max-w-4xl' 
     : maxWidth === '5xl' 
@@ -40,7 +46,7 @@ export default function Breadcrumbs({ items, maxWidth = '7xl', className = '' }:
         : 'max-w-7xl';
 
   return (
-    <nav aria-label="Breadcrumb" className={`pt-6 pb-2 px-4 sm:px-6 lg:px-8 ${maxWClass} mx-auto ${className}`}>
+    <nav aria-label="Breadcrumb" className={`w-full ${topPaddingClass} ${paddingClass} ${maxWClass} ${className}`}>
       <ol className="flex items-center space-x-2 text-xs sm:text-sm text-[#546059] overflow-x-auto whitespace-nowrap">
         {allItems.map((item, index) => {
           const isLast = index === allItems.length - 1;
