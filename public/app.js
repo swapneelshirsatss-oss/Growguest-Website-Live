@@ -20,25 +20,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileDrawer = document.querySelector('.mobile-nav-drawer');
 
   if (menuToggle && mobileDrawer) {
+    const hamburgerSvg = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+    const closeSvg = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+
+    const closeDrawer = () => {
+      mobileDrawer.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.innerHTML = hamburgerSvg;
+      document.body.style.overflow = '';
+    };
+
     menuToggle.addEventListener('click', () => {
       const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!isExpanded));
-      mobileDrawer.classList.toggle('active');
+      const nextExpanded = !isExpanded;
+      menuToggle.setAttribute('aria-expanded', String(nextExpanded));
+      mobileDrawer.classList.toggle('active', nextExpanded);
+      menuToggle.innerHTML = nextExpanded ? closeSvg : hamburgerSvg;
+      document.body.style.overflow = nextExpanded ? 'hidden' : '';
     });
 
     // Close when clicking any nav link inside drawer
     mobileDrawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileDrawer.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeDrawer);
     });
 
     // Close on ESC key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && mobileDrawer.classList.contains('active')) {
-        mobileDrawer.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
+        closeDrawer();
       }
     });
   }
