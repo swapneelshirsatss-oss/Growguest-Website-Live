@@ -25,7 +25,7 @@ export default function Proof() {
       title: "The Goan House",
       location: "ASSAGAO, NORTH GOA",
       type: "PRIVATE HERITAGE VILLA",
-      image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+      image: "/Image/Entrance-villa-in-goa-near-baga-beach-with-private-pool.webp",
       url: "https://thegoanhouse.com/",
       metric: "100% Commission-Free Buyouts",
       description: "Exclusive Portuguese heritage villa. Deployed a friction-free WhatsApp concierge reservation pipeline for affluent family and group buyouts."
