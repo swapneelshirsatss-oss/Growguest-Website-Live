@@ -1,79 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles, ShieldCheck, Zap } from 'lucide-react';
-import HeroInfographic from './HeroInfographic';
-
-interface WordToken {
-  text: string;
-  isEmoji?: boolean;
-  isHighlight?: boolean;
-  isItalic?: boolean;
-}
-
-const headlineTokens: WordToken[] = [
-  { text: "You're" },
-  { text: "losing" },
-  { text: "revenue", isHighlight: true },
-  { text: "twice", isHighlight: true },
-  { text: "💸", isEmoji: true },
-  { text: "—" },
-  { text: "once" },
-  { text: "to" },
-  { text: "OTA" },
-  { text: "commission," },
-  { text: "once" },
-  { text: "to" },
-  { text: "guests" },
-  { text: "who" },
-  { text: "never", isItalic: true, isHighlight: true },
-  { text: "even", isItalic: true, isHighlight: true },
-  { text: "found", isItalic: true, isHighlight: true },
-  { text: "you", isItalic: true, isHighlight: true },
-  { text: "🔍", isEmoji: true }
-];
-
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.2
-    }
-  }
-};
-
-const wordVariants = {
-  hidden: {
-    opacity: 0,
-    y: 15
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: [0.16, 1, 0.3, 1]
-    }
-  }
-};
-
-const emojiVariants = {
-  hidden: {
-    opacity: 0,
-    scale: 0.7,
-    y: 10
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-      damping: 12,
-      stiffness: 220,
-      duration: 0.6
-    }
-  }
-};
+import { Sparkles, ArrowRight, ShieldCheck, CheckCircle2, TrendingUp } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -85,129 +11,150 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           
+          {/* Left Column: Value Proposition */}
           <div className="lg:col-span-7 max-w-2xl">
-            {/* Premium Eyebrow Badges */}
+            {/* Eyebrow Badge */}
             <motion.div 
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-wrap gap-2.5 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#c8f169]/15 border border-[#c8f169]/30 text-[#c8f169] text-xs sm:text-sm font-semibold mb-6 backdrop-blur-md"
             >
-              <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-[#c8f169]/15 text-[#c8f169] border border-[#c8f169]/30 backdrop-blur-md shadow-sm">
-                <span className="flex h-2 w-2 rounded-full bg-[#c8f169] mr-2.5 animate-pulse" />
-                Cut 15-25% OTA Fees
-              </div>
-              <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 backdrop-blur-md">
-                <ShieldCheck className="w-4 h-4 mr-1.5 text-emerald-400" />
-                WhatsApp Direct Booking
-              </div>
-              <div className="inline-flex items-center rounded-full px-4 py-1.5 text-xs sm:text-sm font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30 backdrop-blur-md">
-                <Zap className="w-4 h-4 mr-1.5 text-blue-400" />
-                Google Maps Rank #1
-              </div>
+              <span className="flex h-2 w-2 rounded-full bg-[#c8f169] animate-pulse" />
+              <span>HOSPITALITY DIGITAL GROWTH · NAGPUR · UTTARAKHAND · PAN-INDIA</span>
             </motion.div>
-            
-            {/* Word-by-Word Reveal Headline with Boutique Fraunces Serif Font Pairing */}
-            <motion.h1 
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-[1.2] mb-6 tracking-tight text-white flex flex-wrap items-baseline gap-x-2.5 gap-y-1.5"
-            >
-              {headlineTokens.map((token, index) => {
-                if (token.isEmoji) {
-                  return (
-                    <motion.span
-                      key={`emoji-${index}`}
-                      variants={emojiVariants}
-                      className="inline-block transform origin-center select-none text-2xl sm:text-3xl lg:text-4xl mx-0.5 filter drop-shadow-[0_0_12px_rgba(200,241,105,0.35)]"
-                    >
-                      {token.text}
-                    </motion.span>
-                  );
-                }
 
-                return (
-                  <motion.span
-                    key={`word-${index}`}
-                    variants={wordVariants}
-                    className={`inline-block ${
-                      token.isHighlight && !token.isItalic
-                        ? "text-[#c8f169] font-extrabold"
-                        : token.isItalic
-                        ? "italic font-normal text-[#c8f169] drop-shadow-[0_0_25px_rgba(200,241,105,0.25)]"
-                        : "text-white font-semibold"
-                    }`}
-                  >
-                    {token.text}
-                  </motion.span>
-                );
-              })}
-            </motion.h1>
-            
-            {/* Handoff Animation: Subtext and Action Buttons Fade in as Headline Lands */}
-            <motion.p 
-              initial={{ opacity: 0, y: 15 }}
+            {/* Display Headline */}
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.4 }}
-              className="text-lg md:text-xl text-emerald-100/90 mb-9 max-w-xl leading-relaxed font-normal"
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="font-sans text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.12] tracking-tight text-white mb-6"
             >
-              GrowGuest fixes both — a website, GBP, and SEO pipeline built specifically so hotels and homestays stop losing bookings to either one.
-            </motion.p>
-            
-            <motion.div 
-              initial={{ opacity: 0, y: 15 }}
+              Beautiful stays.<br />
+              Stronger brands.<br />
+              <em className="font-serif italic font-normal text-[#c8f169] not-italic">
+                More direct bookings.
+              </em>
+            </motion.h1>
+
+            {/* Subtitle */}
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.6 }}
-              className="flex flex-col sm:flex-row gap-4"
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg md:text-xl text-emerald-100/90 mb-8 max-w-xl leading-relaxed font-normal"
+            >
+              We help independent hotels, boutique resorts, and heritage homestays stop the 18%–25% OTA commission bleed. Transform passive searches into high-margin direct enquiries through Google Business Profile dominance, website conversion fixes, and automated WhatsApp booking pipelines.
+            </motion.p>
+
+            {/* Dual CTAs */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-col sm:flex-row gap-4 mb-12"
             >
               <a 
                 href="#audit" 
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-extrabold rounded-full text-[#043f2e] bg-[#c8f169] hover:bg-[#d8f68e] transition-all shadow-[0_0_30px_rgba(200,241,105,0.35)] hover:shadow-[0_0_45px_rgba(200,241,105,0.55)] transform hover:-translate-y-1"
               >
                 <Sparkles className="mr-2 h-5 w-5 text-[#043f2e]" />
-                फ्री Direct Booking Audit पाएँ
+                Claim Free Growth Audit
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a 
-                href="https://wa.me/918956907343?text=Namaste%20GrowGuest!%20I%20want%20a%20free%20Direct%20Booking%20Audit%20for%20my%20hotel/homestay."
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#calculator" 
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-full text-white bg-white/10 hover:bg-white/15 transition-all backdrop-blur-md border border-white/20 shadow-lg"
               >
-                WhatsApp पर बात करें →
+                Calculate Commission Leak ↓
               </a>
             </motion.div>
-          </div>
 
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="lg:col-span-5 relative h-[480px] lg:h-[560px] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-[#043f2e]/60 backdrop-blur-2xl"
-          >
-            <HeroInfographic />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#02291e] via-transparent to-transparent pointer-events-none" />
-            
-            {/* Ultra-Premium Glassmorphism Floating Badge Card */}
+            {/* 4-Item Trust Bar */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.5 }}
-              className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-2xl border border-white/50"
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10"
             >
-              <div className="flex items-center justify-between mb-3">
-                <div className="text-[#043f2e] font-extrabold text-sm tracking-wide">Direct Bookings Captured</div>
-                <div className="text-[#043f2e] bg-[#c8f169] px-2.5 py-1 rounded-full text-xs font-extrabold shadow-sm">+68% Growth</div>
+              <div>
+                <div className="text-2xl font-extrabold text-white tracking-tight">10+ Yrs</div>
+                <div className="text-xs text-emerald-200/80 mt-0.5">Exclusively In Hospitality</div>
               </div>
-              <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden shadow-inner">
-                <div className="bg-[#043f2e] h-2 rounded-full w-[85%] transition-all duration-1000" />
+              <div>
+                <div className="text-2xl font-extrabold text-[#c8f169] tracking-tight">₹4.8 Cr+</div>
+                <div className="text-xs text-emerald-200/80 mt-0.5">Direct Revenue Unlocked</div>
               </div>
-              <p className="text-xs text-slate-600 mt-3 font-medium">
-                Captured 145 new direct inquiries from local search in Nagpur this month.
-              </p>
+              <div>
+                <div className="text-2xl font-extrabold text-white tracking-tight">18–25%</div>
+                <div className="text-xs text-emerald-200/80 mt-0.5">OTA Bleed Stopped</div>
+              </div>
+              <div>
+                <div className="text-2xl font-extrabold text-[#c8f169] tracking-tight">100+</div>
+                <div className="text-xs text-emerald-200/80 mt-0.5">Properties Audited</div>
+              </div>
             </motion.div>
-          </motion.div>
+          </div>
+
+          {/* Right Column: Visual Showcase Card */}
+          <div className="lg:col-span-5 relative">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="relative h-[520px] lg:h-[580px] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-[#043f2e]/60 backdrop-blur-2xl group"
+            >
+              {/* Resort Background Image */}
+              <img 
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1500&q=85" 
+                alt="Luxury sunlit boutique resort pool surrounded by lush tropical gardens" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                fetchPriority="high"
+              />
+
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#02291e] via-[#02291e]/40 to-black/30 pointer-events-none" />
+
+              {/* Corner Tag: Showcase */}
+              <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-bold text-[#043f2e] flex items-center gap-2 shadow-md">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>BOUTIQUE RESORT SHOWCASE</span>
+              </div>
+
+              {/* Corner Tag: 0% OTA Commission */}
+              <div className="absolute top-5 right-5 bg-[#043f2e]/90 backdrop-blur-md border border-[#c8f169]/40 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-[#c8f169] shadow-md">
+                ✦ 0% OTA COMMISSION
+              </div>
+
+              {/* Floating Live WhatsApp Direct Reservation Card */}
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-xl rounded-2xl p-5 shadow-2xl border border-white/60 text-slate-900">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#043f2e] bg-[#c8f169]/30 px-2.5 py-0.5 rounded-full">
+                      DIRECT WHATSAPP RESERVATION
+                    </span>
+                  </div>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md">
+                    Saved ₹6,240 Commission
+                  </span>
+                </div>
+
+                <p className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug mb-3">
+                  “Hi Swapneel, saw the direct rates for The Stone Heritage Himalayan cottage. We’d like to confirm the family suite for 3 nights next weekend!”
+                </p>
+
+                <div className="flex items-center justify-between text-[11px] text-slate-500 pt-2 border-t border-slate-100">
+                  <span className="font-medium">Mukteshwar, Nainital • Verified Guest</span>
+                  <span className="font-bold text-[#1ebd5b] flex items-center gap-1">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    Direct Channel · 0% Fee
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
         </div>
       </div>
     </section>

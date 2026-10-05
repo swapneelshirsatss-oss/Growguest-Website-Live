@@ -1,87 +1,208 @@
 import { motion } from 'motion/react';
-import { TrendingDown, IndianRupee, AlertCircle } from 'lucide-react';
+import { X, Check, AlertTriangle, ShieldCheck } from 'lucide-react';
 
 export default function Problem() {
   return (
-    <section id="hotels" className="py-16 md:py-24 bg-white">
+    <section id="disparity" className="py-20 md:py-28 bg-[#fcfbf9] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-teal mb-3">
-            The Digital Visibility Gap & The Commission Trap
-          </h2>
-          <h3 className="text-xl sm:text-2xl font-extrabold text-[#C99A2E] mb-4 leading-snug">
-            Zero Google Visibility & The Heavy OTA Commission Trap
-          </h3>
-          <p className="text-lg text-slate-600">
-            80% of guests search Google before booking. If your website and Google Business Profile don't capture them instantly, they either book your competitor or use MakeMyTrip (costing you 20%). <strong className="text-brand-teal">You are losing both new guests and profit margins.</strong>
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/5 border border-emerald-900/15 text-[#043f2e] text-xs font-mono font-semibold uppercase tracking-wider mb-4"
+          >
+            <span className="w-2 h-2 rounded-full bg-[#c99a2e]" />
+            <span>THE REALITY CHECK FOR PROPERTY OWNERS</span>
+          </motion.div>
+
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071510] tracking-tight mb-4"
+          >
+            Why pay 20% on guests who{' '}
+            <span className="font-serif italic font-normal text-[#c99a2e]">already know you?</span>
+          </motion.h2>
+
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-base sm:text-lg text-slate-600 leading-relaxed"
+          >
+            Most travellers discover you on an OTA, then immediately search Google for your website and reviews. If your direct booking journey is slow or missing, you hand that booking back to MakeMyTrip or Booking.com—along with your hard-earned profits.
+          </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="bg-slate-50 rounded-3xl p-6 md:p-12 border border-slate-100 shadow-sm relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-slate-200 text-slate-700 px-4 py-2 rounded-bl-2xl font-semibold flex items-center">
-              <TrendingDown className="w-4 h-4 mr-2" /> Invisible Online
-            </div>
-            <h3 className="text-2xl font-bold text-slate-800 mb-6">Without SEO & Website</h3>
-            
-            <div className="space-y-6">
-              <p className="text-slate-600">When your property isn't visible on Google or has an outdated website:</p>
-              
-              <div className="flex items-start text-slate-700">
-                <AlertCircle className="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-0.5"/>
-                <span><strong>Lose New Guests:</strong> Hundreds of people searching for stays in Nagpur never even see your property.</span>
+        {/* Comparison Grid */}
+        <div className="grid md:grid-cols-2 gap-8 items-stretch">
+          
+          {/* Card 1: The OTA Trap */}
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm flex flex-col justify-between"
+          >
+            <div>
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-rose-600 mb-2">
+                THE COMMODITY CHANNEL
               </div>
-              
-              <div className="w-full h-px bg-slate-200"></div>
-              
-              <div className="flex items-start text-slate-700">
-                <AlertCircle className="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-0.5"/>
-                <span><strong>Lose Margin:</strong> The few who do find you book via MakeMyTrip/Agoda, costing you 20% in commission.</span>
-              </div>
-            </div>
-          </div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                The OTA Trap (MakeMyTrip, Agoda, Booking.com)
+              </h3>
+              <p className="text-sm text-slate-600 mb-8">
+                High commission taxes eating directly into your gross operational margins.
+              </p>
 
-          <div className="bg-brand-teal text-white rounded-3xl p-6 md:p-12 shadow-xl relative overflow-hidden transform md:-translate-y-4">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#C99A2E_0%,_transparent_60%)] opacity-20"></div>
-            <div className="absolute top-0 right-0 bg-brand-gold text-brand-teal px-4 py-2 rounded-bl-2xl font-bold flex items-center shadow-md">
-              <IndianRupee className="w-4 h-4 mr-1" /> Digital Growth
-            </div>
-            <h3 className="text-2xl font-bold mb-6">With Growguest Strategy</h3>
-            
-            <div className="space-y-6 relative z-10">
-              <p className="text-slate-200">When your GBP is optimized and your website is fast and trustworthy:</p>
-              
-              <div className="flex items-start text-white">
-                <IndianRupee className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0 mt-0.5"/>
-                <span><strong>Capture New Demand:</strong> You appear at the top when people search "best homestay near me" or "hotels in Nagpur".</span>
-              </div>
-              
-              <div className="w-full h-px bg-white/20"></div>
-              
-              <div className="flex items-start text-white">
-                <IndianRupee className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0 mt-0.5"/>
-                <span><strong>Keep 100% Profit:</strong> Guests contact you directly via WhatsApp or Phone to book. Zero commission paid to OTAs.</span>
-              </div>
-            </div>
-            
-            <div className="mt-8 pt-6 border-t border-white/10">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-                <p className="text-brand-gold-light font-medium text-lg leading-snug flex-1">
-                  More overall bookings + Higher profit margin per booking.
-                </p>
-                <div className="bg-white/10 rounded-xl p-4 border border-white/20 flex-shrink-0 relative">
-                  <div className="absolute -top-3 -right-3 bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-lg">
-                    100% YOURS
+              <ul className="space-y-5">
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✕
                   </div>
-                  <div className="text-xs text-brand-gold uppercase tracking-wider font-bold mb-1">OTA Commission Saved</div>
-                  <div className="text-3xl font-bold text-white flex items-center">
-                    <IndianRupee className="w-6 h-6 mr-1" />
-                    1,000<span className="text-sm font-normal text-slate-300 ml-1 mt-1"> / ₹5k booking</span>
+                  <div>
+                    <strong className="block text-sm font-semibold text-slate-900">
+                      18% to 25% Commission Bleed
+                    </strong>
+                    <span className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      On a ₹3,00,000 monthly room revenue, you sacrifice ₹54,000 to ₹75,000 every single month.
+                    </span>
                   </div>
-                </div>
-              </div>
+                </li>
+
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✕
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-slate-900">
+                      Masked Guest Contact Data
+                    </strong>
+                    <span className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      OTAs hide the guest’s real phone and email, making repeat direct marketing and loyalty impossible.
+                    </span>
+                  </div>
+                </li>
+
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✕
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-slate-900">
+                      Delayed 15–45 Day Payout Cycles
+                    </strong>
+                    <span className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Your revenue sits in aggregator accounts instead of fueling your immediate operational cash flow.
+                    </span>
+                  </div>
+                </li>
+
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✕
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-slate-900">
+                      Competitor Ads on Your Listing
+                    </strong>
+                    <span className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      OTAs actively display cheaper neighboring hotels right under your photos to trigger price wars.
+                    </span>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </motion.div>
+
+          {/* Card 2: The GrowGuest Direct Engine */}
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-[#0c2018] text-white rounded-3xl p-8 sm:p-10 border border-[#c99a2e]/40 shadow-2xl relative overflow-hidden flex flex-col justify-between"
+          >
+            {/* Background Glow */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#c99a2e]/10 rounded-full blur-[80px] pointer-events-none" />
+
+            <div className="relative z-10">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#dfad3c] mb-2 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
+                THE HIGH-MARGIN PIPELINE
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">
+                The GrowGuest Direct Booking Engine
+              </h3>
+              <p className="text-sm text-emerald-200/80 mb-8">
+                Direct reservations, zero commissions, and 100% guest database ownership.
+              </p>
+
+              <ul className="space-y-5">
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-[#25d366]/20 text-[#25d366] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✓
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-white">
+                      0% Commission on Direct Stays
+                    </strong>
+                    <span className="text-xs sm:text-sm text-emerald-100/75 leading-relaxed">
+                      Keep 100% of your room revenue in your bank account, preserving your property's net profit.
+                    </span>
+                  </div>
+                </li>
+
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-[#25d366]/20 text-[#25d366] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✓
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-white">
+                      100% Direct Guest WhatsApp Ownership
+                    </strong>
+                    <span className="text-xs sm:text-sm text-emerald-100/75 leading-relaxed">
+                      Build a proprietary guest database for seasonal campaigns, birthdays, and high-margin repeat visits.
+                    </span>
+                  </div>
+                </li>
+
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-[#25d366]/20 text-[#25d366] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✓
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-white">
+                      Instant Direct Payments to Your Bank
+                    </strong>
+                    <span className="text-xs sm:text-sm text-emerald-100/75 leading-relaxed">
+                      UPI, netbanking, or direct advance transfers without holding periods or processing deductions.
+                    </span>
+                  </div>
+                </li>
+
+                <li className="flex items-start gap-3.5">
+                  <div className="w-6 h-6 rounded-full bg-[#25d366]/20 text-[#25d366] flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                    ✓
+                  </div>
+                  <div>
+                    <strong className="block text-sm font-semibold text-white">
+                      Google Maps 3-Pack & Brand Exclusivity
+                    </strong>
+                    <span className="text-xs sm:text-sm text-emerald-100/75 leading-relaxed">
+                      Dominate local search results and present your unique property story without distracting third-party ads.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </motion.div>
+
         </div>
       </div>
     </section>
