@@ -131,19 +131,27 @@ export default function Services() {
           {/* Service 6 */}
           <div 
             className="service-card" 
-            data-service="WhatsApp Concierge & OTA Distribution"
-            onClick={() => handleServiceClick("WhatsApp Concierge & OTA Distribution")}
+            data-service="OTA Management for Bookings"
+            onClick={() => handleServiceClick("OTA Management for Bookings")}
           >
             <div className="service-card-top">
               <div className="service-icon-box">⇄</div>
               <span className="service-index">06</span>
             </div>
-            <h3>WhatsApp Concierge & Distribution</h3>
+            <h3>OTA Management for Bookings</h3>
             <p>
-              Connect OTA channel managers with 1-click WhatsApp enquiry funnels. Equip your reservations team with pre-written quotation templates that close bookings instantly.
+              Complete listing optimization, channel manager sync, rate parity defense, and review score enhancement across all major booking platforms. Convert third-party OTA lookers into direct repeat guests.
             </p>
+            <div className="service-ota-tags">
+              <span className="ota-tag">Airbnb</span>
+              <span class="ota-tag">MakeMyTrip</span>
+              <span className="ota-tag">Booking.com</span>
+              <span className="ota-tag">Agoda</span>
+              <span className="ota-tag">Expedia</span>
+              <span className="ota-tag">Goibibo</span>
+            </div>
             <div className="service-card-action">
-              <span>Deploy WhatsApp Engine</span>
+              <span>Audit Your OTA Channels</span>
               <span className="btn-arrow">↗</span>
             </div>
           </div>
