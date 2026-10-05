@@ -11,7 +11,7 @@ export default function Partners() {
       name: "The Stone Heritage",
       subtitle: "Mukteshwar, Uttarakhand",
       url: "https://thestoneheritage.in/",
-      logo: "/Image/stone-heritage-mukteshwar.webp"
+      logo: "/Image/best-homestay-in-mukteshwar-stone-heritage-14.webp"
     },
     { 
       name: "Whispering Pines Resort",

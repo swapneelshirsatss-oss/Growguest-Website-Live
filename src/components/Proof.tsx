@@ -7,7 +7,7 @@ export default function Proof() {
       title: "The Stone Heritage",
       location: "MUKTESHWAR, UTTARAKHAND",
       type: "HIMALAYAN RETREAT",
-      image: "/Image/stone-heritage-mukteshwar.webp",
+      image: "/Image/best-homestay-in-mukteshwar-stone-heritage-14.webp",
       url: "https://thestoneheritage.in/",
       metric: "+42% Direct Bookings via WhatsApp",
       description: "Traditional stone cottage retreat. Engineered custom direct rate packages and Google Maps optimization, diverting high-value weekend buyouts from OTAs."
