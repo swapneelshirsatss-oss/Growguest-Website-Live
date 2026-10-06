@@ -34,4 +34,8 @@
    - Blog posts must credit `Swapneel Shirsat` as author (`jobTitle: "Director & Founder — Hospitality Digital Marketing Consultant"`).
 3. **AI Knowledge Base Sync**: Keep `public/llms.txt` and `public/llms-full.txt` aligned with the exact business name, address, Google Maps CID listing, and director profile for AI search crawlers (Perplexity, ChatGPT, Claude, Gemini).
 4. **Menu Stability**: Do not add new links or alter top-level header navigation (`Header.tsx`) unless explicitly instructed by the user.
+5. **Dev Server Multi-Interface Binding**: Always configure Astro/Vite dev server with `host: true` (or CLI flag `--host`) instead of hardcoding `127.0.0.1`. This ensures dual-stack listening on IPv4 (`127.0.0.1`), IPv6 (`::1`), and LAN, preventing Windows `localhost` DNS resolution failures (`ERR_CONNECTION_REFUSED`).
+6. **CSS Reset & Spacing Utility Hygiene**: Never apply universal `*, *::before, *::after { margin: 0; padding: 0; }` resets or unmanaged global stylesheets that override Tailwind v4's `:where()` utility classes (`space-y-*`, `gap-*`, `pt-*`, `pb-*`). Use element-specific resets only (`body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure { margin: 0; }`).
+7. **Pre-Flight Static Lint & JSX Validation**: Always run `npm run lint` (`tsc --noEmit`) to verify zero JSX or TypeScript errors before declaring pages/dev server healthy or committing code.
+
 
