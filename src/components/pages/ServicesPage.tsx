@@ -229,14 +229,15 @@ export default function ServicesPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
+      <section className="subpage-hero">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 py-0" />
+          </div>
 
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={false}
               className="hero-pill-badge mb-6"
             >
               <span className="pulse-dot" />
@@ -244,27 +245,21 @@ export default function ServicesPage() {
             </motion.div>
 
             <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              initial={false}
               className="hero-title mb-6"
             >
               Hospitality Digital Marketing: <em>Services by GrowGuest</em>
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              initial={false}
               className="hero-desc mb-8"
             >
               Struggling with zero Google visibility and bleeding profits to the heavy OTA commission trap? We build end-to-end direct booking engines, local SEO dominance, and high-ROAS paid ads to reclaim your hotel's revenue.
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              initial={false}
               className="hero-actions mb-10"
             >
               <a

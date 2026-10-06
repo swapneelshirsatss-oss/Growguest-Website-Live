@@ -216,14 +216,15 @@ export default function AboutPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
+      <section className="subpage-hero">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 py-0" />
+          </div>
 
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={false}
               className="hero-pill-badge mb-6"
             >
               <span className="pulse-dot" />
@@ -231,18 +232,14 @@ export default function AboutPage() {
             </motion.div>
 
             <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              initial={false}
               className="hero-title mb-6"
             >
               About GrowGuest: <em>Founder-Led Hospitality Marketing</em>
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              initial={false}
               className="hero-desc mb-8"
             >
               Founded by <strong className="text-[#071510]">Swapneel Shirsat</strong>, GrowGuest is a boutique digital growth consultancy specializing exclusively in hospitality. We solve the OTA commission bleed for independent hotel, homestay, and resort owners with an end-to-end direct booking pipeline.
@@ -250,9 +247,7 @@ export default function AboutPage() {
 
             {/* AEO Direct Answer Card */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.25 }}
+              initial={false}
               className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
@@ -265,9 +260,7 @@ export default function AboutPage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              initial={false}
               className="hero-actions mb-0"
             >
               <a
@@ -293,64 +286,65 @@ export default function AboutPage() {
       </section>
 
       {/* Featured Founder Profile Showcase */}
-      <section className="py-16 container">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:border-[#dfad3c]/30 transition-all">
-          <div className="grid lg:grid-cols-12 gap-10 items-center">
-            
-            {/* Left: Founder Avatar & Quick Badges */}
-            <div className="lg:col-span-4 text-center space-y-5">
-              <div className="relative inline-block">
-                <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl bg-gradient-to-br from-[#0c2018] via-[#071510] to-[#163a2c] flex items-center justify-center text-[#dfad3c] font-extrabold text-5xl sm:text-6xl shadow-2xl border-4 border-[#dfad3c]/30 mx-auto transform hover:scale-105 transition-transform">
-                  SS
+      <section className="subpage-section">
+        <div className="container">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:border-[#dfad3c]/30 transition-all">
+            <div className="grid lg:grid-cols-12 gap-10 items-center">
+              
+              {/* Left: Founder Avatar & Quick Badges */}
+              <div className="lg:col-span-4 text-center space-y-5">
+                <div className="relative inline-block">
+                  <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl bg-gradient-to-br from-[#0c2018] via-[#071510] to-[#163a2c] flex items-center justify-center text-[#dfad3c] font-extrabold text-5xl sm:text-6xl shadow-2xl border-4 border-[#dfad3c]/30 mx-auto transform hover:scale-105 transition-transform">
+                    SS
+                  </div>
+                  <div className="absolute -bottom-3 -right-3 bg-[#dfad3c] text-[#071510] font-extrabold text-xs px-3.5 py-1.5 rounded-full shadow-lg border-2 border-white flex items-center">
+                    <ShieldCheck className="w-4 h-4 mr-1 text-[#071510]" />
+                    Verified Specialist
+                  </div>
                 </div>
-                <div className="absolute -bottom-3 -right-3 bg-[#dfad3c] text-[#071510] font-extrabold text-xs px-3.5 py-1.5 rounded-full shadow-lg border-2 border-white flex items-center">
-                  <ShieldCheck className="w-4 h-4 mr-1 text-[#071510]" />
-                  Verified Specialist
+
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
+                    Swapneel Shirsat
+                  </h3>
+                  <p className="text-sm font-bold text-[#c99a2e] mt-1">
+                    Founder & Principal Hospitality Consultant
+                  </p>
+                  <p className="text-xs text-[#546059] mt-0.5">
+                    GrowGuest Digital Growth for Hospitality
+                  </p>
+                </div>
+
+                <div className="flex justify-center gap-2 flex-wrap">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#dfad3c]/10 text-[#c99a2e] border border-[#dfad3c]/25">
+                    18+ Yrs Marketing
+                  </span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#0c2018] text-[#dfad3c] border border-[#dfad3c]/30">
+                    10+ Yrs Hospitality
+                  </span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#f7f5ef] text-[#546059] border border-[rgba(16,41,32,0.1)]">
+                    Nagpur, India
+                  </span>
+                </div>
+
+                <div className="pt-3 flex flex-wrap justify-center gap-3">
+                  <a
+                    href="https://wa.me/918956907343"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2.5 rounded-xl text-xs font-bold bg-[#25d366] hover:bg-[#20ba5a] text-white shadow-md transition-colors"
+                  >
+                    <PhoneCall className="w-3.5 h-3.5 mr-1.5" />
+                    WhatsApp Direct
+                  </a>
+                  <a
+                    href="mailto:hello@growguest.com"
+                    className="inline-flex items-center px-4 py-2.5 rounded-xl text-xs font-bold bg-[#071510] hover:bg-[#0c2018] text-white shadow-md transition-colors border border-white/10"
+                  >
+                    Email Swapneel
+                  </a>
                 </div>
               </div>
-
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
-                  Swapneel Shirsat
-                </h3>
-                <p className="text-sm font-bold text-[#c99a2e] mt-1">
-                  Founder & Principal Hospitality Consultant
-                </p>
-                <p className="text-xs text-[#546059] mt-0.5">
-                  GrowGuest Digital Growth for Hospitality
-                </p>
-              </div>
-
-              <div className="flex justify-center gap-2 flex-wrap">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#dfad3c]/10 text-[#c99a2e] border border-[#dfad3c]/25">
-                  18+ Yrs Marketing
-                </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#0c2018] text-[#dfad3c] border border-[#dfad3c]/30">
-                  10+ Yrs Hospitality
-                </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#f7f5ef] text-[#546059] border border-[rgba(16,41,32,0.1)]">
-                  Nagpur, India
-                </span>
-              </div>
-
-              <div className="pt-2 flex justify-center space-x-3">
-                <a
-                  href="https://wa.me/918956907343"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold bg-[#25d366] hover:bg-[#20ba5a] text-white shadow-md transition-colors"
-                >
-                  <PhoneCall className="w-3.5 h-3.5 mr-1.5" />
-                  WhatsApp Direct
-                </a>
-                <a
-                  href="mailto:hello@growguest.com"
-                  className="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold bg-[#071510] hover:bg-[#0c2018] text-white shadow-md transition-colors border border-white/10"
-                >
-                  Email Swapneel
-                </a>
-              </div>
-            </div>
 
             {/* Right: Biographical Profile & Core Ethos */}
             <div className="lg:col-span-8 space-y-6">
@@ -417,54 +411,57 @@ export default function AboutPage() {
 
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* 18-Year Track Record & Journey Section */}
-      <section className="py-16 container">
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
-          
-          <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-mono font-semibold text-[#c99a2e] uppercase tracking-wider block">
-              Founder Philosophy
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] leading-tight">
-              Why We Only Work Inside <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Hospitality</em>
-            </h2>
-            <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
-              Most digital marketing agencies in India are generalists. They sell social media posts to a dentist on Monday, a gym on Tuesday, and a hotel on Wednesday. They don’t understand that paying a 20% commission on a ₹4,000 room night drains a hotel owner's entire operating margin.
-            </p>
-            <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
-              With <strong className="text-[#071510]">18 years of freelance marketing experience</strong> and <strong className="text-[#071510]">over a decade spent exclusively inside hospitality</strong>, GrowGuest was founded by Swapneel Shirsat to solve one specific problem: breaking independent hotel dependence on OTAs like MakeMyTrip, Agoda, and Booking.com.
-            </p>
-            <div className="bg-[#f7f5ef] p-6 rounded-2xl border-l-4 border-[#dfad3c] text-[#071510] text-sm sm:text-base font-medium">
-              “Our mission is simple: when a traveler searches for a place to stay in Nagpur or nearby hill stations, your property should be their first choice — and they should book directly with your front desk.”
+      <section className="subpage-section">
+        <div className="container">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div className="lg:col-span-6 space-y-6">
+              <span className="text-xs font-mono font-semibold text-[#c99a2e] uppercase tracking-wider block">
+                Founder Philosophy
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071510] leading-tight">
+                Why We Only Work Inside <em className="font-serif italic font-normal text-[#c99a2e] not-italic">Hospitality</em>
+              </h2>
+              <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
+                Most digital marketing agencies in India are generalists. They sell social media posts to a dentist on Monday, a gym on Tuesday, and a hotel on Wednesday. They don’t understand that paying a 20% commission on a ₹4,000 room night drains a hotel owner's entire operating margin.
+              </p>
+              <p className="text-[#546059] text-base sm:text-lg leading-relaxed">
+                With <strong className="text-[#071510]">18 years of freelance marketing experience</strong> and <strong className="text-[#071510]">over a decade spent exclusively inside hospitality</strong>, GrowGuest was founded by Swapneel Shirsat to solve one specific problem: breaking independent hotel dependence on OTAs like MakeMyTrip, Agoda, and Booking.com.
+              </p>
+              <div className="bg-[#f7f5ef] p-6 rounded-2xl border-l-4 border-[#dfad3c] text-[#071510] text-sm sm:text-base font-medium">
+                “Our mission is simple: when a traveler searches for a place to stay in Nagpur or nearby hill stations, your property should be their first choice — and they should book directly with your front desk.”
+              </div>
             </div>
-          </div>
 
-          <div className="lg:col-span-6 bg-[#0c2018] text-white rounded-3xl p-8 sm:p-10 border border-[#dfad3c]/20 shadow-xl space-y-8">
-            <h3 className="text-2xl font-bold text-[#dfad3c] mb-4">
-              Swapneel's 18-Year Marketing & Hospitality Journey
-            </h3>
+            <div className="lg:col-span-6 bg-[#0c2018] text-white rounded-3xl p-8 sm:p-10 border border-[#dfad3c]/20 shadow-xl space-y-8">
+              <h3 className="text-2xl font-bold text-[#dfad3c] mb-4">
+                Swapneel's 18-Year Marketing & Hospitality Journey
+              </h3>
 
-            <div className="space-y-6">
-              {timelineSteps.map((step, idx) => (
-                <div key={idx} className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center font-bold text-[#dfad3c] text-xs border border-white/10">
-                    {step.year.split(' ')[0]}
+              <div className="space-y-6">
+                {timelineSteps.map((step, idx) => (
+                  <div key={idx} className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center font-bold text-[#dfad3c] text-xs border border-white/10">
+                      {step.year.split(' ')[0]}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-base mb-1">
+                        {step.title}
+                      </h4>
+                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-bold text-white text-base mb-1">
-                      {step.title}
-                    </h4>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                      {step.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </section>
 
@@ -487,10 +484,7 @@ export default function AboutPage() {
             {coreValues.map((value, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                initial={false}
                 className="bg-white rounded-3xl p-8 border border-[rgba(16,41,32,0.08)] shadow-sm hover:shadow-xl hover:border-[#dfad3c]/40 transition-all flex flex-col justify-between"
               >
                 <div>
@@ -511,74 +505,77 @@ export default function AboutPage() {
       </section>
 
       {/* Nagpur Office & Local Presence */}
-      <section className="py-16 container">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:border-[#dfad3c]/30 transition-all">
-          <div className="grid lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#dfad3c]/10 text-[#c99a2e] text-xs font-bold border border-[#dfad3c]/20">
-                <Building className="w-3.5 h-3.5 mr-1.5" />
-                Nagpur Headquarters
+      <section className="subpage-section">
+        <div className="container">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[rgba(16,41,32,0.08)] shadow-sm hover:border-[#dfad3c]/30 transition-all">
+            <div className="grid lg:grid-cols-12 gap-8 items-center">
+              
+              <div className="lg:col-span-7 space-y-4">
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#dfad3c]/10 text-[#c99a2e] text-xs font-bold border border-[#dfad3c]/20">
+                  <Building className="w-3.5 h-3.5 mr-1.5" />
+                  Nagpur Headquarters
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
+                  Local Presence in Nagpur & Hill-Station Networks
+                </h3>
+                <p className="text-[#546059] text-sm sm:text-base leading-relaxed">
+                  We believe in face-to-face relationships and WhatsApp-native communication. Our primary office is located on <strong>Besa-Pipla Road in Nagpur</strong>, serving hotel and restaurant owners across <strong>Wardha Road, Dharampeth, Civil Lines, and Sadar</strong>.
+                </p>
+                <p className="text-[#546059] text-sm sm:text-base leading-relaxed">
+                  We also maintain deep hill-station relationships in <strong>Uttarakhand (Mukteshwar, Ramgarh, Nainital)</strong> — proving our direct booking playbook works both in bustling commercial cities and high-demand leisure destinations.
+                </p>
+                <div className="pt-2">
+                  <a
+                    href="https://wa.me/918956907343"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-[#c99a2e] font-bold text-sm sm:text-base hover:underline"
+                  >
+                    <PhoneCall className="w-4 h-4 mr-2" />
+                    Schedule an In-Person Property Audit in Nagpur →
+                  </a>
+                </div>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071510]">
-                Local Presence in Nagpur & Hill-Station Networks
-              </h3>
-              <p className="text-[#546059] text-sm sm:text-base leading-relaxed">
-                We believe in face-to-face relationships and WhatsApp-native communication. Our primary office is located on <strong>Besa-Pipla Road in Nagpur</strong>, serving hotel and restaurant owners across <strong>Wardha Road, Dharampeth, Civil Lines, and Sadar</strong>.
-              </p>
-              <p className="text-[#546059] text-sm sm:text-base leading-relaxed">
-                We also maintain deep hill-station relationships in <strong>Uttarakhand (Mukteshwar, Ramgarh, Nainital)</strong> — proving our direct booking playbook works both in bustling commercial cities and high-demand leisure destinations.
-              </p>
-              <div className="pt-2">
-                <a
-                  href="https://wa.me/918956907343"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-[#c99a2e] font-bold text-sm sm:text-base hover:underline"
-                >
-                  <PhoneCall className="w-4 h-4 mr-2" />
-                  Schedule an In-Person Property Audit in Nagpur →
-                </a>
-              </div>
-            </div>
 
-            <div className="lg:col-span-5 bg-[#071510] text-white p-6 sm:p-8 rounded-2xl border border-[#dfad3c]/20 space-y-4 text-center">
-              <MapPin className="w-10 h-10 text-[#dfad3c] mx-auto" />
-              <h4 className="font-bold text-xl">Visit GrowGuest Office</h4>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034
-              </p>
-              <div className="pt-2">
-                <a
-                  href="https://www.google.com/maps/place/?cid=13593835757779847259"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs font-bold text-[#dfad3c] hover:text-white transition-colors"
-                >
-                  <MapPin className="w-3.5 h-3.5 mr-1" />
-                  View on Google Maps (CID Listing) →
-                </a>
+              <div className="lg:col-span-5 bg-[#071510] text-white p-6 sm:p-8 rounded-2xl border border-[#dfad3c]/20 space-y-4 text-center">
+                <MapPin className="w-10 h-10 text-[#dfad3c] mx-auto" />
+                <h4 className="font-bold text-xl">Visit GrowGuest Office</h4>
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034
+                </p>
+                <div className="pt-2">
+                  <a
+                    href="https://www.google.com/maps/place/?cid=13593835757779847259"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-xs font-bold text-[#dfad3c] hover:text-white transition-colors"
+                  >
+                    <MapPin className="w-3.5 h-3.5 mr-1" />
+                    View on Google Maps (CID Listing) →
+                  </a>
+                </div>
+                <div className="pt-2 border-t border-white/10 text-xs text-slate-400">
+                  Local in-person audits available Monday – Saturday
+                </div>
               </div>
-              <div className="pt-2 border-t border-white/10 text-xs text-slate-400">
-                Local in-person audits available Monday – Saturday
-              </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-20 bg-[#f7f5ef] border-t border-[rgba(16,41,32,0.06)]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
-              Frequently Asked Questions About GrowGuest
-            </h2>
-            <p className="text-[#546059]">
-              Clear answers about our founder-led team and agency model.
-            </p>
-          </div>
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-extrabold text-[#071510] mb-3">
+                Frequently Asked Questions About GrowGuest
+              </h2>
+              <p className="text-[#546059]">
+                Clear answers about our founder-led team and agency model.
+              </p>
+            </div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
@@ -608,6 +605,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+      </div>
       </section>
 
       <AuditForm />

@@ -46,18 +46,18 @@ export default function Breadcrumbs({ items, maxWidth = '7xl', className = '' }:
         : 'max-w-7xl';
 
   return (
-    <nav aria-label="Breadcrumb" className={`w-full ${topPaddingClass} ${paddingClass} ${maxWClass} ${className}`}>
-      <ol className="flex items-center space-x-2 text-xs sm:text-sm text-[#546059] overflow-x-auto whitespace-nowrap">
+    <nav aria-label="Breadcrumb" className={`w-full ${topPaddingClass} ${paddingClass} ${maxWClass} ${className}`.trim()}>
+      <ol className="flex items-center flex-wrap gap-x-1.5 gap-y-1 text-xs sm:text-sm text-[#546059] py-0.5">
         {allItems.map((item, index) => {
           const isLast = index === allItems.length - 1;
 
           return (
             <li key={item.url} className="flex items-center">
               {index > 0 && (
-                <ChevronRight className="w-3.5 h-3.5 text-[#88968e] mx-1.5 flex-shrink-0" />
+                <ChevronRight className="w-3.5 h-3.5 text-[#88968e] mx-1 flex-shrink-0" />
               )}
               {isLast ? (
-                <span className="font-semibold text-[#c99a2e] truncate" aria-current="page">
+                <span className="font-semibold text-[#c99a2e] truncate max-w-[280px] sm:max-w-none" aria-current="page">
                   {item.name}
                 </span>
               ) : (
@@ -65,7 +65,7 @@ export default function Breadcrumbs({ items, maxWidth = '7xl', className = '' }:
                   href={item.url}
                   className="flex items-center hover:text-[#071510] transition-colors"
                 >
-                  {index === 0 && <Home className="w-3.5 h-3.5 mr-1.5 text-[#88968e] flex-shrink-0" />}
+                  {index === 0 && <Home className="w-3.5 h-3.5 mr-1 text-[#88968e] flex-shrink-0" />}
                   <span>{item.name}</span>
                 </a>
               )}

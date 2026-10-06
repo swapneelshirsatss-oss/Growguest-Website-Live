@@ -17,7 +17,7 @@ export default defineConfig({
     '/blog': '/hospitality-digital-marketing-blog/',
   },
   server: {
-    host: '127.0.0.1',
+    host: true,
     port: 3000,
   },
   vite: {

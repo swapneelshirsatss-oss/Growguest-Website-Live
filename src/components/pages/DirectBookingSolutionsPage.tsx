@@ -172,14 +172,15 @@ export default function DirectBookingSolutionsPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
+      <section className="subpage-hero">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 py-0" />
+          </div>
 
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={false}
               className="hero-pill-badge mb-6"
             >
               <span className="pulse-dot" />
@@ -187,18 +188,14 @@ export default function DirectBookingSolutionsPage() {
             </motion.div>
 
             <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              initial={false}
               className="hero-title mb-6"
             >
               Hotel Direct Booking Solutions: <em>Stop Paying 20% OTA Commissions</em>
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              initial={false}
               className="hero-desc mb-8"
             >
               We build high-converting direct booking engines for independent hotels, resorts, and homestays. Dominate Google Map Pack, own your guest relationships, and convert lookers into commission-free direct bookings.
@@ -206,9 +203,7 @@ export default function DirectBookingSolutionsPage() {
 
             {/* AEO Direct Answer Card */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.25 }}
+              initial={false}
               className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 sm:p-7 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-bold text-xs uppercase tracking-wider mb-2">
@@ -221,9 +216,7 @@ export default function DirectBookingSolutionsPage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              initial={false}
               className="hero-actions"
             >
               <a
@@ -343,10 +336,7 @@ export default function DirectBookingSolutionsPage() {
             {pillars.map((pillar, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                initial={false}
                 className="bg-white rounded-3xl p-8 border border-[rgba(16,41,32,0.08)] shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
               >
                 <div>

@@ -168,3 +168,91 @@
     }
   }
 }
+
+/* ==========================================================================
+   INSIDE PAGES LAYOUT & ALIGNMENT HARMONY SYSTEM
+   ========================================================================== */
+
+/* 1. Global Container Alignment */
+.container {
+  width: 100%;
+  max-width: var(--max-w, 1280px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* 2. Subpage Hero Section (Consistent breathing room below sticky header) */
+.subpage-hero {
+  padding-top: 48px;
+  padding-bottom: 56px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .subpage-hero {
+    padding-top: 56px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subpage-hero {
+    padding-top: 64px;
+    padding-bottom: 76px;
+  }
+}
+
+/* 3. Breadcrumbs Wrapper */
+.breadcrumbs-wrapper {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .breadcrumbs-wrapper {
+    margin-bottom: 28px;
+  }
+}
+
+/* 4. Inside Section Standard Spacing */
+.subpage-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1024px) {
+  .subpage-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* 5. Legal & Content Cards */
+.legal-card {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid rgba(16, 41, 32, 0.08);
+  padding: 36px 32px;
+  box-shadow: 0 2px 8px rgba(12, 32, 24, 0.04);
+}
+
+@media (min-width: 640px) {
+  .legal-card {
+    padding: 48px 44px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .legal-card {
+    padding: 56px 52px;
+  }
+}
+

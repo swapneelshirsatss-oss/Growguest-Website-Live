@@ -18,25 +18,30 @@ export default function TermsOfServicePage() {
       />
 
       {/* Header */}
-      <header className="pt-10 pb-12 lg:pt-14 lg:pb-16 relative">
-        <div className="max-w-4xl mx-auto px-5 sm:px-8">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="4xl" className="px-0 pt-0 pb-6" />
-          <div className="hero-pill-badge mb-6">
-            <span className="pulse-dot" />
-            <span>Service Agreement & Guidelines</span>
+      <section className="subpage-hero">
+        <div className="container">
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 py-0" />
           </div>
-          <h1 className="hero-title mb-4">
-            Terms of <em className="font-serif italic font-normal text-[#c99a2e]">Service</em>
-          </h1>
-          <p className="hero-desc">
-            Last Updated: August 2026. Standard terms governing website use, audit tools, and marketing engagements with Growguest.
-          </p>
+          <div className="max-w-4xl">
+            <div className="hero-pill-badge mb-6">
+              <span className="pulse-dot" />
+              <span>Service Agreement & Guidelines</span>
+            </div>
+            <h1 className="hero-title mb-4">
+              Terms of <em className="font-serif italic font-normal text-[#c99a2e]">Service</em>
+            </h1>
+            <p className="hero-desc">
+              Last Updated: August 2026. Standard terms governing website use, audit tools, and marketing engagements with Growguest.
+            </p>
+          </div>
         </div>
-      </header>
+      </section>
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-5 sm:px-8 pb-16">
-        <div className="bg-white rounded-3xl border border-[rgba(16,41,32,0.08)] p-8 sm:p-12 shadow-sm space-y-10 text-[#546059] leading-relaxed">
+      <section className="pb-24">
+        <div className="container">
+          <div className="legal-card max-w-4xl space-y-10 text-[#546059] leading-relaxed">
           
           <div>
             <h2 className="text-2xl font-bold text-[#071510] mb-4">
@@ -110,9 +115,9 @@ export default function TermsOfServicePage() {
               </div>
             </div>
           </div>
-
         </div>
-      </main>
+      </div>
+    </section>
     </div>
   );
 }

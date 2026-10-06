@@ -187,14 +187,15 @@ export default function ApproachPage() {
       </script>
 
       {/* Hero Section */}
-      <section className="pt-10 pb-14 lg:pt-14 lg:pb-18 relative">
+      <section className="subpage-hero">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 py-0" />
+          </div>
 
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={false}
               className="hero-pill-badge mb-6"
             >
               <span className="pulse-dot" />
@@ -202,9 +203,7 @@ export default function ApproachPage() {
             </motion.div>
 
             <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
+              initial={false}
               className="hero-title mb-6"
             >
               You Craft The Hospitality. <br className="hidden sm:inline" />
@@ -212,9 +211,7 @@ export default function ApproachPage() {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              initial={false}
               className="hero-desc mb-8"
             >
               A stunning property without a connected direct booking journey surrenders 18% to 25% of its gross revenue to OTAs. Here is the exact 3-pillar framework we use to turn lookers into commission-free direct guests.
@@ -222,9 +219,7 @@ export default function ApproachPage() {
 
             {/* AEO Direct Answer Card */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.25 }}
+              initial={false}
               className="mb-8 text-left border-l-4 border-[#c99a2e] bg-[#0c2018] text-slate-200 p-6 rounded-r-2xl shadow-xl border-y border-r border-white/10"
             >
               <div className="flex items-center space-x-2 text-[#dfad3c] font-mono font-bold text-xs uppercase tracking-wider mb-2">
@@ -237,9 +232,7 @@ export default function ApproachPage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              initial={false}
               className="hero-actions"
             >
               <a
@@ -289,7 +282,7 @@ export default function ApproachPage() {
       </section>
 
       {/* The 3 Pillars Section */}
-      <section className="py-16 lg:py-24">
+      <section className="subpage-section">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#dfad3c]/15 border border-[#dfad3c]/30 text-[#dfad3c] text-xs font-mono font-semibold uppercase tracking-wider mb-4">
