@@ -337,7 +337,7 @@ export default function ServicesPage() {
           {servicesList.map((service, index) => (
             <motion.div
               key={service.id}
-              initial={{ opacity: 0, y: 25 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}

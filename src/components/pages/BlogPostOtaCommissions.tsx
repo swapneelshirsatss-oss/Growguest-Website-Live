@@ -97,9 +97,11 @@ export default function BlogPostOtaCommissions() {
       />
 
       {/* Header */}
-      <header className="pt-10 pb-12 lg:pt-14 lg:pb-16 relative">
+      <header className="subpage-hero">
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="4xl" className="px-0 pt-0 pb-6" />
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="4xl" className="px-0 py-0" />
+          </div>
           <div className="hero-pill-badge mb-6">
             <span className="pulse-dot" />
             <span>Direct Booking Economics</span>

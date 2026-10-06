@@ -165,13 +165,15 @@ export default function BlogPostHospitalityDigitalMarketing() {
       </script>
 
       {/* Header / Hero Section */}
-      <header className="pt-10 pb-12 lg:pt-14 lg:pb-16 relative">
+      <header className="subpage-hero">
         <div className="container">
-          <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 pt-0 pb-6" />
+          <div className="breadcrumbs-wrapper">
+            <Breadcrumbs items={breadcrumbItems} maxWidth="full" className="px-0 py-0" />
+          </div>
 
           <div className="max-w-4xl">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               className="hero-pill-badge mb-6"
             >
