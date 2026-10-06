@@ -346,7 +346,7 @@ export default function ApproachPage() {
             <span className="text-xs font-mono font-bold text-[#dfad3c] uppercase tracking-widest block mb-2">
               HOW WE WORK WITH YOU
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4" style={{ color: '#ffffff' }}>
               The 4-Step Operational Blueprint
             </h2>
             <p className="text-slate-300 text-lg">
@@ -358,18 +358,18 @@ export default function ApproachPage() {
             {blueprintSteps.map((item, idx) => (
               <div 
                 key={idx}
-                className="bg-[#0c2018] rounded-2xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between hover:border-[#dfad3c]/40 transition-colors"
+                className="bg-[#0c2018] rounded-2xl p-6 sm:p-8 border border-white/15 flex flex-col justify-between hover:border-[#dfad3c]/60 shadow-lg transition-all"
               >
                 <div>
                   <div className="flex justify-between items-center mb-6">
                     <span className="font-mono text-xs font-bold text-[#dfad3c] tracking-wider">
                       STEP {item.step}
                     </span>
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-300 bg-white/5 px-2.5 py-1 rounded">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-200 bg-white/10 px-2.5 py-1 rounded border border-white/10">
                       {item.phase}
                     </span>
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-3">
+                  <h4 className="text-lg sm:text-xl font-bold text-white mb-3" style={{ color: '#ffffff' }}>
                     {item.title}
                   </h4>
                   <p className="text-sm text-slate-300 leading-relaxed">
