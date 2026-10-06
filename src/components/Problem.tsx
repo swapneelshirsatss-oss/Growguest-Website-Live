@@ -136,7 +136,7 @@ export default function Problem() {
                 <span className="w-2 h-2 rounded-full bg-[#dfad3c] animate-pulse" />
                 THE HIGH-MARGIN PIPELINE
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className="text-2xl font-bold text-white mb-2" style={{ color: '#ffffff' }}>
                 The GrowGuest Direct Booking Engine
               </h3>
               <p className="text-sm text-emerald-200/80 mb-8">

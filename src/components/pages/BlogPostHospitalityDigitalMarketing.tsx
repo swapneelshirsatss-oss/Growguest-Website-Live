@@ -746,7 +746,7 @@ export default function BlogPostHospitalityDigitalMarketing() {
                 <PhoneCall className="w-3.5 h-3.5 mr-1.5" />
                 <span>Nagpur Local Consultancy</span>
               </div>
-              <h4 className="font-bold text-base text-white">
+              <h4 className="font-bold text-base text-white" style={{ color: '#ffffff' }}>
                 Want to discuss your property's direct booking split?
               </h4>
               <p className="text-xs text-slate-300 leading-relaxed">

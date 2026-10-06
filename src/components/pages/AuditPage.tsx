@@ -337,7 +337,7 @@ export default function AuditPage() {
               <span className="text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-wider block mb-2">
                 What You Get In The Audit Report
               </span>
-              <h3 className="text-2xl font-bold mb-6">
+              <h3 className="text-2xl font-bold text-white mb-6" style={{ color: '#ffffff' }}>
                 4-Point Direct Booking Analysis
               </h3>
 
@@ -348,7 +348,7 @@ export default function AuditPage() {
                       {pillar.icon}
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-base mb-1">
+                      <h4 className="font-bold text-white text-base mb-1" style={{ color: '#ffffff' }}>
                         {pillar.title}
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">

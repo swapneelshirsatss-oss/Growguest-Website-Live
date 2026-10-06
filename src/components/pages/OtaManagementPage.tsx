@@ -379,7 +379,7 @@ export default function OtaManagementPage() {
                 <span className="inline-block text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-widest mb-3">
                   COMMISSION RECOVERY CALCULATOR
                 </span>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight" style={{ color: '#ffffff' }}>
                   How Much OTA Commission <span className="font-serif italic font-normal text-[#dfad3c]">Can You Recover?</span>
                 </h2>
                 <p className="text-slate-300 text-base mb-8">
@@ -389,14 +389,14 @@ export default function OtaManagementPage() {
                 <div className="space-y-6">
                   <div>
                     <div className="flex justify-between text-sm font-medium mb-2">
-                      <span>Monthly OTA Room Nights:</span>
+                      <span className="text-slate-200">Monthly OTA Room Nights:</span>
                       <span className="text-[#dfad3c] font-bold">{monthlyOtaBookings} nights</span>
                     </div>
                     <input 
                       type="range" 
                       min="30" 
                       max="600" 
-                      step="10"
+                      step="10" 
                       value={monthlyOtaBookings} 
                       onChange={(e) => setMonthlyOtaBookings(Number(e.target.value))}
                       className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#dfad3c]"
@@ -405,14 +405,14 @@ export default function OtaManagementPage() {
 
                   <div>
                     <div className="flex justify-between text-sm font-medium mb-2">
-                      <span>Average Room Tariff:</span>
+                      <span className="text-slate-200">Average Room Tariff:</span>
                       <span className="text-[#dfad3c] font-bold">₹{avgTariff.toLocaleString('en-IN')}</span>
                     </div>
                     <input 
                       type="range" 
                       min="2000" 
                       max="15000" 
-                      step="500"
+                      step="500" 
                       value={avgTariff} 
                       onChange={(e) => setAvgTariff(Number(e.target.value))}
                       className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#dfad3c]"

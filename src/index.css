@@ -257,9 +257,26 @@
 }
 
 /* 6. High Contrast Dark Section Typography */
-.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4,
-[class*="bg-[#071510]"] h1, [class*="bg-[#071510]"] h2, [class*="bg-[#071510]"] h3, [class*="bg-[#071510]"] h4,
-[class*="bg-[#0c2018]"] h1, [class*="bg-[#0c2018]"] h2, [class*="bg-[#0c2018]"] h3, [class*="bg-[#0c2018]"] h4 {
+:where(
+  .bg-dark, 
+  [class*="bg-[#071510]"], 
+  [class*="bg-[#0c2018]"], 
+  [class*="bg-[#102920]"], 
+  [class*="bg-slate-900"]
+) :where(h1, h2, h3, h4, h5, h6):not([class*="text-"]) {
+  color: #ffffff;
+}
+
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6,
+[class*="bg-[#071510]"] h1, [class*="bg-[#071510]"] h2, [class*="bg-[#071510]"] h3, [class*="bg-[#071510]"] h4, [class*="bg-[#071510]"] h5, [class*="bg-[#071510]"] h6,
+[class*="bg-[#0c2018]"] h1, [class*="bg-[#0c2018]"] h2, [class*="bg-[#0c2018]"] h3, [class*="bg-[#0c2018]"] h4, [class*="bg-[#0c2018]"] h5, [class*="bg-[#0c2018]"] h6,
+[class*="bg-[#102920]"] h1, [class*="bg-[#102920]"] h2, [class*="bg-[#102920]"] h3, [class*="bg-[#102920]"] h4, [class*="bg-[#102920]"] h5, [class*="bg-[#102920]"] h6,
+[class*="bg-slate-900"] h1, [class*="bg-slate-900"] h2, [class*="bg-slate-900"] h3, [class*="bg-slate-900"] h4, [class*="bg-slate-900"] h5, [class*="bg-slate-900"] h6 {
+  color: #ffffff;
+}
+
+[class*="bg-[#071510]"] th:not([class*="text-"]),
+[class*="bg-[#0c2018]"] th:not([class*="text-"]) {
   color: #ffffff;
 }
 

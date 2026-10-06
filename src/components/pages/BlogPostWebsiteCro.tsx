@@ -159,7 +159,7 @@ export default function BlogPostWebsiteCro() {
 
           <div className="pt-8 border-t border-[rgba(16,41,32,0.08)] not-prose">
             <div className="bg-[#071510] text-white p-8 sm:p-10 rounded-3xl border border-[#dfad3c]/20 shadow-xl">
-              <h3 className="text-2xl font-extrabold mb-3">Is your website losing booking inquiries?</h3>
+              <h3 className="text-2xl font-extrabold text-white mb-3" style={{ color: '#ffffff' }}>Is your website losing booking inquiries?</h3>
               <p className="text-slate-300 mb-6 leading-relaxed">
                 Get a comprehensive mobile UX and speed audit for your property website.
               </p>

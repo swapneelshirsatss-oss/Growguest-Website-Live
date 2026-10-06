@@ -377,7 +377,7 @@ export default function SocialMediaManagementPage() {
                 <span className="inline-block text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-widest mb-3">
                   SOCIAL REVENUE SIMULATOR
                 </span>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight" style={{ color: '#ffffff' }}>
                   Calculate Your Monthly <span className="font-serif italic font-normal text-[#dfad3c]">Social Booking Potential</span>
                 </h2>
                 <p className="text-slate-300 text-base mb-8">
@@ -387,7 +387,7 @@ export default function SocialMediaManagementPage() {
                 <div className="space-y-6">
                   <div>
                     <div className="flex justify-between text-sm font-medium mb-2">
-                      <span>Target Engaged Instagram Audience:</span>
+                      <span className="text-slate-200">Target Engaged Instagram Audience:</span>
                       <span className="text-[#dfad3c] font-bold">{monthlyFollowers.toLocaleString('en-IN')} followers</span>
                     </div>
                     <input 
@@ -419,7 +419,7 @@ export default function SocialMediaManagementPage() {
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
                   <div className="bg-[#0c2018] p-3 rounded-xl border border-white/5">
                     <span className="text-[11px] text-slate-400 block uppercase">Est. DM Inquiries</span>
-                    <span className="text-xl font-bold text-white">~{estimatedInquiries} leads</span>
+                    <span className="text-xl font-bold text-white" style={{ color: '#ffffff' }}>~{estimatedInquiries} leads</span>
                   </div>
                   <div className="bg-[#0c2018] p-3 rounded-xl border border-white/5">
                     <span className="text-[11px] text-[#dfad3c] block uppercase">Est. Room Bookings</span>

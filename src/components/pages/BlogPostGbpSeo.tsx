@@ -164,7 +164,7 @@ export default function BlogPostGbpSeo() {
 
           <div className="pt-8 border-t border-[rgba(16,41,32,0.08)] not-prose">
             <div className="bg-[#071510] text-white p-8 sm:p-10 rounded-3xl border border-[#dfad3c]/20 shadow-xl">
-              <h3 className="text-2xl font-extrabold mb-3">Where does your property rank in Google Maps today?</h3>
+              <h3 className="text-2xl font-extrabold text-white mb-3" style={{ color: '#ffffff' }}>Where does your property rank in Google Maps today?</h3>
               <p className="text-slate-300 mb-6 leading-relaxed">
                 We perform a geo-grid rank scan for Nagpur and show you where guests find you vs your competitors.
               </p>

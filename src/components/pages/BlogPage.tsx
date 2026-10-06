@@ -349,7 +349,7 @@ export default function BlogPage() {
         <div className="container">
           <div className="bg-[#071510] text-white rounded-3xl p-8 sm:p-12 text-center border border-[#dfad3c]/20 shadow-xl relative overflow-hidden">
             <div className="max-w-3xl mx-auto">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3 leading-tight">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-3 leading-tight" style={{ color: '#ffffff' }}>
                 Stop Losing 18% to 25% on Every Guest Reservation
               </h3>
               <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-7 leading-relaxed">

@@ -44,7 +44,7 @@ export default function OtaCalculator() {
               <span>INTERACTIVE FINANCIAL TOOL</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6" style={{ color: '#ffffff' }}>
               What could more{' '}
               <em className="font-serif italic font-normal text-[#dfad3c] not-italic">
                 direct bookings mean?

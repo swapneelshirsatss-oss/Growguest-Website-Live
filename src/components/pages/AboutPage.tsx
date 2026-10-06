@@ -449,7 +449,7 @@ export default function AboutPage() {
                       {step.year.split(' ')[0]}
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-base mb-1">
+                      <h4 className="font-bold text-white text-base mb-1" style={{ color: '#ffffff' }}>
                         {step.title}
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -539,7 +539,7 @@ export default function AboutPage() {
 
               <div className="lg:col-span-5 bg-[#071510] text-white p-6 sm:p-8 rounded-2xl border border-[#dfad3c]/20 space-y-4 text-center">
                 <MapPin className="w-10 h-10 text-[#dfad3c] mx-auto" />
-                <h4 className="font-bold text-xl">Visit GrowGuest Office</h4>
+                <h4 className="font-bold text-xl text-white" style={{ color: '#ffffff' }}>Visit GrowGuest Office</h4>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                   60, Swami samarth Nagari, Besa-Pipla Rd, Nagpur, Maharashtra 440034
                 </p>

@@ -296,7 +296,7 @@ export default function ServicesPage() {
                     <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#dfad3c] block mb-1">
                       The Dual Trap Costing Property Owners 20%+ In Profit
                     </span>
-                    <h2 className="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-2">
+                    <h2 className="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-2" style={{ color: '#ffffff' }}>
                       Zero Google Visibility & The Heavy OTA Commission Trap
                     </h2>
                     <p className="text-sm sm:text-base text-slate-300 leading-relaxed">

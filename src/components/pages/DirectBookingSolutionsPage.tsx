@@ -286,7 +286,7 @@ export default function DirectBookingSolutionsPage() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-[#071510] text-white">
-                  <th className="p-5 sm:p-6 text-sm sm:text-base font-bold">Key Feature</th>
+                  <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-white" style={{ color: '#ffffff' }}>Key Feature</th>
                   <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-red-400">OTA Dependence (MakeMyTrip/Agoda)</th>
                   <th className="p-5 sm:p-6 text-sm sm:text-base font-bold text-[#dfad3c] bg-[#0c2018]">GrowGuest Direct Pipeline</th>
                 </tr>
@@ -377,7 +377,7 @@ export default function DirectBookingSolutionsPage() {
                 <span className="inline-block text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-widest mb-3">
                   ROI SAVINGS CALCULATOR
                 </span>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight" style={{ color: '#ffffff' }}>
                   Calculate Your Yearly <span className="font-serif italic font-normal text-[#dfad3c]">OTA Commission Bleed</span>
                 </h2>
                 <p className="text-slate-300 text-base mb-8">
@@ -387,14 +387,14 @@ export default function DirectBookingSolutionsPage() {
                 <div className="space-y-6">
                   <div>
                     <div className="flex justify-between text-sm font-medium mb-2">
-                      <span>Booked Room Nights / Month:</span>
+                      <span className="text-slate-200">Booked Room Nights / Month:</span>
                       <span className="text-[#dfad3c] font-bold">{monthlyRooms} nights</span>
                     </div>
                     <input 
                       type="range" 
                       min="50" 
                       max="1000" 
-                      step="25"
+                      step="25" 
                       value={monthlyRooms} 
                       onChange={(e) => setMonthlyRooms(Number(e.target.value))}
                       className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#dfad3c]"
@@ -403,14 +403,14 @@ export default function DirectBookingSolutionsPage() {
 
                   <div>
                     <div className="flex justify-between text-sm font-medium mb-2">
-                      <span>Average Tariff Per Night (₹):</span>
+                      <span className="text-slate-200">Average Tariff Per Night (₹):</span>
                       <span className="text-[#dfad3c] font-bold">₹{roomTariff.toLocaleString('en-IN')}</span>
                     </div>
                     <input 
                       type="range" 
                       min="1000" 
                       max="15000" 
-                      step="500"
+                      step="500" 
                       value={roomTariff} 
                       onChange={(e) => setRoomTariff(Number(e.target.value))}
                       className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#dfad3c]"

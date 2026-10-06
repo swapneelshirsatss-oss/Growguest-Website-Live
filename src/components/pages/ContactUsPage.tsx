@@ -481,7 +481,7 @@ export default function ContactUsPage() {
               <span className="text-xs font-mono font-semibold text-[#dfad3c] uppercase tracking-wider block">
                 Office Information
               </span>
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-2xl font-bold text-white" style={{ color: '#ffffff' }}>
                 GrowGuest Headquarters
               </h3>
 

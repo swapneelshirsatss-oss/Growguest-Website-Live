@@ -77,7 +77,7 @@ export default function Process() {
 
           {/* Right Column: Key Differentiators */}
           <div className="lg:col-span-5 bg-[#071510] text-white p-7 sm:p-8 rounded-2xl border border-white/10 shadow-lg">
-            <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
+            <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-2" style={{ color: '#ffffff' }}>
               <span className="text-[#c99a2e]">✦</span> Why Work With GrowGuest?
             </h4>
 
