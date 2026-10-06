@@ -23,3 +23,8 @@ This skill governs all copywriting, SEO strategies, client audit playbooks, and 
 - Direct Booking vs. OTA Commission audits.
 - Google Business Profile (GBP) ranking strategies for hotels & restaurants.
 - WhatsApp automation for hotel direct inquiries.
+
+## 4. UI Contrast & Dark Container Typography Standards
+- **Dark Surface Contrast**: All dark cards (`#071510`, `#0c2018`, `#102920`, `bg-slate-900`) must strictly maintain high contrast (pure `#ffffff` for titles, `#dfad3c` for accents/eyebrows, and `#e2e8f0` / `#cbd5e1` for supporting copy).
+- **Calculator & Widget Form Labels**: Input slider labels and unit descriptions on dark backgrounds must explicitly use `text-slate-200` or `text-slate-300`, never generic muted gray.
+- **Defensive Styling**: When authoring JSX components with dark background cards, apply `style={{ color: '#ffffff' }}` to heading elements to prevent cascade collisions with global stylesheets.
